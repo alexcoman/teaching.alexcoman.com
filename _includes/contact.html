@@ -1,37 +1,35 @@
+{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
+{% else %}                          {% assign data = site.data.default    %}
+{% endif %}
+<section id="contact" class="contact container content-section text-center">
 
-<!-- Contact Start -->
-
-<section id="{{ page.section-type }}" class="container content-section text-center">
-  <div class="row">
+  <div id="contact-content" class="row">
     <div class="col-md-10 col-md-offset-1">
-
-      {{ page.content | markdownify }}
-
-      {% if site.email %}
-        {% if site.email contains '@' %}
-          {% assign newemail = site.email | split: '@' %}
-            <p>
-            <script>
-              function join_at_email(user, domain){
-              return (user && domain)?(user + "@" + domain):"";
-              }
-              document.write('<a href="mailto:'
-              + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
-              + '">'
-              + join_at_email( "{{ newemail[0] }}", "{{ newemail[1] }}" )
-              + '</a>'
-              );
-              </script>
-            </p>
-        {% else %}
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-        {% endif %}
-      {% endif %}
-
-      {% include social-buttons.html %}
-
+      <h3>{{ data.contact.title }}</h3>
+      <p>{{ data.contact.content }}</p>
     </div>
   </div>
-</section>
 
-<!-- Contact End -->
+  <div id="contact-blocks" class="row">
+    <div class="col-lg-10 col-lg-offset-1 text-center">
+      {% for block in data.contact.blocks %}
+      {% assign column_width = 12 | divided_by: forloop.length %}
+      <div class="col-md-{{ column_width }} col-sm-4 col-xs-12 col-center">
+        <ul>
+          <li>{{ block.title }}</li>
+          {% for link_element in block.links %}
+          <li><a href="{% if link_element.permalink != null %} {{ link_element.permalink | prepend: site.baseurl }} {% else %} {{ link_element.link }} {% endif %}" {% if link_element.link != null %}target="_blank"{% endif %}>{{ link_element.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="contact-links" class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {% include social-buttons.html %}
+    </div>
+  </div>
+
+</section>
