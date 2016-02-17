@@ -1,38 +1,33 @@
+# Plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Site settings
+# Build Settings
+markdown: kramdown
+permalink: pretty
+exclude:
+  - CONTRIBUTING
+  - CONTRIBUTORS
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - .gitignore
+  - .travis.yml
 
-# NB! Set your site's url, otherwise stuff will break :)
+# Enable minification SASS
+sass:
+  style: compressed
 
-url: "https://panossakkos.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path :)
-
-baseurl: /personal-jekyll-theme
-
-# Google tracking id to track your visitors
-
-google-tracking-id: "UA-35880426-4"
-
-# Forces https everywhere in your website, except when you serve it locally
-# If you are not hosted on Github Pages, and your host doesn't support https
-# then you should disable it
-
+# Site Settings
+url: "https://teaching.alexcoman.com"
+baseurl: ""
 force-https: True
+google-tracking-id: ""
 
-#############
-# HTML Head #
-#############
-
-lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
 favicon: "/img/favicon.ico"
 404-img: "/img/labtocat.png"
 
@@ -152,5 +147,3 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems:
-  - jekyll-paginate
