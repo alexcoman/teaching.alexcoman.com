@@ -1,12 +1,28 @@
-
- <!-- Footer Start -->
-
+{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
+{% else %}                          {% assign data = site.data.default    %}
+{% endif %}
+{% capture month %}
+    {% assign m = site.time | date: "%-m" %}
+    {% case m %}
+        {% when '1' %}ianuarie
+        {% when '2' %}februarie
+        {% when '3' %}martie
+        {% when '4' %}aprilie
+        {% when '5' %}mai
+        {% when '6' %}iunie
+        {% when '7' %}iulie
+        {% when '8' %}august
+        {% when '9' %}septembrie
+        {% when '10' %}octombrie
+        {% when '11' %}noiembrie
+        {% when '12' %}decembrie
+    {% endcase %}
+{% endcapture %}
 <footer>
     <div class="container text-center">
-      <p>Copyright &copy; {{ site.author }} {{ site.time | date: "%Y" }}</p>
+        <p>
+        Ultima actualizare: {{ site.time | date: "%-d" }} {{ month }} {{ site.time | date: "%Y" }} <a itemprop="license" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a><br />
+        <a href="https://alexcoman.com" title="Spre situl Web al titularului laboratorului Alexandru-Florin Coman">Alexandru-Florin Coman</a>
+        </p>
     </div>
 </footer>
-
-<p><br><br><br><br><br><br></p>
-
-<!-- Footer End -->
