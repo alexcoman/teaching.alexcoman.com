@@ -1,37 +1,36 @@
-
-<!-- Post Layout Start -->
-
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
   {% include head.html %}
 
-  <body>
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
 
     {% include navigation.html %}
 
-    <section id="post" class="container content-section text-center">
+    <section id="post" class="post container content-section text-justify">
       <div class="row">
         <div class="col-md-10 col-md-offset-1">
-
           {% include swipe-instructions.html %}
-
-          <h1><strong>{{ page.title }}</strong></h1>
-          <h4><strong>{{ page.date | date_to_string }}</strong>
-            <small> . {{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
-            {% for tag in page.tags %}
-              <a href="{{site.baseurl}}/tags/{{tag}}.html">#{{ tag }}</a>
-            {% endfor %}
-            </small>
-          </h4>
-
-          {{ page.content | markdownify }}
-
+          <hgroup>
+            <h1><strong>{{ page.title }}</strong></h1>
+            <h4>
+              <strong>{{ page.date | date: "%B %-d, %Y" }}</strong>
+              <small>
+                . <a href="/blog/{{ page.category }}">{{ page.category }}</a>
+                . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+                {% for tag in page.tags %}
+                    <a href="{{site.baseurl}}/tags/{{tag}}/">#{{ tag }}</a>
+                {% endfor %}
+              </small>
+            </h4>
+          </hgroup>
+          <div id="post-content" class="post-content text-justify">
+            {{ page.content | markdownify }}
+          </div>
+          
           {% include share.html %}
 
-          {% if jekyll.environment == "production" %}
-            {% include comments.html %}
-          {% endif %}
+          {% include comments.html %}
 
           {% include social-buttons.html %}
 
@@ -45,5 +44,3 @@
 
   </body>
 </html>
-
-<!-- Post Layout End -->
