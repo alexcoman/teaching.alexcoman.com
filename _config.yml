@@ -78,6 +78,15 @@ vkontakte-share: True
 disqus-shortname: ""
 
 syntax-highlight: True
-email: "your@email.here"
+email: "contact@alexcoman.com"
 404-img: "/img/labtocat.png"
 paginate_path: "blog/page:num/"
+
+# Settings for deploy rake task
+username:        "alexandrucoman"
+repo:            "teaching.alexcoman.com"
+branch:          "master"
+relative_source: "../teaching.alexcoman.com/"
+destination:     "../teaching.alexcoman.com-pages/"
+production_url:  "http://teaching.alexcoman.com/"
+source_url:      "https://github.com/alexandrucoman/teaching.alexcoman.com"
