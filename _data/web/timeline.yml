@@ -1,0 +1,27 @@
+timeline-img: "/img/timeline/default.png"
+title: "Laboratoarele aferente cursului"
+events:
+
+  - image: "/img/timeline/css.png"
+    link: ""
+    title: "Foi de stiluri în cascadă"
+    date: "Săptămâna 2 (22—26 februarie)"
+    description: >
+      <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php" title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
+      Resurse utile: 
+        <a href="https://busaco.wordpress.com/2013/01/05/despre-css/" title="Despre CSS">Despre CSS</a>,
+        <a href="https://www.khanacademy.org/computing/computer-programming/html-css" title="Resurse privitoare la HTML și CSS">HTML și CSS</a>,
+        <a href="https://developer.mozilla.org/docs/Web/CSS/Reference" title="Detalii">CSS Reference (MDN)</a>
+
+  - image: "/img/timeline/html.png"
+    link: ""
+    title: "Limbajul de marcare HTML"
+    date: "Săptămâna 1 (15—19 februarie)"
+    description: >
+      <a href="http://www.w3resource.com/html-css-exercise/basic/" title="O serie de exerciții de bază privitoare la HTML5">Exerciții privind bazele HTML5</a><br/>
+      Resurse utile:
+        <a href="http://www.w3.org/html/" title="Detalii despre HTML (HyperText Markup Language)">Limbajul de marcare HTML</a>,
+        <a href="http://www.slideshare.net/busaco/html5-in-xxx-de-minute" title="O prezentare SlideShare despre HTML5">HTML5 în XXX de minute</a>,
+        <a href="http://docs.webplatform.org/wiki/Beginners" title="Resurse pentru începători">Resurse pentru începători</a>,
+        <a href="https://developer.mozilla.org/docs/HTML" title="Resurse despre HTML">tutoriale HTML (MDN)</a>,
+        <a href="http://html5doctor.com/element-index/" title="Detalii despre elementele HTML5">Detalii despre elementele HTML5</a>
