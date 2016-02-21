@@ -18,3 +18,19 @@ meta:
         Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate,
         academic, informatie, educatie, scoala, proiect, limbaj, programare,
         document, software, aplicatie, student, nota
+
+about:
+  - title: "Despre mine"
+    content: >
+      <p class="text-center">
+        Bine ați venit! Numele meu este <a href="https://alexcoman.com">Alexandru Florin Coman</a>, 
+        sunt o persoană mereu în căutare de lucruri noi, pasionat de securitate, tehnologii
+        deschise, cloud computing și dezvoltare software. Poziția mea actuală este
+        de <em>Cloud Engineer</em> la <a href="https://cloudbase.it/" target="_blank">
+        Cloudbase Solutions</a>.<br/>
+        În cadrul acestui site veți putea găsi toate resursele
+        folosite la laboratoarele pe care le susțin în cadrul
+        <a href="http://www.info.uaic.ro/" target="_blank">Facultății de
+        Informatică</a>, <a href="http://www.uaic.ro/" target="_black">
+        Universitatea Alexandru Ioan Cuza</a> din Iași.
+      </p>

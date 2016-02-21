@@ -1,7 +1,6 @@
 {% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
 {% else %}                          {% assign data = site.data.default    %}
 {% endif %}
-
 {% if site.data.nav[page.nav] %}    {% assign nav = site.data.nav[page.nav] %}
 {% else %}                          {% assign nav = site.data.nav.default   %}
 {% endif %}
@@ -22,7 +21,7 @@
 
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        {% for link_element in nav.links %}  
+        {% for link_element in nav %}
           <li><a {% if link_element.section != null %}class="page-scroll" href="#{{ link_element.section }}"{% else %}href="{{ link_element.link }}"{% endif %}>{{ link_element.text }}</a></li>
         {% endfor %}
       </ul>
