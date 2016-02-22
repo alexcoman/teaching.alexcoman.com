@@ -2,6 +2,15 @@
     position: relative;
     padding: 0;
     list-style: none;
+
+    a {
+        color: #fff;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
 }
 
 .timeline:before {
@@ -117,14 +126,19 @@
     margin-bottom: 0;
 }
 
-.timeline .timeline-heading h4 {
+.timeline .timeline-heading h4, h5 {
     margin-top: 0;
     color: inherit;
 }
 
-.timeline .timeline-heading h4.subheading {
+.timeline .timeline-heading h5 {
+    margin-bottom: 10px;
+}
+
+.timeline .timeline-heading h4.subheading, h5.subheading {
     text-transform: none;
 }
+
 
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {

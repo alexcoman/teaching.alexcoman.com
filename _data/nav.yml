@@ -1,0 +1,15 @@
+default:
+  - section: "about"
+    text: "Despre"
+  - link: "/web"
+    text: "Tehnologii Web"
+  - section: "contact"
+    text: "Contact"
+
+web:
+  - link: "/"
+    text: "↩ Prima pagină"
+  - section: "timeline"
+    text: "Laboratoare"  
+  - section: "contact"
+    text: "Contact"

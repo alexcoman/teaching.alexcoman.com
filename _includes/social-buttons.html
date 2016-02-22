@@ -1,10 +1,8 @@
-
-<!-- Social Buttons Start -->
-
+{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
+{% else %}                          {% assign data = site.data.default    %}
+{% endif %}
 <ul class="list-inline social-buttons">
-  {% for network in site.social %}
+  {% for network in data.contact.social %}
     <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
   {% endfor %}
 </ul>
-
-<!-- Social Buttons End -->
