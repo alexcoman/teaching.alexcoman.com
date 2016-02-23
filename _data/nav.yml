@@ -6,6 +6,10 @@ default:
   - section: "contact"
     text: "Contact"
 
+404:
+  - link: "/"
+    text: "↩ Prima pagină"
+
 web:
   - link: "/"
     text: "↩ Prima pagină"

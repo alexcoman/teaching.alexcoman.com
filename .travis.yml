@@ -1,10 +1,15 @@
+sudo: false
 language: ruby
-rvm:
-- 2.1
+cache: bundler
+rvm: 2.1.7
+install: bundle install
+script: bundle exec rake site:deploy --trace && htmlproof ../teaching.alexcoman.com-pages/ --disable-external --empty-alt-ignore
 
-install: gem install jekyll jekyll-paginate jemoji html-proofer
-script: JEKYLL_ENV=production jekyll serve --baseurl "" --detach && htmlproof ./_site --disable-external --empty-alt-ignore
+branches:
+  only:
+    - master
 
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - JEKYLL_ENV=production
