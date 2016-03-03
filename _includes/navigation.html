@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         {% for link_element in nav %}
-          <li><a {% if link_element.section != null %}class="page-scroll" href="#{{ link_element.section }}"{% else %}href="{{ link_element.link }}"{% endif %}>{{ link_element.text }}</a></li>
+          <li><a {% if link_element.section != null %}class="page-scroll" href="#{{ link_element.section }}"{% elsif link_element.permlink %}href="{{ link_element.permlink }}"{% else %}href="{{ link_element.link | prepend: site.baseurl }}"{% endif %}>{{ link_element.text }}</a></li>
         {% endfor %}
       </ul>
     </div>
