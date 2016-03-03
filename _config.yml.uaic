@@ -23,9 +23,8 @@ sass:
   style: compressed
 
 # Site Settings
-url: "https://teaching.alexcoman.com"
-baseurl: ""
-force-https: True
+url: "http://profs.info.uaic.ro"
+baseurl: "/~alex.coman"
 google-tracking-id: ""
 lang: "ro"
 
@@ -86,8 +85,8 @@ paginate_path: "blog/page:num/"
 username:        "alexandrucoman"
 repo:            "teaching.alexcoman.com"
 fetch:           "master"
-push:            "gh-pages"
-relative_source: "../teaching.alexcoman.com/"
-destination:     "../teaching.alexcoman.com-pages/"
+push:            "profs.info.uaic"
+relative_source: "../profs.info.uaic.ro/"
+destination:     "../profs.info.uaic.ro-pages/"
 source_url:      "https://github.com/alexandrucoman/teaching.alexcoman.com"
-production_url:  "https://teaching.alexcoman.com/"
+production_url:  "http://profs.info.uaic.ro/~alex.coman/"
