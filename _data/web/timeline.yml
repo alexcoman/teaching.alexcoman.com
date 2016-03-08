@@ -2,6 +2,18 @@ timeline-img: "/img/timeline/default.png"
 title: "Laboratoarele aferente cursului"
 events:
 
+  - image: "/img/timeline/php.jpg"
+    link: ""
+    title: "Programare Web"
+    date: "Săptămâna 4 (7 - 11 martie)"
+    description: >
+       <a href="http://www.w3resource.com/php-exercises/" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
+       Resurse utile:
+       <a href="https://www.w3.org/community/webed/wiki/HTML_forms_-_the_basics" title="Detalii privind declararea de formulare Web">HTML Forms</a>,
+       <a href="https://developer.mozilla.org/docs/Web/Guide/HTML/Forms" title="Un ghid pentru conceperea formularelor Web">HTML Forms Guide</a>,
+       <a href="http://www.learn-php.org/" title="Un tutorial interactiv referitor la PHP">Learn PHP</a>,
+       <a href="http://www.hackingwithphp.com/" title="O carte online despre PHP">Hacking with PHP</a>
+
   - image: "/img/timeline/css.png"
     link: ""
     title: "Foi de stiluri în cascadă"
