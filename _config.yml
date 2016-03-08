@@ -18,6 +18,12 @@ exclude:
   - .gitignore
   - .travis.yml
 
+jekyll-press:
+  exclude: ['sitemap.xml', '*.css']
+  js_options: {}
+  css_options: {}
+  html_options: {}
+
 # Enable minification SASS
 sass:
   style: compressed
