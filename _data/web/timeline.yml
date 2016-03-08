@@ -5,7 +5,18 @@ events:
   - image: "/img/timeline/css.png"
     link: ""
     title: "Foi de stiluri în cascadă"
-    date: "Săptămâna 2 (22—26 februarie)"
+    date: "Săptămâna 3 (29 februarie - 4 martie)"
+    description: >
+      Resurse utile:
+      <a href="http://tympanus.net/codrops/css_reference/" title="Resurse CSS">Foi de stiluri în cascadă - CSS</a>,
+      <a href="http://www.slideshare.net/busaco/design-web-responsiv" title="Prezentare: 'Design (Web) responsiv'">Design (Web) responsiv</a>,
+      <a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design/" title="Detalii">Responsive Web Design</a>,
+      <a href="https://bradfrost.github.io/this-is-responsive/resources.html" title="Diverse resurse de interes referitoare la design Web responsiv">Responsive Resources</a>
+
+  - image: "/img/timeline/css.png"
+    link: ""
+    title: "Foi de stiluri în cascadă"
+    date: "Săptămâna 2 (22 - 26 februarie)"
     description: >
       <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php" title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
       Resurse utile: 
@@ -16,7 +27,7 @@ events:
   - image: "/img/timeline/html.png"
     link: ""
     title: "Limbajul de marcare HTML"
-    date: "Săptămâna 1 (15—19 februarie)"
+    date: "Săptămâna 1 (15 - 19 februarie)"
     description: >
       <a href="http://www.w3resource.com/html-css-exercise/basic/" title="O serie de exerciții de bază privitoare la HTML5">Exerciții privind bazele HTML5</a><br/>
       Resurse utile:
