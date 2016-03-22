@@ -5,6 +5,16 @@ events:
   - image: "/img/timeline/php.jpg"
     link: ""
     title: "Programare Web"
+    date: "Săptămâna 5 (14 - 18 martie)"
+    description: >
+       <a href="https://github.com/alexandrucoman/labs/tree/master/php/exercitii" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
+       Resurse utile:
+       <a href="http://php.net/manual/en/refs.database.php" title="Suportul pentru baze de date oferit de PHP">Acces la baze de date în PHP</a>,
+       <a href="http://www.artfulsoftware.com/infotree/queries.php" title="Detalii despre interogori MySQL comune">Common MySQL Queries</a>
+
+  - image: "/img/timeline/php.jpg"
+    link: ""
+    title: "Programare Web"
     date: "Săptămâna 4 (7 - 11 martie)"
     description: >
        <a href="http://www.w3resource.com/php-exercises/" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
