@@ -5,6 +5,13 @@ events:
   - image: "/img/timeline/php.jpg"
     link: ""
     title: "Programare Web"
+    date: "Săptămâna 6 (21 - 25 martie)"
+    description: >
+       <a href="https://github.com/alexandrucoman/labs/tree/master/php/exercitii" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
+
+  - image: "/img/timeline/php.jpg"
+    link: ""
+    title: "Programare Web"
     date: "Săptămâna 5 (14 - 18 martie)"
     description: >
        <a href="https://github.com/alexandrucoman/labs/tree/master/php/exercitii" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
