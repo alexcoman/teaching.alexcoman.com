@@ -12,8 +12,10 @@ blocks:
     links:
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
         text: "desfășurare"
+
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html"
         text: "examinare"
+
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html"
         text: "proiecte"
   
@@ -21,8 +23,10 @@ blocks:
     links:
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html"
         text: "bibliografie"
+
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-rules.html"
         text: "reguli"
+
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html"
         text: "contact"
 
@@ -30,19 +34,25 @@ blocks:
     links:
       - link: "http://profs.info.uaic.ro/~orar/discipline/orar_tw.html"
         text: "orar"
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/projects/"
-        text: "proiecte propuse"
+
+      - link: "http://goo.gl/forms/hyzawFCEl1"
+        text: "înscriere proiect"
+
       - link: "http://www.uaic.ro/studenti/regulamente/"
         text: "regulamente UAIC"
 
 social:
   - title: "github"
     url: "https://github.com/alexandrucoman"
+
   - title: "link"
     url: "https://alexcoman.com"
+
   - title: "facebook"
     url: "https://www.facebook.com/alxcoman"
+
   - title: "twitter"
     url: "https://twitter.com/coman_alexandru"
+
   - title: "rss"
     url: "/feed.xml"
