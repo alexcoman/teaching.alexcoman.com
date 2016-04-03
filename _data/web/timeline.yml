@@ -2,27 +2,18 @@ timeline-img: "/img/timeline/default.png"
 title: "Laboratoarele aferente cursului"
 events:
 
-  - image: "/img/timeline/php.jpg"
+  - image: "/img/timeline/collabocats.jpg"
     link: ""
-    title: "Programare Web"
-    date: "Săptămâna 6 (21 - 25 martie)"
+    title: "Lucru la proiect"
+    date: "Săptămâna 8 (4—8 aprilie)"
     description: >
-       <a href="https://github.com/alexandrucoman/labs/tree/master/php/exercitii" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
+      <a href="http://goo.gl/forms/hyzawFCEl1" title="[TW 2016] Proiectare și arhitectură">Înscrie proiectul!</a>
+      <a href="web-projects.html#calendar" title="Detalii despre proiectele disciplinei 'Tehnologii Web'">Mai multe detalii.</a></p>
 
   - image: "/img/timeline/php.jpg"
     link: ""
     title: "Programare Web"
-    date: "Săptămâna 5 (14 - 18 martie)"
-    description: >
-       <a href="https://github.com/alexandrucoman/labs/tree/master/php/exercitii" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
-       Resurse utile:
-       <a href="http://php.net/manual/en/refs.database.php" title="Suportul pentru baze de date oferit de PHP">Acces la baze de date în PHP</a>,
-       <a href="http://www.artfulsoftware.com/infotree/queries.php" title="Detalii despre interogori MySQL comune">Common MySQL Queries</a>
-
-  - image: "/img/timeline/php.jpg"
-    link: ""
-    title: "Programare Web"
-    date: "Săptămâna 4 (7 - 11 martie)"
+    date: "Săptămânile 4 - 7 (7 martie - 1 aprilie)"
     description: >
        <a href="http://www.w3resource.com/php-exercises/" title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
        Resurse utile:
@@ -30,6 +21,8 @@ events:
        <a href="https://developer.mozilla.org/docs/Web/Guide/HTML/Forms" title="Un ghid pentru conceperea formularelor Web">HTML Forms Guide</a>,
        <a href="http://www.learn-php.org/" title="Un tutorial interactiv referitor la PHP">Learn PHP</a>,
        <a href="http://www.hackingwithphp.com/" title="O carte online despre PHP">Hacking with PHP</a>
+       <a href="http://php.net/manual/en/refs.database.php" title="Suportul pentru baze de date oferit de PHP">Acces la baze de date în PHP</a>,
+       <a href="http://www.artfulsoftware.com/infotree/queries.php" title="Detalii despre interogori MySQL comune">Common MySQL Queries</a>
 
   - image: "/img/timeline/css.png"
     link: ""
