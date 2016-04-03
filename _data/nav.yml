@@ -1,8 +1,10 @@
 default:
   - section: "about"
     text: "Despre"
+
   - link: "/web"
     text: "Tehnologii Web"
+
   - section: "contact"
     text: "Contact"
 
@@ -13,9 +15,12 @@ default:
 web:
   - link: "/"
     text: "↩ Prima pagină"
+
   - section: "timeline"
     text: "Laboratoare"
-  - link: "http://goo.gl/forms/hyzawFCEl1"
-    section: "Înscrie proiectul"
+
+  - permlink: "http://goo.gl/forms/hyzawFCEl1"
+    text: "Înscrie proiectul"
+
   - section: "contact"
     text: "Contact"
