@@ -1,0 +1,13 @@
+title: "{ Alex Coman : Web }"
+links:
+  - link: "/"
+    text: "↩ Prima pagină"
+
+  - section: "timeline"
+    text: "Laboratoare"
+
+  - link: "/resurse/web"
+    text: "Resurse"
+
+  - section: "contact"
+    text: "Contact"
