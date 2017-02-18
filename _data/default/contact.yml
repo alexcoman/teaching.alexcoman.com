@@ -4,12 +4,13 @@ blocks:
 
 social:
   - title: "github"
-    url: "https://github.com/alexandrucoman"
+    url: "https://github.com/alexcoman"
+
   - title: "link"
     url: "https://alexcoman.com"
-  - title: "facebook"
-    url: "https://www.facebook.com/alxcoman"
-  - title: "twitter"
-    url: "https://twitter.com/coman_alexandru"
+
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/comanalex/"
+
   - title: "rss"
     url: "/feed.xml"

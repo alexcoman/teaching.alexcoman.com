@@ -18,7 +18,7 @@ blocks:
 
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html"
         text: "proiecte"
-  
+
   - title: "resurse"
     links:
       - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html"
@@ -35,24 +35,18 @@ blocks:
       - link: "http://profs.info.uaic.ro/~orar/discipline/orar_tw.html"
         text: "orar"
 
-      - link: "http://goo.gl/forms/hyzawFCEl1"
-        text: "înscriere proiect"
-
       - link: "http://www.uaic.ro/studenti/regulamente/"
         text: "regulamente UAIC"
 
 social:
   - title: "github"
-    url: "https://github.com/alexandrucoman"
+    url: "https://github.com/alexcoman"
 
   - title: "link"
     url: "https://alexcoman.com"
 
-  - title: "facebook"
-    url: "https://www.facebook.com/alxcoman"
-
-  - title: "twitter"
-    url: "https://twitter.com/coman_alexandru"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/comanalex/"
 
   - title: "rss"
     url: "/feed.xml"
