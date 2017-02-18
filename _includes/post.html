@@ -1,0 +1,27 @@
+<section id="post" class="post container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      {% include swipe-instructions.html %}
+
+      <h1><strong>{{ page.title }}</strong></h1>
+      <h4><strong>{{ page.date | date: "%B %-d, %Y" }}</strong>
+        <small> . <a href="/blog/{{ page.category }}">{{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comentarii</a>
+         {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/tags/{{tag}}/">#{{ tag }}</a>
+          {% endfor %}
+        </small>
+      </h4>
+
+      <div id="post-content" class="post-content text-justify">
+        {{ page.content | markdownify }}
+      </div>
+
+      {% include share.html %}
+
+      {% include comments.html %}
+
+      {% include social-buttons.html %}
+
+    </div>
+  </div>
+</section>
