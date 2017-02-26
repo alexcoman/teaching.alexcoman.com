@@ -1,15 +1,32 @@
 title: "Posibilităţi de contact"
-content: ""
+content: >
+  <p class="text-center">Metoda preferată de comunicare este cea prin
+  poșta electronică mesajul trimis trebuie să aibă ca subiect <strong>[FII]
+  </strong>.
+
 blocks:
+  - title: "laboratoare"
+    links:
+      - link: "web"
+        text: "tehnologii web"
+
+  - title: "de interes"
+    links:
+      - permlink: "https://profs.info.uaic.ro/~orar/participanti/orar_comanA.html"
+        text: "orar"
+
+      - permlink: "http://www.uaic.ro/studenti/regulamente/"
+        text: "regulamente UAIC"
 
 social:
   - title: "github"
-    url: "https://github.com/alexandrucoman"
+    url: "https://github.com/alexcoman"
+
   - title: "link"
     url: "https://alexcoman.com"
-  - title: "facebook"
-    url: "https://www.facebook.com/alxcoman"
-  - title: "twitter"
-    url: "https://twitter.com/coman_alexandru"
+
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/comanalex/"
+
   - title: "rss"
     url: "/feed.xml"

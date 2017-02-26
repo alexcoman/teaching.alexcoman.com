@@ -2,70 +2,10 @@ timeline-img: "/img/timeline/default.png"
 title: "Laboratoarele aferente cursului"
 events:
 
-  - image: "/img/timeline/collabocats.jpg"
-    link: ""
-    title: "Lucru la proiect"
-    date: "Săptămâna 8 (4—8 aprilie)"
-    description: >
-      <a href="https://goo.gl/forms/hyzawFCEl1" title="[TW 2016] Proiectare și arhitectură">Înscrie proiectul!</a><br>
-      <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html#calendar"
-      title="Detalii despre proiectele disciplinei 'Tehnologii Web'">Mai multe detalii.</a></p>
-
-  - image: "/img/timeline/php.jpg"
-    link: ""
-    title: "Programare Web"
-    date: "Săptămânile 4 - 7 (7 martie - 1 aprilie)"
-    description: >
-       <a href="http://www.w3resource.com/php-exercises/"
-        title="Diverse exerciții vizând programarea în PHP">Exerciții PHP</a><br>
-
-       Resurse utile:
-         <a href="https://www.w3.org/community/webed/wiki/HTML_forms_-_the_basics"
-         title="Detalii privind declararea de formulare Web">HTML Forms</a>,
-         <a href="https://developer.mozilla.org/docs/Web/Guide/HTML/Forms"
-          title="Un ghid pentru conceperea formularelor Web">HTML Forms Guide</a>,
-         <a href="http://www.learn-php.org/" title="Un tutorial interactiv referitor la PHP">Learn PHP</a>,
-         <a href="http://www.hackingwithphp.com/" title="O carte online despre PHP">Hacking with PHP</a>
-         <a href="http://php.net/manual/en/refs.database.php"
-          title="Suportul pentru baze de date oferit de PHP">Acces la baze de date în PHP</a>,
-         <a href="http://www.artfulsoftware.com/infotree/queries.php"
-          title="Detalii despre interogori MySQL comune">Common MySQL Queries</a>
-
-  - image: "/img/timeline/css.png"
-    link: ""
-    title: "Foi de stiluri în cascadă"
-    date: "Săptămâna 3 (29 februarie - 4 martie)"
-    description: >
-      Resurse utile:
-        <a href="http://tympanus.net/codrops/css_reference/"
-          title="Resurse CSS">Foi de stiluri în cascadă - CSS</a>,
-        <a href="http://www.slideshare.net/busaco/design-web-responsiv"
-          title="Prezentare: 'Design (Web) responsiv'">Design (Web) responsiv</a>,
-        <a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design/"
-          title="Detalii">Responsive Web Design</a>,
-        <a href="https://bradfrost.github.io/this-is-responsive/resources.html"
-          title="Diverse resurse de interes referitoare la design Web responsiv">Responsive Resources</a>
-
-  - image: "/img/timeline/css.png"
-    link: ""
-    title: "Foi de stiluri în cascadă"
-    date: "Săptămâna 2 (22 - 26 februarie)"
-    description: >
-      <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php"
-        title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
-
-      Resurse utile: 
-        <a href="https://busaco.wordpress.com/2013/01/05/despre-css/"
-          title="Despre CSS">Despre CSS</a>,
-        <a href="https://www.khanacademy.org/computing/computer-programming/html-css"
-          title="Resurse privitoare la HTML și CSS">HTML și CSS</a>,
-        <a href="https://developer.mozilla.org/docs/Web/CSS/Reference"
-          title="Detalii">CSS Reference (MDN)</a>
-
   - image: "/img/timeline/html.png"
     link: ""
     title: "Limbajul de marcare HTML"
-    date: "Săptămâna 1 (15 - 19 februarie)"
+    date: "Săptămâna 1 (20 - 24 februarie)"
     description: >
       <a href="http://www.w3resource.com/html-css-exercise/basic/"
         title="O serie de exerciții de bază privitoare la HTML5">Exerciții privind bazele HTML5</a><br/>
@@ -81,3 +21,19 @@ events:
           title="Resurse despre HTML">tutoriale HTML (MDN)</a>,
         <a href="http://html5doctor.com/element-index/"
           title="Detalii despre elementele HTML5">Detalii despre elementele HTML5</a>
+
+  - image: "/img/timeline/css.png"
+    link: ""
+    title: "Foi de stiluri în cascadă"
+    date: "Săptămâna 2 (22 - 26 februarie)"
+    description: >
+      <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php"
+        title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
+
+      Resurse utile:
+        <a href="https://busaco.wordpress.com/2013/01/05/despre-css/"
+          title="Despre CSS">Despre CSS</a>,
+        <a href="https://www.khanacademy.org/computing/computer-programming/html-css"
+          title="Resurse privitoare la HTML și CSS">HTML și CSS</a>,
+        <a href="https://developer.mozilla.org/docs/Web/CSS/Reference"
+          title="Detalii">CSS Reference (MDN)</a>

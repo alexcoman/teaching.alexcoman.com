@@ -6,7 +6,6 @@ gems:
 
 # Build Settings
 markdown: kramdown
-permalink: pretty
 exclude:
   - CONTRIBUTING
   - CONTRIBUTORS
@@ -86,14 +85,15 @@ disqus-shortname: ""
 syntax-highlight: True
 email: "contact@alexcoman.com"
 404-img: "/img/labtocat.png"
-paginate_path: "blog/page:num/"
+paginate_path: resurse/pagina:num/
+permalink: resurse/:categories/:year/:month/:day/:title/
 
 # Settings for deploy rake task
-username:        "alexandrucoman"
+username:        "alexcoman"
 repo:            "teaching.alexcoman.com"
 fetch:           "master"
 push:            "gh-pages"
 relative_source: "../teaching.alexcoman.com/"
 destination:     "../teaching.alexcoman.com-pages/"
-source_url:      "https://github.com/alexandrucoman/teaching.alexcoman.com"
+source_url:      "https://github.com/alexcoman/teaching.alexcoman.com"
 production_url:  "https://teaching.alexcoman.com/"

@@ -1,18 +1,20 @@
-{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
-{% else %}                          {% assign data = site.data.default    %}
+{% if site.data[page.data].contact %}
+  {% assign contact = site.data[page.data].contact %}
+{% else %}
+  {% assign contact = site.data.default.contact %}
 {% endif %}
-<section id="contact" class="contact container content-section text-center">
 
+<section id="contact" class="contact container content-section text-center">
   <div id="contact-content" class="row">
     <div class="col-md-10 col-md-offset-1">
-      <h3>{{ data.contact.title }}</h3>
-      <p>{{ data.contact.content }}</p>
+      <h3>{{ contact.title }}</h3>
+      <p>{{ contact.content }}</p>
     </div>
   </div>
 
   <div id="contact-blocks" class="row">
     <div class="col-lg-10 col-lg-offset-1 text-center">
-      {% for block in data.contact.blocks %}
+      {% for block in contact.blocks %}
       {% assign column_width = 12 | divided_by: forloop.length %}
       <div class="col-md-{{ column_width }} col-sm-4 col-xs-12 col-center">
         <ul>

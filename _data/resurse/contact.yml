@@ -1,0 +1,16 @@
+title: "Posibilităţi de contact"
+content: ""
+blocks:
+
+social:
+  - title: "github"
+    url: "https://github.com/alexcoman"
+
+  - title: "link"
+    url: "https://alexcoman.com"
+
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/comanalex/"
+
+  - title: "rss"
+    url: "/feed.xml"

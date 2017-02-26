@@ -1,0 +1,13 @@
+title: "{ Alex Coman : Resurse}"
+links:
+  - link: "/"
+    text: "Despre"
+
+  - link: "/web"
+    text: "Tehnologii Web"
+
+  - link: "/resurse"
+    text: "Resurse"
+
+  - section: "contact"
+    text: "Contact"

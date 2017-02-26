@@ -1,0 +1,23 @@
+title: "Tehnologii web"
+content: >
+    <p class="text-justify">
+      În decursul laboratoarelor de la Tehnologii Web o parte dintre
+      tematicilile ce vor fi abordate sunt:
+    </p>
+    <ol>
+      <li>Concepte importante și arhitectura WWW</li>
+      <li>Protocolul HTTP + cookie-uri și sesiuni</li>
+      <li>Limbajul de marcare HTML + foi de stiluri CSS</li>
+      <li>Inginerie Web: proiectare și arhitecturi Web, MVC et al.</li>
+      <li>Programare Web: servere de aplicații – exemplu: Python / PHP</li>
+      <li>Modelarea datelor via XML – XPath, DTD</li>
+      <li>Procesări DOM, SAX, SimpleXML pentru HTML și XML</li>
+      <li>De la SOA la servicii Web: SOAP și REST</li>
+      <li>Interacțiune Web: Ajax + aplicații hibride (mash-ups)</li>
+      <li>Securitatea aplicațiilor Web</li>
+    </ol>
+    <p class="text-justify">
+      <strong>Notă</strong>:<br>
+        Resursele disponibile complementează şi nu substituie prezenţa la cursuri şi laboratoare.<br>
+        În funcție de gradul de interes, tematicile și calendarul pot varia.<br>
+    </p>
