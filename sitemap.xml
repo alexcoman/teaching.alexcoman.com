@@ -6,6 +6,23 @@
     
   
     
+  
+    
+  
+    
+      <url>
+        <loc>https://teaching.alexcoman.com/resurse/</loc>
+        
+          
+          
+          
+          <priority>1.0</priority>
+          
+        
+       </url>
+    
+  
+    
       <url>
         <loc>https://teaching.alexcoman.com/web/</loc>
         
@@ -35,5 +52,16 @@
   
     
   
+    
+  
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/</loc>
+      
+        <lastmod>2017-02-26T20:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
 </urlset>
