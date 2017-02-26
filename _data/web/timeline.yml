@@ -21,3 +21,19 @@ events:
           title="Resurse despre HTML">tutoriale HTML (MDN)</a>,
         <a href="http://html5doctor.com/element-index/"
           title="Detalii despre elementele HTML5">Detalii despre elementele HTML5</a>
+
+  - image: "/img/timeline/css.png"
+    link: ""
+    title: "Foi de stiluri în cascadă"
+    date: "Săptămâna 2 (22 - 26 februarie)"
+    description: >
+      <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php"
+        title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
+
+      Resurse utile:
+        <a href="https://busaco.wordpress.com/2013/01/05/despre-css/"
+          title="Despre CSS">Despre CSS</a>,
+        <a href="https://www.khanacademy.org/computing/computer-programming/html-css"
+          title="Resurse privitoare la HTML și CSS">HTML și CSS</a>,
+        <a href="https://developer.mozilla.org/docs/Web/CSS/Reference"
+          title="Detalii">CSS Reference (MDN)</a>

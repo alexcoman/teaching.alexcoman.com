@@ -3,39 +3,39 @@ content: >
   <p class="text-center">Metoda preferată de comunicare este cea prin
   <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html">
   poșta electronică</a> mesajul trimis trebuie să aibă ca subiect <strong>[Web]
-  </strong> sau direct în perioada alocată <a href="http://profs.info.uaic.ro/
-  ~busaco/teach/courses/web/web-film.html" title="Spre filmul desfășurării
-  materiei">cursului și laboratoarelor</a>.</p>
+  </strong> sau direct în perioada alocată
+  <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
+  title="Spre filmul desfășurării materiei">cursului și laboratoarelor</a>.</p>
 
 blocks:
   - title: "materia"
     links:
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
         text: "desfășurare"
 
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html"
         text: "examinare"
 
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html"
         text: "proiecte"
 
   - title: "resurse"
     links:
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html"
         text: "bibliografie"
 
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-rules.html"
-        text: "reguli"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-rules.html"
+        text: "regulament"
 
-      - link: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html"
-        text: "contact"
+      - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html"
+        text: "date de contact"
 
   - title: "de interes"
     links:
-      - link: "http://profs.info.uaic.ro/~orar/discipline/orar_tw.html"
+      - permlink: "http://profs.info.uaic.ro/~orar/discipline/orar_tw.html"
         text: "orar"
 
-      - link: "http://www.uaic.ro/studenti/regulamente/"
+      - permlink: "http://www.uaic.ro/studenti/regulamente/"
         text: "regulamente UAIC"
 
 social:

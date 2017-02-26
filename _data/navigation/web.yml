@@ -3,6 +3,9 @@ links:
   - link: "/"
     text: "↩ Prima pagină"
 
+  - section: "about"
+    text: "Despre"
+
   - section: "timeline"
     text: "Laboratoare"
 
