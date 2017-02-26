@@ -4,12 +4,30 @@
 {% else %}
   {% assign post = site.posts.first %}
 {% endif %}
+{% capture month %}
+    {% assign m = site.time | date: "%-m" %}
+    {% case m %}
+        {% when '1' %}ianuarie
+        {% when '2' %}februarie
+        {% when '3' %}martie
+        {% when '4' %}aprilie
+        {% when '5' %}mai
+        {% when '6' %}iunie
+        {% when '7' %}iulie
+        {% when '8' %}august
+        {% when '9' %}septembrie
+        {% when '10' %}octombrie
+        {% when '11' %}noiembrie
+        {% when '12' %}decembrie
+    {% endcase %}
+{% endcapture %}
+
 <!-- Latest Post Preview Start -->
 <section id="latest-post" class="container content-section text-center">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         {% if post %}
-          <h4><strong>{{ post.date | date: "%B %-d, %Y" }}</strong>
+          <h4><strong>{{ site.time | date: "%-d" }} {{ month }} {{ site.time | date: "%Y" }}</strong>
             <small>. {{ post.category }} .</small>
             <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
             <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comentarii</a></small>
@@ -17,7 +35,7 @@
           <div id="post-preview" class="text-justify">
             {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
           </div>
-          <h4><a href="{{site.baseurl}}/blog/{{ page.category }}">Mai multe articole.</a></h4>
+          <h4><a href="{{site.baseurl}}/resurse/{{ page.category }}">Mai multe articole.</a></h4>
         {% else %}
           <h4>Pentru moment nu este nici un articol disponibil...</h4>
         {% endif %}

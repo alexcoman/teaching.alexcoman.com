@@ -1,13 +1,38 @@
+{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
+{% else %}                          {% assign data = site.data.default    %}
+{% endif %}
+{% capture month %}
+    {% assign m = site.time | date: "%-m" %}
+    {% case m %}
+        {% when '1' %}ianuarie
+        {% when '2' %}februarie
+        {% when '3' %}martie
+        {% when '4' %}aprilie
+        {% when '5' %}mai
+        {% when '6' %}iunie
+        {% when '7' %}iulie
+        {% when '8' %}august
+        {% when '9' %}septembrie
+        {% when '10' %}octombrie
+        {% when '11' %}noiembrie
+        {% when '12' %}decembrie
+    {% endcase %}
+{% endcapture %}
+
 <section id="post" class="post container content-section text-center">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       {% include swipe-instructions.html %}
 
       <h1><strong>{{ page.title }}</strong></h1>
-      <h4><strong>{{ page.date | date: "%B %-d, %Y" }}</strong>
-        <small> . <a href="/blog/{{ page.category }}">{{ page.category }} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comentarii</a>
-         {% for tag in page.tags %}
-            <a href="{{site.baseurl}}/tags/{{tag}}/">#{{ tag }}</a>
+      <h4><strong>{{ site.time | date: "%-d" }} {{ month }} {{ site.time | date: "%Y" }}</strong>
+        <small>
+          {% for category in page.categories %}
+           . <a href="/resurse/{{ category }}">{{ category }}</a>
+          {% endfor %} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comentarii</a>
+
+          {% for tag in page.tags %}
+            #{{ tag }}
           {% endfor %}
         </small>
       </h4>
@@ -15,8 +40,6 @@
       <div id="post-content" class="post-content text-justify">
         {{ page.content | markdownify }}
       </div>
-
-      {% include share.html %}
 
       {% include comments.html %}
 
