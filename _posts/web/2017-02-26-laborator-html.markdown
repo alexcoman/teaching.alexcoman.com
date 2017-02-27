@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Tehnologii Web - Laboratorul 1"
+title:  "Tehnologii Web - Limbajul de marcare HTML"
 date:   2017-02-26 20:00:00
 author: "Alexandru Coman"
 categories: [laborator, web]
