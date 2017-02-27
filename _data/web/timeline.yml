@@ -3,13 +3,10 @@ title: "Laboratoarele aferente cursului"
 events:
 
   - image: "/img/timeline/html.png"
-    link: ""
+    link: "/resurse/laborator/web/2017/02/26/laborator-html/"
     title: "Limbajul de marcare HTML"
     date: "Săptămâna 1 (20 - 24 februarie)"
     description: >
-      <a href="http://www.w3resource.com/html-css-exercise/basic/"
-        title="O serie de exerciții de bază privitoare la HTML5">Exerciții privind bazele HTML5</a><br/>
-
       Resurse utile:
         <a href="http://www.w3.org/html/"
           title="Detalii despre HTML (HyperText Markup Language)">Limbajul de marcare HTML</a>,
@@ -23,13 +20,10 @@ events:
           title="Detalii despre elementele HTML5">Detalii despre elementele HTML5</a>
 
   - image: "/img/timeline/css.png"
-    link: ""
+    link: "/resurse/laborator/web/2017/02/27/laborator-css/"
     title: "Foi de stiluri în cascadă"
     date: "Săptămâna 2 (22 - 26 februarie)"
     description: >
-      <a href="http://www.w3resource.com/html-css-exercise/main-html-css-exercises.php"
-        title="Diverse exerciții privitoare la CSS">Exerciții privind bazele CSS</a><br>
-
       Resurse utile:
         <a href="https://busaco.wordpress.com/2013/01/05/despre-css/"
           title="Despre CSS">Despre CSS</a>,

@@ -25,4 +25,4 @@ Funcționalitățile cerute la punctul doi trebuiesc incluse în *Pull Request*-
 
 **Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.
 
-[0]: {{ site.baseurl }}/web/2017/02/26/laborator-html/
+[0]: {{ site.baseurl }}/resurse/web/2017/02/26/laborator-html/
