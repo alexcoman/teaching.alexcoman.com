@@ -14,13 +14,13 @@
           {% assign loopindex = forloop.index | modulo: 2 %}
           <li{% if loopindex == 0 %} class="timeline-inverted" {% endif %}>
             <div class="timeline-image">
-              {% if event.link != "" %}<a href="{{ event.link }}">{% endif %}
+              {% if event.link != "" %}<a href="{{ event.link | prepend: site.baseurl }}">{% endif %}
               <img class="img-circle img-responsive" src="{{site.baseurl}}{{ event.image }}" alt="">
               {% if event.link != "" %}</a>{% endif %}
             </div>
             <div class="timeline-panel">
               <div class="timeline-heading">
-                {% if event.link != "" %}<a href="{{ event.link }}">{% endif %}
+                {% if event.link != "" %}<a href="{{ event.link | prepend: site.baseurl }}">{% endif %}
                 <hgroup>
                   <h5>{{ event.date }}</h5>
                   <h4>{{ event.title }}</h4>
