@@ -2,7 +2,7 @@
 {% else %}                          {% assign data = site.data.default    %}
 {% endif %}
 {% capture month %}
-    {% assign m = site.time | date: "%-m" %}
+    {% assign m = page.date | date: "%-m" %}
     {% case m %}
         {% when '1' %}ianuarie
         {% when '2' %}februarie
@@ -25,11 +25,11 @@
       {% include swipe-instructions.html %}
 
       <h1><strong>{{ page.title }}</strong></h1>
-      <h4><strong>{{ site.time | date: "%-d" }} {{ month }} {{ site.time | date: "%Y" }}</strong>
+      <h4><strong>{{ page.date | date: "%-d" }} {{ month }} {{ page.date | date: "%Y" }}</strong>
         <small>
           {% for category in page.categories %}
-           . <a href="/resurse/{{ category }}">{{ category }}</a>
-          {% endfor %} . <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comentarii</a>
+           . <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
+          {% endfor %} . <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread">Comentarii</a>
 
           {% for tag in page.tags %}
             #{{ tag }}

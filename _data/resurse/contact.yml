@@ -1,6 +1,22 @@
 title: "Posibilităţi de contact"
-content: ""
+content: >
+  <p class="text-center">Metoda preferată de comunicare este cea prin
+  poșta electronică mesajul trimis trebuie să aibă ca subiect <strong>[FII]
+  </strong>.
+
 blocks:
+  - title: "laboratoare"
+    links:
+      - link: "web"
+        text: "tehnologii web"
+
+  - title: "de interes"
+    links:
+      - permlink: "https://profs.info.uaic.ro/~orar/participanti/orar_comanA.html"
+        text: "orar"
+
+      - permlink: "http://www.uaic.ro/studenti/regulamente/"
+        text: "regulamente UAIC"
 
 social:
   - title: "github"

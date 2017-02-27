@@ -3,6 +3,9 @@ links:
   - section: "about"
     text: "Despre"
 
+  - section: "latest-post"
+    text: "Noutăți"
+
   - link: "/web"
     text: "Tehnologii Web"
 

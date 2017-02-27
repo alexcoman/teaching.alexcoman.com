@@ -1,12 +1,30 @@
+{% capture month %}
+    {% assign m = post.date | date: "%-m" %}
+    {% case m %}
+        {% when '1' %}ianuarie
+        {% when '2' %}februarie
+        {% when '3' %}martie
+        {% when '4' %}aprilie
+        {% when '5' %}mai
+        {% when '6' %}iunie
+        {% when '7' %}iulie
+        {% when '8' %}august
+        {% when '9' %}septembrie
+        {% when '10' %}octombrie
+        {% when '11' %}noiembrie
+        {% when '12' %}decembrie
+    {% endcase %}
+{% endcapture %}
+
 <!-- Post List Start -->
 <h4 align="left">
-  <strong>{{ post.date | date: "%B %-d, %Y" }}</strong>
+  <strong>{{ post.date | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}</strong>
   <small>. {{ post.category }} .</small>
   <br class="visible-xs-block">
   <a href="{{site.baseurl}}{{post.url}}">
     <strong>{{ post.title }}</strong>
   </a>
   <br class="visible-xs-block">
-  <small><a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comentarii</a></small>
+  <small><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comentarii</a></small>
 </h4>
 <!-- Post List End -->

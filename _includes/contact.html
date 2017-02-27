@@ -20,7 +20,7 @@
         <ul>
           <li>{{ block.title }}</li>
           {% for link_element in block.links %}
-          <li><a href="{% if link_element.permalink != null %} {{ link_element.permalink | prepend: site.baseurl }} {% else %} {{ link_element.link }} {% endif %}" {% if link_element.link != null %}target="_blank"{% endif %}>{{ link_element.text }}</a></li>
+          <li><a href="{% if link_element.permalink != null %} {{ link_element.permalink | prepend: site.baseurl }} {% else %} {{ link_element.link | prepend: site.baseurl }} {% endif %}" {% if link_element.link != null %}target="_blank"{% endif %}>{{ link_element.text }}</a></li>
           {% endfor %}
         </ul>
       </div>

@@ -6,7 +6,9 @@ gems:
 
 # Build Settings
 markdown: kramdown
-permalink: pretty
+kramdown:
+  input: GFM
+
 exclude:
   - CONTRIBUTING
   - CONTRIBUTORS
@@ -18,19 +20,14 @@ exclude:
   - .gitignore
   - .travis.yml
 
-jekyll-press:
-  exclude: ['sitemap.xml', '*.css']
-  js_options: {}
-  css_options: {}
-  html_options: {}
-
 # Enable minification SASS
 sass:
   style: compressed
 
 # Site Settings
-url: "http://profs.info.uaic.ro"
+url: "https://profs.info.uaic.ro"
 baseurl: "/~alex.coman"
+force-https: True
 google-tracking-id: ""
 lang: "ro"
 
@@ -65,7 +62,7 @@ icon-192p: "/img/web-app/icon-192p.png"
 # Blog #
 ########
 
-post-preview-words: 96
+post-preview-words: 64
 
 paginate: 5
 
@@ -85,14 +82,15 @@ disqus-shortname: ""
 syntax-highlight: True
 email: "contact@alexcoman.com"
 404-img: "/img/labtocat.png"
-paginate_path: "blog/page:num/"
+paginate_path: resurse/pagina:num/
+permalink: resurse/:categories/:year/:month/:day/:title/
 
 # Settings for deploy rake task
-username:        "alexandrucoman"
+username:        "alexcoman"
 repo:            "teaching.alexcoman.com"
 fetch:           "master"
 push:            "profs.info.uaic"
 relative_source: "../profs.info.uaic.ro/"
 destination:     "../profs.info.uaic.ro-pages/"
-source_url:      "https://github.com/alexandrucoman/teaching.alexcoman.com"
-production_url:  "http://profs.info.uaic.ro/~alex.coman/"
+source_url:      "https://github.com/alexcoman/teaching.alexcoman.com"
+production_url:  "https://profs.info.uaic.ro/~alex.coman/"

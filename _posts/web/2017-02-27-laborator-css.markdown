@@ -11,7 +11,9 @@ tags: css
 
 Acest laborator are la bază prezentarea [Foi de stiluri CSS](https://www.slideshare.net/busaco/foi-de-stiluri-css)
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/wM92SyrM5EE3s8" class="frame presentation" allowfullscreen=""></iframe>
+<div id="presentation" class="presentation">
+	<iframe src="//www.slideshare.net/slideshow/embed_code/key/wM92SyrM5EE3s8" class="frame" allowfullscreen=""></iframe>
+</div>
 
 
 ## II. Foi de stiluri pentru blogul lui Tuxy (*30 minute*)
@@ -25,4 +27,4 @@ Funcționalitățile cerute la punctul doi trebuiesc incluse în *Pull Request*-
 
 **Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.
 
-[0]: {{ site.baseurl }}/resurse/web/2017/02/26/laborator-html/
+[0]: {{ site.baseurl }}/resurse/laborator/web/2017/02/26/laborator-html/

@@ -5,7 +5,7 @@
   {% assign post = site.posts.first %}
 {% endif %}
 {% capture month %}
-    {% assign m = site.time | date: "%-m" %}
+    {% assign m = post.date | date: "%-m" %}
     {% case m %}
         {% when '1' %}ianuarie
         {% when '2' %}februarie
@@ -27,15 +27,16 @@
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         {% if post %}
-          <h4><strong>{{ site.time | date: "%-d" }} {{ month }} {{ site.time | date: "%Y" }}</strong>
+          <h1>Ultimul articol publicat</h1>
+          <h4><strong>{{ post.date  | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}</strong>
             <small>. {{ post.category }} .</small>
-            <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong>
-            <small> <a href="{{site.baseurl}}{{post.url}}#disqus_thread">Comentarii</a></small>
+            <strong> <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a> </strong>
+            <small> <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comentarii</a></small>
           </h4>
           <div id="post-preview" class="text-justify">
             {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
           </div>
-          <h4><a href="{{site.baseurl}}/resurse/{{ page.category }}">Mai multe articole.</a></h4>
+          <h4><a href="{{ site.baseurl }}/resurse/{{ page.category }}">Mai multe articole.</a></h4>
         {% else %}
           <h4>Pentru moment nu este nici un articol disponibil...</h4>
         {% endif %}

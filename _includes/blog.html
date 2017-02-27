@@ -5,7 +5,7 @@
         <h3>Resurse</h3>
         <h4>Secțiuni disponibile:
         {% for category in site.categories %}
-          <a href="/resurse/{{ category[0] }}">{{ category[0] }}</a>{% unless forloop.last %}, {% endunless %}
+          <a href="{{ site.baseurl }}/resurse/{{ category[0] }}">{{ category[0] }}</a>{% unless forloop.last %}, {% endunless %}
         {% endfor %}
         </h4>
     </div>
@@ -19,7 +19,7 @@
       </div>
       {% include pagination.html %}
     {% else %}
-      <h4><a href="">Nici un articol disponibil..</a></h4>
+      <h4><a href="">Nici un articol disponibil.</a></h4>
     {% endif %}
     </div>
   </div>

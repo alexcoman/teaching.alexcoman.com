@@ -15,8 +15,8 @@ css_dir = "../css"
 images_dir = "../img"
 javascripts_dir = "../js"
 
-line_comments = false
 relative_assets = true
+line_comments = false
 output_style = :compressed
 
 # Remove multiline comments - monkey patch
