@@ -1,1 +1,1 @@
-Sitemap: http://profs.info.uaic.ro/~alex.coman/sitemap.xml
+Sitemap: https://profs.info.uaic.ro/~alex.coman/sitemap.xml

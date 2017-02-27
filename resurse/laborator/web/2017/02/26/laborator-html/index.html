@@ -1,10 +1,10 @@
-<!-- Index Layout Start -->
+<!-- Post Layout Start -->
 <!DOCTYPE html>
 <html lang="ro">
 
   
 <head>
-  <title>{ Alex Coman } | 404</title>
+  <title>{ Alex Coman } | Tehnologii Web - Limbajul de marcare HTML</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
 
-  <link rel="canonical" href="/~alex.coman/404.html">
+  <link rel="canonical" href="/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/~alex.coman/css/main.css" rel="stylesheet">
 
@@ -37,8 +37,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="/~alex.coman/img/favicon.ico">
   
 
-  
-    <meta http-equiv="refresh" content="20; url=/~alex.coman/">
   
 
   
@@ -98,14 +96,94 @@
 </nav>
 <!-- Navigation End -->
 
-    <!-- 404 Layout Start -->
-<section class="container content-section text-center">
+    
+
+
+<section id="post" class="post container content-section text-center">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h1><strong>404</strong></h1>
-        <h2>Pagina solicitată nu este disponibilă.</h2>
-        <h5>Aruncați o privire peste <a href="http://waitbutwhy.com/2013/11/how-to-beat-procrastination.html" target="_blank">asta</a> dacă doriți să nu mai căutați pagini ce nu există!</h5>
-        <img class="img-responsive center-block fourofour" src="/~alex.coman/img/labtocat.png" alt="">
+    <div class="col-md-10 col-md-offset-1">
+      
+<!-- Swipe Instructions Start -->
+
+<div id="swipe-instruction">
+  <div>
+    <p><br><br><br></p>
+    <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+    <p><strong>
+    
+    </strong></p>
+    <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+    </button>
+  </div>
+</div>
+
+<!-- Swipe Instructions End -->
+
+
+      <h1><strong>Tehnologii Web - Limbajul de marcare HTML</strong></h1>
+      <h4><strong>26 
+    
+    februarie
+        
+ 2017</strong>
+        <small>
+          
+           . <a href="/~alex.coman/resurse/laborator">laborator</a>
+          
+           . <a href="/~alex.coman/resurse/web">web</a>
+           . <a href="/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/#disqus_thread">Comentarii</a>
+
+          
+            #html
+          
+        </small>
+      </h4>
+
+      <div id="post-content" class="post-content text-justify">
+        <h2 id="i-pregătirea-mediului-de-lucru-15-minute">I. Pregătirea mediului de lucru (<em>15 minute</em>)</h2>
+
+<p>Pentru laboratorul curent o să aveți nevoie de utilitarul <a href="https://git-scm.com/">git</a>.
+În cazul în care întâmpinați probleme în instalarea acestuia puteți consulta următorul articol <a href="/~alex.coman/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/">git - noțiuni introductive</a>.</p>
+
+<h2 id="ii-propuneți-structura-html-pentru-blogul-lui-tuxy-45-de-minute">II. Propuneți structura HTML pentru blogul lui Tuxy (<em>45 de minute</em>)</h2>
+
+<p>Tuxy își dorește foarte mult un blog prin intermediul căruia să poată împărtăși cu comunitatea resurse interesante despre tehnologie. Din păcate încă nu a avut contact cu tehnologiile web și are nevoie de ajutor.
+Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va trebuie să pregătiți minim 3 fișiere html ce să-i servească lui Tuxy ca exemplu pentru blogul său.</p>
+
+<p>Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>./index.html
+./articole
+    ./index.html
+    ./bine-ați-venit.html
+    ./tehnologii-web
+        ./index.html
+        ./prezentare-html.html
+        ./prezentare-css.html
+    ./rețele-de-calculatoare
+        ./index.html
+        ./modelul-osi.html
+./contact.html
+</code></pre>
+</div>
+
+<h2 id="iii-trimiterea-soluțiilor-5-minute">III. Trimiterea soluțiilor (<em>5 minute</em>)</h2>
+
+<p>Funcționalitățile cerute la punctul doi trebuiesc incluse într-un PR (Pull Request) către ramura
+<a href="https://github.com/alexcoman/labs/commits/master">master</a> al depozitului de cod <a href="https://github.com/alexcoman/labs">labs</a> deținut de utilizatorul <a href="https://github.com/alexcoman">@alexcoman</a>.</p>
+
+<p><strong>Atenție</strong>: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.</p>
+
+
+      </div>
+
+      
+  <div id="disqus_thread"></div>
+  <noscript>Pentru a putea vizualiza <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentariile aveți nevoie de JavaScript.</a></noscript>
+
+ 
+
       
 <ul class="list-inline social-buttons">
   
@@ -119,12 +197,10 @@
   
 </ul>
 
+
     </div>
   </div>
 </section>
-<!-- 404 Layout End -->
-
-
 
     
 
@@ -203,7 +279,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, '404', 'https://profs.info.uaic.ro/~alex.coman/404.html');
+    history.pushState({}, 'Tehnologii Web - Limbajul de marcare HTML', 'https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/');
   }
 }
 </script>
@@ -221,4 +297,4 @@ function addTohistory() {
 
   </body>
 </html>
-<!-- Index Layout End -->
+<!-- Post Layout End -->
