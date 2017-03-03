@@ -7,7 +7,7 @@ content: >
 blocks:
   - title: "laboratoare"
     links:
-      - link: "web"
+      - link: "/web"
         text: "tehnologii web"
 
   - title: "de interes"
