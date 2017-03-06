@@ -22,7 +22,7 @@ events:
   - image: "/img/timeline/css.png"
     link: "/resurse/laborator/web/2017/02/27/laborator-css/"
     title: "Foi de stiluri în cascadă"
-    date: "Săptămâna 2 (27 februarie - 3 martie)"
+    date: "Săptămâna 2 (27 februarie - 4 martie)"
     description: >
       Resurse utile:
         <a href="https://busaco.wordpress.com/2013/01/05/despre-css/"
@@ -31,3 +31,18 @@ events:
           title="Resurse privitoare la HTML și CSS">HTML și CSS</a>,
         <a href="https://developer.mozilla.org/docs/Web/CSS/Reference"
           title="Detalii">CSS Reference (MDN)</a>
+
+  - image: "/img/timeline/css.png"
+    link: "/resurse/laborator/web/2017/02/27/laborator-css-2/"
+    title: "Foi de stiluri în cascadă"
+    date: "Săptămâna 3 (6 martie - 11 martie)"
+    description: >
+      Resurse utile:
+      <a href="http://tympanus.net/codrops/css_reference/"
+        title="Resurse CSS">Foi de stiluri în cascadă - CSS</a>,
+      <a href="http://www.slideshare.net/busaco/design-web-responsiv"
+        title="Prezentare: 'Design (Web) responsiv'">Design (Web) responsiv</a>,
+      <a href="http://learn.shayhowe.com/advanced-html-css/responsive-web-design/"
+        title="Detalii">Responsive Web Design</a>,
+      <a href="https://bradfrost.github.io/this-is-responsive/resources.html"
+        title="Diverse resurse de interes referitoare la design Web responsiv">Responsive Resources</a>
