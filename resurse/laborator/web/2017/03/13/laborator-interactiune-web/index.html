@@ -1,10 +1,10 @@
-<!-- Index Layout Start -->
+<!-- Post Layout Start -->
 <!DOCTYPE html>
 <html lang="ro">
 
   
 <head>
-  <title>{ Alex Coman } | Resurse pentru Tehnologii Web</title>
+  <title>{ Alex Coman } | Tehnologii Web - Design & Interacțiune web</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
 
-  <link rel="canonical" href="/~alex.coman/resurse/web/">
+  <link rel="canonical" href="/~alex.coman/resurse/laborator/web/2017/03/13/laborator-interactiune-web/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/~alex.coman/css/main.css" rel="stylesheet">
 
@@ -54,6 +54,12 @@
   
 
 
+  <!-- Syntax highlight in post pages -->
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
+
+
 </head>
 
 
@@ -70,7 +76,7 @@
       
         <a class="navbar-brand" href="/~alex.coman/">
       
-          <div>{ Alex Coman : Resurse}</div>
+          <div>{ Alex Coman : Resurse Web }</div>
           <a href="/~alex.coman/" id="logo-header" class="logo-header">
             <div class="logo"></div>
           </a>
@@ -82,9 +88,13 @@
         
           <li><a href="/~alex.coman/">↩ Prima pagină</a></li>
         
-          <li><a href="/~alex.coman/web">Tehnologii Web</a></li>
+          <li><a href="/~alex.coman/web/#about">Despre</a></li>
         
-          <li><a href="/~alex.coman/resurse">Resurse</a></li>
+          <li><a href="/~alex.coman/web/#timeline">Laboratoare</a></li>
+        
+          <li><a href="/~alex.coman/resurse/web">Resurse</a></li>
+        
+          <li><a href="/~alex.coman/web/contact">Contact</a></li>
         
       </ul>
     </div>
@@ -92,159 +102,102 @@
 </nav>
 <!-- Navigation End -->
 
-    <!-- Blog Category Section Start -->
-<section id="blog-category" class="container content-section text-center">
+    
+
+
+<section id="post" class="post container content-section text-center">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 id="#web">Resurse pentru Tehnologii Web</h3>
-      <div>
-        
-          
+    <div class="col-md-10 col-md-offset-1">
+      
+<!-- Swipe Instructions Start -->
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>13 
+<div id="swipe-instruction">
+  <div>
+    <p><br><br><br></p>
+    <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+    <p><strong>
+    
+      Did you know that you can navigate the posts by swiping left and right?
+    
+    </strong></p>
+    <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
+      
+    </button>
+  </div>
+</div>
+
+<!-- Swipe Instructions End -->
+
+
+      <h1><strong>Tehnologii Web - Design & Interacțiune web</strong></h1>
+      <h4><strong>13 
     
     martie
         
  2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/13/laborator-interactiune-web/">
-    <strong>Tehnologii Web - Design & Interacțiune web</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  
-    <a href="/~alex.coman/resurse/laborator">laborator</a>
-     , 
-  
-    <a href="/~alex.coman/resurse/web">web</a>
-    
-  
-  </small>
-  }
-</h4>
-<!-- Post List End -->
+          <small>{ categorii: [
+            
+              <a href="/~alex.coman/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/~alex.coman/resurse/web">web</a>
+              
+            
+            ], taguri: [
+            
+              #css
+              
+            
+            ]}
+            
+          </small>
+      </h4>
 
+      <div id="post-content"s class="post-content text-justify">
         
-          
+        
+        <h2 id="i-testarea-cunoștiințelor-dobândite-30-minute">I. Testarea cunoștiințelor dobândite (<em>30 minute</em>)</h2>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>6 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/06/laborator-css-2/">
-    <strong>Tehnologii Web - Design (web) responsive</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  
-    <a href="/~alex.coman/resurse/laborator">laborator</a>
-     , 
-  
-    <a href="/~alex.coman/resurse/web">web</a>
-    
-  
-  </small>
-  }
-</h4>
-<!-- Post List End -->
+<p>Tuxy vrea să propună ca proiect pentru Tehnologii Web o implementare a jocului “X și 0”. Pentru că nu
+a reușit să găsească coleg de echipă până în săptămâna a patra apelează din nou la ajutorul vostru.
+Pentru a putea înscrie proiectul, Tuxy are nevoie de următoarele resurse:</p>
 
-        
-          
+<ul>
+  <li>un document HTML pentru fiecare stare posibilă a jocului:
+    <ul>
+      <li>jucătorii încă mai au alegeri disponibile</li>
+      <li>nici unul dintre jucători nu poate câștiga</li>
+      <li>jocul a fost câștigat de jucătorul X</li>
+      <li>jocul a fost câștigat de jucătorul Y</li>
+    </ul>
+  </li>
+  <li>foaia/foile de stiluri pentru documentele mai sus menționate</li>
+</ul>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>27 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/02/27/laborator-css/">
-    <strong>Tehnologii Web - Foi de stiluri</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  
-    <a href="/~alex.coman/resurse/laborator">laborator</a>
-     , 
-  
-    <a href="/~alex.coman/resurse/web">web</a>
-    
-  
-  </small>
-  }
-</h4>
-<!-- Post List End -->
+<h2 id="ii-trimiterea-soluțiilor-5-minute">II. Trimiterea soluțiilor (<em>5 minute</em>)</h2>
 
-        
-          
+<p>Funcționalitățile cerute la punctul întâi trebuiesc incluse într-un <em>Pull Request</em> intitulat <strong>[WEB] Test HTML &amp; CSS</strong>.
+Pentru acest lucru puteți urma pașii din tutorialul <a href="/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/">git - propunerea unei soluții</a>.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/">
-    <strong>Tehnologii Web - Limbajul de marcare HTML</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  
-    <a href="/~alex.coman/resurse/laborator">laborator</a>
-     , 
-  
-    <a href="/~alex.coman/resurse/web">web</a>
-    
-  
-  </small>
-  }
-</h4>
-<!-- Post List End -->
+<h2 id="iii-ce-se-întâmplă-când-accesăm-googlecom--30-minute">III. Ce se întâmplă când accesăm “google.com” ? (<em>30 minute</em>)</h2>
 
-        
-          
+<p>Discuții bazate pe prezentarea disponibilă în următorul depozit de cod <a href="https://github.com/alex/what-happens-when">@alex/what-happens-when</a>.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/">
-    <strong>git - noțiuni introductive</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  
-    <a href="/~alex.coman/resurse/tutorial">tutorial</a>
-     , 
-  
-    <a href="/~alex.coman/resurse/web">web</a>
-    
-  
-  </small>
-  }
-</h4>
-<!-- Post List End -->
+<h2 id="iv-discuții-despre-proiecte-30-minute">IV. Discuții despre proiecte (<em>30 minute</em>)</h2>
 
-        
+<p>Lista finală de proiecte propuse poate fi găsit <a href="https://goo.gl/nMPrNj">aici</a>.</p>
+
+<p>Fiecare soluţie care va fi evaluată va fi disponibilă public la URL-ul specificat în cadrul <a href="https://goo.gl/forms/nPhkFz3sbHs4nBCn1">formularului de înscriere a proiectului</a> ales - termen-limită: vineri, 17 martie, 17:00 (ora României) - <strong>nu sunt admise întârzieri</strong>.</p>
+
+<p>De consultat <a href="https://goo.gl/xKpvPV">situaţia curentă a proiectelor alese</a>.</p>
+
+
       </div>
+
+      
+
       
 <ul class="list-inline social-buttons">
   
@@ -261,10 +214,6 @@
     </div>
   </div>
 </section>
-<!-- Blog Category Section End -->
-
-
-
 
     
 
@@ -309,6 +258,13 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Syntax highlight in post pages-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
   
 
@@ -331,6 +287,17 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
   <!-- Disqus -->
+
+  
+
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
 
   
 
@@ -359,32 +326,39 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Share buttons Start -->
+
+  <script src="/~alex.coman/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
+
+
+
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Resurse pentru Tehnologii Web', 'https://profs.info.uaic.ro/~alex.coman/resurse/web/');
+    history.pushState({}, 'Tehnologii Web - Design & Interacțiune web', 'https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/13/laborator-interactiune-web/');
   }
 }
 </script>
 
 
 
-
-
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
   <script type="text/javascript" src="/~alex.coman/js/hammer.min.js"></script>
 
   <script>
-    var page = document.getElementById('page');
+    var post = document.getElementById('post');
 
-    new Hammer(page).on('swipeleft', function(event) {
+    new Hammer(post).on('swipeleft', function(event) {
       addTohistory();
       
-        document.location.replace("/~alex.coman");
+        document.location.replace("/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/");
       
     });
-    new Hammer(page).on('swiperight', function(event) {
+
+    new Hammer(post).on('swiperight', function(event) {
       addTohistory();
       
         document.location.replace("/~alex.coman");
@@ -392,29 +366,31 @@ function addTohistory() {
     });
   </script>
 
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
 
 
 
 
-  <!-- Swipe Instructions for Blog Start -->
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
 
   <script>
     $(document).ready(function(){
-      if(!localStorage.getItem('blog-swipeshowed')){
+      if(!localStorage.getItem('post-swipeshowed')){
         $("#swipe-instruction").fadeIn();
         $("#swipe-instruction .close-swipe-instruction").click(function(){
           $("#swipe-instruction").fadeOut();
         });
-        localStorage.setItem('blog-swipeshowed', true);
+        localStorage.setItem('post-swipeshowed', true);
       }
     });
   </script>
 
-  <!-- Swipe Instructions for Blog End -->
-
-
+  <!-- Swipe Instructions for Post End -->
 
 
 
@@ -423,4 +399,4 @@ function addTohistory() {
 
   </body>
 </html>
-<!-- Index Layout End -->
+<!-- Post Layout End -->
