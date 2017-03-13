@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Tehnologii Web - Design (web) responsive"
-date:   2017-02-27 00:00:00
+date:   2017-03-06 00:00:00
 author: "Alexandru Coman"
 categories: [laborator, web]
 tags: css
+section-type: post
+navigation: "resurse_web"
 ---
 
 ## I. Consultarea resurselor (*25 minute*)
@@ -27,6 +29,6 @@ Pentru că conținutul actual este dificil de urmărit pe dispozitive cu ecran m
 
 Funcționalitățile cerute la punctul doi trebuiesc incluse în *Pull Request*-ul deschis în cadrul [laboratorului I][0].
 
-**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.
+**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia este neclară puteți cere indicații suplimentare în timpul laboratorului.
 
 [0]: {{ site.baseurl }}/resurse/laborator/web/2017/02/26/laborator-html/

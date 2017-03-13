@@ -44,7 +44,10 @@
       </h4>
 
       <div id="post-content"s class="post-content text-justify">
-        <summary>{{ page.content | more: "summary" }}</summary>
+        {% assign contains_summary = page.content | post_contains_summary %}
+        {% if contains_summary == true %}
+          <summary>{{ page.content | more: "summary" }}</summary>
+        {% endif %}
         {{ page.content | more: "remaining" }}
       </div>
 

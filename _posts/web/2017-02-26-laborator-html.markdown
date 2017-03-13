@@ -6,7 +6,7 @@ author: "Alexandru Coman"
 categories: [laborator, web]
 tags: html
 section-type: post
-navigation: "resurse"
+navigation: "resurse_web"
 ---
 
 ## I. Pregătirea mediului de lucru (*15 minute*)
@@ -41,7 +41,7 @@ Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:
 Funcționalitățile cerute la punctul doi trebuiesc incluse într-un PR (Pull Request) către ramura
 [master][2] al depozitului de cod [labs][3] deținut de utilizatorul [@alexcoman][4].
 
-**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.
+**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia este neclară puteți cere indicații suplimentare în timpul laboratorului.
 
 
 [0]: https://git-scm.com/

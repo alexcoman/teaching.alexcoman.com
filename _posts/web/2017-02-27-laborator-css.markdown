@@ -6,7 +6,7 @@ author: "Alexandru Coman"
 categories: [laborator, web]
 tags: css
 section-type: post
-navigation: "resurse"
+navigation: "resurse_web"
 ---
 
 ## I. Consultarea resurselor (*25 minute*)
@@ -27,6 +27,6 @@ Pentru că Tuxy a fost foarte mulțumit de modul în care ați modelat blogul s�
 
 Funcționalitățile cerute la punctul doi trebuiesc incluse în *Pull Request*-ul deschis în cadrul [laboratorului I][0].
 
-**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.
+**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia este neclară puteți cere indicații suplimentare în timpul laboratorului.
 
 [0]: {{ site.baseurl }}/resurse/laborator/web/2017/02/26/laborator-html/
