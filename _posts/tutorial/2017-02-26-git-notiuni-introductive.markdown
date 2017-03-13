@@ -5,11 +5,13 @@ date:   2017-02-26 20:00:00
 author: "Mircea Brățan"
 categories: [tutorial, web]
 tags: git
+section-type: post
+navigation: "resurse"
 ---
 
 Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare Git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.
 
-<!-- more -->
+<!--more-->
 
 ## 0. Concepte de bază
 Înainte de a începe tutorialul este util să răspundem la câteva întrebări și să definim câteva noțiuni.

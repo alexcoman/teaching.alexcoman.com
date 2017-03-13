@@ -26,25 +26,30 @@
 
       <h1><strong>{{ page.title }}</strong></h1>
       <h4><strong>{{ page.date | date: "%-d" }} {{ month }} {{ page.date | date: "%Y" }}</strong>
-        <small>
-          {% for category in page.categories %}
-           . <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
-          {% endfor %} . <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread">Comentarii</a>
-
-          {% for tag in page.tags %}
-            #{{ tag }}
-          {% endfor %}
-        </small>
+          <small>{ categorii: [
+            {% for category in page.categories %}
+              <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
+              {% unless forloop.last %} , {% endunless %}
+            {% endfor %}
+            ], taguri: [
+            {% for tag in page.tags %}
+              #{{ tag }}
+              {% unless forloop.last %} , {% endunless %}
+            {% endfor %}
+            ]}
+            {% if site.disqus-shortname != "" %}
+              <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread">Comentarii</a></small>
+            {% endif %}
+          </small>
       </h4>
 
-      <div id="post-content" class="post-content text-justify">
-        {{ page.content | markdownify }}
+      <div id="post-content"s class="post-content text-justify">
+        <summary>{{ page.content | more: "summary" }}</summary>
+        {{ page.content | more: "remaining" }}
       </div>
 
       {% include comments.html %}
-
       {% include social-buttons.html %}
-
     </div>
   </div>
 </section>

@@ -5,6 +5,8 @@ date:   2017-02-27 00:00:00
 author: "Alexandru Coman"
 categories: [laborator, web]
 tags: css
+section-type: post
+navigation: "resurse"
 ---
 
 ## I. Consultarea resurselor (*25 minute*)
