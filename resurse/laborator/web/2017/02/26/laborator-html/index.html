@@ -54,6 +54,12 @@
   
 
 
+  <!-- Syntax highlight in post pages -->
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
+
+
 </head>
 
 
@@ -70,7 +76,7 @@
       
         <a class="navbar-brand" href="/~alex.coman/">
       
-          <div>{ Alex Coman }</div>
+          <div>{ Alex Coman : Resurse}</div>
           <a href="/~alex.coman/" id="logo-header" class="logo-header">
             <div class="logo"></div>
           </a>
@@ -80,9 +86,7 @@
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         
-          <li><a class="page-scroll" href="#about">Despre</a></li>
-        
-          <li><a class="page-scroll" href="#latest-post">Noutăți</a></li>
+          <li><a href="/~alex.coman/">↩ Prima pagină</a></li>
         
           <li><a href="/~alex.coman/web">Tehnologii Web</a></li>
         
@@ -111,8 +115,12 @@
     <i id="hand-swipe" class="fa fa-hand-o-up"></i>
     <p><strong>
     
+      Did you know that you can navigate the posts by swiping left and right?
+    
     </strong></p>
     <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
       
     </button>
   </div>
@@ -127,20 +135,60 @@
     februarie
         
  2017</strong>
-        <small>
-          
-           . <a href="/~alex.coman/resurse/laborator">laborator</a>
-          
-           . <a href="/~alex.coman/resurse/web">web</a>
-           . <a href="/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/#disqus_thread">Comentarii</a>
-
-          
-            #html
-          
-        </small>
+          <small>{ categorii: [
+            
+              <a href="/~alex.coman/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/~alex.coman/resurse/web">web</a>
+              
+            
+            ], taguri: [
+            
+              #html
+              
+            
+            ]}
+            
+          </small>
       </h4>
 
-      <div id="post-content" class="post-content text-justify">
+      <div id="post-content"s class="post-content text-justify">
+        <summary><h2 id="i-pregătirea-mediului-de-lucru-15-minute">I. Pregătirea mediului de lucru (<em>15 minute</em>)</h2>
+
+<p>Pentru laboratorul curent o să aveți nevoie de utilitarul <a href="https://git-scm.com/">git</a>.
+În cazul în care întâmpinați probleme în instalarea acestuia puteți consulta următorul articol <a href="/~alex.coman/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/">git - noțiuni introductive</a>.</p>
+
+<h2 id="ii-propuneți-structura-html-pentru-blogul-lui-tuxy-45-de-minute">II. Propuneți structura HTML pentru blogul lui Tuxy (<em>45 de minute</em>)</h2>
+
+<p>Tuxy își dorește foarte mult un blog prin intermediul căruia să poată împărtăși cu comunitatea resurse interesante despre tehnologie. Din păcate încă nu a avut contact cu tehnologiile web și are nevoie de ajutor.
+Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va trebuie să pregătiți minim 3 fișiere html ce să-i servească lui Tuxy ca exemplu pentru blogul său.</p>
+
+<p>Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:</p>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>./index.html
+./articole
+    ./index.html
+    ./bine-ați-venit.html
+    ./tehnologii-web
+        ./index.html
+        ./prezentare-html.html
+        ./prezentare-css.html
+    ./rețele-de-calculatoare
+        ./index.html
+        ./modelul-osi.html
+./contact.html
+</code></pre>
+</div>
+
+<h2 id="iii-trimiterea-soluțiilor-5-minute">III. Trimiterea soluțiilor (<em>5 minute</em>)</h2>
+
+<p>Funcționalitățile cerute la punctul doi trebuiesc incluse într-un PR (Pull Request) către ramura
+<a href="https://github.com/alexcoman/labs/commits/master">master</a> al depozitului de cod <a href="https://github.com/alexcoman/labs">labs</a> deținut de utilizatorul <a href="https://github.com/alexcoman">@alexcoman</a>.</p>
+
+<p><strong>Atenție</strong>: modificările sugerate trebuie să respecte structura depozitului de cod. În cazul în care structura acestuia puteți cere indicații suplimentare în timpul laboratorului.</p>
+
+</summary>
         <h2 id="i-pregătirea-mediului-de-lucru-15-minute">I. Pregătirea mediului de lucru (<em>15 minute</em>)</h2>
 
 <p>Pentru laboratorul curent o să aveți nevoie de utilitarul <a href="https://git-scm.com/">git</a>.
@@ -153,7 +201,7 @@ Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va t
 
 <p>Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:</p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>./index.html
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>./index.html
 ./articole
     ./index.html
     ./bine-ați-venit.html
@@ -179,10 +227,6 @@ Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va t
       </div>
 
       
-  <div id="disqus_thread"></div>
-  <noscript>Pentru a putea vizualiza <a href="https://disqus.com/?ref_noscript" rel="nofollow">comentariile aveți nevoie de JavaScript.</a></noscript>
-
- 
 
       
 <ul class="list-inline social-buttons">
@@ -197,7 +241,6 @@ Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va t
   
 </ul>
 
-
     </div>
   </div>
 </section>
@@ -207,7 +250,7 @@ Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va t
 <footer id="footer" class="footer">
     <div class="container text-center">
         <p>
-        Ultima actualizare: 11 
+        Ultima actualizare: 13 
     
     martie
         
@@ -245,6 +288,13 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Syntax highlight in post pages-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
   
 
@@ -270,9 +320,47 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
   
 
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+  
+
+  
+
+    <!-- Comments Counter Start -->
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
+    <!-- Comments Counter End -->
+
   
 
 
+
+
+
+  <!-- Share buttons Start -->
+
+  <script src="/~alex.coman/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
 
 
 
@@ -286,9 +374,53 @@ function addTohistory() {
 
 
 
+  <!-- Post Gesture Navigation Start -->
+
+  <script type="text/javascript" src="/~alex.coman/js/hammer.min.js"></script>
+
+  <script>
+    var post = document.getElementById('post');
+
+    new Hammer(post).on('swipeleft', function(event) {
+      addTohistory();
+      
+        document.location.replace("/~alex.coman/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/");
+      
+    });
+
+    new Hammer(post).on('swiperight', function(event) {
+      addTohistory();
+      
+        document.location.replace("/~alex.coman/resurse/laborator/web/2017/02/27/laborator-css/");
+      
+    });
+  </script>
+
+  <!-- Post Gesture Navigation Start -->
 
 
 
+
+
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
+
+  <script>
+    $(document).ready(function(){
+      if(!localStorage.getItem('post-swipeshowed')){
+        $("#swipe-instruction").fadeIn();
+        $("#swipe-instruction .close-swipe-instruction").click(function(){
+          $("#swipe-instruction").fadeOut();
+        });
+        localStorage.setItem('post-swipeshowed', true);
+      }
+    });
+  </script>
+
+  <!-- Swipe Instructions for Post End -->
 
 
 
