@@ -29,12 +29,21 @@
         {% if post %}
           <h1>Ultimul articol publicat</h1>
           <h4><strong>{{ post.date  | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}</strong>
-            <small>. {{ post.category }} .</small>
-            <strong> <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}} </a> </strong>
-            <small> <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comentarii</a></small>
+            {<small>
+            {% for category in post.categories %}
+              <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
+              {% unless forloop.last %} , {% endunless %}
+            {% endfor %}
+            </small>}
+            <strong> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }} </a> </strong>
+            {% if site.disqus-shortname != "" %}
+              <small> <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Comentarii</a></small>
+            {% endif %}
           </h4>
           <div id="post-preview" class="text-justify">
-            {{ post.content | truncatewords: site.post-preview-words | strip_html | markdownify }}
+            {% if post.content | post_contains_summary %}
+              {{ post.content | more: "summary" }}
+            {% endif %}
           </div>
           <h4><a href="{{ site.baseurl }}/resurse/{{ page.category }}">Mai multe articole.</a></h4>
         {% else %}

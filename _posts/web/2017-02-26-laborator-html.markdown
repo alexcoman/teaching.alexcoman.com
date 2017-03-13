@@ -5,6 +5,8 @@ date:   2017-02-26 20:00:00
 author: "Alexandru Coman"
 categories: [laborator, web]
 tags: html
+section-type: post
+navigation: "resurse"
 ---
 
 ## I. Pregătirea mediului de lucru (*15 minute*)
@@ -19,7 +21,7 @@ Sarcina de-al ajuta pe Tuxy vă revine vouă. În următoarele 45 de minute va t
 
 Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:
 
-```
+```bash
 ./index.html
 ./articole
     ./index.html
