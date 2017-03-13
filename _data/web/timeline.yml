@@ -33,9 +33,9 @@ events:
           title="Detalii">CSS Reference (MDN)</a>
 
   - image: "/img/timeline/css.png"
-    link: "/resurse/laborator/web/2017/02/27/laborator-css-2/"
+    link: "/resurse/laborator/web/2017/03/06/laborator-css-2/"
     title: "Foi de stiluri în cascadă"
-    date: "Săptămâna 3 (6 martie - 11 martie)"
+    date: "Săptămâna 3 (6 - 11 martie)"
     description: >
       Resurse utile:
       <a href="http://tympanus.net/codrops/css_reference/"
@@ -46,3 +46,18 @@ events:
         title="Detalii">Responsive Web Design</a>,
       <a href="https://bradfrost.github.io/this-is-responsive/resources.html"
         title="Diverse resurse de interes referitoare la design Web responsiv">Responsive Resources</a>
+
+  - image: "/img/timeline/benevocats.png"
+    link: "/resurse/laborator/web/2017/03/13/laborator-interactiune-web/"
+    title: "Design & Interacţiune Web"
+    date: "Săptămâna 4 (13 - 18 martie)"
+    description: >
+      Resurse utile:
+      <a href="https://www.w3.org/community/webed/wiki/HTML_forms_-_the_basics"
+        title="Detalii privind declararea de formulare Web">HTML Forms</a>,
+      <a href="https://developer.mozilla.org/docs/Web/Guide/HTML/Forms"
+        title="Un ghid pentru conceperea formularelor Web">HTML Forms Guide</a>,
+      <a href="http://www.learn-php.org/"
+        title="Un tutorial interactiv referitor la PHP">Learn PHP</a>,
+      <a href="http://www.hackingwithphp.com/"
+        title="O carte online despre PHP">Hacking with PHP</a>
