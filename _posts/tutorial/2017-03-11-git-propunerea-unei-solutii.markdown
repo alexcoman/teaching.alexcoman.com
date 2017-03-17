@@ -141,7 +141,7 @@ Mai jos puteți găsi o secvență posibilă de pași pe care *Tuxy Pinguinescu*
 
 5. Va adăuga un *branch* nou special pentru acest laborator
     ```bash
-    git checkout -b tweb/laborator-css
+    git checkout -b tweb/laborator-html
     ```
 
 6.  Se va asigura că structura de directoare pentru soluțiile sale există
