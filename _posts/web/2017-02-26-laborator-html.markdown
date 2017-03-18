@@ -45,7 +45,7 @@ Funcționalitățile cerute la punctul doi trebuiesc incluse într-un PR (Pull R
 
 
 [0]: https://git-scm.com/
-[1]: {{ site.baseurl }}/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/
+[1]: {{ site.baseurl }}/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/
 [2]: https://github.com/alexcoman/labs/commits/master
 [3]: https://github.com/alexcoman/labs
 [4]: https://github.com/alexcoman

@@ -211,8 +211,8 @@ Pentru Tuxy Pinguinescu această pagini este `https://github.com/tuxy_pinguinesc
 [0]: https://github.com/alexcoman/labs
 [1]: {{ site.baseurl }}/resurse/laborator/web/2017/02/26/laborator-html/
 [2]: https://www.w3.org/html/
-[3]: {{ site.baseurl }}/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/#3-instalarea-și-configurarea-github-for-windows
+[3]: {{ site.baseurl }}/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/#3-instalarea-și-configurarea-github-for-windows
 [4]: https://git-scm.com/downloads
 [5]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [6]: https://github.com/
-[7]: {{ site.baseurl }}/resurse/tutorial/web/2017/02/26/git-notiuni-introductive/#1-crearea-contului-github
+[7]: {{ site.baseurl }}/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/#1-crearea-contului-github

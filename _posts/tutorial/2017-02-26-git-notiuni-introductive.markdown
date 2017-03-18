@@ -3,7 +3,7 @@ layout: post
 title:  "git - noțiuni introductive"
 date:   2017-02-26 20:00:00
 author: "Mircea Brățan"
-categories: [tutorial, web]
+categories: [tutorial, git]
 tags: git
 section-type: post
 navigation: "resurse"
