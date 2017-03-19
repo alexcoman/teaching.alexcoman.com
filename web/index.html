@@ -4,17 +4,17 @@
 
   
 <head>
-  <title>{ Alex Coman : Web }</title>
+  <title>{ Alex Coman }</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-    <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat disciplinei Tehnologii Web" />
+    <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat laboratoarelor susținute de Alexandru Coman" />
   
-    <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang programming, document, software, application, student, grade" />
+    <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang, programming, document, software, application, student, grade" />
   
-    <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate, academic, informatie, educatie, scoala, proiect, limbaj, programare, document, software, aplicatie, student, nota" />
+    <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, România, Iași, informatică, universitate, academic, informație, educație, școală, proiect, limbaj, programare, document, software, aplicație, student, notă" />
   
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
@@ -60,6 +60,7 @@
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
 
     
+
 <!-- Navigation Start -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
@@ -68,12 +69,9 @@
         <i class="fa fa-bars"></i>
       </button>
       
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand page-scroll" href="#page-top">
       
           <div>{ Alex Coman : Web }</div>
-          <a href="/" id="logo-header" class="logo-header">
-            <div class="logo"></div>
-          </a>
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -84,9 +82,9 @@
         
           <li><a class="page-scroll" href="#about">Despre</a></li>
         
-          <li><a class="page-scroll" href="#timeline">Laboratoare</a></li>
+          <li><a class="page-scroll" href="#latest-post">Noutăți</a></li>
         
-          <li><a href="/resurse/web">Resurse</a></li>
+          <li><a class="page-scroll" href="#timeline">Laboratoare</a></li>
         
           <li><a class="page-scroll" href="#contact">Contact</a></li>
         
@@ -95,6 +93,7 @@
   </div>
 </nav>
 <!-- Navigation End -->
+
 
     
 <!-- About Start -->
@@ -126,6 +125,45 @@
   </div>
 </section>
 <!-- About End -->
+
+
+<!-- Latest Post Preview Start -->
+
+
+
+<!-- Latest Post Preview Start -->
+<section id="latest-post" class="container content-section text-center">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        
+          <h1>Ultimul articol publicat</h1>
+          <h4><strong>13 
+    
+    martie
+        
+ 2017</strong>
+            {<small>
+            
+              <a href="/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/resurse/web">web</a>
+              
+            
+            </small>}
+            <strong> <a href="/resurse/laborator/web/2017/03/13/laborator-interactiune-web/">Tehnologii Web - Design & Interacțiune web </a> </strong>
+            
+          </h4>
+          <div id="post-preview" class="text-justify">
+            
+            
+          </div>
+          <h4><a href="/resurse/">Mai multe articole.</a></h4>
+        
+      </div>
+    </div>
+</section>
+<!-- Latest Post Preview End -->
 
 
 
@@ -368,7 +406,7 @@
 <footer id="footer" class="footer">
     <div class="container text-center">
         <p>
-        Ultima actualizare: 18 
+        Ultima actualizare: 19 
     
     martie
         
@@ -404,6 +442,14 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Collapse navbar when navbar-brand is clicked -->
+
+  <script>
+  $(function(){$(".navbar-brand").click(function(){$(".collapse.in")&&$(".collapse.in").animate({height:"1px"},500,function(){$(".collapse.in").removeClass("in")})})});
+  </script>
+
+
+
 
 
 
@@ -430,6 +476,25 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <!-- Disqus -->
 
   
+
+  
+
+    <!-- Comments Counter Start -->
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
+    <!-- Comments Counter End -->
 
   
 
