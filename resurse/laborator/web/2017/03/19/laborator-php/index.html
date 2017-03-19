@@ -1,10 +1,10 @@
-<!-- Index Layout Start -->
+<!-- Post Layout Start -->
 <!DOCTYPE html>
 <html lang="ro">
 
   
 <head>
-  <title>{ Alex Coman } | Resurse pentru Tehnologii Web</title>
+  <title>{ Alex Coman } | Tehnologii Web - Programare în PHP</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
 
-  <link rel="canonical" href="/resurse/web/">
+  <link rel="canonical" href="/resurse/laborator/web/2017/03/19/laborator-php/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/css/main.css" rel="stylesheet">
 
@@ -52,6 +52,12 @@
 
 
   
+
+
+  <!-- Syntax highlight in post pages -->
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
 
 
 </head>
@@ -89,89 +95,148 @@
 <!-- Navigation End -->
 
 
-    <!-- Blog Category Section Start -->
-<section id="blog-category" class="container content-section text-center">
+    
+
+
+<section id="post" class="post container content-section text-center">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 id="#web">Resurse pentru Tehnologii Web</h3>
-      <div>
-        
-          
+    <div class="col-md-10 col-md-offset-1">
+      
+<!-- Swipe Instructions Start -->
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>19 
+<div id="swipe-instruction">
+  <div>
+    <p><br><br><br></p>
+    <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+    <p><strong>
+    
+      Did you know that you can navigate the posts by swiping left and right?
+    
+    </strong></p>
+    <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
+      
+    </button>
+  </div>
+</div>
+
+<!-- Swipe Instructions End -->
+
+      <h1><strong>Tehnologii Web - Programare în PHP</strong></h1>
+      <h4>
+        Alexandru Coman -
+        <small>
+          19 
     
     martie
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/resurse/laborator/web/2017/03/19/laborator-php/"><strong>Tehnologii Web - Programare în PHP</strong></a>
-</h4>
-<!-- Post List End -->
+ 2017
+        </small>
+      </h4>
+      <h5>
+          <small>categorii: [
+            
+              <a href="/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/resurse/web">web</a>
+              
+            
+            ], taguri: [
+            
+              #php
+              
+            
+            ]
 
-        
-          
+            
+          </small>
+      </h5>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>13 
-    
-    martie
+      <div id="post-content"s class="post-content text-justify">
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/resurse/laborator/web/2017/03/13/laborator-interactiune-web/"><strong>Tehnologii Web - Design & Interacțiune web</strong></a>
-</h4>
-<!-- Post List End -->
+        
+        <h2 id="i-consultarea-resurselor-25-minute">I. Consultarea resurselor (<em>25 minute</em>)</h2>
 
-        
-          
+<p>Acest laborator are la bază prezentarea <a href="0">Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a></p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>6 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/resurse/laborator/web/2017/03/06/laborator-css-2/"><strong>Tehnologii Web - Design (web) responsive</strong></a>
-</h4>
-<!-- Post List End -->
+<div id="presentation" class="presentation">
+	<iframe src="//profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf" class="frame" allowfullscreen=""></iframe>
+</div>
 
-        
-          
+<h2 id="ii-tuxy-captcha-30-minute">II. Tuxy captcha (<em>30 minute</em>)</h2>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>27 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/resurse/laborator/web/2017/02/27/laborator-css/"><strong>Tehnologii Web - Foi de stiluri</strong></a>
-</h4>
-<!-- Post List End -->
+<p>Tuxy are nevoie de un mecanism care să îi garanteze că toți utilizatorii aplicației lui știu să rezolve ecuații de gradul I.
+Pentru că specialiștii din echipa lui Tuxy nu au reușit să rezolve această problemă au apelat la tine. Deoarece este o problemă destul de urgentă ai la dispoziție doar 30 de minute să rezolvi această sarcină.</p>
 
-        
-          
+<p>Exemple: <code class="highlighter-rouge">10 - 3x = 1</code>, <code class="highlighter-rouge">6x * 7 = 42</code>, <code class="highlighter-rouge">10x - 4 * 2 = 1</code>.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/resurse/laborator/web/2017/02/26/laborator-html/"><strong>Tehnologii Web - Limbajul de marcare HTML</strong></a>
-</h4>
-<!-- Post List End -->
+<p>Funcții ce ar putea fi utile <a href="https://secure.php.net/manual/en/function.explode.php">explode</a>, <a href="https://secure.php.net/manual/en/function.intval.php">intval</a>, <a href="https://secure.php.net/manual/en/function.strpos.php">strpos</a>. Mai multe detalii pot fi găsite în <a href="https://secure.php.net/manual/en/">documentație</a>.</p>
 
-        
+<h2 id="iii-tuxy-bot-45-minute">III. Tuxy bot (<em>45 minute</em>)</h2>
+
+<p>Tuxy Pinguinescu are nevoie de o unealtă web care să îi ușureze munca de zi cu zi.
+Pentru că nimeni din echipa lui Tuxy nu este suficient de pregătit pentru a dezvolta <strong>Tuxy Bot</strong> această sarcină îți revine ție.</p>
+
+<p>Tuxy Bot trebuie să știe să rezolve următoarele sarcini:</p>
+
+<ul>
+  <li>/reține cheie valoare
+    <ul>
+      <li>Se va salva această informație și în toate comenzile ce vor fi trimise ulterior se va schimba orice apariție a cuvântului <em>cheie</em> cu valoarea acestuia</li>
+    </ul>
+  </li>
+  <li>/palindrom valoare
+    <ul>
+      <li>Verifică dacă valoarea primită este un șir palindrom</li>
+    </ul>
+  </li>
+  <li>/calculează valoare1 operator valoare2</li>
+  <li>/evaluează expresie</li>
+  <li>/curăță
+    <ul>
+      <li>Șterge toate informațiile salvate până în acest moment</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Câteva exemple:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>/reține acasă Iași
+Am învățat termenul `acasă`.
+
+/reține expresie 20 + 4 - 3 * 8
+Am învățat termenul `expresie`.
+
+/evaluează expresie
+Rezultatul expresiei: '20 + 4 - 3 * 8' este 0
+
+/palindrom acasa
+Șirul 'Iași' nu este palindrom.
+
+/curăță
+Am șters toate informațiile din această sesiune.
+</code></pre>
+</div>
+
+<h2 id="iv-trimiterea-soluțiilor-5-minute">IV. Trimiterea soluțiilor (<em>5 minute</em>)</h2>
+
+<p>Pentru acest lucru puteți urma pașii din tutorialul <a href="/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/">git - propunerea unei soluții</a>.</p>
+
+<p>Restricții:</p>
+
+<ul>
+  <li>fiecare soluție trebuie să fie dezvoltată pe un branch separat</li>
+  <li>pentru fiecare exercițiu va fi deschis un Pull Request</li>
+  <li>soluțiile trebuie să respecte structura sugerată în tutorialul mai sus menționat</li>
+</ul>
+
+
       </div>
+
+      
+
       
 <ul class="list-inline social-buttons">
   
@@ -188,10 +253,6 @@
     </div>
   </div>
 </section>
-<!-- Blog Category Section End -->
-
-
-
 
     
 
@@ -236,6 +297,13 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Syntax highlight in post pages-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
   
 
@@ -258,6 +326,17 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
   <!-- Disqus -->
+
+  
+
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
 
   
 
@@ -286,32 +365,39 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Share buttons Start -->
+
+  <script src="/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
+
+
+
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Resurse pentru Tehnologii Web', 'https://teaching.alexcoman.com/resurse/web/');
+    history.pushState({}, 'Tehnologii Web - Programare în PHP', 'https://teaching.alexcoman.com/resurse/laborator/web/2017/03/19/laborator-php/');
   }
 }
 </script>
 
 
 
-
-
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
   <script type="text/javascript" src="/js/hammer.min.js"></script>
 
   <script>
-    var page = document.getElementById('page');
+    var post = document.getElementById('post');
 
-    new Hammer(page).on('swipeleft', function(event) {
+    new Hammer(post).on('swipeleft', function(event) {
       addTohistory();
       
-        document.location.replace("/");
+        document.location.replace("/resurse/tutorial/vagrant/2017/03/19/vagrant-notiuni-introductive/");
       
     });
-    new Hammer(page).on('swiperight', function(event) {
+
+    new Hammer(post).on('swiperight', function(event) {
       addTohistory();
       
         document.location.replace("/");
@@ -319,29 +405,31 @@ function addTohistory() {
     });
   </script>
 
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
 
 
 
 
-  <!-- Swipe Instructions for Blog Start -->
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
 
   <script>
     $(document).ready(function(){
-      if(!localStorage.getItem('blog-swipeshowed')){
+      if(!localStorage.getItem('post-swipeshowed')){
         $("#swipe-instruction").fadeIn();
         $("#swipe-instruction .close-swipe-instruction").click(function(){
           $("#swipe-instruction").fadeOut();
         });
-        localStorage.setItem('blog-swipeshowed', true);
+        localStorage.setItem('post-swipeshowed', true);
       }
     });
   </script>
 
-  <!-- Swipe Instructions for Blog End -->
-
-
+  <!-- Swipe Instructions for Post End -->
 
 
 
@@ -350,4 +438,4 @@ function addTohistory() {
 
   </body>
 </html>
-<!-- Index Layout End -->
+<!-- Post Layout End -->
