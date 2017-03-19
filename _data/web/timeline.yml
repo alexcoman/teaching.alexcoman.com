@@ -61,3 +61,31 @@ events:
         title="Un tutorial interactiv referitor la PHP">Learn PHP</a>,
       <a href="http://www.hackingwithphp.com/"
         title="O carte online despre PHP">Hacking with PHP</a>
+
+  - image: "/img/timeline/php.jpg"
+    link: "/resurse/laborator/web/2017/03/19/laborator-php/"
+    title: "Programare Web în PHP"
+    date: "Săptămâna 5 (20 - 25 martie)"
+    description: >
+      Resurse utile:
+        <a href="http://www.fluffycat.com/PHP-Design-Patterns/"
+          title="Implementarea unor design patterns &icirc;n PHP">PHP Design Patterns</a>,
+        <a href="https://phpdelusions.net/pdo"
+          title="Un tutorial despre utilizarea PDO (PHP Data Objects)">PDO Tutorial</a>,
+        <a href="http://www.php-fig.org/"
+          title="Moving PHP forward through collaboration and standards">PHP Framework Interop Group</a>,
+        <a href="http://devzone.zend.com/"
+          title="Zend Developer Zone">Zend Developer Zone</a>,
+        <a href="http://hacklang.org/"
+          title="Detalii despre limbajul de programare Hack">Hack</a>,
+        <a href="http://hhvm.com/"
+          title="Detalii despre HHVM (Hip-Hop Virtual Machine)">HHVM</a>,
+        <a href="https://www.besthostnews.com/php-5-6-vs-hhvm-3-7-vs-php-7-benchmarks/"
+          title="Compara&#355;ii privind performan&#355;a programelor PHP 7">
+          PHP 5.6 vs HHVM 3.7 vs PHP 7 Benchmarks</a>,
+        <a href="http://www.jeffgeerling.com/blogs/jeff-geerling/benchmarking-drupal-8-php-7-vs-hhvm"
+          title="Compara&#355;ii privind performan&#355;a programelor PHP 7">
+          Benchmarking PHP 7 vs HHVM (Drupal &amp; Wordpress)</a>,
+        <a href="http://blog.wpoven.com/2016/04/14/hhvm-vs-php-7-performance-showdown-wordpress-nginx/"
+            title="Detalii referitoare la performan&#355;a PHP 7 vs. HHVM">
+            HHVM vs PHP 7 Performance (WordPress, Nginx)</a>
