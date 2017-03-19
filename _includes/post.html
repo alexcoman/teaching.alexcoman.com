@@ -24,8 +24,14 @@
     <div class="col-md-10 col-md-offset-1">
       {% include swipe-instructions.html %}
       <h1><strong>{{ page.title }}</strong></h1>
-      <h4><strong>{{ page.date | date: "%-d" }} {{ month }} {{ page.date | date: "%Y" }}</strong>
-          <small>{ categorii: [
+      <h4>
+        {{ page.author }} -
+        <small>
+          {{ page.date | date: "%-d" }} {{ month }} {{ page.date | date: "%Y" }}
+        </small>
+      </h4>
+      <h5>
+          <small>categorii: [
             {% for category in page.categories %}
               <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
               {% unless forloop.last %} , {% endunless %}
@@ -35,12 +41,13 @@
               #{{ tag }}
               {% unless forloop.last %} , {% endunless %}
             {% endfor %}
-            ]}
+            ]
+
             {% if site.disqus-shortname != "" %}
               <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread">Comentarii</a></small>
             {% endif %}
           </small>
-      </h4>
+      </h5>
 
       <div id="post-content"s class="post-content text-justify">
         {% assign contains_summary = page.content | post_contains_summary %}
