@@ -7,6 +7,19 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Tehnologii Web - Programare în PHP</title>
+				
+				
+					<description>&lt;h2 id=&quot;i-consultarea-resurselor-25-minute&quot;&gt;I. Consultarea resurselor (&lt;em&gt;25 minute&lt;/em&gt;)&lt;/h2&gt;
+
+</description>
+				
+				<pubDate>Sun, 19 Mar 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/19/laborator-php/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/19/laborator-php/</guid>
+			</item>
+		
+			<item>
 				<title>Vagrant - noțiuni introductive</title>
 				
 				
