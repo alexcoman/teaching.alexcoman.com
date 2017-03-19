@@ -1,8 +1,9 @@
-{% if page.navigation %}
-  {% assign navigation =  site.data.navigation[page.navigation] %}
+{% if site.data.navigation[page.navigation] %}
+  {% assign navigation = site.data.navigation[page.navigation] %}
 {% else %}
-  {% assign navigation =  site.data.navigation.default %}
+  {% assign navigation = site.data.navigation.default %}
 {% endif %}
+
 <!-- Navigation Start -->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
   <div class="container">
@@ -10,15 +11,14 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
         <i class="fa fa-bars"></i>
       </button>
-      {% if page.section-type == "index" and page.permalink == "/" %}
+      {% if page.section-type == "index" %}
         <a class="navbar-brand page-scroll" href="#page-top">
+      {% elsif navigation.link %}
+        <a class="navbar-brand" href="{{ navigation.link | prepend: site.baseurl }}">
       {% else %}
         <a class="navbar-brand" href="{{ site.baseurl }}/">
       {% endif %}
           <div>{{ navigation.title }}</div>
-          <a href="{{ site.baseurl }}/" id="logo-header" class="logo-header">
-            <div class="logo"></div>
-          </a>
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->

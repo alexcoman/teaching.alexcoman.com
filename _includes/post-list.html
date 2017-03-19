@@ -20,17 +20,6 @@
 <h4 align="left">
   <strong>{{ post.date | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}</strong>
   <br class="visible-xs-block">
-  <a href="{{site.baseurl}}{{post.url}}">
-    <strong>{{ post.title }}</strong>
-  </a>
-  <br class="visible-xs-block">
-  {
-  <small>
-  {% for category in post.categories %}
-    <a href="{{ site.baseurl }}/resurse/{{ category }}">{{ category }}</a>
-    {% unless forloop.last %} , {% endunless %}
-  {% endfor %}
-  </small>
-  }
+  <a href="{{site.baseurl}}{{post.url}}"><strong>{{ post.title }}</strong></a>
 </h4>
 <!-- Post List End -->
