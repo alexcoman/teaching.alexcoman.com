@@ -89,3 +89,16 @@ events:
         <a href="http://blog.wpoven.com/2016/04/14/hhvm-vs-php-7-performance-showdown-wordpress-nginx/"
             title="Detalii referitoare la performan&#355;a PHP 7 vs. HHVM">
             HHVM vs PHP 7 Performance (WordPress, Nginx)</a>
+
+  - image: "/img/timeline/collabocats.jpg"
+    link: "/resurse/laborator/web/2017/03/26/laborator-programare-web/"
+    title: "Programare Web"
+    date: "Săptămâna 6 (27 martie - 1 aprilie)"
+    description: >
+      Resurse utile:
+        <a href="http://www.theserverside.com/news/1365146/Redirect-After-Post"
+          title="Detalii despre PRG (Post/Redirect/Get)">Redirect After Post</a>,
+        <a href="http://aspiringcraftsman.com/2007/08/25/interactive-application-architecture/"
+          title="Detalii despre &#351;abloane arhitecturale">Interactive Application Architecture Patterns</a>,
+        <a href="https://www.youtube.com/playlist?list=PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD"
+          title="O serie de tutoriale video privitoare la MVC &icirc;n PHP">Build a PHP MVC Application</a>
