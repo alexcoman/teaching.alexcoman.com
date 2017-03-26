@@ -1,10 +1,10 @@
-<!-- Index Layout Start -->
+<!-- Post Layout Start -->
 <!DOCTYPE html>
 <html lang="ro">
 
   
 <head>
-  <title>{ Alex Coman } | Resurse pentru Git</title>
+  <title>{ Alex Coman } | Programare Web</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
 
-  <link rel="canonical" href="/~alex.coman/resurse/git/">
+  <link rel="canonical" href="/~alex.coman/resurse/laborator/web/2017/03/26/laborator-programare-web/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/~alex.coman/css/main.css" rel="stylesheet">
 
@@ -54,6 +54,12 @@
   
 
 
+  <!-- Syntax highlight in post pages -->
+
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
+
+
 </head>
 
 
@@ -69,18 +75,18 @@
         <i class="fa fa-bars"></i>
       </button>
       
-        <a class="navbar-brand" href="/~alex.coman/resurse/">
+        <a class="navbar-brand" href="/~alex.coman/resurse/web">
       
-          <div>{ Alex Coman : Resurse}</div>
+          <div>{ Alex Coman : Resurse : Web}</div>
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         
-          <li><a href="/~alex.coman/">↩ Prima pagină</a></li>
+          <li><a href="/~alex.coman/web">↩ Pagina laboratorului</a></li>
         
-          <li><a href="/~alex.coman/web">Tehnologii Web</a></li>
+          <li><a href="/~alex.coman/resurse">Alte resurse</a></li>
         
       </ul>
     </div>
@@ -89,44 +95,126 @@
 <!-- Navigation End -->
 
 
-    <!-- Blog Category Section Start -->
-<section id="blog-category" class="container content-section text-center">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 id="#git">Resurse pentru Git</h3>
-      <div>
-        
-          
+    
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>11 
+
+<section id="post" class="post container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      
+<!-- Swipe Instructions Start -->
+
+<div id="swipe-instruction">
+  <div>
+    <p><br><br><br></p>
+    <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+    <p><strong>
+    
+      Did you know that you can navigate the posts by swiping left and right?
+    
+    </strong></p>
+    <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
+      
+    </button>
+  </div>
+</div>
+
+<!-- Swipe Instructions End -->
+
+      <h1><strong>Programare Web</strong></h1>
+      <h4>
+        Alexandru Coman -
+        <small>
+          26 
     
     martie
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/"><strong>git - propunerea unei soluții</strong></a>
-</h4>
-<!-- Post List End -->
+ 2017
+        </small>
+      </h4>
+      <h5>
+          <small>categorii: [
+            
+              <a href="/~alex.coman/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/~alex.coman/resurse/web">web</a>
+              
+            
+            ], taguri: [
+            
+              #web
+              
+            
+            ]
 
-        
-          
+            
+          </small>
+      </h5>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    februarie
+      <div id="post-content"s class="post-content text-justify">
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/"><strong>git - noțiuni introductive</strong></a>
-</h4>
-<!-- Post List End -->
+        
+        <h3 id="i-consultarea-resurselor-30-minute">I. Consultarea resurselor (<em>30 minute</em>)</h3>
 
-        
+<div id="presentation" class="presentation">
+    <iframe width="853" height="480" src="https://www.youtube.com/embed/OsCTzGASImQ?list=PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<h3 id="ii-tuxy-are-nevoie-de-ajutor-60-minute">II. Tuxy are nevoie de ajutor (<em>60 minute</em>)</h3>
+
+<p>În săptămâna aceasta Tuxy are două task-uri foarte urgente dintre care puteți alege.</p>
+
+<p><strong>II.1. Îmbunătățire tuxy-captcha și tuxy-bot</strong></p>
+
+<p>Soluția propusă de voi săptămâna anterioară satisface nevoile lui Tuxy, dar echipa lui are probleme în a continua munca la tuxy-bot. În acest scop, Tuxy apelează la ajutorul vostru pentru a îmbunătăți arhitectura aplicației.
+Din ce a auzit, pentru această sarcină s-ar potrivi mai bine MVC.</p>
+
+<p>În cazul în care soluțiile de săptămâna trecută sunt de negăsit puteți folosi următoarele exemple <a href="https://github.com/alexcoman/labs/tree/master/web/exemple/tuxy-captcha">tuxy-captcha</a> și <a href="https://github.com/alexcoman/labs/tree/master/web/exemple/tuxy-bot">tuxy-bot</a>.</p>
+
+<p><strong>II.2. Management-ul proiectelor</strong></p>
+
+<p>În decursul timpului, Tuxy a apelat la ajutorul comunității pentru a putea rezolva o bună parte dintre problemele ce au apărut în organizația sa. Acum pentru că majoritatea proiectelor sunt într-o stare stabilă, dorește să răsplătească contribuitorii.</p>
+
+<p>În acest scop, are nevoie de ajutorul tău pentru a dezvolta o aplicație web care să îi ofere cât mai multe informații despre contribuitorii la depozitul de cod <a href="https://github.com/alexcoman/labs">@alexcoman/labs</a>. Structura aplicației rămâne la latitudinea ta.</p>
+
+<p>Informații ce ar putea fi de folos:</p>
+
+<ul>
+  <li>detalii despre fiecare contribuitor
+    <ul>
+      <li>numărul de contribuții</li>
+      <li>limbajul folosit</li>
+      <li>numărul de proiecte la care contribuie</li>
+    </ul>
+  </li>
+  <li>statistici despre depozitul de cod
+    <ul>
+      <li>numărul de Pull Request-uri deschise / închise / integrate etc</li>
+      <li>numărul de soluții</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="iii-trimiterea-soluțiilor-5-minute">III. Trimiterea soluțiilor (<em>5 minute</em>)</h3>
+
+<p>Pentru acest lucru puteți urma pașii din tutorialul <a href="/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/">git - propunerea unei soluții</a>.</p>
+
+<p>Restricții:</p>
+
+<ul>
+  <li>fiecare soluție trebuie să fie dezvoltată pe un branch separat</li>
+  <li>pentru fiecare exercițiu va fi deschis un Pull Request</li>
+  <li>soluțiile trebuie să respecte structura sugerată în tutorialul mai sus menționat</li>
+</ul>
+
+
       </div>
+
+      
+
       
 <ul class="list-inline social-buttons">
   
@@ -143,10 +231,6 @@
     </div>
   </div>
 </section>
-<!-- Blog Category Section End -->
-
-
-
 
     
 
@@ -191,6 +275,13 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Syntax highlight in post pages-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 
   
 
@@ -213,6 +304,17 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
   <!-- Disqus -->
+
+  
+
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
 
   
 
@@ -241,32 +343,39 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Share buttons Start -->
+
+  <script src="/~alex.coman/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
+
+
+
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Resurse pentru Git', 'https://profs.info.uaic.ro/~alex.coman/resurse/git/');
+    history.pushState({}, 'Programare Web', 'https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/26/laborator-programare-web/');
   }
 }
 </script>
 
 
 
-
-
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
   <script type="text/javascript" src="/~alex.coman/js/hammer.min.js"></script>
 
   <script>
-    var page = document.getElementById('page');
+    var post = document.getElementById('post');
 
-    new Hammer(page).on('swipeleft', function(event) {
+    new Hammer(post).on('swipeleft', function(event) {
       addTohistory();
       
-        document.location.replace("/~alex.coman");
+        document.location.replace("/~alex.coman/resurse/laborator/web/2017/03/19/laborator-php/");
       
     });
-    new Hammer(page).on('swiperight', function(event) {
+
+    new Hammer(post).on('swiperight', function(event) {
       addTohistory();
       
         document.location.replace("/~alex.coman");
@@ -274,29 +383,31 @@ function addTohistory() {
     });
   </script>
 
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
 
 
 
 
-  <!-- Swipe Instructions for Blog Start -->
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
 
   <script>
     $(document).ready(function(){
-      if(!localStorage.getItem('blog-swipeshowed')){
+      if(!localStorage.getItem('post-swipeshowed')){
         $("#swipe-instruction").fadeIn();
         $("#swipe-instruction .close-swipe-instruction").click(function(){
           $("#swipe-instruction").fadeOut();
         });
-        localStorage.setItem('blog-swipeshowed', true);
+        localStorage.setItem('post-swipeshowed', true);
       }
     });
   </script>
 
-  <!-- Swipe Instructions for Blog End -->
-
-
+  <!-- Swipe Instructions for Post End -->
 
 
 
@@ -305,4 +416,4 @@ function addTohistory() {
 
   </body>
 </html>
-<!-- Index Layout End -->
+<!-- Post Layout End -->
