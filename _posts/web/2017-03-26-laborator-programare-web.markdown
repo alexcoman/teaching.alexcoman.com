@@ -31,7 +31,7 @@ Din ce a auzit, pentru această sarcină s-ar potrivi mai bine MVC.
 
 În decursul timpului, Tuxy a apelat la ajutorul comunității pentru a putea rezolva o bună parte dintre problemele ce au apărut în organizația sa. Acum pentru că majoritatea proiectelor sunt într-o stare stabilă, dorește să răsplătească contribuitorii.
 
-În acest scop, are nevoie de ajutorul tău pentru a dezvolta o aplicație web care să îi ofere cât mai multe informații despre contribuitorii la depozitul de cod [@alexcoman/labs][2]. Structura aplicației rămâne la latitudinea ta.
+În acest scop, are nevoie de ajutorul tău pentru a dezvolta o aplicație web care să îi ofere cât mai multe informații despre contribuitorii la depozitul de cod [@alexcoman/labs][2] folosind [github API][3]. Structura aplicației rămâne la latitudinea ta.
 
 Informații ce ar putea fi de folos:
 
@@ -45,7 +45,7 @@ Informații ce ar putea fi de folos:
 
 ### III. Trimiterea soluțiilor (*5 minute*)
 
-Pentru acest lucru puteți urma pașii din tutorialul [git - propunerea unei soluții][3].
+Pentru acest lucru puteți urma pașii din tutorialul [git - propunerea unei soluții][4].
 
 Restricții:
 
@@ -57,5 +57,6 @@ Restricții:
 [0]: https://github.com/alexcoman/labs/tree/master/web/exemple/tuxy-captcha
 [1]: https://github.com/alexcoman/labs/tree/master/web/exemple/tuxy-bot
 [2]: https://github.com/alexcoman/labs
-[3]: {{ site.baseurl }}/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/
+[3]: https://developer.github.com/v3/
+[4]: {{ site.baseurl }}/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/
 
