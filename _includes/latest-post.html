@@ -41,7 +41,7 @@
             {% endif %}
           </h4>
           <div id="post-preview" class="text-justify">
-            {% assign contains_summary = page.content | post_contains_summary %}
+            {% assign contains_summary = post.content | post_contains_summary %}
             {% if contains_summary == true %}
               {{ post.content | more: "summary" }}
             {% endif %}
