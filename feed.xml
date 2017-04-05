@@ -7,6 +7,19 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Virtualbox - noțiuni introductive</title>
+				
+				
+					<description>&lt;p&gt;Virtual Box este o aplicație care își propune să vină în ajutorul nostru atunci când avem nevoie rapid și ușor de o mașină care să îndeplinească anumite specificații, atât hardware, cât și software. Astfel, urmând câțiva pași simpli, putem crea mașini virtule cu orice sistem de operare, diferit de cel pe care-l avem pe mașina locală. În plus, după ce am creat mașini virtuale proprii, cu specificațiile dorite, putem să le facem copii, sau să le clonăm și folosi pe orice alt computer.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/2017/04/01/virtualbox-notiuni-introductive/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/virtualbox/2017/04/01/virtualbox-notiuni-introductive/</guid>
+			</item>
+		
+			<item>
 				<title>Programare Web</title>
 				
 				
