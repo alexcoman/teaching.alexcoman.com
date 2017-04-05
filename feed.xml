@@ -7,6 +7,33 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Programare Web</title>
+				
+				
+					<description>&lt;h3 id=&quot;i-consultarea-resurselor-20-minute&quot;&gt;I. Consultarea resurselor (&lt;em&gt;20 minute&lt;/em&gt;)&lt;/h3&gt;
+
+</description>
+				
+				<pubDate>Tue, 04 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/04/04/laborator-programare-web/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/04/04/laborator-programare-web/</guid>
+			</item>
+		
+			<item>
+				<title>Vagrant - Server web (PHP5 &amp; MySQL)</title>
+				
+				
+					<description>&lt;p&gt;În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt; ce folosește &lt;a href=&quot;https://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; ca și bază de date.
+&lt;!--more--&gt;&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 04 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/2017/04/04/vagrant-server-web-php5-mysql/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/2017/04/04/vagrant-server-web-php5-mysql/</guid>
+			</item>
+		
+			<item>
 				<title>Virtualbox - noțiuni introductive</title>
 				
 				
@@ -109,32 +136,6 @@ Toate soluțiile propuse vor fi incluse în depozitul de cod &lt;a href=&quot;ht
 				<pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/02/27/laborator-css/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/02/27/laborator-css/</guid>
-			</item>
-		
-			<item>
-				<title>Tehnologii Web - Limbajul de marcare HTML</title>
-				
-				
-					<description>&lt;h2 id=&quot;i-pregătirea-mediului-de-lucru-15-minute&quot;&gt;I. Pregătirea mediului de lucru (&lt;em&gt;15 minute&lt;/em&gt;)&lt;/h2&gt;
-
-</description>
-				
-				<pubDate>Sun, 26 Feb 2017 20:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/</guid>
-			</item>
-		
-			<item>
-				<title>git - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare Git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 26 Feb 2017 20:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/</guid>
 			</item>
 		
 	</channel>
