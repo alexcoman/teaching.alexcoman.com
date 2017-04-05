@@ -102,3 +102,27 @@ events:
           title="Detalii despre &#351;abloane arhitecturale">Interactive Application Architecture Patterns</a>,
         <a href="https://www.youtube.com/playlist?list=PLfdtiltiRHWGXVHXX09fxXDi-DqInchFD"
           title="O serie de tutoriale video privitoare la MVC &icirc;n PHP">Build a PHP MVC Application</a>
+
+  - image: "/img/timeline/shoptocat.png"
+    link: "/resurse/laborator/web/2017/04/04/laborator-programare-web/"
+    title: "Programare Web"
+    date: "Săptămâna 7 (3 - 8 aprilie) "
+    description: >
+      Resurse utile:
+        <a href="http://php.net/manual/en/refs.database.php"
+          title="Suportul pentru baze de date oferit de PHP">PHP Database Extensions</a>,
+        <a href="http://www.artfulsoftware.com/infotree/queries.php"
+          title="Detalii despre interog&#259;ri MySQL comune">Common MySQL Queries</a>,
+        <a href="http://shlomi-noach.github.io/awesome-mysql/"
+          title="Resurse utile privitoare la MySQL">Awesome MySQL</a>,
+        <a href="https://github.com/dhamaniasad/awesome-postgres"
+          title="Resurse utile privitoare la PostgreSQL">Awesome PostgreSQL</a>,
+        <a href="http://blog.acolyer.org/2015/01/20/architecture-of-a-database-system/"
+          title="Detalii privind arhitectura unui sistem de baze de date">Architecture of a Database System</a>,
+        <a href="http://nosql.mypopescu.com/kb/nosql" title="Detalii despre NoSQL">NoSQL</a>,
+        <a href="http://zetcode.com/db/mongodbphp/"
+          title="Un tutorial despre utilizarea serverului MongoDB &icirc;n PHP">MongoDB PHP Tutorial</a>,
+        <a href="https://neo4j.com/developer/php/"
+          title="Un tutorial de exploatare a Neo4j &icirc;n PHP">Using Neo4j from PHP</a>,
+        <a href="http://dbweekly.com/issues"
+          title="Resurse referitoare la bazele de date">DB Weekly</a>
