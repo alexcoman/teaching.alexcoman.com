@@ -7,6 +7,19 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Evaluarea proiectelor (săptămâna a IX-a)</title>
+				
+				
+					<description>&lt;p&gt;În săptămâna a IX-a fiecare echipă înscrisă va prezenta interfața web și arhitectura proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească toate cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 11 Apr 2017 08:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/web/evaluare/2017/04/11/evaluare-componenta-d/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/web/evaluare/2017/04/11/evaluare-componenta-d/</guid>
+			</item>
+		
+			<item>
 				<title>Programare Web</title>
 				
 				
@@ -123,19 +136,6 @@ Toate soluțiile propuse vor fi incluse în depozitul de cod &lt;a href=&quot;ht
 				<pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/laborator/web/2017/03/06/laborator-css-2/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/laborator/web/2017/03/06/laborator-css-2/</guid>
-			</item>
-		
-			<item>
-				<title>Tehnologii Web - Foi de stiluri</title>
-				
-				
-					<description>&lt;h2 id=&quot;i-consultarea-resurselor-25-minute&quot;&gt;I. Consultarea resurselor (&lt;em&gt;25 minute&lt;/em&gt;)&lt;/h2&gt;
-
-</description>
-				
-				<pubDate>Mon, 27 Feb 2017 00:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/laborator/web/2017/02/27/laborator-css/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/laborator/web/2017/02/27/laborator-css/</guid>
 			</item>
 		
 	</channel>

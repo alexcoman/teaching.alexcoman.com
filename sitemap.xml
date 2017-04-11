@@ -14,6 +14,12 @@
     
   
     
+  
+    
+  
+    
+  
+    
       <url>
         <loc>https://teaching.alexcoman.com/resurse/</loc>
         
@@ -84,6 +90,15 @@
        </url>
     
   
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/web/evaluare/2017/04/11/evaluare-componenta-d/</loc>
+      
+        <lastmod>2017-04-11T08:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
     <url>
       <loc>https://teaching.alexcoman.com/resurse/laborator/web/2017/04/04/laborator-programare-web/</loc>
