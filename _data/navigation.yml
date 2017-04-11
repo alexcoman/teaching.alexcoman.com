@@ -37,6 +37,19 @@ web:
     - section: "contact"
       text: "Contact"
 
+web_team:
+  title: "{ Alex Coman : Web : Echipe}"
+  link: "/web/echipe"
+  links:
+    - link: "/web"
+      text: "↩ Pagina laboratorului"
+
+    - section: "about"
+      text: "Echipe înscrise"
+
+    - section: "contact"
+      text: "Contact"
+
 resurse:
   title: "{ Alex Coman : Resurse}"
   link: "/resurse/"
