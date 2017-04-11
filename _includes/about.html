@@ -1,7 +1,9 @@
-{% if page.data %}
-    {% assign about = site.data[page.data].about %}
+{% if page.about %}
+	{% assign about = site.data.about[page.about] %}
+{% elsif page.data %}
+    {% assign about = site.data.about[page.data] %}
 {% else %}
-    {% assign about = site.data.default.about %}
+    {% assign about = site.data.about.default %}
 {% endif %}
 <!-- About Start -->
 <section id="about" class="about container content-section text-center">

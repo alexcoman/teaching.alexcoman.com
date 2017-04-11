@@ -25,11 +25,27 @@ web:
     - section: "about"
       text: "Despre"
 
+    - link: "/web/echipe"
+      text: "Echipe"
+
     - section: "latest-post"
       text: "Noutăți"
 
     - section: "timeline"
       text: "Laboratoare"
+
+    - section: "contact"
+      text: "Contact"
+
+web_team:
+  title: "{ Alex Coman : Web : Echipe}"
+  link: "/web/echipe"
+  links:
+    - link: "/web"
+      text: "↩ Pagina laboratorului"
+
+    - section: "about"
+      text: "Echipe înscrise"
 
     - section: "contact"
       text: "Contact"
@@ -40,6 +56,9 @@ resurse:
   links:
     - link: "/"
       text: "↩ Prima pagină"
+
+    - link: "/resurse"
+      text: "Resurse"
 
     - link: "/web"
       text: "Tehnologii Web"

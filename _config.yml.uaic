@@ -76,7 +76,6 @@ vkontakte-share: True
 
 disqus-shortname: ""
 
-syntax-highlight: True
 email: "contact@alexcoman.com"
 404-img: "/img/labtocat.png"
 paginate_path: resurse/pagina:num/
