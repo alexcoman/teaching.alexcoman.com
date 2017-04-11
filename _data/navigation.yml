@@ -25,6 +25,9 @@ web:
     - section: "about"
       text: "Despre"
 
+    - link: "/web/echipe"
+      text: "Echipe"
+
     - section: "latest-post"
       text: "Noutăți"
 
@@ -40,6 +43,9 @@ resurse:
   links:
     - link: "/"
       text: "↩ Prima pagină"
+
+    - link: "/resurse"
+      text: "Resurse"
 
     - link: "/web"
       text: "Tehnologii Web"
