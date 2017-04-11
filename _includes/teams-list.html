@@ -1,0 +1,43 @@
+{% assign teams = site.data[page.data].teams %}
+{% assign projects = site.data[page.data].projects %}
+
+<section id="teams" class="teams container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
+            <div class="teams-table">
+            {% for team in teams %}
+                {% for project in projects %}
+                    {% if team.project_id == project.id %}
+                        {% assign current_project = project %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                <div class="teams-row">
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <a data-toggle="modal" data-target="#projectDetail-{{ current_project.id }}">
+                                <p class="title">{{ current_project.title }}</p>
+                            </a>
+                            <p class="project_class">
+                                <small>Clasa de dificultate:</small>
+                                {{ current_project.class }}
+                            </p>
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <span class="leader">{{ team.owner }}</span>
+                            {% for member in team.members %}
+                                <span class="member">{{ member }}</span>
+                            {% endfor %}
+                        </div>
+                        <div class="col-sm-3 col-xs-12">
+                            <span class="bordered repository">
+                                <a href="{{ team.repository }}" target="_blank">Depozit de cod</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
