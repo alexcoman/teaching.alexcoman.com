@@ -1,0 +1,34 @@
+{% assign teams = site.data.[page.data].teams %}
+{% assign projects = site.data.[page.data].projects %}
+<div class="modals" class="modals">
+  {% for project in projects %}
+  <div class="modal fade text-left project-modal" id="projectDetail-{{ project.id }}" tabindex="-1" role="dialog" aria-labelledby="projectDetailLabel-{{ project.id }}" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="close">
+              <div class="close-mask" data-dismiss="modal">
+                <i class="fa fa-times"></i>
+              </div>
+          </div>
+          <h4>{{ project.title }}</h4>
+            {% if project.class != null %}
+              <span class="project-metadata">
+                <span class="caption">Clasă de dificultate: </span>{{ project.class }}
+              </span>
+            {% endif %}
+
+            {% if project.members != null %}
+              <span class="project-metadata">
+                <span class="caption">Persoane alocate: </span>{{ project.members }}
+              </span>
+            {% endif %}
+            {% if project.description %}
+              <p class="project-description">{{ project.description | markdownify }}</p>
+            {% endif %}
+            </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
