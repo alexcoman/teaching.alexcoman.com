@@ -52,6 +52,9 @@
 
 
   
+  <!-- Syntax highlight in post pages -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
 
 </head>
 
@@ -68,24 +71,18 @@
         <i class="fa fa-bars"></i>
       </button>
       
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="/resurse/web">
       
-          <div>{ Alex Coman }</div>
+          <div>{ Alex Coman : Resurse : Web}</div>
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         
-          <li><a class="page-scroll" href="#about">Despre</a></li>
+          <li><a href="/web">↩ Pagina laboratorului</a></li>
         
-          <li><a class="page-scroll" href="#latest-post">Noutăți</a></li>
-        
-          <li><a href="/web">Tehnologii Web</a></li>
-        
-          <li><a href="/resurse">Resurse</a></li>
-        
-          <li><a class="page-scroll" href="#contact">Contact</a></li>
+          <li><a href="/resurse">Alte resurse</a></li>
         
       </ul>
     </div>
@@ -109,8 +106,12 @@
     <i id="hand-swipe" class="fa fa-hand-o-up"></i>
     <p><strong>
     
+      Did you know that you can navigate the posts by swiping left and right?
+    
     </strong></p>
     <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
       
     </button>
   </div>
@@ -161,8 +162,12 @@
 <h2 id="cerințe">Cerințe</h2>
 
 <ul>
-  <li>Proiectarea şi implementarea interfeţei Web <em>responsive</em> folosind <strong>HTML5</strong> şi <strong>CSS3</strong>.</li>
-  <li>Vor fi oferite motivaţii asupra alegerii unei anumite idei de design.</li>
+  <li>Proiectarea şi implementarea interfeţei Web <em>responsive</em> folosind <strong>HTML5</strong> şi <strong>CSS3</strong>.
+    <ul>
+      <li>Vor fi oferite motivaţii asupra alegerii unei anumite idei de design.</li>
+      <li>Toate fișierele trebuie să fie valide (pentru a verifica fișierele redactate puteți folosi <a href="https://jigsaw.w3.org/css-validator/">w3/markup-validator</a> și respectiv <a href="https://jigsaw.w3.org/css-validator/">w3/css-validator</a>).</li>
+    </ul>
+  </li>
   <li>Se va utiliza obligatoriu un sistem de stocare şi management online al codului-sursă – e.g., utilizarea de soluţii populare precum <a href="https://bitbucket.org/">Bitbucket</a> ori <a href="https://github.com/">GitHub</a> etc.</li>
   <li>În cazul proiectelor din categoria <strong>S</strong>, prezentarea arhitecturii de ansamblu (e.g., via diagrame UML), plus etapele intermediare ale dezvoltării proiectului.</li>
   <li>Pentru proiectele din categoria <strong>S</strong>, consideraţii preliminare privind structura (modelarea) datelor şi, eventual, provenienţa lor – de exemplu, recurgerea la anumite servicii Web ori API-uri publice.</li>
@@ -172,13 +177,7 @@
 <ul>
   <li>Sursele proiectelor vor trebui să conţină exclusiv cod aflat sub incidenţa unei <a href="http://opensource.org/licenses">licenţe libere</a>.</li>
   <li>Conţinutul pus la dispoziţie va respecta termenii stipulaţi de <a href="http://creativecommons.org/licenses/">Creative Commons</a>.</li>
-</ul>
-
-<h3 id="depozitul-de-cod">Depozitul de cod</h3>
-<ul>
-  <li>Depozitul de cod trebuie să fie disponibil public începând cu vineri, 14 aprilie, ora 20:00 (GMT +3).</li>
-  <li>Depozitul de cod trebuie să conțină toate versiunile / stările intermediare ale proiectului.</li>
-  <li>Fiecare membru al echipei trebuie să adauge propriile contribuții.</li>
+  <li>Depozitul de cod trebuie să conțină un fișier <strong>LICENSE</strong> care să conțină informații despre licența aleasă (de exemplu <a href="https://github.com/alexcoman/labs/blob/master/LICENSE">@alexcoman/labs/LICENSE</a>)</li>
 </ul>
 
 <h3 id="codul-sursă">Codul-sursă</h3>
@@ -187,11 +186,75 @@
   <li>Codul-sursă trebuie să fi redactat urmând un singur standard de scriere</li>
 </ul>
 
+<h3 id="depozitul-de-cod">Depozitul de cod</h3>
+<ul>
+  <li>Depozitul de cod trebuie să fie disponibil public începând cu vineri, 14 aprilie, ora 20:00 (GMT +3).</li>
+  <li>Depozitul de cod trebuie să conțină toate versiunile / stările intermediare ale proiectului.</li>
+  <li>Fiecare membru al echipei trebuie să adauge propriile contribuții.</li>
+  <li>Fiecare <em>commit</em> trebuie să fie atomic (să conțină o suită de modificări independente – de exemplu rezolvarea unui bug, adăugarea unei funcționalități specifice, îmbunătățirea unei funcționalități existente, adăugarea unui modul nou etc)</li>
+  <li>Descrierea <em>commit</em>-ului trebuie să respecte același model în tot istoricul depozitului de cod. Recomandarea este ca fiecare mesaj de <em>commit</em> să respecte următorul șablon
+    <ul>
+      <li>Titlu: primul rând din mesajul de commit ce va prezenta cât mai succint posibil modificarea adăugată</li>
+      <li>Descriere: un bloc de text care va descrie în amănunt modicarea adăugată și motivația pentru această modificare</li>
+      <li>Un exemplu de mesaj ar putea fi:
+        <div class="highlighter-rouge"><pre class="highlight"><code>  Adaugă structura inițială pentru procesatori
+
+  În cadrul proiectului o să fie nevoie de o suită de procesatori pentru
+  diverse acțiuni (de exemplu, pentru obținerea informațiilor de la diverse
+  servicii web externe, pentru prelucrarea datelor regăsite etc).
+
+  Acest patch adaugă clasele contract pentru fiecare tip de procesator,
+  specificațiile pentru aceștia și documentația pentru maniera în care
+  aceștia trebuiesc folosiți.
+</code></pre>
+        </div>
+      </li>
+    </ul>
+  </li>
+  <li>Depozitul de cod trebuie să conțină un fișier <strong>README</strong> care să conțină descrierea proiectului și problema pe care încearcă să o rezolve.</li>
+  <li>Depozitul de cod trebuie să conțină un fișier <strong>CONTRIBUTING</strong> care să specifice modul în care membrii echipei propun modificări (un exemplu poate fi găsit la următoarea adresă <a href="https://github.com/alexcoman/labs/blob/master/CONTRIBUTING.md">@alexcoman/labs/CONTRIBUTING.md</a>.</li>
+</ul>
+
+<h2 id="aspecte-urmărite-în-evaluare">Aspecte urmărite în evaluare</h2>
+
+<h3 id="interacțiunea-cu-utilizatorul">Interacțiunea cu utilizatorul</h3>
+
+<ul>
+  <li>Unitate, compoziţie, echilibru vizual, eleganță estetică.</li>
+  <li>Concordanța interfeței și a mijloacelor de interacțiune cu utilizatorii.</li>
+  <li>Asigurarea ergonomiei (de exemplu: navigabilitate, căutare internă, recomandarea datelor de interes etc.).</li>
+  <li>Asigurarea accesibilității în ceea ce privește utilizatorii cu nevoi speciale; adoptarea unor tehnici vizând internaționalizarea și/sau localizarea conținutului (suport multi-lingv, convenții privind afișarea unităților de măsură etc.).</li>
+  <li>Independența de platformă, conform standardelor actuale ale Consorțiului Web.</li>
+  <li>design adaptiv/responsiv: orientări ale ecranului, rezoluții variate, densitate de pixeli, platforme (e.g. desktop, tabletă etc).</li>
+  <li>acces facil folosind paradigme de interacțiune: tradițională via mouse, tastatură și/sau naturală (e.g. tactilă, gesturală, vocală, 3D etc.).</li>
+  <li>acces prin intermediul dispozitivelor alternative precum cele embedded, smart TV etc.</li>
+</ul>
+
+<h3 id="originalitate">Originalitate</h3>
+<ul>
+  <li>Originalitatea ideii, a designului şi a implementării soluției propuse</li>
+  <li>Posibile inovații și diferențierea lucrării față de alte abordări existente</li>
+</ul>
+
+<h3 id="prezentare">Prezentare</h3>
+<ul>
+  <li>Modul de prezentare a proiectului în fața publicului</li>
+  <li>Documentația oferită (descrierea clară a proiectului); calitatea demonstrației practice; utilizarea unor studii de caz adecvate</li>
+</ul>
+
 <h2 id="echipele-înscrise">Echipele înscrise</h2>
 
 <p>Lista cu echipele înscrise până în acest moment poate fi găsită <a href="/web/echipe">aici</a>.</p>
 
 <p>Orice problemă referitoare la datele legate de componența echipei, proiectul ales etc. trebuie raportată prin adăugarea unui <a href="https://github.com/alexcoman/teaching.alexcoman.com/issues">issue</a> până cel târziu joi, 13 aprilie, ora 20:00 (GMT +3).</p>
+
+<h2 id="alte-observații">Alte observații</h2>
+
+<ul>
+  <li>În cazul în care în istoricul depozitului de cod există commit-uri sau modificări care încalcă specificațiile de mai sus, acestea trebuie revizuite</li>
+  <li>Nu vor fi punctate acele părţi ale proiectului care nu sunt concepute de autor (de exemplu, design bazat pe template-uri, recurgerea la cod preluat din alte surse etc.).</li>
+  <li>În cazul în care autorul își asumă realizarea unor părți care apoi se dovedesc a nu fi de concepție proprie, acesta va fi depunctat.</li>
+</ul>
 
 
       </div>
@@ -220,7 +283,7 @@
 <footer id="footer" class="footer">
     <div class="container text-center">
         <p>
-        Ultima actualizare: 11 
+        Ultima actualizare: 12 
     
     aprilie
         
@@ -283,9 +346,47 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
   
 
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+  
+
+  
+
+    <!-- Comments Counter Start -->
+
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = ''; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+
+    <!-- Comments Counter End -->
+
   
 
 
+
+
+
+  <!-- Share buttons Start -->
+
+  <script src="/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
 
 
 
@@ -299,9 +400,53 @@ function addTohistory() {
 
 
 
+  <!-- Post Gesture Navigation Start -->
+
+  <script type="text/javascript" src="/js/hammer.min.js"></script>
+
+  <script>
+    var post = document.getElementById('post');
+
+    new Hammer(post).on('swipeleft', function(event) {
+      addTohistory();
+      
+        document.location.replace("/resurse/laborator/web/2017/04/04/laborator-programare-web/");
+      
+    });
+
+    new Hammer(post).on('swiperight', function(event) {
+      addTohistory();
+      
+        document.location.replace("/");
+      
+    });
+  </script>
+
+  <!-- Post Gesture Navigation Start -->
 
 
 
+
+
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
+
+  <script>
+    $(document).ready(function(){
+      if(!localStorage.getItem('post-swipeshowed')){
+        $("#swipe-instruction").fadeIn();
+        $("#swipe-instruction .close-swipe-instruction").click(function(){
+          $("#swipe-instruction").fadeOut();
+        });
+        localStorage.setItem('post-swipeshowed', true);
+      }
+    });
+  </script>
+
+  <!-- Swipe Instructions for Post End -->
 
 
 
