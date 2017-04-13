@@ -366,3 +366,33 @@
     situl va oferi posibilitatea inserarii de impresii (eventual, post factum) referitoare
     la desfasurarea unor partide. Bonus: recurgerea la date publice disponibile pe
     Web.
+
+- id: 60
+  title: AsciiPic
+  class: S
+  members: 4
+  description: |
+      Inspirat din Command Line for Web. In mod normal, accesul la Web se realizeaza
+      pe baza unui browser. Se doreste experimentarea unei interactiuni Web in linia
+      de comandă, punandu-se la dispozitie o platforma extensibila capabila sa ofere
+      suport pentru cautarea, manipularea, agregarea si exportarea imaginilor impreuna
+      cu metadatele asociate acestora utilizand difierite API-uri publice (e.g. Flickr,
+      Instagram, etc).
+
+      Aplicatia va expune propriul API si va pune la dispozitie doua modalitati de
+      interactiune cu acesta:
+        - una prin intermediul unei interfete web ce emuleaza o linie de comanda
+        - iar a doua folosind un client, direct dintr-un terminal.
+
+      Printre functionalitati aplicatia permite:
+        - cautarea si filtrarea imaginilor dupa tag-uri, data postarii, dimensiune etc.
+        - vizualizarea imaginilor in format ascii(atat la linia de comanda cat
+          si in interfata web);
+        - exportarea url-urilor impreuna cu metadata asociata acestora
+          in diverse formate(e.g. JSON, XML etc.);
+        - transformarea imaginilor astfel gasite(resize, aplicarea diverselor filtre);
+
+      Datorita faptului ca anumite cereri pot fi costisitoare oferim posibilitatea
+      postarii asincrone de sarcini care for fi executate de o arhitectura distribuita
+      de procesatori. Astfel putem interoga statusul sarcini sau la finalul lui putem
+      opta pentru primirea unui e-mail cu informatiile cerute.

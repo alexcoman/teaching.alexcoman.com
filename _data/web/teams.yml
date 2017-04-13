@@ -4,6 +4,12 @@
   members: [Maties P. Petruta]
   project_id: 1
 
+- team_id: 41
+  repository: https://github.com/micumatei/asciipic
+  owner: Micu Matei-Marius
+  members: [Tudose G. Alexandru, Folvaiter P. Alexandra-Petronela]
+  project_id: 60
+
 - team_id: 1
   repository: https://github.com/simgrigoras/command-line-web
   owner: Grigoras Simona Ionela
