@@ -396,3 +396,47 @@
       postarii asincrone de sarcini care for fi executate de o arhitectura distribuita
       de procesatori. Astfel putem interoga statusul sarcini sau la finalul lui putem
       opta pentru primirea unui e-mail cu informatiile cerute.
+
+- id: 61
+  title: yuso
+  class: S
+  members: 4
+  description: |
+		1. Descriere
+		Proiectul își propune crearea unei platforme ce permite utilizatorilor să publice anunțuri în regim de licitație pentru livrarea de bunuri.
+		Sistemul va funcționa în stilul eBay, permițând unui utilizator să aleagă între un anunț tip licitație, la care transportatorii pot face oferte
+		în minus, sau cu preț fix, asemănător funcției “Buy It Now” din cadrul siteului eBay.
+		Transportatorilor li se vor pune la dispoziție diferite metode de a obține o maximizare a profitului. Aceștia vor putea filtra anunțurile atât
+		în funcție de orașul de pornire și orașul destinație cât și în funcție de traseul ales. În plus, vor putea interoga sistemul pentru a găsi o 
+		încărcătură optimă care va ține cont și de consumul autovehiculului.
+		Utilizatorii care vor folosi platforma pentru a publica anunțuri vor putea monitoriza în timp real statusul transportului iar la finalizarea
+		serviciilor au posibilitatea să ofere o recenzie transportatorului referitor la performanțele acestuia.
+
+		2. Actori
+		2.1 Vizitator
+
+		• poate publica un anunț
+		• în timpul procesului de publicare acesta va crea și un cont de utilizator
+		2.2 Utilizator normal
+
+		• se autentifică
+		• adaugă anunț
+		• editează un anunț
+		• șterge un anunț
+		• alege transportatorul dorit
+		• trimite o recenzie
+		• trimite mesaje private către transportator
+		• verifică mesajele private
+		2.3 Transportator
+
+		• caută anunțuri
+		• licitează
+		• verifică detalii despre licitațiile câștigate
+		• verifică mesajele private
+		• trimite mesaje private
+		• vizualizează statistici despre câștiguri
+		• se înrolează într-o promoție inițiată de administratorii platformei
+		2.4 Administrator
+
+		• aprobă cereri de înscriere pentru a fi transportator
+		• adaugă promoții noi
