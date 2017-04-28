@@ -249,3 +249,9 @@
   owner: Sparhat P. Cosmin
   members: [Stanciu Emilian, Palasanu George]
   project_id: 54
+
+- team_id: 41
+  repository: https://github.com/nullray/yuso
+  owner: Ursu I. Vlad-Florin
+  members: [Cristea Cristian, Puiu Danut, Rusu Cristian]
+  project_id: 61
