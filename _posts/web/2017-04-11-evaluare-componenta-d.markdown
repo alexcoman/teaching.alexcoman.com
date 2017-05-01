@@ -6,7 +6,7 @@ author: "Alexandru Coman"
 categories: [web, evaluare]
 navigation: "resurse_web"
 syntax-highlight: true
-section-type: "post"
+section-type: post
 tags: web
 ---
 
