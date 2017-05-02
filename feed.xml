@@ -7,6 +7,57 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Procesarea datelor XML via DOM</title>
+				
+				
+					<description>&lt;h3 id=&quot;i-consultarea-resurselor-30-minute&quot;&gt;I. Consultarea resurselor (&lt;em&gt;30 minute&lt;/em&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Acest laborator are la bază prezentarea &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web-SabloaneXML.pdf&quot;&gt;Marcarea datelor pentru &lt;Web&gt;&lt;/Web&gt; Șabloane de proiectare pentru XML&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;ii-tuxy-are-nevoie-de-ajutor-60-minute&quot;&gt;II. Tuxy are nevoie de ajutor (&lt;em&gt;60 minute&lt;/em&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Pentru că în decursul timpului Tuxy a reușit să implementeze marea majoritate a ideilor pe care le-a avut cu ajutorul vostru, acum, în Tuxy Cloud se regăsesc câteva sute de aplicații. Până acum Tuxy ținea evidența acestor proiecte într-un fișier CSV, dar și-a dat seama că este foarte greu de extins și menținut acest fișier.&lt;/p&gt;
+
+&lt;p&gt;În acest scop, vă roagă să modelați un fișier XML care să conțină informațiile despre proiectele existente.&lt;/p&gt;
+
+&lt;p&gt;Cerințe:
+    - modelați un document XML pentru structurarea datelor despre proiectele lui Tuxy
+    - minimal, acesta trebuie să conțină următoarele elemente: dezvoltatori, proiecte, servere, probleme cunoscute.
+    - documentul trebuie să conțină informații despre cel puțin 5 proiecte&lt;/p&gt;
+
+&lt;h3 id=&quot;iii-utilitarul-tuxy-infra-60-minute&quot;&gt;III. Utilitarul tuxy-infra (&lt;em&gt;60 minute&lt;/em&gt;)&lt;/h3&gt;
+
+&lt;p&gt;Pentru ca datele modelate în fișierul din exercițiul anterior să fie mai ușor de prezentat, echipa lui Tuxy vă roagă să dezvoltați o aplicație web care să permită afișarea informațiilor despre proiecte într-o manieră cât mai intuitivă și căutarea proiectelor după o serie de criterii pe care le considerați utile.&lt;/p&gt;
+
+&lt;p&gt;Cerințe:
+    - aplicația trebuie să verifice dacă fișierul XML este unul valid
+    - aplicația trebuie să ofere posibilitatea utilizatorului:
+        - să exploreze toate informațiile disponibile despre proiecte
+        - să caute proiectele ce au anumite particularități
+    - &lt;em&gt;suplimentar&lt;/em&gt; aplicația poate oferi posibilitatea utilizatorului să modifice datele existente&lt;/p&gt;
+
+&lt;h3 id=&quot;iv-trimiterea-soluțiilor-5-minute&quot;&gt;IV. Trimiterea soluțiilor (&lt;em&gt;5 minute&lt;/em&gt;)&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Important&lt;/strong&gt;: fiecare stundent are obligația de a rezolva cel puțin unul dintre exercițiile propuse în cadrul laboratorului și să propună soluția prin deschiderea unui &lt;em&gt;Pull Request&lt;/em&gt; (pentru acest lucru se pot urma pașii din tutorialul &lt;a href=&quot;/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/&quot;&gt;git - propunerea unei soluții&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Notă&lt;/strong&gt;: Refuzul de a rezolva exercițiile propuse pentru laborator atrage un bonus de &lt;strong&gt;-0.2&lt;/strong&gt;, puncte ce se vor aplica la nota finală.&lt;/p&gt;
+
+&lt;p&gt;Restricții:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fiecare soluție trebuie să fie dezvoltată pe un branch separat&lt;/li&gt;
+  &lt;li&gt;pentru fiecare exercițiu va fi deschis un Pull Request&lt;/li&gt;
+  &lt;li&gt;soluțiile trebuie să respecte structura sugerată în tutorialul mai sus menționat&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+				
+				<pubDate>Mon, 01 May 2017 08:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/05/01/procesarea-datelor-xml-via-dom/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/05/01/procesarea-datelor-xml-via-dom/</guid>
+			</item>
+		
+			<item>
 				<title>Evaluarea proiectelor (săptămâna a IX-a)</title>
 				
 				
@@ -123,19 +174,6 @@ Toate soluțiile propuse vor fi incluse în depozitul de cod &lt;a href=&quot;ht
 				<pubDate>Sat, 11 Mar 2017 08:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/</guid>
-			</item>
-		
-			<item>
-				<title>Tehnologii Web - Design (web) responsive</title>
-				
-				
-					<description>&lt;h2 id=&quot;i-consultarea-resurselor-25-minute&quot;&gt;I. Consultarea resurselor (&lt;em&gt;25 minute&lt;/em&gt;)&lt;/h2&gt;
-
-</description>
-				
-				<pubDate>Mon, 06 Mar 2017 00:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/06/laborator-css-2/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/03/06/laborator-css-2/</guid>
 			</item>
 		
 	</channel>

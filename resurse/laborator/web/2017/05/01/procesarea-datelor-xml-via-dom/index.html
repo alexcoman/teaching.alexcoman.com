@@ -1,10 +1,10 @@
-<!-- Index Layout Start -->
+<!-- Post Layout Start -->
 <!DOCTYPE html>
 <html lang="ro">
 
   
 <head>
-  <title>{ Alex Coman } | Resurse pentru laboratoare</title>
+  <title>{ Alex Coman } | Procesarea datelor XML via DOM</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +19,7 @@
 
   <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
 
-  <link rel="canonical" href="/~alex.coman/resurse/laborator/">
+  <link rel="canonical" href="/~alex.coman/resurse/laborator/web/2017/05/01/procesarea-datelor-xml-via-dom/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link href="/~alex.coman/css/main.css" rel="stylesheet">
 
@@ -52,6 +52,9 @@
 
 
   
+  <!-- Syntax highlight in post pages -->
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/monokai_sublime.min.css">
+
 
 </head>
 
@@ -68,20 +71,18 @@
         <i class="fa fa-bars"></i>
       </button>
       
-        <a class="navbar-brand" href="/~alex.coman/resurse/">
+        <a class="navbar-brand" href="/~alex.coman/resurse/web">
       
-          <div>{ Alex Coman : Resurse}</div>
+          <div>{ Alex Coman : Resurse : Web}</div>
         </a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
         
-          <li><a href="/~alex.coman/">↩ Prima pagină</a></li>
+          <li><a href="/~alex.coman/web">↩ Pagina laboratorului</a></li>
         
-          <li><a href="/~alex.coman/resurse">Resurse</a></li>
-        
-          <li><a href="/~alex.coman/web">Tehnologii Web</a></li>
+          <li><a href="/~alex.coman/resurse">Alte resurse</a></li>
         
       </ul>
     </div>
@@ -90,134 +91,113 @@
 <!-- Navigation End -->
 
 
-    <!-- Blog Category Section Start -->
-<section id="blog-category" class="container content-section text-center">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
-      <h3 id="#laborator">Resurse pentru laboratoare</h3>
-      <div>
-        
-          
+    
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>1 
+
+<section id="post" class="post container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      
+<!-- Swipe Instructions Start -->
+
+<div id="swipe-instruction">
+  <div>
+    <p><br><br><br></p>
+    <i id="hand-swipe" class="fa fa-hand-o-up"></i>
+    <p><strong>
+    
+      Did you know that you can navigate the posts by swiping left and right?
+    
+    </strong></p>
+    <button type="button" class="btn btn-default ok-btn close-swipe-instruction">
+      
+        Awesome!
+      
+    </button>
+  </div>
+</div>
+
+<!-- Swipe Instructions End -->
+
+      <h1><strong>Procesarea datelor XML via DOM</strong></h1>
+      <h4>
+        Alexandru Coman -
+        <small>
+          1 
     
     mai
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/05/01/procesarea-datelor-xml-via-dom/"><strong>Procesarea datelor XML via DOM</strong></a>
-</h4>
-<!-- Post List End -->
+ 2017
+        </small>
+      </h4>
+      <h5>
+          <small>categorii: [
+            
+              <a href="/~alex.coman/resurse/laborator">laborator</a>
+               , 
+            
+              <a href="/~alex.coman/resurse/web">web</a>
+              
+            
+            ], taguri: [
+            
+              #web
+              
+            
+            ]
 
-        
-          
+            
+          </small>
+      </h5>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>4 
-    
-    aprilie
+      <div id="post-content"s class="post-content text-justify">
         
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/04/04/laborator-programare-web/"><strong>Programare Web</strong></a>
-</h4>
-<!-- Post List End -->
+        
+        <h3 id="i-consultarea-resurselor-30-minute">I. Consultarea resurselor (<em>30 minute</em>)</h3>
 
-        
-          
+<p>Acest laborator are la bază prezentarea <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web-SabloaneXML.pdf">Marcarea datelor pentru <Web></Web> Șabloane de proiectare pentru XML</a>.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/26/laborator-programare-web/"><strong>Programare Web</strong></a>
-</h4>
-<!-- Post List End -->
+<h3 id="ii-tuxy-are-nevoie-de-ajutor-60-minute">II. Tuxy are nevoie de ajutor (<em>60 minute</em>)</h3>
 
-        
-          
+<p>Pentru că în decursul timpului Tuxy a reușit să implementeze marea majoritate a ideilor pe care le-a avut cu ajutorul vostru, acum, în Tuxy Cloud se regăsesc câteva sute de aplicații. Până acum Tuxy ținea evidența acestor proiecte într-un fișier CSV, dar și-a dat seama că este foarte greu de extins și menținut acest fișier.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>19 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/19/laborator-php/"><strong>Tehnologii Web - Programare în PHP</strong></a>
-</h4>
-<!-- Post List End -->
+<p>În acest scop, vă roagă să modelați un fișier XML care să conțină informațiile despre proiectele existente.</p>
 
-        
-          
+<p>Cerințe:
+    - modelați un document XML pentru structurarea datelor despre proiectele lui Tuxy
+    - minimal, acesta trebuie să conțină următoarele elemente: dezvoltatori, proiecte, servere, probleme cunoscute.
+    - documentul trebuie să conțină informații despre cel puțin 5 proiecte</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>13 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/13/laborator-interactiune-web/"><strong>Tehnologii Web - Design & Interacțiune web</strong></a>
-</h4>
-<!-- Post List End -->
+<h3 id="iii-utilitarul-tuxy-infra-60-minute">III. Utilitarul tuxy-infra (<em>60 minute</em>)</h3>
 
-        
-          
+<p>Pentru ca datele modelate în fișierul din exercițiul anterior să fie mai ușor de prezentat, echipa lui Tuxy vă roagă să dezvoltați o aplicație web care să permită afișarea informațiilor despre proiecte într-o manieră cât mai intuitivă și căutarea proiectelor după o serie de criterii pe care le considerați utile.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>6 
-    
-    martie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/03/06/laborator-css-2/"><strong>Tehnologii Web - Design (web) responsive</strong></a>
-</h4>
-<!-- Post List End -->
+<p>Cerințe:
+    - aplicația trebuie să verifice dacă fișierul XML este unul valid
+    - aplicația trebuie să ofere posibilitatea utilizatorului:
+        - să exploreze toate informațiile disponibile despre proiecte
+        - să caute proiectele ce au anumite particularități
+    - <em>suplimentar</em> aplicația poate oferi posibilitatea utilizatorului să modifice datele existente</p>
 
-        
-          
+<h3 id="iv-trimiterea-soluțiilor-5-minute">IV. Trimiterea soluțiilor (<em>5 minute</em>)</h3>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>27 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/02/27/laborator-css/"><strong>Tehnologii Web - Foi de stiluri</strong></a>
-</h4>
-<!-- Post List End -->
+<p><strong>Important</strong>: fiecare stundent are obligația de a rezolva cel puțin unul dintre exercițiile propuse în cadrul laboratorului și să propună soluția prin deschiderea unui <em>Pull Request</em> (pentru acest lucru se pot urma pașii din tutorialul <a href="/~alex.coman/resurse/tutorial/git/2017/03/11/git-propunerea-unei-solutii/">git - propunerea unei soluții</a>).</p>
 
-        
-          
+<p><strong>Notă</strong>: Refuzul de a rezolva exercițiile propuse pentru laborator atrage un bonus de <strong>-0.2</strong>, puncte ce se vor aplica la nota finală.</p>
 
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>26 
-    
-    februarie
-        
- 2017</strong>
-  <br class="visible-xs-block">
-  <a href="/~alex.coman/resurse/laborator/web/2017/02/26/laborator-html/"><strong>Tehnologii Web - Limbajul de marcare HTML</strong></a>
-</h4>
-<!-- Post List End -->
+<p>Restricții:</p>
 
-        
+<ul>
+  <li>fiecare soluție trebuie să fie dezvoltată pe un branch separat</li>
+  <li>pentru fiecare exercițiu va fi deschis un Pull Request</li>
+  <li>soluțiile trebuie să respecte structura sugerată în tutorialul mai sus menționat</li>
+</ul>
+
+
       </div>
+
+      
+
       
 <ul class="list-inline social-buttons">
   
@@ -234,10 +214,6 @@
     </div>
   </div>
 </section>
-<!-- Blog Category Section End -->
-
-
-
 
     
 
@@ -307,6 +283,17 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
   
 
+    <script type="text/javascript">
+    var disqus_shortname = '';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+  
+
   
 
     <!-- Comments Counter Start -->
@@ -332,32 +319,39 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
 
 
 
+  <!-- Share buttons Start -->
+
+  <script src="/~alex.coman/js/rrssb.min.js"></script>
+
+  <!-- Share buttons End -->
+
+
+
 <script>
 function addTohistory() {
   if (!window.location.host.startsWith("127.0.0.1")) {
-    history.pushState({}, 'Resurse pentru laboratoare', 'https://profs.info.uaic.ro/~alex.coman/resurse/laborator/');
+    history.pushState({}, 'Procesarea datelor XML via DOM', 'https://profs.info.uaic.ro/~alex.coman/resurse/laborator/web/2017/05/01/procesarea-datelor-xml-via-dom/');
   }
 }
 </script>
 
 
 
-
-
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
   <script type="text/javascript" src="/~alex.coman/js/hammer.min.js"></script>
 
   <script>
-    var page = document.getElementById('page');
+    var post = document.getElementById('post');
 
-    new Hammer(page).on('swipeleft', function(event) {
+    new Hammer(post).on('swipeleft', function(event) {
       addTohistory();
       
-        document.location.replace("/~alex.coman");
+        document.location.replace("/~alex.coman/resurse/web/evaluare/2017/04/11/evaluare-componenta-d/");
       
     });
-    new Hammer(page).on('swiperight', function(event) {
+
+    new Hammer(post).on('swiperight', function(event) {
       addTohistory();
       
         document.location.replace("/~alex.coman");
@@ -365,29 +359,31 @@ function addTohistory() {
     });
   </script>
 
-  <!-- Blog Gesture Navigation Start -->
+  <!-- Post Gesture Navigation Start -->
 
 
 
 
 
-  <!-- Swipe Instructions for Blog Start -->
+
+
+
+
+  <!-- Swipe Instructions for Post Start -->
 
   <script>
     $(document).ready(function(){
-      if(!localStorage.getItem('blog-swipeshowed')){
+      if(!localStorage.getItem('post-swipeshowed')){
         $("#swipe-instruction").fadeIn();
         $("#swipe-instruction .close-swipe-instruction").click(function(){
           $("#swipe-instruction").fadeOut();
         });
-        localStorage.setItem('blog-swipeshowed', true);
+        localStorage.setItem('post-swipeshowed', true);
       }
     });
   </script>
 
-  <!-- Swipe Instructions for Blog End -->
-
-
+  <!-- Swipe Instructions for Post End -->
 
 
 
@@ -396,4 +392,4 @@ function addTohistory() {
 
   </body>
 </html>
-<!-- Index Layout End -->
+<!-- Post Layout End -->
