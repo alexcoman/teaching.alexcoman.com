@@ -30,7 +30,7 @@
 .modal-content {
     border-radius: 4px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
-    background-color: $dark;
+    background-color: $light;
 }
 
 .modal-dialog {
@@ -42,7 +42,7 @@
 
 .modal-body {
     padding: 16px 31px;
-    color: $light;
+    color: $dark;
 }
 
 .project-modal {
@@ -84,7 +84,7 @@
 
         .position {
             font-weight: $regular;
-            color: $light;
+            color: $dark;
         }
 
         .social {

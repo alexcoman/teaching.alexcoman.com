@@ -2,16 +2,17 @@
 $primary: #1a7bd3;
 $primary-hover: #3266d5;
 $dark: #0b141f;
-$light: #fff;
+$light: #EEE;
+$timeline-border: #036;
 
 $regular: 300;
 $bold: 500;
 
-$navbar-text-shadow: true;
-$header-text-shadow: true;
-$header-background-color: $dark;
-$intro-text-color: $light;
-$navbar-color: $light;
+$navbar-text-shadow: false;
+$header-text-shadow: false;
+$header-background-color: $light;
+$intro-text-color: $dark;
+$navbar-color: $dark;
 $navbar-lg-collapse-background-color: $header-background-color;
 $navbar-lg-background: transparent;
 $navbar-sm-background-color: $navbar-lg-collapse-background-color;

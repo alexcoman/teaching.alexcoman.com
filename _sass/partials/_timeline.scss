@@ -4,7 +4,7 @@
     list-style: none;
 
     a {
-        color: #fff;
+        color: $dark;
         &:hover,
         &:focus {
             text-decoration: none;
@@ -21,7 +21,7 @@
     left: 40px;
     width: 2px;
     margin-left: -1.5px;
-    background-color: #f1f1f1;
+    background-color: $timeline-border;
 }
 
 .timeline>li {
@@ -69,11 +69,11 @@
     width: 80px;
     height: 80px;
     margin-left: 0;
-    border: 7px solid #f1f1f1;
+    border: 7px solid $timeline-border;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #f1f1f1;
+    background-color: $light;
 }
 
 .img-me {
@@ -83,11 +83,11 @@
     height: 100px;
     margin-left: 0;
     margin-bottom: 10px;
-    border: 7px solid #f1f1f1;
+    border: 7px solid $timeline-border;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #f1f1f1;
+    background-color: $light;
 }
 
 .timeline>li .timeline-image h4 {
