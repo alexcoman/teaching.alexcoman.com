@@ -1,13 +1,37 @@
+# Site Settings
+url: "https://teaching.alexcoman.com"
+baseurl: ""
+paginate_path: resurse/pagina:num/
+permalink: resurse/:categories/:year/:month/:day/:title/
+force-https: True
+lang: "ro"
+paginate: 5
+google-tracking-id: ""
+
+favicon: "favicon.ico"
+404-img: "labtocat.png"
+
+# Build Settings
+markdown:           kramdown
+highlighter:        rouge
+kramdown:
+  input:            GFM
+  auto_ids:         true
+  footnote_nr:      1
+  entity_output:    as_char
+  toc_levels:       1..6
+  enable_coderay:   false
+
+# Enable minification SASS
+sass:
+  sass_dir:         assets/css
+  style:            compressed
+
 # Plugins
 gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
-
-# Build Settings
-markdown: kramdown
-kramdown:
-  input: GFM
 
 exclude:
   - CONTRIBUTING
@@ -20,37 +44,20 @@ exclude:
   - .gitignore
   - .travis.yml
 
-# Enable minification SASS
-sass:
-  style: compressed
-
-# Site Settings
-url: "https://teaching.alexcoman.com"
-baseurl: ""
-force-https: True
-google-tracking-id: ""
-lang: "ro"
-
-favicon: "/img/favicon.ico"
-404-img: "/img/labtocat.png"
 
 ################
 # Header layout #
 ################
-
 black-favicon: "/img/black-lab-glass.ico"
-
 background-img: "../img/intro-bg.jpg"
 me-img: "/img/jetpacktocat.png"
 
 ################
 # Web app mode #
 ################
-
 web-app-mode: True
 
 # Icons for Web App mode
-
 icon-36p: "/img/web-app/icon-36p.png"
 icon-48p: "/img/web-app/icon-48p.png"
 icon-72p: "/img/web-app/icon-72p.png"
@@ -61,8 +68,6 @@ icon-192p: "/img/web-app/icon-192p.png"
 ########
 # Blog #
 ########
-paginate: 5
-
 email-share: True
 fb-share: True
 twitter-share: True
@@ -75,11 +80,8 @@ pocket-share: True
 vkontakte-share: True
 
 disqus-shortname: ""
-
 email: "contact@alexcoman.com"
 404-img: "/img/labtocat.png"
-paginate_path: resurse/pagina:num/
-permalink: resurse/:categories/:year/:month/:day/:title/
 
 # Settings for deploy rake task
 username:        "alexcoman"
