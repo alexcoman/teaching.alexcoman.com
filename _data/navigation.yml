@@ -1,74 +1,12 @@
-default:
-  title: "{ Alex Coman }"
+opensource:
+  title: "{ Open-Source }"
   links:
-    - section: "about"
-      text: "Despre"
-
-    - section: "latest-post"
-      text: "Noutăți"
-
-    - link: "/web"
-      text: "Tehnologii Web"
-
-    - link: "/resurse"
-      text: "Resurse"
-
-    - section: "contact"
-      text: "Contact"
 
 web:
-  title: "{ Alex Coman : Web }"
+  title: "{ Tehnologii Web}"
   links:
-    - link: "/"
-      text: "↩ Prima pagină"
+    - text: "Pagina cursului"
+      link: "https://profs.info.uaic.ro/~busaco/teach/courses/web/"
 
-    - section: "about"
-      text: "Despre"
-
-    - link: "/web/echipe"
-      text: "Echipe"
-
-    - section: "latest-post"
-      text: "Noutăți"
-
-    - section: "timeline"
-      text: "Laboratoare"
-
-    - section: "contact"
-      text: "Contact"
-
-web_team:
-  title: "{ Alex Coman : Web : Echipe}"
-  link: "/web/echipe"
-  links:
-    - link: "/web"
-      text: "↩ Pagina laboratorului"
-
-    - section: "about"
-      text: "Echipe înscrise"
-
-    - section: "contact"
-      text: "Contact"
-
-resurse:
-  title: "{ Alex Coman : Resurse}"
-  link: "/resurse/"
-  links:
-    - link: "/"
-      text: "↩ Prima pagină"
-
-    - link: "/resurse"
-      text: "Resurse"
-
-    - link: "/web"
-      text: "Tehnologii Web"
-
-resurse_web:
-  title: "{ Alex Coman : Resurse : Web}"
-  link: "/resurse/web"
-  links:
-    - link: "/web"
-      text: "↩ Pagina laboratorului"
-
-    - link: "/resurse"
-      text: "Alte resurse"
+    - text: "Pagina laboratorului"
+      link: ""
