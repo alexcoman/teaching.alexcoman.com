@@ -1,42 +1,36 @@
-title: "Posibilităţi de contact"
-content: >
-  <p class="text-center">Metoda preferată de comunicare este cea prin
-  <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html">
-  poșta electronică</a> mesajul trimis trebuie să aibă ca subiect <strong>[Web]
-  </strong> sau direct în perioada alocată
-  <a href="http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
-  title="Spre filmul desfășurării materiei">cursului și laboratoarelor</a>.</p>
-
 blocks:
   - title: "materia"
     links:
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html"
-        text: "desfășurare"
+        text: "&#9733; desfășurare"
 
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html"
-        text: "examinare"
+        text: "&#9763; examinare"
 
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html"
-        text: "proiecte"
+        text: "&#10048; proiecte"
 
   - title: "resurse"
     links:
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html"
-        text: "bibliografie"
+        text: "&#9851; bibliografie"
 
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-rules.html"
-        text: "regulament"
+        text: "&#10004; reguli"
 
       - permlink: "http://profs.info.uaic.ro/~busaco/teach/courses/web/web-contact.html"
-        text: "date de contact"
+        text: "&#41528; contact"
 
   - title: "de interes"
     links:
       - permlink: "http://profs.info.uaic.ro/~orar/discipline/orar_tw.html"
-        text: "orar"
+        text: "&#128466; orar"
+
+      - permlink: "https://profs.info.uaic.ro/~busaco/teach/courses/web/index.html"
+        text: "&#128366; pagina cursului"
 
       - permlink: "http://www.uaic.ro/studenti/regulamente/"
-        text: "regulamente UAIC"
+        text: "&#9888; regulamente UAIC"
 
 social:
   - title: "github"

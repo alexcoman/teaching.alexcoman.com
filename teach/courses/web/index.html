@@ -1,0 +1,53 @@
+---
+layout: course
+section-type: index
+permalink: teach/courses/web/
+navigation: web
+---
+
+{% capture content %}
+    <p class="text-justify">
+        Cursul de Tehnologii Web își propune să clădească o fundație solidă
+        pentru stundeții ce doresc să devină dezvoltatori Web profesioniști.
+
+        Printre tematicile ce vor fi abordate în cadrul laboratoarelor
+        putem aminti dar fără a ne limita la:
+    </p>
+          
+    <div class="tags text-center">
+        <a href="/teach/courses/web/desfasurare"
+            title="Concepte importante și arhitectura WWW">Concepte importante și arhitectura WWW</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Protocolul HTTP">Protocolul HTTP</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Limbajul de marcare HTML">Limbajul de marcare HTML</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Foi de stiluri CSS">Foi de stiluri CSS</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Proiectare și arhitecturi Web">Proiectare și arhitecturi Web</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Servere de aplicații">Servere de aplicații – exemplu: Python / PHP</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Modelarea datelor via XML">Modelarea datelor via XML</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Procesări DOM, SAX, SimpleXML">Procesări DOM, SAX, SimpleXML pentru HTML și XML</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="De la SOA la servicii Web">De la SOA la servicii Web: SOAP și REST</a>
+        <a href="/teach/courses/web/desfasurare"
+            title="Securitatea aplicațiilor Web">Securitatea aplicațiilor Web</a>
+    </div>
+
+    <p class="text-justify">
+        <strong>Notă:</strong> În funcție de gradul de interes, tematicile și
+        calendarul pot varia. Resursele disponibile în cadrul acestui sit
+        complementează şi nu substituie prezenţa la cursuri şi laboratoare
+        (vezi <a href="http://profs.info.uaic.ro/~orar/discipline/orar_tw.html">orarul</a>).
+    </p>
+{% endcapture %}
+
+{% include about.html
+    title="Tehnologii Web"
+    content=content
+%}
+
+{% include contact.html data=site.data.web.contact %}
