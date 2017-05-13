@@ -1,0 +1,48 @@
+---
+layout: compress
+---
+{% include _setup_categories %}
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+
+  {% include head.html %}
+
+  <body id="page-top">
+
+    <section id="resources" class="resources container">
+        <header class="text-center">
+          <h1>{{ page.title }}</h1>
+        </header>
+        <div class="terminal col-md-8 col-md-offset-2">
+            <p class="m-b-md">
+              <span class="text-muted">~ $ cd {{ resource_path | join: '/' }}</span><br>
+              <span class="text-muted">Ați putea continua cu:
+                '<a href="../">..</a>'
+                {% for subcategory in page.subcategories %}
+                  '<a href="{{ subcategory }}">{{ subcategory }}</a>'
+                {% endfor %}
+              </span>
+            </p>
+            <p class="m-b-md">
+              <span class="text-muted">~ $ tree -FDL 1 --sort=ctime . | grep -v /$</span><br>
+              {% if resources.size > 0 %}
+                .<br>
+                {% for post in resources %}
+                  {% include _month date=post.date %}
+                  ├── [{{ post.date | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}] 
+                  <a href="{{ site.baseurl }}{{ post.url }}"><strong>{{ post.title }}</strong></a>*<br>
+                {% endfor %}
+              {% else %}
+                Acest director nu conține nici o resursă.
+              {% endif %}
+            </p>
+        </div>
+    </section>
+
+    {% include footer.html %}
+
+    {% include js.html %}
+
+  </body>
+</html>
+<!-- Post Layout End -->

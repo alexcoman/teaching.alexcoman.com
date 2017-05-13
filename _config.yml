@@ -1,8 +1,8 @@
 # Site Settings
 url: "https://teaching.alexcoman.com"
 baseurl: ""
-paginate_path: resurse/pagina:num/
-permalink: resurse/:categories/:year/:month/:day/:title/
+paginate_path: resurse/pagina-:num/
+permalink: resurse/:categories/:title/
 force-https: True
 lang: "ro"
 paginate: 5
@@ -13,7 +13,6 @@ favicon: "favicon.ico"
 
 # Build Settings
 markdown:           kramdown
-highlighter:        rouge
 kramdown:
   input:            GFM
   auto_ids:         true

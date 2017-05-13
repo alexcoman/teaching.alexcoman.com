@@ -1,14 +1,43 @@
-<!-- Post Layout Start -->
+---
+layout: compress
+---
+{% include _setup_categories %}
+{% assign contains_summary = page.content | post_contains_summary %}
+ 
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
 
   {% include head.html %}
+  
+  <body id="page-top">
+    <section id="post" class="post container content-section">
+      <div class="row">
+        <header id="post-header" class="text-center">
+          <h1>{{ page.title }}</h1>
+        </header>
 
-  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+        <div class="terminal col-md-8 col-md-offset-2">
+          <p class="m-b-md">
+            <span class="text-muted">~ $ cd {{ resource_path | join: '/' }}</span><br>
+            <span class="text-muted">~ $ cat {{ page.title | handleize }}</span>
+          </p>
+        </div>
 
-    {% include navigation.html %}
+        <article class="col-md-8 col-md-offset-2">
+          <div id="post-content" class="post-content text-justify">
+            {% if post_contains_summary %}
+              <summary>{{ page.content | more: "summary" }}</summary>
+            {% endif %}
+            {{ page.content | more: "remaining" }}
+          </div>
 
-    {% include post.html %}
+          <footer>
+            {% include comments.html %}
+            {% include social-buttons.html %}
+          </footer>
+        </article>
+      </div>
+    </section>
 
     {% include footer.html %}
 
@@ -16,4 +45,3 @@
 
   </body>
 </html>
-<!-- Post Layout End -->

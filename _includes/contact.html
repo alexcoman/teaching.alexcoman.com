@@ -1,21 +1,19 @@
-{% if site.data[page.data].contact %}
-  {% assign contact = site.data[page.data].contact %}
-{% else %}
-  {% assign contact = site.data.default.contact %}
-{% endif %}
+{% assign contact = include.data %}
 
-<section id="contact" class="contact container content-section text-center">
+<section id="contact" class="contact container content-section">
+  {% if contact.title %}
   <div id="contact-content" class="row">
     <div class="col-md-10 col-md-offset-1">
       <h3>{{ contact.title }}</h3>
       <p>{{ contact.content }}</p>
     </div>
   </div>
+  {% endif %}
 
-  <div id="contact-blocks" class="row container-fluid">
+  <div id="contact-blocks" class="row row-centered">
       {% for block in contact.blocks %}
       {% assign column_width = 12 | divided_by: forloop.length %}
-      <div class="col-md-{{ column_width }} col-sm-{{ column_width }} col-xs-6">
+      <div class="col-md-{{ column_width }} col-sm-{{ column_width }} col-xs-6 col-centered">
         <ul>
           <li>{{ block.title }}</li>
           {% for link_element in block.links %}
@@ -24,12 +22,6 @@
         </ul>
       </div>
       {% endfor %}
-  </div>
-
-  <div id="contact-links" class="row">
-    <div class="col-md-10 col-md-offset-1">
-      {% include social-buttons.html %}
-    </div>
   </div>
 
 </section>

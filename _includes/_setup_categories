@@ -1,0 +1,26 @@
+{% assign resources = '' | split: '' %}
+{% assign resource_url = { site.baseurl | append: "/resurse" } %}
+{% assign resource_path = '' | split: '' %}
+
+{% for post in site.posts %}
+    {% assign is_valid = true %}
+
+    {% for category in page.categories %}
+        {% unless post.categories contains category %}
+            {% assign is_valid = false %}
+            {% break %}
+        {% endunless %}
+    {% endfor %}
+
+    {% if is_valid %}
+        {% assign resources = resources | push: post %}
+    {% endif %}
+{% endfor %}
+
+{% capture element %}<a href="{{ resource_url }}">resurse</a>{% endcapture %}
+{% assign resource_path = resource_path | push: element %}
+{% for category in page.categories %}
+  {% assign resource_url =  resource_url | append: "/" | append: category %}
+  {% capture element %}<a href="{{ resource_url }}">{{ category }}</a>{% endcapture %}
+  {% assign resource_path = resource_path | push: element %}
+{% endfor %}

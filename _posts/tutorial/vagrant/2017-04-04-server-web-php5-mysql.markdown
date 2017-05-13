@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "Vagrant - Server web (PHP5 & MySQL)"
-date:   2017-04-04 12:00:00
+title: "Vagrant - Server web (PHP5 & MySQL)"
+date: 2017-04-04 12:00:00
 author: "Alexandru Coman"
 categories: [tutorial, vagrant]
-tags: vagrant
 section-type: post
-navigation: "resurse"
 ---
 
 În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație [PHP] ce folosește [MySQL] ca și bază de date.
@@ -169,8 +167,8 @@ Verificăm dacă răspunsul este cel așteptat.
 OK.
 ```
 
-[vagrant-101]: {{ site.baseurl }}/resurse/tutorial/vagrant/2017/03/19/vagrant-notiuni-introductive/
-[virtualbox-101]: {{ site.baseurl }}/resurse/tutorial/virtualbox/2017/04/01/virtualbox-notiuni-introductive/
+[vagrant-101]: {{ site.baseurl }}/resurse/tutorial/vagrant/notiuni-introductive/
+[virtualbox-101]: {{ site.baseurl }}/resurse/tutorial/virtualbox/notiuni-introductive/
 [PHP]: http://php.net/
 [MySQL]: https://www.mysql.com/
 [Vagrant]: https://www.vagrantup.com/

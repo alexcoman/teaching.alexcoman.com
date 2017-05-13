@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "git - propunerea unei soluții"
-date:   2017-03-11 08:00:00
+title: "git - propunerea unei soluții"
+date: 2017-03-11 08:00:00
 author: "Alexandru Coman"
 categories: [tutorial, git]
-tags: git
 section-type: post
-navigation: "resurse"
 ---
 
 În cadrul acestui tutorial vom discuta despre pașii pe care trebuie să îi urmați pentru a putea să trimiteți spre evaluare soluțiile la problemele propuse în cadrul laboratoarelor.
@@ -97,7 +95,7 @@ Pentru că utilizatorul creat de voi nu are drepturi de scriere în cadrul acest
 Pentru acest lucru va trebui să accesați cu ajutorul unui browser web [pagina depozitului de cod][0] și să apăsați pe butonul **Fork** situat în partea dreapta sus a paginii.
 
 {: .center}
-![Fork al depozitului de cod alexcoman/labs]({{ site.baseurl }}/img/git-propunerea-unei-solutii/01-fork.png)
+![Fork al depozitului de cod alexcoman/labs]({{ site.baseurl }}/assets/img/git-propunerea-unei-solutii/01-fork.png)
 
 ## III. Elaborarea soluției
 
@@ -205,14 +203,14 @@ Pentru Tuxy Pinguinescu această pagini este `https://github.com/tuxy_pinguinesc
 În cadrul acestei pagini vor fi afișate toate *branch*-urile existente în cadrul depozitului vostru de cod cu o serie de acțiuni pentru fiecare dintre ele. În cazul nostru acțiunea care ne interesează este **New pull request**.
 
 {: .center}
-![New pull request]({{ site.baseurl }}/img/git-propunerea-unei-solutii/02-new-pull-request.png)
+![New pull request]({{ site.baseurl }}/assets/img/git-propunerea-unei-solutii/02-new-pull-request.png)
 
 
 [0]: https://github.com/alexcoman/labs
-[1]: {{ site.baseurl }}/resurse/laborator/web/2017/02/26/laborator-html/
+[1]: https://github.com/alexcoman/labs/tree/master/web/exercitii/blog
 [2]: https://www.w3.org/html/
-[3]: {{ site.baseurl }}/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/#3-instalarea-și-configurarea-github-for-windows
+[3]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#3-instalarea-și-configurarea-github-for-windows
 [4]: https://git-scm.com/downloads
 [5]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [6]: https://github.com/
-[7]: {{ site.baseurl }}/resurse/tutorial/git/2017/02/26/git-notiuni-introductive/#1-crearea-contului-github
+[7]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#1-crearea-contului-github

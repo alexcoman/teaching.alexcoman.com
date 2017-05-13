@@ -11,11 +11,11 @@
     <meta name="{{ meta.name }}" lang="{{ meta.lang }}" xml:lang="{{ meta.lang }}" content="{{ meta.content | strip }}" />
   {% endfor %}
 
-  <meta name="author" content="Alexandru-Florin Coman - https://alexcoman.com">
+  <meta name="author" content="Alexandru Coman - https://alexcoman.com">
 
   <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
 
   <!-- Custom Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
@@ -28,7 +28,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
   {% if site.favicon %}
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}{{site.favicon}}">
+    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/img/{{site.favicon}}">
   {% endif %}
 
   {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
