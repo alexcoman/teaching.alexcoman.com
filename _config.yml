@@ -6,10 +6,7 @@ permalink: resurse/:categories/:title/
 force-https: True
 lang: "ro"
 paginate: 5
-google-tracking-id: ""
-
-favicon: "favicon.ico"
-404-img: "labtocat.png"
+google-tracking-id: "UA-99139394-1"
 
 # Build Settings
 markdown:           kramdown

@@ -1,25 +1,25 @@
-{% if site.data[page.page].base %}  {% assign data = site.data[page.page] %}
-{% else %}                          {% assign data = site.data.default    %}
+{% if site.data[page.data].base %}  {% assign data = site.data[page.data].base %}
+{% else %}                          {% assign data = site.data.base            %}
 {% endif %}
 <head>
-  <title>{{data.base.title}}{% if page.title %} | {{page.title}}{% endif %}</title>
+  <title>{{data.title}}{% if page.title %} | {{ page.title }}{% endif %}</title>
   
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% for meta in data.base.meta %}
+  {% for meta in data.meta %}
     <meta name="{{ meta.name }}" lang="{{ meta.lang }}" xml:lang="{{ meta.lang }}" content="{{ meta.content | strip }}" />
   {% endfor %}
 
-  <meta name="author" content="Alexandru Coman - https://alexcoman.com">
+  <meta name="author" content="Alexandru Coman">
 
   <link rel="canonical" href="{{page.url | replace:'index.html','' | prepend: site.baseurl}}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet" type="text/css">
 
   <!-- Custom Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href="//fonts.googleapis.com/css?family=Montserrat:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -27,9 +27,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  {% if site.favicon %}
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/img/{{site.favicon}}">
-  {% endif %}
+  <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/img/favicon.ico">
 
   {% if page.url == "/404.html" | prepend: {{site.baseurl}} %}
     <meta http-equiv="refresh" content="20; url={{site.baseurl}}/">
