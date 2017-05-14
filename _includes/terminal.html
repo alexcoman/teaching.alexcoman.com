@@ -1,0 +1,8 @@
+<div class="terminal col-md-8 col-md-offset-2">
+  {% for command in include.history %}
+    <p class="m-b-md">
+      <span class="text-muted">{{ command.name }}</span><br>
+      {{ command.output }}
+    </p>
+  {% endfor %}
+</div>

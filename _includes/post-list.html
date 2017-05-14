@@ -1,25 +1,2 @@
-{% capture month %}
-    {% assign m = post.date | date: "%-m" %}
-    {% case m %}
-        {% when '1' %}ianuarie
-        {% when '2' %}februarie
-        {% when '3' %}martie
-        {% when '4' %}aprilie
-        {% when '5' %}mai
-        {% when '6' %}iunie
-        {% when '7' %}iulie
-        {% when '8' %}august
-        {% when '9' %}septembrie
-        {% when '10' %}octombrie
-        {% when '11' %}noiembrie
-        {% when '12' %}decembrie
-    {% endcase %}
-{% endcapture %}
-
-<!-- Post List Start -->
-<h4 align="left">
-  <strong>{{ post.date | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}</strong>
-  <br class="visible-xs-block">
-  <a href="{{site.baseurl}}{{post.url}}"><strong>{{ post.title }}</strong></a>
-</h4>
-<!-- Post List End -->
+{% include _month date=post.date %}
+├── [{{ post.date | date: "%-d" }} {{ month }} {{ post.date | date: "%Y" }}]  <a href="{{site.baseurl}}{{post.url}}"><strong>{{ post.title }}</strong></a>*<br>

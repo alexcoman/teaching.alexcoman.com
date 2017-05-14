@@ -1,14 +1,12 @@
 ---
-layout: default
+layout: home
 section-type: index
-navigation: default
-data: default
 sitemap:
   priority: 1.0
 ---
-
-{% include about.html %}
-
-{% include latest-post.html %}
-
-{% include contact.html %}
+<div class="row">
+    <header class="text-center">
+        <h1>Alexandru Coman</h1>
+    </header>
+    {% include terminal.html history=site.data.base.homepage.terminal %}
+</div>
