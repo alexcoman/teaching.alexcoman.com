@@ -1,0 +1,26 @@
+// Variables
+$primary: #1a7bd3;
+$primary-hover: #3266d5;
+$dark: #0b141f;
+$light: #EEE;
+$timeline-border: #036;
+$console: #6a7490;
+
+$regular: 300;
+$bold: 500;
+
+$navbar-text-shadow: false;
+$header-text-shadow: false;
+$header-background-color: $light;
+$intro-text-color: $dark;
+$navbar-color: $dark;
+$navbar-lg-collapse-background-color: $header-background-color;
+$navbar-lg-background: transparent;
+$navbar-sm-background-color: $navbar-lg-collapse-background-color;
+
+$social-buttons-color: $primary;
+
+$base-transition: all .3s;
+$base-cubic-transition: all .3s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+$long-transition: all .5s;
+$long-cubic-transition: all .5s cubic-bezier(0.175, 0.885, 0.320, 1.275);

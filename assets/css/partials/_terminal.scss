@@ -1,0 +1,13 @@
+.terminal {
+    font-family: monospace;
+    color: $primary;
+    padding: 15px;
+
+    p {
+        line-height: normal;
+    }
+
+    .text-muted {
+       color: $console;
+    }
+}

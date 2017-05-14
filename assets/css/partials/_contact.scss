@@ -1,0 +1,18 @@
+.contact {
+    ul {
+        list-style: outside none none;
+    	margin: 0;
+    	padding: 0;
+    }
+    
+    ul li:first-child {
+    	border-top: medium none;
+	}
+
+	ul li {
+    	color: $dark;
+    	border-top: 1px solid rgba(147, 138, 156, 0.15);
+    	padding: 5px 0;
+    	margin-bottom: 9px;        
+	}
+}

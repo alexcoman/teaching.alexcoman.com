@@ -15,5 +15,4 @@ pkg/
 test/
 _deploy/*
 .jekyll-metadata
-css
 Gemfile.lock

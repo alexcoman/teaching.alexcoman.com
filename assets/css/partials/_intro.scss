@@ -1,0 +1,93 @@
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $intro-text-color;
+    background-color: $header-background-color;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+    a {
+        color: #fff;
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+            @if $navbar-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.explore {
+    margin-left: -16px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    animation: callToAction 3.5s linear 0s infinite;
+    @media (max-width: 767px) {
+        margin-left: -12.5px;
+        bottom: 30px;
+        animation: none;
+    }
+}
+.icon-arrow-down {
+    width: 32px;
+    height: 32px;
+    fill: #e6e6e6;
+    @media (max-width: 767px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+@keyframes callToAction {
+    0% {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    85% {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-16px);
+    }
+}

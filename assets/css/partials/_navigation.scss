@@ -1,0 +1,16 @@
+.logo-header {
+    display: block;
+
+    .logo {
+        width: 289px;
+        height: 43px;
+        margin-right: 20px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        transform: scale(.8);
+        vertical-align: middle;
+        @media (max-width: 767px) {
+            transform: scale(.7);
+        }
+    }
+}
