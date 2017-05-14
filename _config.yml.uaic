@@ -1,19 +1,15 @@
 # Site Settings
-url: "https://teaching.alexcoman.com"
-baseurl: ""
+url: "https://profs.info.uaic.ro"
+baseurl: "/~alex.coman"
 paginate_path: resurse/pagina:num/
-permalink: resurse/:categories/:year/:month/:day/:title/
+permalink: resurse/:categories/:title/
 force-https: True
 lang: "ro"
 paginate: 5
-google-tracking-id: ""
-
-favicon: "favicon.ico"
-404-img: "labtocat.png"
+google-tracking-id: "UA-99096729-1"
 
 # Build Settings
 markdown:           kramdown
-highlighter:        rouge
 kramdown:
   input:            GFM
   auto_ids:         true
