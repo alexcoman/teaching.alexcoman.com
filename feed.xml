@@ -7,6 +7,19 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Instalarea sistemului de operare CentOS 7</title>
+				
+				
+					<description>&lt;p&gt;Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va rula sistemul de operare CentOS 7.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 14 May 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-centos-7/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-centos-7/</guid>
+			</item>
+		
+			<item>
 				<title>Vagrant - Server web (PHP5 &amp; MySQL)</title>
 				
 				
