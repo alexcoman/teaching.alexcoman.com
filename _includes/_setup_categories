@@ -1,5 +1,5 @@
 {% assign resources = '' | split: '' %}
-{% assign resource_url = { site.baseurl | append: "/resurse" } %}
+{% assign resource_url = "/resurse" | prepend: site.baseurl %}
 {% assign resource_path = '' | split: '' %}
 
 {% for post in site.posts %}
