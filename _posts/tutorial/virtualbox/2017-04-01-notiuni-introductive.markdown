@@ -5,6 +5,7 @@ date: 2017-04-01 12:00:00
 author: "Sabin Marcu"
 categories: [tutorial, virtualbox]
 section-type: post
+excerpt_separator: <!--more-->
 ---
 
 Virtual Box este o aplicație care își propune să vină în ajutorul nostru atunci când avem nevoie rapid și ușor de o mașină care să îndeplinească anumite specificații, atât hardware, cât și software. Astfel, urmând câțiva pași simpli, putem crea mașini virtule cu orice sistem de operare, diferit de cel pe care-l avem pe mașina locală. În plus, după ce am creat mașini virtuale proprii, cu specificațiile dorite, putem să le facem copii, sau să le clonăm și folosi pe orice alt computer.
@@ -19,61 +20,9 @@ De asemenea, Virtual Box nu este dependent de sistemul de operare, astfel că po
 
 ## Instalare
 
-### Mac OS X
-
-Pentru a instala Virtual Box, accesați [pagina de download](https://www.virtualbox.org/wiki/Downloads) și descărcați versiunea pentru Mac OS X, _VirtualBox 5.0 for OS X hosts_. Imaginea descărcată, după ce va fi descărcată și deschisă, va arăta ca în imaginea de mai jos:
-
-![Descriere imagine]({{ site.baseurl }}/assets/img/virtualbox/macos/dmgcontent.png)
-
-Utilitarul de instalare se numește `VirtualBox.pkg`. Accesați utilitarul pentru a continua instalarea. Pașii de instalare sunt descriși în continuare:
-
-![Verificare cerințe]({{ site.baseurl }}/assets/img/virtualbox/macos/oscheck.png)
-![Meniu opțiuni]({{ site.baseurl }}/assets/img/virtualbox/macos/optsmenu.png)
-
-În acest punct, două opțiuni de configurare sunt disponibile: **Customize** și **Change install location**. Prin apăsarea butonului *Customize* putem modifica ce componente vor fi instalate, precum ilustrează imaginea de mai jos:
-
-![Customizare componente]({{ site.baseurl }}/assets/img/virtualbox/macos/custominstall.png)
-
-Prin apăsarea butonului *Change install location* putem modifica locația unde va fi instalat *VirtualBox*, precum ilustrează imaginea de mai jos:
-
-![Customizare cale instalare]({{ site.baseurl }}/assets/img/virtualbox/macos/location.png)
-
-După apăsarea butonului **Install**, utilizatorul va fi solicitat să își introducă parola pentru a putea continua instalarea:
-
-![Solicitare parolă]({{ site.baseurl }}/assets/img/virtualbox/macos/password.png)
-
-Din acest moment, instalarea va progresa fără a necesita orice interacțiune suplimetară din partea utilizatorului, proces ilustrat în imaginile următoare:
-
-![Progres instalare]({{ site.baseurl }}/assets/img/virtualbox/macos/installprogress.png)
-![Instalare completată]({{ site.baseurl }}/assets/img/virtualbox/macos/installsuccess.png)
-
-### Windows
-
-Pentru a instala Virtual Box, accesați [pagina de download](https://www.virtualbox.org/wiki/Downloads) și descărcați versiunea pentru Windows, _VirtualBox 5.0 for Windows hosts_. Pașii de instalare sunt descriși în imaginile ce urmează:
-
-![Instare virtual box pas 1]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step1.png)
-
-În următorul pas utilizatorul poate alege ce componente ale aplicației să fie instalate și locația unde aceasta va fi instalată. De cele mai multe ori, opțiunile predefinite sunt suficiente.
-
-![Instare virtual box pas 2]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step2.png)
-
-În acest moment, utilizatorul poate alege dacă dorește să se creeze scurtături desktop, etc sau dacă dorește ca anumite tipuri de fișiere să fie asociate cu *VirtualBox*.
-
-![Instare virtual box pas 3]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step3.png)
-
-![Instare virtual box pas 4]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step4.png)
-
-![Instare virtual box pas 5]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step5.png)
-
-![Instare virtual box pas 6]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step6.png)
-
-Este necesar instalarea unor drivere suplimentare pentru funcționarea și integrarea completă a aplicației cu sistemul de operare. La mesaje asemănătoare cu cel de mai jos, apăsați butonul *Install* pentru a permite instalarea acestora.
-
-![Instare virtual box pas 7]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step7.png)
-
-În acest moment, instalarea este terminată, iar utilizatorul poate începe să folosească *VirtualBox*.
-
-![Instare virtual box pas 8]({{ site.baseurl }}/assets/img/virtualbox/windows/install-step8.png)
+Pentru a instala Virtual Box pe sistemul dumneavoastră puteți urma pașii din unul dintre următoarele tutoriale:
+ - [Instalare VirtualBox pe Mac OS X][instalare-mac-osx]
+ - [Instalare VirtualBox pe Windows][instalare-windows]
 
 ## Quickstart (101)
 
@@ -223,6 +172,9 @@ Mașinile virtuale exportate, pot fi și importate în Virtual Box. Astfel, avâ
 ![Import pas 3]({{ site.baseurl }}/assets/img/virtualbox/import/import-step3.png)
 
 După ce apăsați _Import_, va dura câteva minute până se va finaliza procesul, iar apoi veți putea vedea în fereastra de VirtualBox o nouă mașină, având configurația mașinii importate. Tot ce mai rămâne este să fie pornită și folosită. De asemenea, setările noii mașini virtuale se pot accesa / modifica oricând, accesând _Settings_ din meniu.
+
+[instalare-windows]: {{ site.baseurl}}/resurse/tutorial/virtualbox/instalare-windows/
+[instalare-mac-osx]: {{ site.baseurl}}/resurse/tutorial/virtualbox/instalare-mac-osx/
 
 <style>
 .content-section img{
