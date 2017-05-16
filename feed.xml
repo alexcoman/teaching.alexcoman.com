@@ -7,6 +7,19 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Instalarea OpenStack folosind DevStack</title>
+				
+				
+					<description>&lt;p&gt;În cadrul acestui tutorial o să vorbim despre o metodă prin care putem să pregătim un mediu de dezvoltare pentru &lt;a href=&quot;https://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; folosind utilitarul &lt;a href=&quot;https://docs.openstack.org/developer/devstack/&quot;&gt;DevStack&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 15 May 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</guid>
+			</item>
+		
+			<item>
 				<title>Instalarea sistemului de operare CentOS 7</title>
 				
 				
@@ -44,6 +57,31 @@
 				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/notiuni-introductive/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/notiuni-introductive/</guid>
+			</item>
+		
+			<item>
+				<title>VirtualBox - instalare pe Windows</title>
+				
+				
+					<description>&lt;p&gt;Pentru a instala Virtual Box, accesați &lt;a href=&quot;https://www.virtualbox.org/wiki/Downloads&quot;&gt;pagina de download&lt;/a&gt; și descărcați ultima versiunea pentru Windows (în cazul nostru, la momentul scrierii acestui articol &lt;em&gt;VirtualBox 5.0 for Windows hosts&lt;/em&gt;). Pașii de instalare sunt descriși în imaginile ce urmează:&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</guid>
+			</item>
+		
+			<item>
+				<title>VirtualBox - instalare pe Mac OSX</title>
+				
+				
+					<description>
+</description>
+				
+				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</guid>
 			</item>
 		
 			<item>

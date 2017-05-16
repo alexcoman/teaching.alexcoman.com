@@ -28,6 +28,8 @@
     
   
     
+  
+    
       <url>
         <loc>https://profs.info.uaic.ro/</loc>
         
@@ -57,6 +59,15 @@
   
   
     <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</loc>
+      
+        <lastmod>2017-05-15T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
       <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-centos-7/</loc>
       
         <lastmod>2017-05-14T12:00:00+00:00</lastmod>
@@ -76,6 +87,24 @@
   
     <url>
       <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/notiuni-introductive/</loc>
+      
+        <lastmod>2017-04-01T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</loc>
+      
+        <lastmod>2017-04-01T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</loc>
       
         <lastmod>2017-04-01T12:00:00+00:00</lastmod>
       

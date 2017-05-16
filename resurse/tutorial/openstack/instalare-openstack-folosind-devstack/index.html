@@ -1,0 +1,78 @@
+<!DOCTYPE html> <html lang="ro"> <head> <title>Alexandru Coman | Instalarea OpenStack folosind DevStack</title> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta name="author" content="Alexandru Coman"> <link rel="canonical" href="/~alex.coman/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/"> <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css"> <link href="/~alex.coman/assets/css/main.css" rel="stylesheet" type="text/css"> <!-- Custom Fonts --> <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> <link href="//fonts.googleapis.com/css?family=Montserrat:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"> <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> <!-- WARNING: Respond.js doesn't work if you view the page via file:// --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]--> <link rel="shortcut icon" type="image/x-icon" href="/~alex.coman/assets/img/favicon.ico"> <meta name="apple-mobile-web-app-capable" content="yes"> <link rel="apple-touch-icon" sizes="36x36" href="/~alex.coman/img/web-app/icon-36p.png"> <link rel="apple-touch-icon" sizes="48x48" href="/~alex.coman/img/web-app/icon-48p.png"> <link rel="apple-touch-icon" sizes="72x72" href="/~alex.coman/img/web-app/icon-72p.png"> <link rel="apple-touch-icon" sizes="96x96" href="/~alex.coman/img/web-app/icon-96p.png"> <link rel="apple-touch-icon" sizes="144x144" href="/~alex.coman/img/web-app/icon-144p.png"> <link rel="apple-touch-icon" sizes="192x192" href="/~alex.coman/img/web-app/icon-192p.png"> <link rel="manifest" href="/~alex.coman/manifest.json"> <!-- Syntax highlight in post pages --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css"> </head> <body id="page-top"> <section id="post" class="post container content-section"> <div class="row"> <header id="post-header" class="text-center"> <h1>Instalarea OpenStack folosind DevStack</h1> </header> <div class="terminal col-md-8 col-md-offset-2"> <p class="m-b-md"> <span class="text-muted">~ $ cd <a href="/resurse">resurse</a>/<a href="/resurse/tutorial">tutorial</a>/<a href="/resurse/tutorial/openstack">openstack</a></span><br> <span class="text-muted">~ $ cat Instalarea OpenStack folosind DevStack</span> </p> </div> <article class="col-md-8 col-md-offset-2"> <div id="post-content" class="post-content text-justify"> <p><strong>Avertisment</strong>: Mediul pregătit folosind <a href="https://docs.openstack.org/developer/devstack/">DevStack</a> nu este unul persistent, utilitarul are ca scop pregătirea unui mediu de dezvoltare într-un timp foarte scurt ce facilitează utilizatorilor posibilitatea de a interacționa cu OpenStack și de a testa funcționalități experimentale. Această metodă nu este destinată pregătirii unui mediu de producție.</p> <h2 id="resurse-necesare">Resurse necesare</h2> <p>Pentru pregătirea mediului de dezvoltare o să avem nevoie de o mașină virtuală cu sistemul de operare <a href="https://www.centos.org/">CentOS 7</a>. În tutorialul <em><a href="/~alex.coman/resurse/tutorial/virtualbox/instalare-centos-7/">Instalarea sistemului de operare CentOS 7</a></em> puteți găsi toți pașii pe care trebuie să îi urmați pentru pregătirea acesteia.</p> <h2 id="pregătirea-mașinii-virtuale">Pregătirea mașinii virtuale</h2> <h3 id="modulul-selinux">Modulul SELinux</h3> <p>Pentru a ușura pregătirea mediului o să începem prin a dezactiva modulul <strong>SELinux</strong>(<em>Security-Enhanced Linux</em>) din cadrul nucleului de Linux.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"SELINUX=disabled"</span> &gt; /etc/sysconfig/selinux
+~ <span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"SELINUXTYPE=minimum"</span> &gt;&gt; /etc/sysconfig/selinux
+</code></pre></div> <p><strong>Avertisment</strong>: acest lucru va scădea securitatea sistemului de operare.</p> <p>Pentru ca modificările asupra <em>SELinux</em> să aibă efect, va trebui să repornim sistemul de operare.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>reboot
+</code></pre></div> <h3 id="configurația-rețelei">Configurația rețelei</h3> <p>Înainte de a trece la pasul următor, va trebui să verificăm care este starea rețelelor din cadrul sistemului de operare.</p> <p>Pentru a vedea conexiunile care disponibile putem să rulăm comanda următoare:</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>nmcli con s
+</code></pre></div> <p>În cadrul mașinii pregătite în cadrul tutorialul <em><a href="/~alex.coman/resurse/tutorial/virtualbox/instalare-centos-7/">Instalarea sistemului de operare CentOS 7</a></em> comanda de mai sus a afișat pe ecran:</p> <div class="highlighter-rouge"><pre class="highlight"><code>NAME    UUID                                  TYPE            DEVICE
+eth0    c7b645b7-4647-49ea-a2bf-d5dbeea6db89  802-3-ethernet  enp0s3
+eth1    0608fbce-9e8c-40fa-aeef-6e418c8ace10  802-3-ethernet  enp0s8
+</code></pre></div> <p>În cazul în care conexiunile respective nu sunt active putem folosi comanda <code class="highlighter-rouge">nmcli con up &lt;nume_conexiune&gt;</code>.</p> <div class="highlighter-rouge"><pre class="highlight"><code># De exemplu
+~ $ nmcli con up eth1
+</code></pre></div> <p>Pasul următor este să configurăm static interfața pe care o să o folosim pentru a interacționa cu Horizon, interfața web prin intermediul căreia putem interacționa cu OpenStack.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>nmcli con m eth1 <span class="se">\</span>
+    ipv4.method manual <span class="se">\</span>
+    ipv4.addresses 192.168.56.101/24 <span class="se">\</span>
+    ipv4.gateway 192.168.56.1
+~ <span class="nv">$ </span>nmcli con down eth1 <span class="o">&amp;&amp;</span> nmcli con up eth1
+</code></pre></div> <p>Pentru a vizualiza modificările făcute, putem rula comanda următoare:</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>ip -4 a s
+</code></pre></div> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>1: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: enp0s3: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 84730sec preferred_lft 84730sec
+3: enp0s8: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu 1500 qdisc pfifo_fast state UP qlen 1000
+    inet 192.168.56.101/24 brd 192.168.56.255 scope global dynamic enp0s8
+       valid_lft 743sec preferred_lft 743sec
+</code></pre></div> <h2 id="utilitarul-devstack">Utilitarul DevStack</h2> <h3 id="adăugarea-unui-utilizator">Adăugarea unui utilizator</h3> <p>Nu este recomandat să rulăm, utilitarul <a href="https://docs.openstack.org/developer/devstack/">DevStack</a> în contextul utilizatorului <em>root</em>. Pentru a putea să îl rulăm avem nevoie de un utilizator nou, care să aibă privilegii de administrator. În cazul în care ați adăugat un utilizator nou în timpul instalării sistemului de operare, acest pas nu mai este necesar.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>useradd -s /bin/bash -d /opt/stack -m stack
+</code></pre></div> <h3 id="privilegii-de-administrare">Privilegii de administrare</h3> <p>Oferim privilegii de administrare utilizatorului creat și îi dăm posibilitatea de a rula comenzi elevate fără a i se cere parola.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span><span class="nb">echo</span> <span class="s2">"stack ALL=(ALL) NOPASSWD: ALL"</span> &gt;&gt; /etc/sudoers
+</code></pre></div> <h3 id="instalarea-openstack">Instalarea OpenStack</h3> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>su stack    <span class="c"># Schimbăm utilizatorul din root în stack</span>
+~ <span class="nv">$ </span><span class="nb">cd</span>          <span class="c"># Schimbăm directorul de lucru</span>
+~ <span class="nv">$ </span>git clone https://git.openstack.org/openstack-dev/devstack
+</code></pre></div> <p>După ce am făcut o copie locală a utilitarului <a href="https://docs.openstack.org/developer/devstack/">DevStack</a> mai trebuie să adăugăm un fișier de configurare (numit <em>local.conf</em>) în care putem specifica modul în care dorim ca <a href="https://www.openstack.org/">OpenStack</a> să fie instalat.</p> <p>În cadrul acestui tutorial vom opta spre a instala toate componentele OpenStack în cadrul aceleași mașini virtuale.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span><span class="nb">cd </span>devstack
+~ <span class="nv">$ </span>vi local.conf
+</code></pre></div> <p>Un exemplu de fișier de configurare pentru configurația mașinii virtuale curente și a rețelelor din aceasta, ar putea fi:</p><pre><code class="language-[[local|localrc]]">HOST_IP=192.168.56.101
+FLOATING_RANGE=192.168.56.101/27
+FIXED_RANGE=10.10.10.0/24
+FIXED_NETWORK_SIZE=256
+FLAT_INTERFACE=eth0
+ADMIN_PASSWORD=supersecret
+DATABASE_PASSWORD=iheartdatabases
+RABBIT_PASSWORD=flopsymopsy
+SERVICE_PASSWORD=iheartksl
+[[local|localrc]]
+FLOATING_RANGE=192.168.1.224/27
+FIXED_RANGE=10.11.12.0/24
+FIXED_NETWORK_SIZE=256
+FLAT_INTERFACE=enp0s8
+ADMIN_PASSWORD=supersecret
+DATABASE_PASSWORD=iheartdatabases
+RABBIT_PASSWORD=flopsymopsy
+SERVICE_PASSWORD=iheartksl
+</code></pre><p>După ce am specificat modul în care dorim să fie pregătit mediul de dezvoltare cu OpenStack, putem să începem instalarea:</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>./stack
+</code></pre></div> <p>După aproximativ 15 minute, instalarea ar trebui să se finalizeze și să primim un raport cu detalii despre mediul creat.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="o">=========================</span>
+DevStack Component Timing
+<span class="o">=========================</span>
+Total runtime    994
+
+run_process       27
+test_with_retry    4
+pip_install      169
+wait_for_service  20
+yum_install       33
+<span class="o">=========================</span>
+
+
+
+This is your host IP address: 192.168.56.101
+This is your host IPv6 address: ::1
+Horizon is now available at http://192.168.56.101/dashboard
+Keystone is serving at http://192.168.56.101/identity/
+The default users are: admin and demo
+The password: supersecret
+Services are running under systemd unit files.
+For more information see:
+https://docs.openstack.org/developer/devstack/systemd.html
+2017-05-15 13:47:09.207 | stack.sh completed <span class="k">in </span>994 seconds.
+</code></pre></div> <h2 id="după-instalarea">După instalarea</h2> <p>Pentru a putea accesa interfața web (<em>Horizon</em>) din afara mașinii virtuale, va trebui să adăugăm două reguli noi în fișierul <em>/etc/sysconfig/iptables</em>. Cele două reguli vor permite conexiuni din exterior pe porturile <em>80</em> și respectiv <em>443</em>.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>-A INPUT -p tcp -m multiport --dports 443 -j ACCEPT
+-A INPUT -p tcp -m multiport --dports 80 -j ACCEPT
+</code></pre></div> <p>Pentru ca modificările făcute să aibă efect, va trebuie să repornim serviciul <em>iptables</em>.</p> <div class="language-bash highlighter-rouge"><pre class="highlight"><code>~ <span class="nv">$ </span>service iptables restart
+</code></pre></div> <p class="center"><img src="/~alex.coman/assets/img/devstack/openstack.png" alt="Am terminat" /></p> </div> <footer> <ul class="list-inline social-buttons"> </ul> </footer> </article> </div> </section> <footer id="footer" class="footer"> <div class="container text-center"> <p> Ultima actualizare: 16 mai 2017 <a itemprop="license" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a><br /> <a href="//~alex.coman" title="Spre situl Web al titularului laboratorului Alexandru Coman">Alexandru Coman</a> </p> </div> </footer> <script src="//code.jquery.com/jquery-1.11.3.min.js"></script> <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script> <script>hljs.initHighlightingOnLoad();</script> <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-99096729-1', 'auto'); ga('send', 'pageview'); </script> <script src="/~alex.coman/assets/js/rrssb.min.js"></script> </body> </html>
