@@ -20,6 +20,19 @@
 			</item>
 		
 			<item>
+				<title>Instalare Openstack(RDO) folosind Packstack</title>
+				
+				
+					<description>&lt;p&gt;Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va contine un mediu de execuție OpensStack RDO(&lt;a href=&quot;RDO&quot;&gt;RedHat Deployment of OpenStack&lt;/a&gt;)&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 15 May 2017 12:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</guid>
+			</item>
+		
+			<item>
 				<title>Instalarea sistemului de operare CentOS 7</title>
 				
 				

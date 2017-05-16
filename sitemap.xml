@@ -68,6 +68,15 @@
     </url>
   
     <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</loc>
+      
+        <lastmod>2017-05-15T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
       <loc>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</loc>
       
         <lastmod>2017-05-14T12:00:00+00:00</lastmod>
