@@ -36,8 +36,7 @@
 				<title>Vagrant - Server web (PHP5 &amp; MySQL)</title>
 				
 				
-					<description>&lt;p&gt;În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt; ce folosește &lt;a href=&quot;https://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; ca și bază de date.
-&lt;!--more--&gt;&lt;/p&gt;
+					<description>&lt;p&gt;În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt; ce folosește &lt;a href=&quot;https://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; ca și bază de date.&lt;/p&gt;
 
 </description>
 				
