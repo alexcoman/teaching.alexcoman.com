@@ -5,6 +5,7 @@ date: 2017-04-04 12:00:00
 author: "Alexandru Coman"
 categories: [tutorial, vagrant]
 section-type: post
+excerpt_separator: <!--more-->
 ---
 
 În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație [PHP] ce folosește [MySQL] ca și bază de date.

@@ -5,6 +5,7 @@ date: 2017-03-11 08:00:00
 author: "Alexandru Coman"
 categories: [tutorial, git]
 section-type: post
+excerpt_separator: <!--more-->
 ---
 
 În cadrul acestui tutorial vom discuta despre pașii pe care trebuie să îi urmați pentru a putea să trimiteți spre evaluare soluțiile la problemele propuse în cadrul laboratoarelor.
