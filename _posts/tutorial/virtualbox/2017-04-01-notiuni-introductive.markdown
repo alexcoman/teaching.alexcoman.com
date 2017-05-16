@@ -5,6 +5,7 @@ date: 2017-04-01 12:00:00
 author: "Sabin Marcu"
 categories: [tutorial, virtualbox]
 section-type: post
+excerpt_separator: <!--more-->
 ---
 
 Virtual Box este o aplicație care își propune să vină în ajutorul nostru atunci când avem nevoie rapid și ușor de o mașină care să îndeplinească anumite specificații, atât hardware, cât și software. Astfel, urmând câțiva pași simpli, putem crea mașini virtule cu orice sistem de operare, diferit de cel pe care-l avem pe mașina locală. În plus, după ce am creat mașini virtuale proprii, cu specificațiile dorite, putem să le facem copii, sau să le clonăm și folosi pe orice alt computer.

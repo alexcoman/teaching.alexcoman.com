@@ -25,10 +25,7 @@ layout: compress
 
         <article class="col-md-8 col-md-offset-2">
           <div id="post-content" class="post-content text-justify">
-            {% if post_contains_summary %}
-              <summary>{{ page.content | more: "summary" }}</summary>
-            {% endif %}
-            {{ page.content | more: "remaining" }}
+            {{ page.content }}
           </div>
 
           <footer>

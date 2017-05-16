@@ -5,10 +5,12 @@ date: 2017-05-14 12:00:00
 author: "Alexandru Coman"
 categories: [tutorial, virtualbox]
 section-type: post
+excerpt_separator: <!--more-->
 ---
 
-
 Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va rula sistemul de operare CentOS 7.
+
+<!--more-->
 
 ## Resurse necesare
 
