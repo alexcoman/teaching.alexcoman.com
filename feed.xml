@@ -7,6 +7,19 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Evaluarea proiectelor (în sesiune)</title>
+				
+				
+					<description>&lt;p&gt;În sesiune fiecare echipă înscrisă va prezenta implementarea &lt;strong&gt;completă&lt;/strong&gt; a proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont de &lt;a href=&quot;{site.baseurl}/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 22 May 2017 08:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/evaluarea-proiectelor/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/evaluarea-proiectelor/</guid>
+			</item>
+		
+			<item>
 				<title>Instalarea OpenStack folosind DevStack</title>
 				
 				
@@ -43,6 +56,19 @@
 				<pubDate>Sun, 14 May 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</guid>
+			</item>
+		
+			<item>
+				<title>Evaluarea proiectelor (săptămâna a IX-a)</title>
+				
+				
+					<description>&lt;p&gt;În săptămâna a IX-a fiecare echipă înscrisă va prezenta interfața web și arhitectura proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească toate cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 11 Apr 2017 08:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/evaluare-componenta-d/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/evaluare-componenta-d/</guid>
 			</item>
 		
 			<item>
@@ -107,33 +133,6 @@
 				<pubDate>Sun, 19 Mar 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/vagrant/notiuni-introductive/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/vagrant/notiuni-introductive/</guid>
-			</item>
-		
-			<item>
-				<title>git - propunerea unei soluții</title>
-				
-				
-					<description>&lt;p&gt;În cadrul acestui tutorial vom discuta despre pașii pe care trebuie să îi urmați pentru a putea să trimiteți spre evaluare soluțiile la problemele propuse în cadrul laboratoarelor.
-Toate soluțiile propuse vor fi incluse în depozitul de cod &lt;a href=&quot;https://github.com/alexcoman/labs&quot;&gt;alexcoman/labs&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sat, 11 Mar 2017 08:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/git/propunerea-unei-solutii/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/git/propunerea-unei-solutii/</guid>
-			</item>
-		
-			<item>
-				<title>git - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare Git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 26 Feb 2017 20:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/git/notiuni-introductive/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/git/notiuni-introductive/</guid>
 			</item>
 		
 	</channel>

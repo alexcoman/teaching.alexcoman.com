@@ -57,6 +57,17 @@
   
     
   
+    
+  
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/noutati/web/evaluarea-proiectelor/</loc>
+      
+        <lastmod>2017-05-22T08:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
     <url>
       <loc>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</loc>
@@ -80,6 +91,15 @@
       <loc>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</loc>
       
         <lastmod>2017-05-14T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/noutati/web/evaluare-componenta-d/</loc>
+      
+        <lastmod>2017-04-11T08:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
