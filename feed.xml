@@ -7,10 +7,23 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Aspecte privind evaluarea proiectelor</title>
+				
+				
+					<description>&lt;p&gt;Fiecare echipă înscrisă pentru evaluare trebuie să țină cont în dezvoltarea proiectului de cerințele și recomandările disponibile în următoarele documente &lt;a href=&quot;/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt;, &lt;a href=&quot;/resurse/noutati/web/evaluarea-proiectelor/&quot;&gt;evaluarea componentei P&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 28 May 2017 08:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/aspecte-privind-evaluarea-proiectelor/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/aspecte-privind-evaluarea-proiectelor/</guid>
+			</item>
+		
+			<item>
 				<title>Evaluarea proiectelor (în sesiune)</title>
 				
 				
-					<description>&lt;p&gt;În sesiune fiecare echipă înscrisă va prezenta implementarea &lt;strong&gt;completă&lt;/strong&gt; a proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont de &lt;a href=&quot;{site.baseurl}/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
+					<description>&lt;p&gt;În sesiune fiecare echipă înscrisă va prezenta implementarea &lt;strong&gt;completă&lt;/strong&gt; a proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont de &lt;a href=&quot;/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
 
 </description>
 				
@@ -120,19 +133,6 @@
 				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-mac-osx/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-mac-osx/</guid>
-			</item>
-		
-			<item>
-				<title>Vagrant - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;În ultimii ani, virtualizarea și standardizarea mașinilor virtuale a devenit un subiect din ce în ce mai dezbătut, și populat de diferite sisteme ce își doresc a face acest subiect o realitate cât mai accesibilă. Unul dintre aceste sisteme, realizat modular, este &lt;strong&gt;Vagrant&lt;/strong&gt;. În următoarele rânduri vom vorbi despre ce este mai exact Vagrant, cum funcționează și cum se instaleaza și configurează acest sistem.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 19 Mar 2017 12:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/vagrant/notiuni-introductive/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/vagrant/notiuni-introductive/</guid>
 			</item>
 		
 	</channel>
