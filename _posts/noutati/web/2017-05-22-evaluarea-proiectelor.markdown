@@ -80,7 +80,7 @@ Maniera în care este structurat codul sursă este foarte importantă în dezvol
 - prezența docstring-urilor și a comentariilor ce descriu funcționalitatea fragmentelor de cod;
 - ușurința prin care se poate desfășura procedeul de mentenanță a codului și design pattern-urile folosite.
 
-[componenta-d]: {site.baseurl}/resurse/noutati/web/evaluare-componenta-d/
+[componenta-d]: {{ site.baseurl }}/resurse/noutati/web/evaluare-componenta-d/
 [evaluare]: https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html
 [GitHub]: https://github.com/
 [BitBucket]: https://bitbucket.org/
