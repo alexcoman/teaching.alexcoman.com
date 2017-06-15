@@ -7,6 +7,19 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Evaluarea proiectelor (în restanță)</title>
+				
+				
+					<description>&lt;p&gt;Fiecare echipă înscrisă pentru evaluare trebuie să țină cont în dezvoltarea proiectului de cerințele și recomandările disponibile în următoarele documente &lt;a href=&quot;/~alex.coman/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt;, &lt;a href=&quot;/~alex.coman/resurse/noutati/web/evaluarea-proiectelor/&quot;&gt;evaluarea componentei P&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 15 Jun 2017 08:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluarea-proiectelor-in-sesiunea-de-restante/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluarea-proiectelor-in-sesiunea-de-restante/</guid>
+			</item>
+		
+			<item>
 				<title>Aspecte privind evaluarea proiectelor</title>
 				
 				
@@ -121,18 +134,6 @@
 				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</guid>
-			</item>
-		
-			<item>
-				<title>VirtualBox - instalare pe Mac OSX</title>
-				
-				
-					<description>
-</description>
-				
-				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</guid>
 			</item>
 		
 	</channel>
