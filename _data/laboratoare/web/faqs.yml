@@ -1,0 +1,24 @@
+- section: 'Tehnologii Web'
+  questions:
+    - title: 'Care este scopul acestui curs?'
+      answer: >
+        Cursul de Tehnologii Web își propune să clădească o fundație solidă
+        pentru stundeții ce doresc să devină dezvoltatori Web profesioniști.
+      is_new: false
+      was_updated: false
+    - title: 'Ce tematici vor fi abortate în cadrul laboratoarelor?'
+      answer: >
+        Printre tematicile ce vor fi abordate în cadrul laboratoarelor
+        putem aminti dar fără a ne limita la:    
+        Concepte importante și arhitectura WWW,
+        Protocolul HTTP,
+        Limbajul de marcare HTML,
+        Foi de stiluri CSS,
+        Proiectare și arhitecturi Web,
+        Servere de aplicații – exemplu: Python / PHP,
+        Modelarea datelor via XML,
+        Procesări DOM, SAX, SimpleXML pentru HTML și XML,
+        De la SOA la servicii Web: SOAP și REST,
+        Securitatea aplicațiilor Web.
+      is_new: false
+      was_updated: false

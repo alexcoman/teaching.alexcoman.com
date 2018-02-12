@@ -1,0 +1,26 @@
+- section: 'Open-Source'
+  questions:
+    - title: 'Care este scopul acestui curs?'
+      answer: >
+        Cursul are ca scop formarea unui grup de studenți pasionați de tehnologie
+        ce doresc să contribuie la un proiect de anvergură sau ce vor să clădească
+        un nou proiect ce să ajute comunitatea.
+      is_new: false
+      was_updated: false
+
+    - title: 'Ce tematici vor fi abortate în cadrul laboratoarelor?'
+      answer: >
+        Printre tematicile ce vor fi abordate în cadrul laboratoarelor putem aminti
+        dar fără a ne limita la:
+        Comunitatea open-source,
+        Licențe libere și date deschise,
+        Sisteme de stocare și gestiune a codului sursă,
+        Guvernanță și organizare internă in cadrul comunităților open source,
+        Sisteme de gestionare a erorilor,
+        Testarea unitară a codului,
+        Unelte pentru analiza statică și dinamică a codului sursă,
+        Integrare continuă,
+        Revizuirea codului,
+        Sisteme de detecție a intruziunilor.
+      is_new: false
+      was_updated: false

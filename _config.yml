@@ -7,8 +7,11 @@ force-https: True
 lang: "ro"
 paginate: 5
 google-tracking-id: "UA-99139394-1"
+theme: prettydocs-jekyll
 
 # Build Settings
+github:             [metadata]
+encoding:           UTF-8 
 markdown:           kramdown
 kramdown:
   input:            GFM
@@ -24,10 +27,9 @@ sass:
   style:            compressed
 
 # Plugins
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-paginate
-  - jemoji
 
 exclude:
   - CONTRIBUTING
@@ -37,47 +39,18 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - vendor
   - .gitignore
   - .travis.yml
+  - .build
 
-
-################
-# Header layout #
-################
-black-favicon: "/img/black-lab-glass.ico"
-background-img: "../img/intro-bg.jpg"
-me-img: "/img/jetpacktocat.png"
-
-################
-# Web app mode #
-################
-web-app-mode: True
-
-# Icons for Web App mode
-icon-36p: "/img/web-app/icon-36p.png"
-icon-48p: "/img/web-app/icon-48p.png"
-icon-72p: "/img/web-app/icon-72p.png"
-icon-96p: "/img/web-app/icon-96p.png"
-icon-144p: "/img/web-app/icon-144p.png"
-icon-192p: "/img/web-app/icon-192p.png"
-
-########
-# Blog #
-########
-email-share: True
-fb-share: True
-twitter-share: True
-linkedin-share: True
-reddit-share: True
-google-plus-share: True
-tumblr-share: True
-pinterest-share: True
-pocket-share: True
-vkontakte-share: True
-
-disqus-shortname: ""
-email: "contact@alexcoman.com"
-404-img: "/img/labtocat.png"
+# Theme settings
+author:
+  name: "Alexandru Coman"
+  email: "alexandru.coman@tss-yonder.com"
+  website:
+    url: "https://teaching.alexcoman.com"
+    title: "Spre situl Web al titularului laboratorului Alexandru Coman."
 
 # Settings for deploy rake task
 username:        "alexcoman"

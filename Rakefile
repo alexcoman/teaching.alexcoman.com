@@ -15,10 +15,17 @@ def check_destination
   end
 end
 
-namespace :site do
-
+namespace :site do |args|
   desc "Generate the site and push changes to remote origin"
   task :deploy do
+    options = {}
+    OptionParser.new(args) do |opts|
+      opts.banner = "Usage: rake site:deploy [options]"
+      opts.on("-c", "--config {config}","Jekyll config file", String) do |user|
+        options[:config] = config
+      end
+    end.parse!
+
     # Detect pull request
     if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
       puts 'Pull request detected. Not proceeding with deploy.'
@@ -39,7 +46,7 @@ namespace :site do
     Dir.chdir(CONFIG["destination"]) { sh "git checkout #{DESTINATION_BRANCH}" }
 
     # Generate the site
-    sh "bundle exec jekyll build"
+    sh "bundle exec jekyll build --config " + options[:config]
 
     # Commit and push to github
     sha = `git log`.match(/[a-z0-9]{40}/)[0]

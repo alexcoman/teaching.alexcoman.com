@@ -1,4 +1,4 @@
-##Situl dedicat laboratoarelor susținute în cadrul FII
+## Situl dedicat laboratoarelor susținute în cadrul FII
 
 În cadrul acest depozit de cod veți putea găsi situl dedicat laboratoarelor susținute de [Alexandru Coman](https://alexcoman.com) în cadrul [Facultății de Informatică](https://www.info.uaic.ro/bin/Main/), [Universitate Alexandru Ioan Cuza](https://www.uaic.ro/), Iași.
 
