@@ -1,12 +1,12 @@
 # Site Settings
-url: "https://teaching.alexcoman.com"
-baseurl: ""
-paginate_path: resurse/pagina-:num/
+url: "https://profs.info.uaic.ro"
+baseurl: "/~alex.coman"
+paginate_path: resurse/pagina:num/
 permalink: resurse/:categories/:title/
 force-https: True
 lang: "ro"
 paginate: 5
-google-tracking-id: "UA-99139394-1"
+google-tracking-id: "UA-99096729-1"
 theme: prettydocs-jekyll
 
 # Build Settings
@@ -49,15 +49,15 @@ author:
   name: "Alexandru Coman"
   email: "alexandru.coman@tss-yonder.com"
   website:
-    url: "https://teaching.alexcoman.com"
+    url: "https://profs.info.uaic.ro/~alex.coman/"
     title: "Spre situl Web al titularului laboratorului Alexandru Coman."
 
 # Settings for deploy rake task
 username:        "alexcoman"
 repo:            "teaching.alexcoman.com"
 fetch:           "master"
-push:            "gh-pages"
-relative_source: "../teaching.alexcoman.com/"
-destination:     "../teaching.alexcoman.com-pages/"
+push:            "profs.info.uaic"
+relative_source: "../profs.info.uaic.ro/"
+destination:     "../profs.info.uaic.ro-pages/"
 source_url:      "https://github.com/alexcoman/teaching.alexcoman.com"
-production_url:  "https://teaching.alexcoman.com/"
+production_url:  "https://profs.info.uaic.ro/~alex.coman/"

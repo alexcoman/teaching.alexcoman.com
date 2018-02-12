@@ -1,0 +1,40 @@
+- type: 'label'
+  class: 'success'
+  icon: 'fa-play'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 1'
+
+- type: 'event'
+  class: 'info'
+  point:
+    class: 'black'
+    icon: 'fa-book'
+  heading: 'Curs: <a href="#">Software - aspecte generale și istoric</a>'
+  body: >
+    O parte dintre aspectele abordate în cadrul cursului:
+    <ul>
+      <li>Ce inseamna software (Open Source)?</li>
+      <li>Free Software (as in beer / Free Willy)</li>
+      <li>Tipuri de licențiere</li>
+    </ul>
+
+  footer: 'Data: <a href="#">Va fi anunțată în curând.</a>'
+
+- type: 'event'
+  class: 'warning'
+  point:
+    class: 'black'
+    icon: 'fa-laptop'
+  heading: 'Laborator: <a href="#">Sisteme de operare & Virtualizare (recapitulare)</a>'
+  body: >
+    Subiecte abordate în cadrul acestui laborator:
+    noțiuni de sisteme de operare (procese, servicii, package, gestiunea utilizatorilor, gestiunea discurilor),
+    noțiuni generale de rețelistică,
+    introducere în limbajul Bash.
+  footer: '<a href="#">Temă acasă</a> | Termen limită: săptămâna 2'
+
+- type: 'label'
+  class: 'danger'
+  icon: 'fa-stop'

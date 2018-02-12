@@ -1,9 +1,9 @@
 author: "Alex Coman"
-title: "Resurse disponibile"
+title: "Open Source"
 meta:
     - name: "description"
       lang: "ro"
-      content: "Resurse disponibile pentru stundeții ce urmează cursurile prezentate în acest sit."
+      content: "Situl dedicat materiei Metodologii de lucru în mediul Open-Source"
 
     - name: "keywords"
       lang: "en"
@@ -19,6 +19,6 @@ meta:
         academic, informație, educație, școală, proiect, limbaj, programare,
         document, software, aplicație, student, notă
 header:
-  title: 'Resurse'
-  subtitle: 'disponibile'
+  title: 'Open'
+  subtitle: 'Source'
   tagline: []

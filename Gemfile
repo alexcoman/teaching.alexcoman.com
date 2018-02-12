@@ -1,9 +1,9 @@
-source "https://rubygems.org"
-
+source 'https://rubygems.org'
+gem "rake"
 gem "jekyll"
+gem "html-proofer"
 gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-feed"
-gem "jekyll-press"
-gem "github-pages"
-gem "rake", "~> 10.1.1"
+gem "jekyll-paginate"
+gem "jekyll-theme-prettydocs"
+gem "jemoji"
+gem "prettydocs-jekyll"

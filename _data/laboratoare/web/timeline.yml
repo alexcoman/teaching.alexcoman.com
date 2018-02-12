@@ -1,0 +1,72 @@
+- type: 'label'
+  class: 'success'
+  icon: 'fa-play'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 1'
+
+- type: 'event'
+  class: 'info'
+  point:
+    class: 'black'
+    icon: 'fa-laptop'
+  heading: 'Laborator: <a href="#">Limbajul de marcare HTML</a>'
+  body: >
+    <p>Resurse:
+      <a href="http://www.slideshare.net/busaco/25-de-ani-de-web">25 de ani de Web</a>
+      <a href="https://www.slideshare.net/busaco/sabin-buraga-dezvoltator-web-n-2017">
+        Dezvoltator Web?!
+      </a>
+      <a href="https://eager.io/blog/the-history-of-the-url-domain-and-protocol/">
+        The History of the URL: Domain, Protocol, and Port
+      </a>,
+      <a href="https://eager.io/blog/the-history-of-the-url-path-fragment-query-auth/">
+        The History of the URL: Path, Fragment, Query, and Auth
+      </a>
+    </p>
+    <p>De studiat:
+      <a href="http://www.w3.org/html/">Limbajul de marcare HTML</a>
+      <a href="http://www.slideshare.net/busaco/html5-in-xxx-de-minute">HTML5 în XXX de minute</a> și 
+      <a href="http://www.html-5-tutorial.com/">Un tutorial privitor la HTML</a>
+    </p>
+    <ul>
+      <li>
+        <p>detalii:
+          <a href="https://w3c.github.io/elements-of-html/">Detalii despre elementele limbajului HTML</a>, 
+          <a href="http://docs.webplatform.org/wiki/Beginners">Resurse pentru începători</a>,
+          <a href="https://developer.mozilla.org/docs/HTML">Resurse despre HTML</a> (MDN),
+          <a href="http://html5doctor.com/element-index/">Detalii despre elementele HTML5</a>,
+          <a href="http://www.w3resource.com/html-css-exercise/basic/">O serie de exerciții de bază privitoare la HTML5</a>
+        </p>
+      </li>
+      <li>
+        <p>instrumente:
+          <a href="https://github.com/k4m4/terminals-are-sexy">Command Line Interactions</a>,
+          <a href="http://www.slideshare.net/busaco/cu-codul-n-nori">Cu codul în "nori"</a>
+        </p>
+      </li>
+      <li>
+        <p>editoare: 
+          <a href="https://atom.io/">Atom</a>,
+          <a href="http://brackets.io/">Brackets</a>,
+          <a href="http://www.sublimetext.com/">Sublime Text</a>
+          (vezi și <a href="https://sublime.wbond.net/">Package Control</a>),
+          <a href="https://code.visualstudio.com/">Visual Studio Code</a> +
+          <a href="https://marketplace.visualstudio.com/VSCode">extensii</a>;
+          <a href="http://validator.w3.org/">W3C Validator</a>
+        </p>
+      </li>
+    </ul>
+  footer: '<a href="#">Temă acasă</a> | Termen limită: săptămâna 2'
+
+- type: 'event'
+  class: 'warning'
+  point:
+    class: 'black'
+    icon: 'fa-laptop'
+  heading: 'Extra: <a href="#">Sisteme de gestiune a codului sursă</a>'
+
+- type: 'label'
+  class: 'danger'
+  icon: 'fa-stop'

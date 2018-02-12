@@ -1,0 +1,20 @@
+- title: 'Resurse utile'
+  intro: ''
+  cards:
+    - title: 'Articole'
+      intro: 'diverse resurse ce completează informațiile din cadrul laboratoarelor'
+      color: 'green'
+      icon:  'fa-rss'
+      url: '/resurse'
+
+    - title: 'FAQs'
+      intro: 'întrebări comune referitoare la cursuri și laboratoare'
+      color: 'purple'
+      icon:  'fa-question'
+      url: 'faqs'
+
+    - title: 'Contact'
+      intro: 'modalități de contact'
+      color: 'orange'
+      icon: 'fa-address-card-o'
+      url: 'contact'
