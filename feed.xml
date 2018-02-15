@@ -7,19 +7,6 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
-				<title>Evaluarea proiectelor (în restanță)</title>
-				
-				
-					<description>&lt;p&gt;Fiecare echipă înscrisă pentru evaluare trebuie să țină cont în dezvoltarea proiectului de cerințele și recomandările disponibile în următoarele documente &lt;a href=&quot;/~alex.coman/resurse/noutati/web/evaluare-componenta-d/&quot;&gt;evaluarea componentei D&lt;/a&gt;, &lt;a href=&quot;/~alex.coman/resurse/noutati/web/evaluarea-proiectelor/&quot;&gt;evaluarea componentei P&lt;/a&gt; și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Thu, 15 Jun 2017 08:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluarea-proiectelor-in-sesiunea-de-restante/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluarea-proiectelor-in-sesiunea-de-restante/</guid>
-			</item>
-		
-			<item>
 				<title>Aspecte privind evaluarea proiectelor</title>
 				
 				
@@ -85,19 +72,6 @@
 			</item>
 		
 			<item>
-				<title>Evaluarea proiectelor (săptămâna a IX-a)</title>
-				
-				
-					<description>&lt;p&gt;În săptămâna a IX-a fiecare echipă înscrisă va prezenta interfața web și arhitectura proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească toate cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont și de &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html&quot;&gt;aspecte privind evaluarea&lt;/a&gt;).&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Tue, 11 Apr 2017 08:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluare-componenta-d/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/evaluare-componenta-d/</guid>
-			</item>
-		
-			<item>
 				<title>Vagrant - Server web (PHP5 &amp; MySQL)</title>
 				
 				
@@ -134,6 +108,31 @@
 				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</guid>
+			</item>
+		
+			<item>
+				<title>VirtualBox - instalare pe Mac OSX</title>
+				
+				
+					<description>
+</description>
+				
+				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</guid>
+			</item>
+		
+			<item>
+				<title>Vagrant - noțiuni introductive</title>
+				
+				
+					<description>&lt;p&gt;În ultimii ani, virtualizarea și standardizarea mașinilor virtuale a devenit un subiect din ce în ce mai dezbătut, și populat de diferite sisteme ce își doresc a face acest subiect o realitate cât mai accesibilă. Unul dintre aceste sisteme, realizat modular, este &lt;strong&gt;Vagrant&lt;/strong&gt;. În următoarele rânduri vom vorbi despre ce este mai exact Vagrant, cum funcționează și cum se instaleaza și configurează acest sistem.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 19 Mar 2017 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/notiuni-introductive/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/notiuni-introductive/</guid>
 			</item>
 		
 	</channel>

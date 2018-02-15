@@ -32,7 +32,7 @@ $(document).ready(function() {
     /* ======= jQuery Responsive equal heights plugin ======= */
     /* Ref: https://github.com/liabru/jquery-match-height */
     
-     $('#cards-wrapper .item-inner').matchHeight();
+     $('.cards-wrapper .item-inner').matchHeight();
      $('#showcase .card').matchHeight();
      
     /* Bootstrap lightbox */
