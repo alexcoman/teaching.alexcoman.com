@@ -40,6 +40,8 @@
     
   
     
+  
+    
       <url>
         <loc>https://teaching.alexcoman.com/</loc>
         
@@ -62,15 +64,8 @@
   
     
   
+    
   
-    <url>
-      <loc>https://teaching.alexcoman.com/resurse/noutati/web/evaluarea-proiectelor-in-sesiunea-de-restante/</loc>
-      
-        <lastmod>2017-06-15T08:00:00+00:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
   
     <url>
       <loc>https://teaching.alexcoman.com/resurse/noutati/web/aspecte-privind-evaluarea-proiectelor/</loc>
@@ -112,15 +107,6 @@
       <loc>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</loc>
       
         <lastmod>2017-05-14T12:00:00+00:00</lastmod>
-      
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
-    </url>
-  
-    <url>
-      <loc>https://teaching.alexcoman.com/resurse/noutati/web/evaluare-componenta-d/</loc>
-      
-        <lastmod>2017-04-11T08:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
