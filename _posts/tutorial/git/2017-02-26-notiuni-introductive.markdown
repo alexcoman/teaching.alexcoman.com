@@ -2,14 +2,14 @@
 layout: post
 title: "git - noțiuni introductive"
 date: 2017-02-26 20:00:00
-author: "Mircea Brățan"
+author: ["Mircea Brățan", "Alexandru Coman"]
 categories: [tutorial, git]
 section-type: post
 excerpt_separator: <!--more-->
 color: blue
 ---
 
-Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare Git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.
+Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.
 
 <!--more-->
 
@@ -57,41 +57,3 @@ Licența folosită determină condițiile în care o altă persoană poate folos
 După apăsarea butonului „**Create Repository**” veți ajunge pe pagina repository-ului nou creat.
 
 ![Repository-ul a fost creat]({{ site.baseurl }}/assets/img/github-101/03-repo-created.png){:class="img-responsive"}
-
-## 3. Instalarea și configurarea GitHub for Windows
-În continuare vom descăra și instala aplicația GitHub for Windows de la adresa [windows.github.com](https://windows.github.com/). După instalare va trebui să vă autentificați în aplicație cu username-ul/adresa de mail și parola alese la crearea contului de GitHub.
-
-![Autentificare GitHub for Windows]({{ site.baseurl }}/assets/img/github-101/04-github-setup.png){:class="img-responsive"}
-
-În următorul pas va trebui să configurați identitatea voastră. Scrieți numele întreg și adresa de email. Acestea vor fi publice tuturor persoanelor care au acces la repository.
-
-![Configurarea GitHub for Windows]({{ site.baseurl }}/assets/img/github-101/05-github-setup-2.png){:class="img-responsive"}
-
-La ultimul pas puteți apăsa pe „**Skip**”, deoarece încă nu aveți niciun repository local.
-
-![Importarea repo]({{ site.baseurl }}/assets/img/github-101/06-github-setup-3.png){:class="img-responsive"}
-
-## 4. Crearea primul commit
-Acum vom clona (crea o copie locală) repository-ul creat anterior. Din aplicație vom da click pe „**+**”, vom selecta tab-ul „**Clone**”, contul și repository-ul pe care dorim să-l clonăm, iar în final vom apăsa „**Clone \<repo-name\>**”. Pe ecran va apărea o fereastră pentru selectarea directorului unde se va face clonarea.
-
-![Clonarea unui repository]({{ site.baseurl }}/assets/img/github-101/07-github-clone.png){:class="img-responsive"}
-
-Acum puteți adăuga fișierele sursă în folderul în care ați clonat repository-ul. În acest exemplu este vorba de fișierul *hello.c*.
-
-![Adăugarea fișierelor sursă]({{ site.baseurl }}/assets/img/github-101/08-add-source-files.png){:class="img-responsive"}
-
-Reveniniți în aplicația GitHub for Windows și selectați repository-ul. Veți observa pe coloana centrală că a detectat modificarea unor fișiere („*Uncommitted changes*”). Dați click pe Show pentru a vedea lista lor.
-
-În coloana din dreapta vor apărea toate fișierele noi apărute în directorul repository-ului (ex: *hello.c*), precum și fișierele existente care au fost modificate de la ultimul commit (ex: *README.md*). Pentru a adăuga toate fișierele în repository bifați „*Files to commit*”. Dacă doriți un control mai fin asupra fișierelor puteți expanda fiecare fișier și selecta doar anumite linii. La final scrieți un mesaj de commit în câmpul Summary de pe coloana centrală și dați click pe commit.
-
-![Crearea unui commit]({{ site.baseurl }}/assets/img/github-101/09-commit.png){:class="img-responsive"}
-
-Ultimul pas este sincronizarea repository-ului local cu GitHub. Tot ce trebuie făcut este să dați click pe „**Sync**”.
-
-**Important!** După fiecare commit este necesară sincronizarea cu GitHub pentru ca modificările să fie disponibile și online.
-
-![Sincronizarea cu GitHub]({{ site.baseurl }}/assets/img/github-101/10-push.png){:class="img-responsive"}
-
-Acum modificările create în ultimul commit vor fi vizibile tuturor persoanelor cu acces la repository.
-
-![Done]({{ site.baseurl }}/assets/img/github-101/11-done.png){:class="img-responsive"}
