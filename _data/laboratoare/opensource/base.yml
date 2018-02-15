@@ -21,4 +21,5 @@ meta:
 header:
   title: 'Open'
   subtitle: 'Source'
+  icon: fas fa-book
   tagline: []

@@ -1,6 +1,6 @@
 - type: 'label'
   class: 'success'
-  icon: 'fa-play'
+  icon: 'fas fa-play'
 
 - type: 'label'
   class: 'primary'
@@ -10,7 +10,7 @@
   class: 'info'
   point:
     class: 'black'
-    icon: 'fa-book'
+    icon: 'fas fa-book'
   heading: 'Curs: <a href="#">Software - aspecte generale și istoric</a>'
   body: >
     O parte dintre aspectele abordate în cadrul cursului:
@@ -37,4 +37,4 @@
 
 - type: 'label'
   class: 'danger'
-  icon: 'fa-stop'
+  icon: 'fas fa-stop'

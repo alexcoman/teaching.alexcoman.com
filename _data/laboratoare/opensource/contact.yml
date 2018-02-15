@@ -1,4 +1,4 @@
-- title: "Echipa noastră"
+- title: ""
   description: >
     Metoda preferată de comunicare este cea direct în perioada alocată cursului
     şi laboratoarelor. Pentru cazuri de excepţie, se poate recurge la poşta
@@ -10,11 +10,11 @@
       email: "alexandru.coman@tss-yonder.com"
       social:
         - title: "Pagina de GitHub"
-          icon: "fa-github"
+          icon: "fab fa-github"
           url: "https://github.com/alexcoman/"
         - title: "Profilul tehnic"
-          icon: "fa-linkedin"
+          icon: "fab fa-linkedin"
           url: "https://www.linkedin.com/in/comanalex/"
         - title: "Situl personal"
-          icon: "fa-external-link"
+          icon: "fas fa-anchor"
           url: "https://alexcoman.com/"
