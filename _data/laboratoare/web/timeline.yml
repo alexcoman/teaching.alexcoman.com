@@ -1,17 +1,17 @@
 - type: 'label'
   class: 'success'
-  icon: 'fa-play'
+  icon: 'fas fa-play'
 
 - type: 'label'
   class: 'primary'
   content: 'săptămâna 1'
 
 - type: 'event'
-  class: 'info'
+  class: 'primary'
   point:
-    class: 'black'
-    icon: 'fa-laptop'
-  heading: 'Laborator: <a href="#">Limbajul de marcare HTML</a>'
+    class: 'info'
+    icon: 'fab fa-html5'
+  heading: 'Laborator: <a href="limbajul-de-marcare-html">Limbajul de marcare HTML</a>'
   body: >
     <p>Resurse:
       <a href="http://www.slideshare.net/busaco/25-de-ani-de-web">25 de ani de Web</a>
@@ -58,14 +58,172 @@
         </p>
       </li>
     </ul>
-  footer: '<a href="#">Temă acasă</a> | Termen limită: săptămâna 2'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 2'
 
 - type: 'event'
-  class: 'warning'
+  class: 'primary'
   point:
-    class: 'black'
-    icon: 'fa-laptop'
-  heading: 'Extra: <a href="#">Sisteme de gestiune a codului sursă</a>'
+    class: 'info'
+    icon: 'fab fa-css3'
+  heading: 'Laborator: <a href="#">Foi de stiluri în cascadă – CSS</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 3'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-css3'
+  heading: 'Laborator: <a href="#">Design (Web) responsiv</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 4'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-desktop'
+  heading: 'Laborator: <a href="#">design & interacţiune Web</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'danger'
+  content: 'săptămâna 5'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'danger'
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P</a>'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 6'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-php'
+  heading: 'Laborator: <a href="#">Programare Web în PHP</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 7'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-python'
+  heading: 'Laborator: <a href="#">Programare Web</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'info'
+  content: 'săptămâna 8'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-code-branch'
+  heading: 'Lucru la proiect'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 9'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-python'
+  heading: 'Laborator: <a href="#">Programare Web</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 10'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-database'
+  heading: 'Laborator: <a href="#">Modelarea, validarea şi procesarea datelor XML via DOM</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'danger'
+  content: 'săptămâna 11'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'danger'
+    icon: 'fa-bell'
+  heading: 'Evaluare: <a href="#">Componenta A</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 12'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-check'
+  heading: 'Laborator: <a href="#">Procesarea documentelor XML/HTML</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 13'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-check'
+  heading: 'Laborator: <a href="#">Implementarea şi invocarea serviciilor Web</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna 14'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-check'
+  heading: 'Laborator: <a href="#">Transfer asincron de date cu Ajax</a>'
+  body: 'Mai multe detalii în curând'
+
+- type: 'label'
+  class: 'danger'
+  content: 'sesiune'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'danger'
+    icon: 'fa-bell'
+  heading: 'Evaluare: <a href="#">Componenta S</a>'
+  body: 'Mai multe detalii în curând'
 
 - type: 'label'
   class: 'danger'
