@@ -21,4 +21,5 @@ meta:
 header:
   title: 'Resurse'
   subtitle: 'disponibile'
+  icon: 'fas fa-code-branch'
   tagline: []

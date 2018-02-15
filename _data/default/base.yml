@@ -21,4 +21,5 @@ meta:
 header:
   title: 'Laboratoare'
   subtitle: '@FII'
+  icon: fas fa-laptop
   tagline: []

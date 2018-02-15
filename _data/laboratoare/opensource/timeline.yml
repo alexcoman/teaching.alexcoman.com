@@ -26,7 +26,7 @@
   class: 'warning'
   point:
     class: 'black'
-    icon: 'fa-laptop'
+    icon: 'fas fa-laptop'
   heading: 'Laborator: <a href="#">Sisteme de operare & Virtualizare (recapitulare)</a>'
   body: >
     Subiecte abordate în cadrul acestui laborator:

@@ -19,14 +19,14 @@ blocks:
         text: "regulamente UAIC"
 
 social:
-  - title: "github"
+  - title: "fab fa-github"
     url: "https://github.com/alexcoman"
 
-  - title: "link"
+  - title: "fab fa-linkedin"
+    url: "https://www.linkedin.com/in/comanalex/"
+  
+  - title: "fas fa-anchor"
     url: "https://alexcoman.com"
 
-  - title: "linkedin"
-    url: "https://www.linkedin.com/in/comanalex/"
-
-  - title: "rss"
+  - title: "fas fa-rss"
     url: "/feed.xml"

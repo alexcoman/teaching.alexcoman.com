@@ -173,7 +173,7 @@
   class: 'primary'
   point:
     class: 'danger'
-    icon: 'fa-bell'
+    icon: 'fas fa-bell'
   heading: 'Evaluare: <a href="#">Componenta A</a>'
   body: 'Mai multe detalii în curând'
 
@@ -221,10 +221,10 @@
   class: 'primary'
   point:
     class: 'danger'
-    icon: 'fa-bell'
+    icon: 'fas fa-bell'
   heading: 'Evaluare: <a href="#">Componenta S</a>'
   body: 'Mai multe detalii în curând'
 
 - type: 'label'
   class: 'danger'
-  icon: 'fa-stop'
+  icon: 'fas fa-stop'
