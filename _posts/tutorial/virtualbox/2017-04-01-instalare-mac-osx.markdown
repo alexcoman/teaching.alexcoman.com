@@ -6,6 +6,7 @@ author: "Sabin Marcu"
 categories: [tutorial, virtualbox]
 section-type: post
 excerpt_separator: <!--more-->
+highlight: true
 ---
 
 <!--more-->

@@ -6,6 +6,7 @@ author: "Alexandru Coman"
 categories: [tutorial, openstack]
 section-type: post
 excerpt_separator: <!--more-->
+highlight: true
 ---
 
 În cadrul acestui tutorial o să vorbim despre o metodă prin care putem să pregătim un mediu de dezvoltare pentru [OpenStack] folosind utilitarul [DevStack].

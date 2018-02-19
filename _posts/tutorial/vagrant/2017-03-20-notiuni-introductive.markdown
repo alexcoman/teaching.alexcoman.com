@@ -6,6 +6,7 @@ author: "Sabin Marcu"
 categories: [tutorial, vagrant]
 section-type: post
 excerpt_separator: <!--more-->
+highlight: true
 ---
 
 În ultimii ani, virtualizarea și standardizarea mașinilor virtuale a devenit un subiect din ce în ce mai dezbătut, și populat de diferite sisteme ce își doresc a face acest subiect o realitate cât mai accesibilă. Unul dintre aceste sisteme, realizat modular, este **Vagrant**. În următoarele rânduri vom vorbi despre ce este mai exact Vagrant, cum funcționează și cum se instaleaza și configurează acest sistem.

@@ -4,7 +4,7 @@ title: "Instalare Openstack(RDO) folosind Packstack"
 date: 2017-05-15 12:00:00
 author: "Matei-Marius Micu"
 categories: [tutorial, openstack]
-section-type: post
+highlight: true
 ---
 
 

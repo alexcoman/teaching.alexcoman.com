@@ -6,6 +6,7 @@ author: "Alexandru Coman"
 categories: [tutorial, virtualbox]
 section-type: post
 excerpt_separator: <!--more-->
+highlight: true
 ---
 
 Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va rula sistemul de operare CentOS 7.

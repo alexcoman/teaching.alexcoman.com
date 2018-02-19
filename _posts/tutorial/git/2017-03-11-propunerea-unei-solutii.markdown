@@ -4,8 +4,8 @@ title: "git - propunerea unei soluții"
 date: 2017-03-11 08:00:00
 author: "Alexandru Coman"
 categories: [tutorial, git]
-section-type: post
 excerpt_separator: <!--more-->
+highlight: true
 ---
 
 În cadrul acestui tutorial vom discuta despre pașii pe care trebuie să îi urmați pentru a putea să trimiteți spre evaluare soluțiile la problemele propuse în cadrul laboratoarelor.
@@ -13,7 +13,7 @@ Toate soluțiile propuse vor fi incluse în depozitul de cod [alexcoman/labs][0]
 
 <!--more-->
 
-## I. Structura depozitului de cod
+## Structura depozitului de cod
 
 Pentru fiecare dintre laboratoarele propuse, structura directoarelor respectă următoarea schemă:
 
@@ -69,14 +69,14 @@ web
 
 După cum se poate observa, studentul *Tuxy Pinguinescu* a adăugat în directorul *soluții* din cadrul laboratorului destinat *tehnologiilor web* un director cu numele său în care a adăugat soluția pentru exercițiul intitulat *blog*.
 
-## II. Resurse necesare
+## Resurse necesare
 
-### II.1. Un cont de utilizator pe GitHub
+### Un cont de utilizator pe GitHub
 
 Pentru a putea propune soluțiile pe care le elaborați veți avea nevoie de un cont de utilizator pe [github.com][6].
 Mai multe detalii despre acest pas putem găsi în tutorialul introductiv despre git în secțiunea [1. Crearea contului GitHub.][7]
 
-### II.2. Utilitarul git
+### Utilitarul git
 
 În cazul în care nu aveți instalat în cadrul sistemului vostru acest utilitar puteți să urmați pașii din tutorialul intoductiv despre git din secțiunea [3. Instalarea și configurarea GitHub for Windows][3].
 
@@ -89,16 +89,18 @@ Pentru aceia dintre voi care preferă interacțiunea cu *git* din linia de coman
 ```
 Mai multe detalii și exemple pot fi găsite [aici][5].
 
-### II.3. Un *fork* al depozitului de cod *labs*
+### Un *fork* al depozitului de cod *labs*
 
 Depozitul de cod ce conține materialele folosite în cadrul laboratoarelor de *Tehnologii web* poate fi găsit la următoarea adresă [github.com/alexcoman/labs][0].
 Pentru că utilizatorul creat de voi nu are drepturi de scriere în cadrul acestui depozit de cod veți avea nevoie de un *fork* al depozitului de cod mai sus menționat.
 Pentru acest lucru va trebui să accesați cu ajutorul unui browser web [pagina depozitului de cod][0] și să apăsați pe butonul **Fork** situat în partea dreapta sus a paginii.
 
-{: .center}
-![Fork al depozitului de cod alexcoman/labs]({{ site.baseurl }}/assets/img/git-propunerea-unei-solutii/01-fork.png)
+{% include _utils/picture
+    picture="/assets/img/git-propunerea-unei-solutii/01-fork.png"
+    title="Fork al depozitului de cod alexcoman/labs"
+%}
 
-## III. Elaborarea soluției
+## Elaborarea soluției
 
 În acest moment aveți la dispoziție toate resursele necesare pentru a putea trece la elaborarea soluției pentru problemele propuse în cadrul laboratorului.
 
@@ -150,7 +152,7 @@ Mai jos puteți găsi o secvență posibilă de pași pe care *Tuxy Pinguinescu*
 
 7. Toate fișierele cu rezolvările vor fi plasate în directoarele corespunzătoare
 
-## IV. Propunerea soluției
+## Propunerea soluției
 
 După redactarea fișierelor ce reprezintă soluția pentru unul dintre exercițiile propuse în cadrul unui laborator va trebui să încapsulați acele modificări în cadrul unui *commit*.
 
@@ -184,7 +186,7 @@ Changes to be committed:
 
 După ce am adăugat toate modificările pe care le dorim putem să le încapsulăm într-un commit folosind următoarea comandă:
 
-```
+```bash
 ~ $ git commit -m "Mesajul pe care dorim să îl atașăm acestor modificări"
 ```
 
@@ -203,15 +205,16 @@ Pentru Tuxy Pinguinescu această pagini este `https://github.com/tuxy_pinguinesc
 
 În cadrul acestei pagini vor fi afișate toate *branch*-urile existente în cadrul depozitului vostru de cod cu o serie de acțiuni pentru fiecare dintre ele. În cazul nostru acțiunea care ne interesează este **New pull request**.
 
-{: .center}
-![New pull request]({{ site.baseurl }}/assets/img/git-propunerea-unei-solutii/02-new-pull-request.png)
-
+{% include _utils/picture
+    picture="/assets/img/git-propunerea-unei-solutii/02-new-pull-request.png"
+    title="New pull request"
+%}
 
 [0]: https://github.com/alexcoman/labs
 [1]: https://github.com/alexcoman/labs/tree/master/web/exercitii/blog
 [2]: https://www.w3.org/html/
-[3]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#3-instalarea-și-configurarea-github-for-windows
+[3]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#instalarea-și-configurarea-github-for-windows
 [4]: https://git-scm.com/downloads
 [5]: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [6]: https://github.com/
-[7]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#1-crearea-contului-github
+[7]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/#crearea-contului-github
