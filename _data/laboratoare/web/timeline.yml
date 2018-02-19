@@ -222,7 +222,7 @@
   point:
     class: 'danger'
     icon: 'fas fa-bell'
-  heading: 'Evaluare: <a href="#">Componenta S</a>'
+  heading: 'Evaluare: <a href="evaluare-componenta-s">Componenta S</a>'
   body: 'Mai multe detalii în curând'
 
 - type: 'label'
