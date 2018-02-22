@@ -2,7 +2,7 @@
 layout: post
 title: "Instalarea sistemului de operare CentOS 7"
 date: 2017-05-14 12:00:00
-author: "Alexandru Coman"
+author: ["Alexandru Coman", "Gabriel Paiu"]
 categories: [tutorial, virtualbox]
 section-type: post
 excerpt_separator: <!--more-->
@@ -19,86 +19,176 @@ Pentru pregătirea mediului de execuție o să folosim utilitarul  hypervisorul 
 
 [VirtualBox] este o aplicație ce ne permite să virtualizăm o mașină fizică (un computer). Cu ajutorul său, putem să creăm o mașină virtuală după specificațiile oferite de noi, ce va conține un sistem de operare izolat de sistemul de operare al mașinii gazdă. Mai multe detalii pot fi găsite în tutorialul [VirtualBox - noțiuni introductive][virtualbox-101].
 
-## Specificații pentru mașina virtuală
+## Instalarea VritualBox
 
-Pentru pregătirea mașinii virtuale puteți urma pașii prezentați în cadrul tutorialului [VirtualBox - Noțiuni introductive][virtualbox-101] menționat mai sus.
+Peste procedura de instalare a VirtualBox nu vom trece in amănunt. deoarece este suficient sa urmați pașii de instalare cu setările implicite, nefiind nevoie de configurări adiționale. Pentru fiecare sistem de operare este disponibil un utilitar care vă va ghida in procesul de instalare
 
-- Setări privitoare la procesoare:
-	- Numărul de procesoare: 2 (*Recomandat*)
-	- Numărul de nuclee pentru fiecare procesor: 1
-- Setări privitoare la memorie: 1GB RAM (*Recomandat*)
-- Setări privitoare la spațiu de stocare: HDD - SATA - Minim 20 GB (Este recomandat ca spațiul să fie *prealocat*)
-- Setări privitoare la rețea:
-	- Adaptorul de rețea 1:  **NAT**
-	- Adaptorul de rețea 2:  **Host Only** (pentru a facilita accesul la mașina virtuală)
+## Specificațiile mașinii virtuale
 
+Setări privitoare la prcesoare: 1 CPU cu 1 nucleu
+Setări privitoare la memorie: 1GB RAM
+Setări privitoare la spațiul de stocare: 15GB prealocați
+Setări privitoare la rețea:
+- Adaptor de rețea 1: NAT (asigura comunicarea cu exteriorul)
+- Adaptor de rețea 2: Host Only (faciliteaza comunicarea cu sistemul de operare gazdă)
 
 ## Instalarea sistemului de operare
 
-### Pasul I. Începem instalarea sistemului de operare
+### Crearea mașinii si setarea resurselor
 
-După ce o să pornim mașina virtuală, utilitarul pentru instalarea sistemului de operare va fi pornit de pe *ISO*-ul montat folosind suportul pentru DVD.
-{: .center}
-![Începem instalarea sistemului de operare]({{ site.baseurl }}/assets/img/instalare-centos-7/0-install-centos-7.png)
+Pentru început, vom deschide aplicația VirtualBox si vom crea o mașina nouă. Putem opta fie pentru ”Guided Mode” sau ”Expert Mode”, ambele fiind potrivie pentru ceea ce avem de realizat. În cadrul acestui tutorial, am ales ”Expert Mode”.
 
-### Pasul II. Setări privitoare la localizare
+Vom completa câmpul cu numele mașinii pe care o vom crea, după care din dropdown vom selecta Linux si RedHat, deoarece CentOS este o distribuție de RedHat. Vom aloca apoi 1024MB de RAM si vom alege să creem si un hard disk odată cu mașina virtuală
 
-În cadrul acestui pas trebuie să selectăm limba în care dorim să parcurgem pașii de instalare. Pentru acest tutorial am optat pentru limba *română*. 
-{: .center}
-
-![Setări privitoare la localizare]({{ site.baseurl }}/assets/img/instalare-centos-7/1-setari-referitoare-la-localizare.png)
-
-### Pasul III. Instalarea sistemului de operare
-
-După ce am ales limba în care dorim să ne fie prezentate informațiile, ne este oferită posibilitatea de a personaliza o parte dinte aspectele legate de modul în care sistemul de operare va fi instalat.
-Pentru acest tutorial vom opta spre instalarea minimală a sistemului de operare, fără interfață grafică.
-
-{: .center}
-![Începe instalarea sistemului de operare]({{ site.baseurl }}/assets/img/instalare-centos-7/3-incepem-instalarea.png)
-
-În cazul în care nu dorim să personalizăm nici un alt aspect din cele disponibile, singurul lucru pe care trebuie să-l mai facem înainte de a trece la pasul următor, este să alegem modul în care va fi structurat sistemul de fișiere.
-
-Pentru ușurință sau din lipsa unor altor specificații, putem opta să lăsăm utilitarul să partiționeze spațiul disponibil pentru noi.
-
-{: .center}
-![Setări privitoare la disk-uri]({{ site.baseurl }}/assets/img/instalare-centos-7/2-setari-privitoare-la-disk-uri.png)
-
-### Pasul IV. Gestiunea utilizatorilor
-
-În acest pas, utilitarul a terminat de instalat sistemul de operare și ne dă posibiltiatea să gestionăm utilizatorii.
-{: .center}
-![Se instalează pachetele necesare]({{ site.baseurl }}/assets/img/instalare-centos-7/6-instalarea-sistemului-de-operare.png)
-
-O să adăugăm o parolă ușor de reținut (*nu este recomandat acest lucru pe o mașină accesibilă în afara mediului nostru local, din motive de securitate*). În cazul în care parola nu este suficient de complexă, ca în exemplul de mai jos, o să primim un mesaj de avertizare și va trebui să apăsăm de două ori pe butonul **Done** pentru a trece la pasul următor.
-
-{: .center}
-![Setăm parola pentru utilizatorul root]({{ site.baseurl }}/assets/img/instalare-centos-7/5-setam-parola-pentru-root.png)
-
-După ce am adăugat parola pentru utilizatorul **root** (care este un cont cu privilegii depline asupra sistemului) o să adăugăm un utilizator nou.
-
-{: .center}
-![Adăugam un utilizator nou]({{ site.baseurl }}/assets/img/instalare-centos-7/4-adaugam-un-utilizator-nou.png)
-
-### Pasul V. Finalizarea instalării
-
-O dată cu acest pas, instalarea sistemului de operare a luat sfârșit.
-Pentru a putea folosi sistemul nou instalat va trebui să repornim mașina virtuală.
-
-{: .center}
-![Repornim mașina virtuală]({{ site.baseurl }}/assets/img/instalare-centos-7/7-repornim-sistemul.png)
-
-## Interacțiunea cu CentOS 7
-
-După ce mașina virtuală va reporni, putem să ne autentificăm în cadrul sistemului de operare.
-
-{: .center}
-![Ne autentificăm]({{ site.baseurl }}/assets/img/instalare-centos-7/8-autentificare.png)
+{% include _utils/picture 
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-02.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-02.png"
+    title="Informații generale referitoare la mașina virtuală."
+%}
 
 
-Pentru acest lucru putem folosi utilizatorul adăugat în cadrul [pasului IV][pasul-4] (în cazul nostru *Tuxy Pinguinescu* cu numele de utilizator *tuxy*).
+La pasul urmator vom fi prezentați cu opțiuni referitoare la unde va fi alocat efectiv spațiul pe discul mașinii gazdă. Puteți selecta locația in funcție de preferința organizatorie, având grijă sa alocăm spațiul menționat in specificațiile precedente.
 
-{: .center}
-![Am terminat]({{ site.baseurl }}/assets/img/instalare-centos-7/9-am-terminat.png)
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-03.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-03.png"
+%}
+
+După acest pas, ar trebui să aveți deja alocate resurse, iar mașina virtuală este creată.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-04.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-04.png"
+%}
+
+Înainte de a porni procesul de instalare al sistemului de operare, vom aloca si adaptorii de rețea. Asadar in opțiunile mașinii virtuale, la secțiunea Network, veți găsi posibilitatea de a adăuga și de a asigna adaptorii conform specificațiilor.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-05.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-05.png"
+%}
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-06.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-06.png"
+%}
+
+Deasemenea, la rubrica Storage, va trebui să montăm imaginea de CentOS descărcata în prealabil, ca mașina virtuală să poată accesa secvența de pornire a acesteia. In consecință, vom adăuga un disc optic ce ne va permite sa incărcăm imaginea desărcată.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-07.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-07.png"
+%}
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-08.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-08.png"
+%}
+
+Dupa acest pas, suntem pregătiți pentru a trece mai departe la instalarea efectiva a sistemului de operare.
+
+### Instalarea sistemului de operare
+
+Dupa ce am pornit mașina virtuală vom fi prezentați cu 3 opțiuni dintre care vom alege sa instalăm CentOS 7. La pasul următor, veți avea posibilitatea sa alegeți limba in care vă va fi oferit ghidul de instalare.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-09.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-09.png"
+%}
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-10.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-10.png"
+%}
+
+Setările privitoare la schema de partiționare o vom alege noi, pentru a putea folosi volume logice ce ne vor fi necesare în laboratoarele ulterioare.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-11.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-11.png"
+%}
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-12.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-12.png"
+%}
+
+Schema de partiționare:
+- /boot - 200MB - Standard Partition
+- / - 10GB - Logical Partition
+- swap - 1GB - swap
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-13.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-13.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-14.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-14.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-15.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-15.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-16.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-16.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-17.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-17.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-18.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-18.png"
+%}
+
+Ulterior, vom activa adaptorii de rețea, și vom seta hostname-ul mașinii virtuale, dupa care putem porni procedura de instalare.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-19.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-19.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-20.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-20.png"
+%}
+
+În timpul acesteia, vom putea seta si parola pentru utilizatorul ”root” (cu drepturile depline pe sistem) dar si pentru un utilizator ”normal”, pentru care veți putea introduce si informații descriptive.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-21.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-21.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-22.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-22.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-23.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-23.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-24.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-24.png"
+%}
+
+Odată ce instalarea se va finaliza, veți putea reporni mașina virtuală. Rezultatul final va fi o consolă în care veți putea introduce datele de autentificare pentru sistem, cele pe care le-ați configurat la pașii precedenți.
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-25.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-25.png"
+%}
+
+{% include _utils/picture
+    picture="/assets/images/tutorial/virtualbox/instalare-centos-7/vm-install-26.png"
+    thumbnail="/assets/images/tutorial/virtualbox/instalare-centos-7/small/vm-install-26.png"
+%}
 
 [VirtualBox]: https://www.virtualbox.org/
 [virtualbox-101]: {{ site.baseurl }}/resurse/tutorial/vagrant/notiuni-introductive/
