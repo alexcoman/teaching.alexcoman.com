@@ -7,33 +7,17 @@
   content: 'săptămâna 1'
 
 - type: 'event'
-  class: 'info'
+  class: 'primary'
   point:
-    class: 'black'
-    icon: 'fas fa-book'
-  heading: 'Curs: <a href="#">Software - aspecte generale și istoric</a>'
-  body: >
-    O parte dintre aspectele abordate în cadrul cursului:
-    <ul>
-      <li>Ce inseamna software (Open Source)?</li>
-      <li>Free Software (as in beer / Free Willy)</li>
-      <li>Tipuri de licențiere</li>
-    </ul>
-
-  footer: 'Data: <a href="#">Va fi anunțată în curând.</a>'
-
-- type: 'event'
-  class: 'warning'
-  point:
-    class: 'black'
-    icon: 'fas fa-laptop'
-  heading: 'Laborator: <a href="#">Sisteme de operare & Virtualizare (recapitulare)</a>'
+    class: 'info'
+    icon: 'fab fa-html5'
+  heading: 'Laborator: <a href="sisteme-de-operare-si-bash">Sisteme de operare și Bash</a>'
   body: >
     Subiecte abordate în cadrul acestui laborator:
     noțiuni de sisteme de operare (procese, servicii, package, gestiunea utilizatorilor, gestiunea discurilor),
     noțiuni generale de rețelistică,
     introducere în limbajul Bash.
-  footer: '<a href="#">Temă acasă</a> | Termen limită: săptămâna 2'
+  footer: '<a href="sisteme-de-operare-si-bash/#tema">Temă acasă</a> | Termen limită: săptămâna 3'
 
 - type: 'label'
   class: 'danger'
