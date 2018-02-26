@@ -1,7 +1,7 @@
 sudo: false
 language: ruby
 cache: bundler
-rvm: 2.4.0
+rvm: 2.4.1
 
 branches:
   only:
@@ -12,7 +12,10 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     - JEKYLL_ENV=production
 
-install: bundle install
+install:
+  - bundle install
+  - bundle update
+
 script:
   - bundle exec rake site:deploy[_config.yml] 
   - bundle exec rake site:deploy[_config.fii.yml]
