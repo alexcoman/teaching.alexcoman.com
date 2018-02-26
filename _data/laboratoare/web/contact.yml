@@ -6,7 +6,6 @@
     (în caz contrar, mesajul va fi ignorat).
   members:
     - name: "Alexandru Coman"
-      avatar: ""
       email: "alexandru.coman@tss-yonder.com"
       social:
         - title: "Pagina de GitHub"
