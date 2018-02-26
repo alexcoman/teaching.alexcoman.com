@@ -1,11 +1,5 @@
-- section: 'Tehnologii Web'
+- section: 'Laboratoare'
   questions:
-    - title: 'Care este scopul acestui curs?'
-      answer: >
-        Cursul de Tehnologii Web își propune să clădească o fundație solidă
-        pentru stundeții ce doresc să devină dezvoltatori Web profesioniști.
-      is_new: false
-      was_updated: false
     - title: 'Ce tematici vor fi abortate în cadrul laboratoarelor?'
       answer: >
         Printre tematicile ce vor fi abordate în cadrul laboratoarelor
@@ -21,4 +15,33 @@
         De la SOA la servicii Web: SOAP și REST,
         Securitatea aplicațiilor Web.
       is_new: false
+      was_updated: false
+
+    - title: 'Care este scopul acestui laborator ?'
+      answer: >
+        Cursul de Tehnologii Web își propune să clădească o fundație solidă
+        pentru stundeții ce doresc să devină dezvoltatori Web profesioniști.
+      is_new: false
+      was_updated: false
+
+    - title: 'Este posibil să mă transfer la altă grupă ?'
+      answer: >
+        În cazul în care nu puteți ajunge la laboratorul grupei dumneavoastră
+        puteți să vă transferați la altă grupă dacă găsiți un coleg de la grupa
+        respectivă dispus să facă schimb cu dumneavoastră și dacă ambii titulari
+        de laboratori sunt de acord cu acest lucru. 
+      is_new: true
+      was_updated: false
+
+- section: 'Evaluare'
+  questions:
+    - title: 'Echipa poate fi compusă din membrii din grupe diferite ?'
+      answer: >
+        Dacă studenții fac parte din grupe ce au același titular de curs
+        nu este nici o problemă și nu este necesară nici o acțiune suplimentară
+        din partea studenților. În cazul în care grupele din care fac parte
+        studenții au titulari diferiți aceștia trebuie să decidă la care dintre
+        grupe doresc să prezinte proiectul și să urmeze pașii descriși în 
+        răspunsul pentru întrebarea "Este posibil să mă transfer la altă grupă ?".
+      is_new: true
       was_updated: false
