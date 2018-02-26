@@ -7,6 +7,58 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Managementul pachetelor</title>
+				
+				
+					<description>&lt;p&gt;Vom instala și dez-instala programe :)&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 19 Feb 2018 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/manager-pachete/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/manager-pachete/</guid>
+			</item>
+		
+			<item>
+				<title>Noțiuni introductive în Bash</title>
+				
+				
+					<description>&lt;p&gt;Acest totorial este o scurtă recapitulare a noțiunilor referitoare la Bash ce au fost predate în cadrul cursului de Sisteme de Operare.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 17 Feb 2018 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/notiuni-introductive-in-bash/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/notiuni-introductive-in-bash/</guid>
+			</item>
+		
+			<item>
+				<title>Managementul discurilor</title>
+				
+				
+					<description>&lt;p&gt;Să discutăm despre partiţii, tipuri de partiţii, partiţii primare, partiţii extinse, partiţii logice, file systems.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Fri, 16 Feb 2018 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/managementul-discurilor/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/managementul-discurilor/</guid>
+			</item>
+		
+			<item>
+				<title>Gestiunea proceselor</title>
+				
+				
+					<description>&lt;p&gt;Un proces îl putem defini ca un program in execuţie. Ele sunt unităţi prin care sistemul de operare alocă resurse utilizatorilor.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 24 Jan 2018 12:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/gestiunea-proceselor/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/sisteme-operare/gestiunea-proceselor/</guid>
+			</item>
+		
+			<item>
 				<title>Instalarea OpenStack folosind DevStack</title>
 				
 				
@@ -82,58 +134,6 @@
 				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-windows/</guid>
-			</item>
-		
-			<item>
-				<title>VirtualBox - instalare pe Mac OSX</title>
-				
-				
-					<description>
-</description>
-				
-				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/instalare-mac-osx/</guid>
-			</item>
-		
-			<item>
-				<title>Vagrant - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;În ultimii ani, virtualizarea și standardizarea mașinilor virtuale a devenit un subiect din ce în ce mai dezbătut, și populat de diferite sisteme ce își doresc a face acest subiect o realitate cât mai accesibilă. Unul dintre aceste sisteme, realizat modular, este &lt;strong&gt;Vagrant&lt;/strong&gt;. În următoarele rânduri vom vorbi despre ce este mai exact Vagrant, cum funcționează și cum se instaleaza și configurează acest sistem.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 19 Mar 2017 12:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/notiuni-introductive/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/notiuni-introductive/</guid>
-			</item>
-		
-			<item>
-				<title>git - propunerea unei soluții</title>
-				
-				
-					<description>&lt;p&gt;În cadrul acestui tutorial vom discuta despre pașii pe care trebuie să îi urmați pentru a putea să trimiteți spre evaluare soluțiile la problemele propuse în cadrul laboratoarelor.
-Toate soluțiile propuse vor fi incluse în depozitul de cod &lt;a href=&quot;https://github.com/alexcoman/labs&quot;&gt;alexcoman/labs&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sat, 11 Mar 2017 08:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/propunerea-unei-solutii/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/propunerea-unei-solutii/</guid>
-			</item>
-		
-			<item>
-				<title>git - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare git am pregătit acest tutorial care vă va arăta pașii care trebuie urmați pentru a încărca proiectele voastre pe GitHub.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 26 Feb 2017 20:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/notiuni-introductive/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/git/notiuni-introductive/</guid>
 			</item>
 		
 	</channel>
