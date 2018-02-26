@@ -13,6 +13,11 @@
     icon: 'fab fa-html5'
   heading: 'Laborator: <a href="limbajul-de-marcare-html">Limbajul de marcare HTML</a>'
   body: >
+    <p>Curs:
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web01ArhitecturaWeb.pdf">
+        World Wide Web – aspecte arhitecturale
+      </a>
+    </p>
     <p>Resurse:
       <a href="http://www.slideshare.net/busaco/25-de-ani-de-web">25 de ani de Web</a>
       <a href="https://www.slideshare.net/busaco/sabin-buraga-dezvoltator-web-n-2017">
@@ -59,6 +64,14 @@
       </li>
     </ul>
 
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fas fa-check'
+  heading: 'Temă acasă: <a href="teme/tema-1">Limbajul de marcare HTML</a>'
+  footer: 'Termeni limită: Săptămâna 2'
+
 - type: 'label'
   class: 'primary'
   content: 'săptămâna 2'
@@ -68,162 +81,73 @@
   point:
     class: 'info'
     icon: 'fab fa-css3'
-  heading: 'Laborator: <a href="#">Foi de stiluri în cascadă – CSS</a>'
-  body: 'Mai multe detalii în curând'
+  heading: 'Laborator: <a href="https://profs.info.uaic.ro/~busaco/teach/labs/css/">Foi de stiluri în cascadă - CSS</a>'
+  body: >
+    <p>
+      Curs:
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web02ProgramareWeb-HTTP-CGI.pdf">
+        World Wide Web – aspecte arhitecturale
+      </a
+    </p>
+    
+    <p>Resurse:
+      <a href="https://code-maze.com/http-series/">Un tutorial despre HTTP</a>,
+      <a href="https://devdocs.io/http/">Detalii despre HTTP oferite de DevDocs.io</a>,
+      <a href="https://busaco.wordpress.com/2013/02/10/cateva-milisecunde-de-http/">Câteva milisecunde de HTTP</a>,
+      <a href="https://httpstatuses.com/">Lista codurilor de stare ale protocolului HTTP</a>,
+      <a href="http://http2.github.io/">Resurse despre HTTP/2</a>,
+      <a href="http://www.softwareishard.com/blog/har-12-spec/">Specificația formatului HAR</a>,
+      <a href="https://cookiepedia.co.uk/">Informații despre cookie-uri</a>,
+      <a href="https://scotthelme.co.uk/tough-cookies/">Cookie-uri în contextul securității Web</a>,
+      <a href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">Informații privind managementul sesiunilor Web</a>,
+      <a href="http://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week2">Arhitectura navigatorului Web</a>,
+      <a href="https://blog.appcanary.com/2017/http-security-headers.html">HTTP Security Headers</a>
+    </p>
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 3'
+    <p>Instrumente:
+    <ul>
+      <li>servere Web:
+        <a href="https://httpd.apache.org/" title="Detalii despre serverul Apache">Apache HTTP Server</a>,
+        <a href="http://www.iis.net/" title="Detalii referitoare la Microsoft IIS">Microsoft IIS</a>,
+        <a href="http://nginx.org/en/" title="Detalii privind serverul nginx">nginx</a>;
+      </li>
 
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fab fa-css3'
-  heading: 'Laborator: <a href="#">Design (Web) responsiv</a>'
-  body: 'Mai multe detalii în curând'
+      <li>vizând HTTP:
+        <a href="https://curl.haxx.se/" title="Spre situl Web oficial al instrumentului curl">cURL</a>,
+        <a href="http://www.hurl.it/" title="Un instrument Web de realizare de cereri HTTP">Hurl.it</a>,
+        <a href="http://httpbin.org/" title="Detalii despre httpbin: HTTP Request &amp; Response Service">httpbin</a>;
+      </li>
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 4'
+      <li>performanță Web:
+        <a href="https://trafficserver.apache.org/" title="Apache Traffic Server">Apache Traffic Server</a>,
+        <a href="http://www.haproxy.org/" title="A Reliable, High Performance Load Balancer">HAProxy</a>
+        <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts">
+          An Introduction to HAProxy and Load Balancing Concepts</a>,
+        <a href="http://www.squid-cache.org/" title="A caching proxy for Web">Squid</a>,
+        <a href="https://www.varnish-cache.org/" title="Varnish HTTP Cache">Varnish</a>;
+      </li>
 
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-desktop'
-  heading: 'Laborator: <a href="#">design & interacţiune Web</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'danger'
-  content: 'săptămâna 5'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'danger'
-    icon: 'fas fa-bell'
-  heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P</a>'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 6'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fab fa-php'
-  heading: 'Laborator: <a href="#">Programare Web în PHP</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 7'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fab fa-python'
-  heading: 'Laborator: <a href="#">Programare Web</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'info'
-  content: 'săptămâna 8'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-code-branch'
-  heading: 'Lucru la proiect'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 9'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fab fa-python'
-  heading: 'Laborator: <a href="#">Programare Web</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 10'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-database'
-  heading: 'Laborator: <a href="#">Modelarea, validarea şi procesarea datelor XML via DOM</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'danger'
-  content: 'săptămâna 11'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'danger'
-    icon: 'fas fa-bell'
-  heading: 'Evaluare: <a href="#">Componenta A</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 12'
+      <li>extensii pentru clientul Web privind intimitatea:
+        <a href="https://www.ghostery.com/" title="Detalii despre instrumentul Ghostery">Ghostery</a>,
+        <a href="https://www.eff.org/https-everywhere" title="Detalii despre HTTPS Everywhere">HTTPS Everywhere</a>,
+        <a href="https://github.com/gorhill/uBlock" title="Detalii despre uBlock">uBlock Origin</a>;
+      </li>
+      
+      <li>
+        HTTPS:
+        <a href="https://certbot.eff.org/" title="Automatically enabling HTTPS on a Website">Certbot</a>,
+        <a href="https://movingtohttps.com/" class="super" title="Ghid de migrare la HTTPS">Moving to HTTPS Guide</a>
+      </li>
+    </ul>
+    </p>
 
 - type: 'event'
   class: 'primary'
   point:
     class: 'info'
     icon: 'fas fa-check'
-  heading: 'Laborator: <a href="#">Procesarea documentelor XML/HTML</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 13'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-check'
-  heading: 'Laborator: <a href="#">Implementarea şi invocarea serviciilor Web</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 14'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-check'
-  heading: 'Laborator: <a href="#">Transfer asincron de date cu Ajax</a>'
-  body: 'Mai multe detalii în curând'
-
-- type: 'label'
-  class: 'danger'
-  content: 'sesiune'
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'danger'
-    icon: 'fas fa-bell'
-  heading: 'Evaluare: <a href="evaluare-componenta-s">Componenta S</a>'
-  body: 'Mai multe detalii în curând'
+  heading: 'Temă acasă: <a href="teme/tema-2">Foi de stiluri în cascadă - CSS</a>'
+  footer: 'Termeni limită: Săptămâna 3'
 
 - type: 'label'
   class: 'danger'
