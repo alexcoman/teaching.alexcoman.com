@@ -44,6 +44,8 @@
     
   
     
+  
+    
       <url>
         <loc>https://teaching.alexcoman.com/</loc>
         
@@ -68,6 +70,46 @@
   
     
   
+    
+  
+    
+  
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/sisteme-operare/manager-pachete/</loc>
+      
+        <lastmod>2018-02-19T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/sisteme-operare/notiuni-introductive-in-bash/</loc>
+      
+        <lastmod>2018-02-17T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/sisteme-operare/managementul-discurilor/</loc>
+      
+        <lastmod>2018-02-16T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://teaching.alexcoman.com/resurse/tutorial/sisteme-operare/gestiunea-proceselor/</loc>
+      
+        <lastmod>2018-01-24T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
   
     <url>
       <loc>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</loc>
