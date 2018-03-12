@@ -2,10 +2,6 @@
   class: 'success'
   icon: 'fas fa-play'
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 1'
-
 - type: 'event'
   class: 'primary'
   point:
@@ -63,18 +59,8 @@
         </p>
       </li>
     </ul>
-
-- type: 'event'
-  class: 'primary'
-  point:
-    class: 'info'
-    icon: 'fas fa-check'
-  heading: 'Temă acasă: <a href="teme/tema-1">Limbajul de marcare HTML</a>'
-  footer: 'Termeni limită: Săptămâna 2'
-
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 2'
+  footer: >
+    'Temă acasă: <a href="teme/tema-1">Limbajul de marcare HTML</a>'
 
 - type: 'event'
   class: 'primary'
@@ -140,14 +126,52 @@
       </li>
     </ul>
     </p>
+  footer: >
+    Temă acasă: <a href="teme/tema-2">Foi de stiluri în cascadă - CSS</a>
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna curentă'
 
 - type: 'event'
   class: 'primary'
   point:
     class: 'info'
-    icon: 'fas fa-check'
-  heading: 'Temă acasă: <a href="teme/tema-2">Foi de stiluri în cascadă - CSS</a>'
-  footer: 'Termeni limită: Săptămâna 3'
+    icon: 'fas fa-desktop'
+  heading: 'Laborator: <a href="design-si-interactiune-web">Design & interacţiune Web</a>'
+  body: >
+    <p>
+      Curs: 
+        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf">
+          Programare Web - Dezvoltarea aplicațiilor Web în PHP
+        </a>
+      </p>
+    <p>Demo: 
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/demos/php/php.zip">
+        Exemple de programe PHP</a> (arhivă zip, 41.5K)
+    </p>
+    
+    <p>Resurse: 
+      <a href="http://www.tutorialspoint.com/php/" title="Tutoriale referitoare la PHP">PHP Tutorial</a>,
+      <a href="http://www.phptherightway.com/" title="O carte online privitoare la PHP">PHP: The Right Way</a>,
+      <a href="http://php.net/manual/en/index.php" title="Manualul PHP oficial">PHP Manual</a>,
+      <a href="https://phpbestpractices.org/" title="O carte online referitoare la PHP">PHP Best Practices</a>,
+      <a href="http://www.phpweekly.com/" class="super" title="Nout&#259;&#355;ii privitoare la PHP">PHP Weekly</a>,
+      <a href="https://medium.freecodecamp.com/best-gitter-channels-php-867f93321da2" 
+         title="A list of PHP-related channels on Gitter">Best Gitter channels: PHP</a>
+    </p>
+
+- type: 'label'
+  class: 'danger'
+  content: 'săptămâna următoare'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'danger'
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P</a>'
+
 
 - type: 'label'
   class: 'danger'
