@@ -50,6 +50,12 @@
     
   
     
+  
+    
+  
+    
+  
+    
       <url>
         <loc>https://profs.info.uaic.ro/</loc>
         
@@ -60,6 +66,12 @@
           
         
        </url>
+    
+  
+    
+  
+    
+  
     
   
     
@@ -186,6 +198,33 @@
       <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/notiuni-introductive/</loc>
       
         <lastmod>2017-03-19T12:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/docker/docker-introducere/</loc>
+      
+        <lastmod>2017-03-13T08:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/docker/docker-imagini/</loc>
+      
+        <lastmod>2017-03-13T08:00:00+00:00</lastmod>
+      
+      <changefreq>weekly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/docker/docker-containere/</loc>
+      
+        <lastmod>2017-03-13T08:00:00+00:00</lastmod>
       
       <changefreq>weekly</changefreq>
       <priority>1.0</priority>
