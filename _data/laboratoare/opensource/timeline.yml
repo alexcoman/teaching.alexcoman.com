@@ -2,15 +2,11 @@
   class: 'success'
   icon: 'fas fa-play'
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna 1'
-
 - type: 'event'
   class: 'primary'
   point:
     class: 'info'
-    icon: 'fab fa-html5'
+    icon: 'fas fa-hashtag'
   heading: 'Laborator: <a href="sisteme-de-operare-si-bash">Sisteme de operare și Bash</a>'
   body: >
     Subiecte abordate în cadrul acestui laborator:
@@ -18,6 +14,47 @@
     noțiuni generale de rețelistică,
     introducere în limbajul Bash.
   footer: '<a href="sisteme-de-operare-si-bash/#tema">Temă acasă</a> | Termen limită: săptămâna 3'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-github'
+  heading: 'Laborator: <a href="git">Git</a>'
+  body: >
+    Pentru a veni în întâmpinarea celor care nu sunt familiarizați cu sistemul de versionare
+    git am pregătit acest laborator care vă va arăta pașii care trebuie urmați pentru a
+    contibui într-un mod cât mai ușor la un proiect ce folosește ca sistem de versionare
+    a codului sursă utilitarul git.
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-github'
+  heading: 'Tema suplimentară: <a href="teme/tema-extra-1">Configurarea mașinilor virtuale</a>'
+  body: >
+    Pentru a veni în întâmpinarea studenților ce doresc să obțină puncte suplimentare punem la
+    dispoziție o temă opțională ce va aborda toate subiectele discutate până în acest punct
+    în cadrul laboratoarelor.
+  footer: >
+    Termen limită: săptămâna 7
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna curentă'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'info'
+    icon: 'fab fa-docker'
+  heading: 'Laborator: <a href="docker">Docker</a>'
+  body: >
+    Subiecte abordate în cadrul acestui laborator:
+    introducere în Docker, containerizare vs. virtualizare, containere, imagini, volume
+  footer: >
+    <a href="teme/tema-2">Temă acasă</a> | Termen limită: săptămâna 5
 
 - type: 'label'
   class: 'danger'

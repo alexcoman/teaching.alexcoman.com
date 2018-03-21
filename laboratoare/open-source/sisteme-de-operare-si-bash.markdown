@@ -3,6 +3,7 @@ layout: page
 title: "Sisteme de operare și Bash"
 permalink: /laboratoare/open-source/sisteme-de-operare-si-bash/
 layout: post
+color: pink
 date: 2018-02-17 12:00:00
 author: "Gabriel Paiu"
 excerpt_separator: <!--more-->
