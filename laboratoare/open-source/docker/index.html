@@ -1,0 +1,209 @@
+<!DOCTYPE html> <!--[if IE 8]> <html lang="ro" class="ie8"> <![endif]--> <!--[if IE 9]> <html lang="ro" class="ie9"> <![endif]--> <!--[if !IE]><!--> <html lang="ro"> <!--<![endif]--> <head> <title>Docker</title> <!-- Meta --> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat laboratoarelor susținute în cadrul Facultății de Informatică din Iași." /> <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang programming, document, software, application, student, grade" /> <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate, academic, informatie, educatie, scoala, proiect, limbaj, programare, document, software, aplicatie, student, nota" /> <link rel="shortcut icon" href="/assets/images/favicon.ico"> <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Global CSS --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Plugins CSS --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"> <!-- Theme CSS --> <link id="theme-style" rel="stylesheet" href="/assets/css/main.css"> <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <link rel="canonical" href="https://teaching.alexcoman.com/laboratoare/open-source/docker/"> <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" integrity="sha256-3YM6A3pH4QFCl9WbSU8oXF5N6W/2ylvW0o2g+Z6TmLQ=" crossorigin="anonymous" /> </head> <body class="body-pink"> <div class="page-wrapper"> <header id="header" class="header "> <div class="container"> <div class="branding"> <h1 class="logo"> <a href="/laboratoare/open-source/docker/"> <span aria-hidden="true" class="icon fas fa-laptop"></span> <span class="text-highlight">Laboratoare</span> <span class="text">@FII</span> </a> </h1> </div> <ol class="breadcrumb"> <li><a href="/">Acasă</a></li> <li><a href="/laboratoare">Laboratoare</a></li> <li><a href="/laboratoare/open-source">Open-source</a></li> <li class="active">Docker</li> </ol> </div> </header> <section id="blog_post" class="blog-post-section doc-wrapper"> <div class="container"> <div id="doc-header" class="doc-header text-center"> <h1 class="doc-title" itemprop="name headline"> <i class="icon fas fa-paper-plane"></i> Docker </h1> <div class="meta"> Publicat de: <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Gabriel Paiu</span> </span> pe <i class="fas fa-clock"></i> <time datetime="2018-03-13T12:00:00+00:00" itemprop="datePublished"> 13 martie 2018 </time> </div> </div> <div class="doc-body"> <div class="doc-content"> <div class="content-inner"> <section id="dashboards" class="doc-section"> <div class="section-block"> <h2 id="pregătirea-mediului-de-lucru">Pregătirea mediului de lucru</h2> <p>Pentru acest laborator vom avea nevoie de utilitarul Docker.</p> <h3 id="instalarea-docker">Instalarea Docker</h3> <p>Mai întâi vom configura un repository de pachete de unde putem instala utilitarul:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+</code></pre></div></div> <p>După care vom instala și porni motorul de containerizare:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yum install docker-ce
+systemctl enable docker
+systemctl start docker
+</code></pre></div></div> <h2 id="lucru-cu-containere">Lucru cu containere</h2> <p>Pornirea primului container</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 ~]# docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+ca4f61b1923c: Pull complete
+Digest: sha256:083de497cff944f969d8499ab94f07134c50bcf5e6b9559b27182d3fa80ce3f7
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://cloud.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/engine/userguide/
+</code></pre></div></div> <p>Pornirea interactivă a unui container și inspectarea acestuia:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 ~]# docker run -ti centos
+Unable to find image 'centos:latest' locally
+latest: Pulling from library/centos
+5e35d10a3eba: Pull complete
+Digest: sha256:dcbc4e5e7052ea2306eed59563da1fec09196f2ecacbe042acbdcd2b44b05270
+Status: Downloaded newer image for centos:latest
+
+[root@c676b1514c76 /]# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.1  11776  1884 pts/0    Ss   19:08   0:00 /bin/bash
+root        13  0.0  0.1  47448  1660 pts/0    R+   19:09   0:00 ps aux
+
+[root@node01 ~]# docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS                        PORTS               NAMES
+c676b1514c76        centos              "/bin/bash"         About a minute ago   Exited (127) 19 seconds ago                       cranky_swanson
+99dc9b7dc770        hello-world         "/hello"            3 minutes ago        Exited (0) 3 minutes ago                          competent_lumiere
+
+[root@node01 ~]# docker inspect c676b1514c76
+...
+</code></pre></div></div> <p>Descărcarea și inspectarea unei imagini</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 ~]# docker pull haproxy
+Using default tag: latest
+latest: Pulling from library/haproxy
+8176e34d5d92: Pull complete
+a2c5d2ee06f4: Pull complete
+77feadebc8c6: Pull complete
+ec8ca0aa4db7: Pull complete
+Digest: sha256:10c2d38f7e69a7c241b2c0559d6601b0683fb96326ae43406b43d30347f6aae9
+Status: Downloaded newer image for haproxy:latest
+
+[
+    {
+        "Id": "sha256:fec0a3082e12293f9d95ba838f24c2aaee60aee4237cf92265d399c9d7805c9d",
+        "RepoTags": [
+            "haproxy:latest"
+        ],
+        "RepoDigests": [
+            "haproxy@sha256:10c2d38f7e69a7c241b2c0559d6601b0683fb96326ae43406b43d30347f6aae9"
+        ],
+        "Parent": "",
+        "Comment": "",
+        "Created": "2018-02-17T08:07:52.705027598Z",
+        "Container": "ebfe2fbd03e68e6360dc51fc77617f6a647132f0d440c84311b391e2d63e362e",
+        "ContainerConfig": {
+            "Hostname": "ebfe2fbd03e6",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "HAPROXY_MAJOR=1.8",
+                "HAPROXY_VERSION=1.8.4",
+                "HAPROXY_MD5=540cd21169e8828d5d11894b2fa74ab4"
+            ],
+            "Cmd": [
+                "/bin/sh",
+                "-c",
+                "#(nop) ",
+                "CMD [\"haproxy\" \"-f\" \"/usr/local/etc/haproxy/haproxy.cfg\"]"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:19844aed4cf58f372d60ccc42fd8b0713361e51c07e703259861341b82dadb7b",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": [],
+            "Labels": {}
+        },
+        "DockerVersion": "17.06.2-ce",
+        "Author": "",
+        "Config": {
+            "Hostname": "",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "HAPROXY_MAJOR=1.8",
+                "HAPROXY_VERSION=1.8.4",
+                "HAPROXY_MD5=540cd21169e8828d5d11894b2fa74ab4"
+            ],
+            "Cmd": [
+                "haproxy",
+                "-f",
+                "/usr/local/etc/haproxy/haproxy.cfg"
+            ],
+            "ArgsEscaped": true,
+            "Image": "sha256:19844aed4cf58f372d60ccc42fd8b0713361e51c07e703259861341b82dadb7b",
+            "Volumes": null,
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "OnBuild": [],
+            "Labels": null
+        },
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 71004366,
+        "VirtualSize": 71004366,
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/28fc0c8c0a1a64ad3949a8e4756dd87ea1b0bd6a437c591adb209b691c71a8c9/diff:/var/lib/docker/overlay2/991169a4777e027a1279bae8459ca400dd410817ede1d52dd3ddbdaf6c3bfe64/diff:/var/lib/docker/overlay2/7cee440917bae805ba2bbed929be3945eb900b5577b8ae4a2cf409423f8c657d/diff",
+                "MergedDir": "/var/lib/docker/overlay2/2e89dd05c7a49d63da54d7a637cf566254296f2762d225ddf7671e76ebd77fb9/merged",
+                "UpperDir": "/var/lib/docker/overlay2/2e89dd05c7a49d63da54d7a637cf566254296f2762d225ddf7671e76ebd77fb9/diff",
+                "WorkDir": "/var/lib/docker/overlay2/2e89dd05c7a49d63da54d7a637cf566254296f2762d225ddf7671e76ebd77fb9/work"
+            },
+            "Name": "overlay2"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:014cf8bfcb2d50b7b519c4714ac716cda5b660eae34189593ad880dc72ba4526",
+                "sha256:babf9af79bcf29b0c617bef189b2fb9af1fef2b2ec463046beaff1aa08148e55",
+                "sha256:49add22b538490853a566fd9a43bcac4395e606a82de2e2b8a3140123af4538b",
+                "sha256:4f64e3bdfad36eee935f0948892cf88a95764159f79d81ba4c737ad7af339cd5"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "0001-01-01T00:00:00Z"
+        }
+    }
+]
+</code></pre></div></div> <h2 id="scenariu">Scenariu</h2> <p>În acest scenariu, va trebui să rulăm în container o aplicație care va rula în spatele unui proxy. Aplicația o puteți alege, în acest caz noi vom folosi Visualizer, o aplicație NodeJS care comunica cu Docker printr-un socket montat ca volum și afișeaza date despre serviciile care rulează într-un Swarm.</p> <h3 id="pornirea-containerului-visualizer">Pornirea containerului Visualizer</h3> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -it -d --name visualizer -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock dockersamples/visualizer
+</code></pre></div></div> <p>Parametrii explicați:</p> <ul> <li>-d: Detached. Consola nu va fi conectată interactiv la container</li> <li>-t: Un pseudo-terminal va fi alocat</li> <li>-i: Va ține STDIN deschis ca și descriptor chiar dacă nu există un STDIN atașat. Acești ultimi doi parametri sunt necesari pentru a putea ulterior să atașăm o consolă și pentru a putea interacționa cu un container</li> <li>–name: Stabilește un nume pentru container</li> <li>-v: Montează /var/run/docker.sock (primul argument) de pe Host în locația /var/run/docker.sock (al doilea argument) în container</li> <li>-p: Publică un port pe interfața de rețea a host-ului care va redirecționa către un port de pe interfața containerului</li> <li>dockersamples/visualizer: Numele imaginii pe baza căreia se va crea containerul</li> </ul> <h3 id="pornirea-containerului-haproxy">Pornirea containerului HAProxy</h3> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -d --name haproxy -v /docker/volumes/haproxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg -p=80:80/tcp --link visualizer haproxy
+</code></pre></div></div> <p>Parametrii explicați:</p> <ul> <li>-d: Detached. Consola nu va fi conectată interactiv la container</li> <li>–name: Stabilește un nume pentru container</li> <li>-v: Montează /docker/volumes/haproxy/haproxy.cfg de pe host în locația /usr/local/etc/haproxy/haproxy.cfg în container</li> <li>-p: Publică portul 80 pe interfața de rețea a hostului</li> <li>–link: Crează o legatură între containere astfel încât să se poată realiza o interogare DNS pentru serviciul ”visualizer”</li> <li>haproxy: Numele imaginii pe baza căreia se va crea containerul</li> </ul> <h3 id="fisierul-de-configurare-haproxycfg">Fisierul de configurare haproxy.cfg</h3> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>global
+  log 127.0.0.1 local0
+  log 127.0.0.1 local1 notice
+  daemon
+
+defaults
+  log global
+  mode http
+  option httplog
+  option dontlognull
+  timeout connect 5000ms
+  timeout client 50000ms
+  timeout server 50000ms
+
+frontend http_in
+  bind *:80
+  default_backend visualizer
+
+backend visualizer
+  server visualizer visualizer:8080
+</code></pre></div></div> <h3 id="concluzii-și-observații">Concluzii și observații</h3> <ul> <li>Publicarea portului 80 de către containerul HAProxy are ca scop captarea traficului web atunci cand vom accesa prin browser IP-ul mașinii virtuale</li> <li>Prin setarea corecta a fișiserului de configurare pentru serviciul HAProxy, vom putea repartiza traficul în funcție de necesitate. În cazul de față, am folosit default_backend fara access control lists (ACL) pentru a trimite tot traficul către un singur backend, și anume visualizer - cel care ne servește aplicația</li> <li>Pentru orice tip de informații persistente sau care ulterior vor sau pot suferi modificări, este necesară folosirea unui volum fie de pe host fie dintr-o sursă externă. Altfel, reconstrucția containerelor ar fi prea costisitoare din punctul de vedere a resurselor cât și a timpului de livrare</li> </ul> <h2 id="lucru-cu-imagini">Lucru cu imagini</h2> <p>În exercițiul anterior am observat că fiecare container folosit a fost pornit din imagini de pe Docker Hub. Acum vom vedea ce înseamna să extindem noi o imagine pe care sa o folosim în cadrul infrastructurii.</p> <p>Procesul de extindere a unei imagini este bazat pe straturi. Un strat reprezintă o imagine care pana la pasul respectiv a implementat un set de instrucțiuni.</p> <p>Să presupunem urmatorul scenariu:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 imagine1]# cat Dockerfile
+FROM centos:latest
+MAINTAINER gabriel.paiu@gmail.com
+
+RUN useradd alex
+</code></pre></div></div> <p>Un Dockerfile în care folosim imaginea deja existentă centos:latest, adaugăm metadata MAINTAINER pentru a oferi informații cu privire la cine este reponsabil pentru menținerea la zi a imaginii, după care adaugăm un utilizator.</p> <p>Ce se întamplă în momentul în care vom construi imaginea?</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 imagine1]# docker build -t image1 .
+Sending build context to Docker daemon  2.048kB
+Step 1/3 : FROM centos:latest
+ ---&gt; 2d194b392dd1
+Step 2/3 : MAINTAINER gabriel.paiu@gmail.com
+ ---&gt; Running in 32f93fc1af1e
+Removing intermediate container 32f93fc1af1e
+ ---&gt; d57fd2aee3a4
+Step 3/3 : RUN useradd alex
+ ---&gt; Running in 8d4ea98dc038
+Removing intermediate container 8d4ea98dc038
+ ---&gt; 8ee3fdf43ef4
+Successfully built 8ee3fdf43ef4
+Successfully tagged image1:latest
+</code></pre></div></div> <p>Observăm ca pentru fiecare instrucțiune specificată, se crează o un container intermediar, ultimul container (ID 8ee3fdf43ef4) reprezentând rezultatul final.</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[root@node01 imagine1]# docker image ls | grep 8ee3fdf43ef4
+image1                     latest              8ee3fdf43ef4        13 minutes ago      196MB
+</code></pre></div></div> <h2 id="exercitiu">Exercitiu</h2> <ul> <li>Veți crea un Dockerfile în care veți adauga scriptul de la acest <a href="https://gist.github.com/alexcoman/226af528b4bded9a1db2bbf55803d48c">link</a> peste imaginea de alpine:latest</li> <li>Scriptul va fi folosit ca și punct de intrare pentru container</li> <li>Veți crea o imagine pornind de la acest Dockerfile, imagine care se va numi “webserver”, versiunea “1.0”</li> <li>Veți porni un container sub numele de “web” fără a publica nici un port, container ce va folosi imaginea “webserver:1.0”</li> <li>Veți porni un container pornind de la imaginea de HAProxy oferită de Docker Hub, și veți monta un fișier de configurare care să trimită toate conexiunile către containerul “web”</li> </ul> <p>Sugestii:</p> <ul> <li>Instrucțiuni pe care le puteți folosi în cadrul extinderii imaginii alpine: RUN</li> <li>Utilitarul pe care Alpine Linux îl folosește se numește “apk”</li> </ul> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#pregătirea-mediului-de-lucru">Pregătirea mediului de lucru</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#instalarea-docker">Instalarea Docker</a> </li></ul></li> <li><a class="scrollto" href="#lucru-cu-containere">Lucru cu containere</a> </li> <li><a class="scrollto" href="#scenariu">Scenariu</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#pornirea-containerului-visualizer">Pornirea containerului Visualizer</a> </li> <li><a class="scrollto" href="#pornirea-containerului-haproxy">Pornirea containerului HAProxy</a> </li> <li><a class="scrollto" href="#fisierul-de-configurare-haproxycfg">Fisierul de configurare haproxy.cfg</a> </li> <li><a class="scrollto" href="#concluzii-și-observații">Concluzii și observații</a> </li></ul></li> <li><a class="scrollto" href="#lucru-cu-imagini">Lucru cu imagini</a> </li> <li><a class="scrollto" href="#exercitiu">Exercitiu</a> </li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 21 martie 2018 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://teaching.alexcoman.com" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
