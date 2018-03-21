@@ -129,10 +129,6 @@
   footer: >
     Temă acasă: <a href="teme/tema-2">Foi de stiluri în cascadă - CSS</a>
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna curentă'
-
 - type: 'event'
   class: 'primary'
   point:
@@ -163,7 +159,7 @@
 
 - type: 'label'
   class: 'danger'
-  content: 'săptămâna următoare'
+  content: 'săptămâna curentă'
 
 - type: 'event'
   class: 'primary'
@@ -171,7 +167,8 @@
     class: 'danger'
     icon: 'fas fa-bell'
   heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P</a>'
-
+  footer: >
+    Programări pentru: <a href="https://goo.gl/T9CunY" target="_blank">Joi, 21 martie</a>
 
 - type: 'label'
   class: 'danger'
