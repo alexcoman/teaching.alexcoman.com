@@ -166,10 +166,6 @@
   footer: >
     Programări pentru: <a href="https://goo.gl/T9CunY" target="_blank">Joi, 21 martie</a>
 
-- type: 'label'
-  class: 'primary'
-  content: 'săptămâna curentă'
-
 - type: 'event'
   class: 'primary'
   point:
@@ -205,6 +201,17 @@
           title="Detalii referitoare la performan&#355;a PHP 7 vs. HHVM">
           HHVM vs PHP 7 Performance (WordPress, Nginx)</a>
     </p>
+
+- type: 'label'
+  class: 'primary'
+  content: 'săptămâna curentă'
+
+- type: 'event'
+  class: 'primary'
+  point:
+    class: 'danger'
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-a">Componenta A</a>'
 
 - type: 'label'
   class: 'danger'
