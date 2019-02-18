@@ -1,14 +1,8 @@
 - title: 'Lista de laboratoare'
-  intro: 'An universitar 2017-2018'
+  intro: 'An universitar 2018-2019'
   cards:
     - title: 'Tehnologii Web'
       intro: 'fundaţia unui viitor dezvoltator Web profesionist'
       color: 'blue'
       icon:  'fas fa-university'
       url: '/laboratoare/web/'
-
-    - title: 'Open-Source'
-      intro: 'tehnologii, proiecte și comunități deschise'
-      color: 'pink'
-      icon:  'fas fa-book'
-      url: '/laboratoare/open-source/'

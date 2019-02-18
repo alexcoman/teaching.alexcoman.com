@@ -7,7 +7,7 @@ color: blue
 icon: fas fa-laptop
 highlight: true
 author: "Alexandru Coman"
-date: 2018-03-12 12:00:00
+date: 2019-02-18 12:00:00
 ---
 
 ## Protocolul HTTP

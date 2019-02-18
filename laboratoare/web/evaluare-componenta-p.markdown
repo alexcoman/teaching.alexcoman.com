@@ -6,7 +6,7 @@ layout: post
 color: blue
 icon: fas fa-bell
 author: Alexandru Coman
-date: 2018-02-15 00:00:00
+date: 2019-02-18 12:00:00
 ---
 
 În săptămâna a V-a fiecare echipă înscrisă va prezenta interfața web a proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească toate cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont și de [aspecte privind evaluarea][evaluare]).

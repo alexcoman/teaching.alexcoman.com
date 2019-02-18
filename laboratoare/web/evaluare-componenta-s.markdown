@@ -6,7 +6,7 @@ layout: post
 color: blue
 icon: fas fa-bell
 author: Alexandru Coman
-date: 2018-02-15 00:00:00
+date: 2019-02-18 12:00:00
 ---
 
 În sesiune fiecare echipă înscrisă va prezenta implementarea **completă** a proiectului ales. Pentru ca proiectul ales să poată fi evaluat, acesta trebuie să îndeplinească cerințele prezentate în secțiunile de mai jos (de asemenea, trebuie să țineți cont de [evaluarea componentei P][componenta-p], [componentei A][componenta-a] și de [aspecte privind evaluarea][evaluare]).

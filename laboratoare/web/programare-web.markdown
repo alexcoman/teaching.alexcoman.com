@@ -7,7 +7,7 @@ color: blue
 icon: fab fa-php
 highlight: true
 author: "Alexandru Coman"
-date: 2018-03-29 08:00:00
+date: 2019-02-18 12:00:00
 ---
 
 ## Consultarea resurselor
@@ -58,17 +58,6 @@ Rezultatul expresiei: '20 + 4 - 3 * 8' este 0
 /curăță
 Am șters toate informațiile din această sesiune.
 ```
-
-## Trimiterea soluțiilor
-
-Pentru acest lucru puteți urma pașii din tutorialul [git - propunerea unei soluții][1].
-
-Restricții:
-
-- fiecare soluție trebuie să fie dezvoltată pe un branch separat
-- pentru fiecare exercițiu va fi deschis un Pull Request
-- soluțiile trebuie să respecte structura sugerată în tutorialul mai sus menționat
-
 
 [0]: https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf
 [1]: {{ site.baseurl }}/resurse/tutorial/git/propunerea-unei-solutii/

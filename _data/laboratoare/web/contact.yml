@@ -1,9 +1,10 @@
-- title: "Echipa noastră"
+- title: "Date de contact"
   description: >
     Metoda preferată de comunicare este cea direct în perioada alocată cursului
     şi laboratoarelor. Pentru cazuri de excepţie, se poate recurge la poşta
     electronică -- mesajul trimis trebuie să aibă ca subiect [TW]
     (în caz contrar, mesajul va fi ignorat).
+
   members:
     - name: "Alexandru Coman"
       email: "alexandru.coman@tss-yonder.com"
