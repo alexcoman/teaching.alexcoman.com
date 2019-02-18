@@ -1,11 +1,17 @@
 - title: 'Resurse utile'
   intro: ''
   cards:
-    - title: 'Articole'
-      intro: 'diverse resurse ce completează informațiile din cadrul laboratoarelor'
-      color: 'green'
-      icon:  'fas fa-rss'
-      url: '/resurse'
+    - title: Tutoriale
+      intro: diverse resurse ce completează informațiile din cadrul laboratoarelor
+      color: green
+      icon:  fas fa-book
+      url: /resurse/tutorial
+
+    - title: Noutăți
+      intro: diverse anunțuri referitoare la laboratoarele de Tehnologii Web
+      color: blue
+      icon: fas fa-rss
+      url: /resurse/noutati/web
 
     - title: 'FAQs'
       intro: 'întrebări comune referitoare la cursuri și laboratoare'

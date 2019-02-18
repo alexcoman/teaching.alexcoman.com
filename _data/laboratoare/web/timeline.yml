@@ -1,23 +1,54 @@
-- type: 'label'
-  class: 'success'
+- type: label
+  class: success
   icon: 'fas fa-play'
 
-- type: 'label'
-  class: 'primary'
+- type: label
+  class: primary
   content: 'săptămâna curentă'
 
-- type: 'event'
-  class: 'primary'
+- type: event
+  class: primary
+  point:
+    class: info
+    icon: fab fa-linux
+  heading: <a href="prezentare-generala">Prezentare generală</a>
+  body: >
+    <p>Pagina cursului:
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/">
+        @busaco/tehnologii-web
+      </a>
+    </p>
+    <p>Regulament intern pentru Tehnologii web:
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-rules.html">
+        @busaco/tehnologii-web/regulement
+      </a>
+    </p>
+    <p>Detalii despre evaluare:<ul>
+      <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html">
+        Aspecte privind evaluarea activităţii
+      </a></li>
+      <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html">
+        Detalii despre proiectele practice
+      </a></li>
+    </ul></p>
+    <p>Resurse de interes:
+      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-biblio.html">
+        @busaco/tehnologii-web/bibliografie
+      </a>
+    </p>
+  footer: >
+    Prezentările aferente cursului:
+    <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html">
+        @busaco/tehnologii-web/desfășurare
+    </a>
+
+- type: event
+  class: primary
   point:
     class: 'info'
     icon: 'fab fa-html5'
   heading: 'Laborator: <a href="limbajul-de-marcare-html">Limbajul de marcare HTML</a>'
   body: >
-    <p>Curs:
-      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web01ArhitecturaWeb.pdf">
-        World Wide Web – aspecte arhitecturale
-      </a>
-    </p>
     <p>Resurse:
       <a href="http://www.slideshare.net/busaco/25-de-ani-de-web">25 de ani de Web</a>
       <a href="https://www.slideshare.net/busaco/sabin-buraga-dezvoltator-web-n-2017">
@@ -67,20 +98,13 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week1">
       World Wide Web – aspecte arhitecturale</a>
 
-- type: 'event'
-  class: 'primary'
+- type: event
+  class: primary
   point:
     class: 'info'
     icon: 'fab fa-css3'
   heading: 'Laborator: <a href="https://profs.info.uaic.ro/~busaco/teach/labs/css/">Foi de stiluri în cascadă - CSS</a>'
   body: >
-    <p>
-      Curs:
-      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web02ProgramareWeb-HTTP-CGI.pdf">
-        World Wide Web – aspecte arhitecturale
-      </a
-    </p>
-    
     <p>Resurse:
       <a href="https://code-maze.com/http-series/">Un tutorial despre HTTP</a>,
       <a href="https://devdocs.io/http/">Detalii despre HTTP oferite de DevDocs.io</a>,
@@ -94,7 +118,6 @@
       <a href="http://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week2">Arhitectura navigatorului Web</a>,
       <a href="https://blog.appcanary.com/2017/http-security-headers.html">HTTP Security Headers</a>
     </p>
-
     <p>Instrumente:
     <ul>
       <li>servere Web:
@@ -102,13 +125,11 @@
         <a href="http://www.iis.net/" title="Detalii referitoare la Microsoft IIS">Microsoft IIS</a>,
         <a href="http://nginx.org/en/" title="Detalii privind serverul nginx">nginx</a>;
       </li>
-
       <li>vizând HTTP:
         <a href="https://curl.haxx.se/" title="Spre situl Web oficial al instrumentului curl">cURL</a>,
         <a href="http://www.hurl.it/" title="Un instrument Web de realizare de cereri HTTP">Hurl.it</a>,
         <a href="http://httpbin.org/" title="Detalii despre httpbin: HTTP Request &amp; Response Service">httpbin</a>;
       </li>
-
       <li>performanță Web:
         <a href="https://trafficserver.apache.org/" title="Apache Traffic Server">Apache Traffic Server</a>,
         <a href="http://www.haproxy.org/" title="A Reliable, High Performance Load Balancer">HAProxy</a>
@@ -117,13 +138,11 @@
         <a href="http://www.squid-cache.org/" title="A caching proxy for Web">Squid</a>,
         <a href="https://www.varnish-cache.org/" title="Varnish HTTP Cache">Varnish</a>;
       </li>
-
       <li>extensii pentru clientul Web privind intimitatea:
         <a href="https://www.ghostery.com/" title="Detalii despre instrumentul Ghostery">Ghostery</a>,
         <a href="https://www.eff.org/https-everywhere" title="Detalii despre HTTPS Everywhere">HTTPS Everywhere</a>,
         <a href="https://github.com/gorhill/uBlock" title="Detalii despre uBlock">uBlock Origin</a>;
       </li>
-      
       <li>
         HTTPS:
         <a href="https://certbot.eff.org/" title="Automatically enabling HTTPS on a Website">Certbot</a>,
@@ -131,25 +150,21 @@
       </li>
     </ul>
     </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week2">
+      Programare Web – HTTP. Cookie-uri. Sesiuni Web</a>
 
-- type: 'event'
-  class: 'primary'
+- type: event
+  class: primary
   point:
     class: 'info'
     icon: 'fas fa-desktop'
   heading: 'Laborator: <a href="design-si-interactiune-web">Design & interacţiune Web</a>'
   body: >
-    <p>
-      Curs: 
-        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf">
-          Programare Web - Dezvoltarea aplicațiilor Web în PHP
-        </a>
-      </p>
     <p>Demo: 
       <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/demos/php/php.zip">
         Exemple de programe PHP</a> (arhivă zip, 41.5K)
     </p>
-    
     <p>Resurse: 
       <a href="http://www.tutorialspoint.com/php/" title="Tutoriale referitoare la PHP">PHP Tutorial</a>,
       <a href="http://www.phptherightway.com/" title="O carte online privitoare la PHP">PHP: The Right Way</a>,
@@ -159,26 +174,63 @@
       <a href="https://medium.freecodecamp.com/best-gitter-channels-php-867f93321da2" 
          title="A list of PHP-related channels on Gitter">Best Gitter channels: PHP</a>
     </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week3">
+      Programare Web – Arhitectura aplicaţiilor Web. Inginerie Web</a>
 
-- type: 'event'
-  class: 'primary'
+- type: event
+  class: primary
   point:
-    class: 'danger'
-    icon: 'fas fa-bell'
-  heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P</a>'
+    class: 'info'
+    icon: 'fas fa-desktop'
+  heading: 'Laborator: <a href="#">Discuții despre proiecte</a>'
+  body: >
+    <p>Resurse:
+      <ul>
+        <li><a href="#">Lista de proiecte propuse</a></li>
+        <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html">
+          Aspecte privind evaluarea activităţii</a>
+        </li>
+        <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html">
+          Cerințe pentru proiectele practice</a>
+        </li>
+      </ul>
+    </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week4">
+      Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
 
-- type: 'event'
-  class: 'primary'
+- type: label
+  class: primary
+  content: 'urmează o etapă de evaluare'
+
+- type: event
+  class: primary
+  point:
+    class: danger
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-p">Componenta P: Prototip al interfeţei Web</a>'
+  body: >
+    <p>
+      Specificarea cerinţelor principale:
+      <ul>
+        <li>pentru proiectele din clasa B: minimal, cele referitoare la funcţionalităţile esenţiale ale aplicaţiei;</li>
+        <li>pentru proiectele din clasa M: suplimentar, cele privind interacţiunea cu utilizatorul.</li>
+      </ul>
+      Proiectarea şi implementarea interfeţei Web responsive ce va recurge la HTML5 şi CSS3.
+      Vor fi oferite motivaţii asupra alegerii unei/unor anumite idei de design.
+    </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week5">
+      Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
+
+- type: event
+  class: primary
   point:
     class: 'info'
     icon: 'fab fa-php'
   heading: 'Laborator: <a href="programare-web">Programare Web</a>'
   body: >
-    <p>
-      Curs:
-      <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web05DezvoltareaAplicatiilorWeb-PHP.pdf"
-         title="Prezentare în format PDF">Programare Web & Dezvoltarea aplicațiilor Web în PHP</a>
-    </p>
     <p>Resurse utile:
       <a href="http://www.fluffycat.com/PHP-Design-Patterns/"
         title="Implementarea unor design patterns &icirc;n PHP">PHP Design Patterns</a>,
@@ -202,7 +254,10 @@
           title="Detalii referitoare la performan&#355;a PHP 7 vs. HHVM">
           HHVM vs PHP 7 Performance (WordPress, Nginx)</a>
     </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week6">
+      Modelarea datelor. Familia XML şi spaţii de nume</a>
 
-- type: 'label'
+- type: label
   class: 'danger'
   icon: 'fas fa-stop'
