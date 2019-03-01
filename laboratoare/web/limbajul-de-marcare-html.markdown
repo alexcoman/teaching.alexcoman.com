@@ -57,24 +57,34 @@ Un exemplu de structură de fișiere pentru blogul lui Tuxy ar putea fi:
 ./contact.html
 ```
 
+## Trimiterea soluției
+
+Fișierele rezultate în urma rezolvării cerințelor trebuiesc incluse într-un PR (Pull Request)
+către ramura [master][4] a depozitului de cod [labs][5] deținut de utilizatorul [@alexcoman][6].
+
+**Atenție**: modificările sugerate trebuie să respecte structura depozitului de cod. Mai multe detalii puteți găsi în articolul [git - propunerea unei soluții][7].
+
 ## Temă acasă
 
 ### Alegerea proiectului
 
-1. Consultați lista de [proiecte propuse][7] și alegeți o serie de proiecte ce vi se par interesante;
+1. Consultați lista de [provizorie proiecte propuse][9] și alegeți o serie de proiecte ce vi se par interesante;
 2. Discutați cu colegii de grupă lista de proiecte aleasă și încercați să formați o echipă cu care să lucrați la unul dintre ele;
 
 Mențiuni:
 - Fiecare proiect va fi dezvoltat în echipă -- formată din 2-4 studenţi ce aparţin grupelor având acelaşi titular de laborator.
-- O propunere de proiect poate fi aleasă de maxim 6 echipe -- [detalii][6]. Studenţii care nu-şi aleg la timp o temă de proiect vor avea asignat unul dintre proiectele nealese şi vor fi penalizaţi cu 2 puncte pentru fiecare componentă evaluată.
+- O propunere de proiect poate fi aleasă de maxim 5 echipe -- [detalii][8]. Studenţii care nu-şi aleg la timp o temă de proiect vor avea asignat unul dintre proiectele nealese şi vor fi penalizaţi cu 2 puncte pentru fiecare componentă evaluată.
 
 
 [GitHub]: https://github.com/
 [validator.w3.org]: https://validator.w3.org/
-
 [0]: https://git-scm.com/
 [1]: https://education.github.com/pack
 [2]: https://github.com/collections/text-editors
 [3]: {{ site.baseurl }}/resurse/tutorial/git/notiuni-introductive/
-[6]: https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html
-[7]: {{ site.baseurl }}/laboratoare/web/proiecte
+[4]: https://github.com/alexcoman/labs/commits/master
+[5]: https://github.com/alexcoman/labs
+[6]: https://github.com/alexcoman
+[7]: {{ site.baseurl }}/resurse/tutorial/git/propunerea-unei-solutii/
+[8]: https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html
+[9]: {{ site.baseurl }}/laboratoare/web/proiecte
