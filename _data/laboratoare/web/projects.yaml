@@ -1,368 +1,314 @@
 - id: 1
-  title: ASA (Web App Security Alerter)
-  class: M
-  members: 2
-  description: >
-    Folosind datele publice referitoare la incidente de securitate -- preluate, de
-    exemplu, de la Web Application Exploits --, sa se realizeze un sistem capabil
-    sa trimita alerte in timp-real despre noile vulnerabilitati software pentru o
-    clasa de aplicatii (e.g., CMS, framework, modul, biblioteca etc.). Suplimentar,
-    aplicatia va oferi pe baza unui API respectand paradigma REST diverse solutii
-    -- precum sfaturi, rapoarte tehnice, ghiduri de programare defensiva, articole
-    si altele -- vizand prevenirea si/sau eradicarea acestor incidente de securitate.
-    Informatiile oferite vor fi disponibile in formate ca HTML, JSON si Atom. Bonus:
-    recurgerea la un model si implementare publish/subscribe.
-
-- id: 3
-  title: CoLiW (Command Line for Web)
-  class: M
-  members: 3
-  description: |
-    In mod normal, accesul la Web se realizeaza pe baza unui browser.
-    Se doreste experimentarea unei interactiuni Web in linia de comandă, punandu-se
-    la dispozitie o platforma extensibila capabila sa ofere suport pentru realizarea
-    de mash-up-uri exclusiv cu ajutorul unui set de mini-comenzi, in stilul celor
-    oferite de bash. Utilizatorul va putea accesa servicii de interes via comenzi
-    precum:
-
-    ```bash
-    ~ $ web slideshare upload <URL>
-    ~ $ web twitter follow <utilizator>
-    ~ $ web gmail -tag:Important -since:2017-01-01 > msg.atom
-    ```
-    De asemenea, se vor putea realiza mash-up-uri si/sau pipe-uri -- de exemplu:
-
-    ```bash
-    ~ $ web flickr photos -tag:Tux -first | web instagram update user
-    ```
-    pentru actualizarea profilului Instagram pe baza unei fotografii preluate
-    de pe situl Flickr ori:
-    ```bash
-    ~ $ web join rss <URL1> <URL2> \
-            -where <conditie> -unique | web wordpress publish <blog> -as HTML
-    ```
-    pentru a obtine o lista de fluxuri de stiri in vederea publicarii in format HTML
-    pe un blog (aici, Wordpress, insa se pot oferi extensii si pentru altele: Medium,
-    Tumblr,...). Interfata in linie de comanda poate fi oferita si via o extensie de
-    navigator Web. Bonus: recurgerea la microservicii Web.
-
-- id: 4
-  title: ConDr (Consumer Decision Maker)
-  class: M
-  members: 4
-  description: >
-    E necesar un instrument Web pentru a oferi asistenta consumatorilor privind deciziile
-    de achitie a unor bunuri/servicii intr-un mod etic. Sistemul va putea stoca si
-    folosi reguli simple de forma "daca are loc <conditie> atunci <actiune>"
-    -- in cazul nostru, de pilda "nu voi cumpara/folosi produsul P deoarece include/utilizeaza
-    substanta S" ori "voi alege produsul P in loc de Q pe baza motivului M (e.g.,
-    mobilitate scazuta ori pret nejustificat de ridicat)" -- in vederea oferirii de
-    sugestii referitoare la resurse de interes personal sau la nivel de grup. Aplicatia
-    va oferi, de asemenea, statistici privind cele mai (in)dezirabile resurse, utilizatorii
-    cu cele mai multe/putine restrictii, persoanele avand preferinte similare etc.
-    Ca inspiratie, a se studia Buycott. Bonus: recurgerea la microservicii Web.
-
-- id: 7
-  title: DiLy (Digital Legacy Box)
-  class: M
-  members: 4
-  description: >
-    Inainte de epoca digitala, amintirile personale se stocau in diverse cutii sau
-    cufere in vederea pastrarii peste ani. Se doreste implementarea unei aplicatii
-    Web cu rol de prezervare a acestor informatii sentimentale -- in special, anumite
-    scrisori vechi, fotografii, filme, acte, relatii de rudenie si alte artefacte
-    de interes (e.g., suveniruri). Sistemul va fi capabil sa interconecteze datele
-    digitizate cu cele deja existente in mediul electronic actual in cadrul unor aplicatii
-    sociale precum Facebook, Instagram, Vimeo etc. Se vor oferi posibilitati de cautare
-    si filtrare sofisticata -- de pilda, toate fotografiile de vacanta infatisand-o
-    pe bunica la varsta studentiei sau actele vizand tranzactiile imobiliare din zona
-    Copou realizate de rudele de pana la gradul IV. Bonus: recurgerea la microservicii
-    Web. Inspiratie: Liife.com.
-
-- id: 8
-  title: Fun@Web
-  class: M
-  members: 4
-  description: >
-    Sa se conceapa un joc Web multi-player (e.g., de tip RPG -- Role Playing Game)
-    care sa aiba drept scop ilustrarea folosirii in practica si invatarea de catre
-    jucatori a celor mai importante concepte predate la disciplina "Tehnologii Web":
-    protocolul HTTP, cookie-uri, sesiuni Web, mecanismul de functionare a unui server
-    de aplicatii Web, dezvoltarea si invocarea de servicii Web pe baza REST, transferul
-    asincron de date prin Ajax, realizarea de mash-up-uri, aspecte esentiale privind
-    securitatea Web si altele. Pe baza API-ului creat, aliniat paradigmei REST, jocul
-    va putea fi jucat si in grup via o platforma sociala precum Facebook ori Twitter,
-    inclusiv pe telefoane mobile.
-
-- id: 9
-  title: "HTTPcaf\xE9"
-  class: M
-  members: 2
-  description: >
-    Sa se implementeze o aplicatie Web care simuleaza o cafenea destinata in special
-    studentilor informaticieni. Interactiunea cu "clientii" se va realiza din pagini
-    Web publice gazduite pe un anumit server Web, pe baza cimpului 'Referer' din antetul
-    unui mesaj HTTP. Aplicatia trebuie sa puna la dispozitia "clientilor" o serie
-    de resurse identificate via URI precum '/intrare', '/meniu', '/prefer/cafea',
-    '/comanda/suc', '/comanda/zacusca', '/nota', '/iesire' etc. (dati frau liber imaginatiei).
-    Desi identificarea clientului se va face pe baza contului din URL-ul oferit de
-    Referer, trebuie mentinut un nivel minimal contabil si informativ: ce produse
-    sunt in stoc si la ce pret, cine si ce a comandat, care e valoarea totala a notei
-    de plata, la ce ora s-a inregistrat o comanda, cine mai era atunci in cafenea
-    etc. Resursele sunt disponibile in cantitati finite, eventual ajustabile dinamic.
-    "Filmul" ocuparii cafenelei va putea fi expus, in mod dinamic, ca document HTML,
-    ca date JSON si ca flux de stiri Atom. De asemenea, "barman"-ul trebuie sa raspunda
-    clientilor in mod "politicos HTTP" -- exemplu: daca se recurge la 'GET /comanda/alcool',
-    se va intoarce codul 403.
-
-- id: 11
-  title: KiMo (Kid Monitor)
-  class: M
-  members: 3
-  description: >
-    Sa se implementeze un sistem Web de monitorizare in timp real a unui copil sau
-    grup de copii, eventual pe baza unui senzor (de tip beacon) sau dispozitiv (ce
-    poate fi emulat prin software cu ajutorul unui API REST). Se vor oferi in timp
-    real atat locatia copilului pe o harta convenabil aleasa (e.g., la nivel de apartament,
-    cladire, strada, cartier), cat si notificari daca se distanteaza la mai mult de
-    M metri de un punct ori multime de puncte de interes sau de coordonatele actuale
-    ale unei persoane: parinte, ruda, tutore, altcineva de incredere. Suplimentar,
-    se vor realiza notificari pe baza unui serviciu Web privind posibile accidente
-    precum coliziuni cu obiecte/autovehicule, izbituri la sol, contact cu animale
-    posibil periculoase etc. De asemenea, se va oferi o interfata de administrare
-    a copiilor monitorizati, inclusiv posibilitatea de a afla cu ce alti copii interactioneaza
-    o anumita odrasla. Bonus: adoptarea de microservicii Web.
-
-- id: 12
-  title: NEDa (Nepal Earthquake Data Explorer)
-  class: M
-  members: 4
-  description: >
-    Recurgand la datele publice privitoare la cutremurul din Nepal, se doreste implementarea
-    unei aplicatii Web si a API-ului REST aferent pentru explorarea, filtrarea, vizualizarea
-    si, eventual, actualizarea informatiilor de interes. API-ul REST va recurge la
-    formatele JSON si XML. Suplimentar, vor fi generate minim 4 modalitati de vizualizare,
-    cat mai edificatoare si atractiva, a datelor. Aceste vizualizari vor putea fi
-    exportate in formatele PNG si SVG. Bonus: oferirea de interactiuni Web ce recurg
-    la realitatea virtuala.
-
-- id: 14
   title: TReX (Topic-based Resource eXplorer)
   class: M
   members: 4
   description: >
-    Acest proiect se doreste a fi un instrument Web de colectare, de regasire si de
-    vizualizare a informatiilor referitoare la resurse stiintifice si/sau tehnologice
-    (articole, carti, rapoarte tehnice, prezentari, cod-sursa si altele) ale persoanelor
-    interesate de o arie a informaticii -- de pilda, algoritmica, interactiune om-calculator,
-    paradigme de programare, securitate, Web etc. -- pe baza '2012 ACM Computing Classification
-    System'. Dezvoltand o aplicatie de tip mash-up, se vor oferi informatii de interes
-    pentru o persoana sau grup de persoane impartasind interese comune, pornind de
-    la resursele multimedia deja colectate si clasificate (eventual, prin tagging)
-    via aplicatii Web sociale precum Feedly, GitHub, Google Scholar, Lanyrd, Pocket,
-    Slideshare, Vimeo etc. Informatiile (structurate pe diverse criterii) vor fi vizualizate/redate
-    in formate precum HTML, SVG sau text obisnuit. De asemenea, sistemul va oferi
-    acces la informatii prin intermediul unui API respectand paradigma REST.
+    Acest proiect se doreste a fi un instrument Web de colectare, de regasire
+    si de vizualizare a informatiilor referitoare la resurse stiintifice si/sau
+    tehnologice (articole, carti, rapoarte tehnice, prezentari, cod-sursa si
+    altele) ale persoanelor interesate de o arie a informaticii -- de pilda,
+    algoritmica, interactiune om-calculator, paradigme de programare, securitate,
+    Web etc. -- pe baza '2012 ACM Computing Classification System'. Dezvoltand
+    o aplicatie de tip mash-up, se vor oferi informatii de interes pentru o
+    persoana sau grup de persoane impartasind interese comune, pornind de la
+    resursele multimedia deja colectate si clasificate (eventual, prin tagging)
+    via aplicatii Web sociale precum Feedly, GitHub, Google Scholar, Lanyrd,
+    Pocket, Slideshare, Vimeo etc. Informatiile (structurate pe diverse criterii)
+    vor fi vizualizate/redate in formate precum HTML, SVG sau text obisnuit.
+    De asemenea, sistemul va oferi acces la informatii prin intermediul unui
+    API respectand paradigma REST.
 
-- id: 15
+    Resurse suplimentare:
+      - http://www.acm.org/publications/class-2012
+      - https://www.programmableweb.com/apis/directory
+      - https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4
+
+- id: 2
   title: TeaSk (Technical Skill Enhancer)
   class: M
   members: 3
   description: >
-    Se doreste o aplicatie Web capabila sa ofere intr-o forma atractiva
-    o lista a celor mai reprezentative evenimente (conferinte, ateliere de lucru,
-    concursuri, stagii de practica) si proiecte software la care un utilizator ar
-    putea participa pentru a-si imbunatati aptitudinile tehnice dintr-un domeniu
-    de interes. Sugestiile expuse se vor baza pe un profil tehnic al persoanei,
-    construit utilizand informatii de interes colectate din situri specializate
-    \u2013 e.g., retele sociale profesionale (de exemplu, LinkedIn), sisteme de
-    stocare si gestiune a codului sursa (minimal, GitHub), situri ce propun rezolvarea
-    unor probleme de algoritmica sau concursuri tematice, situri propunand stagii
-    de pregatire (e.g., Stagii pe bune, Junio, Intern Suply), sisteme de tip intrebare-raspuns
-    (de pilda, StackExchange, Reddit ori Quora), blog-uri axate pe aspecte tehnologice
-    gazduite pe platforme ca Medium sau WordPress etc. Aceste surse vor putea fi
-    ajustate de utilizator. De asemenea, sistemul trebuie sa urmareasca evolutia
-    utilizatorilor (de exemplu, actualizarea profilului in functie de sugestiile
-    oferite), eventual oferind suport pentru 'gamification'. Diversele statistici
-    vor fi disponibile in formatele HTML, JSON si XML.
+    Se doreste o aplicatie Web capabila sa ofere intr-o forma atractiva o
+    lista a celor mai reprezentative evenimente (conferinte, ateliere de
+    lucru, concursuri, stagii de practica) si proiecte software la care
+    un utilizator ar putea participa pentru a-si imbunatati aptitudinile
+    tehnice dintr-un domeniu de interes. Sugestiile expuse se vor baza
+    pe un profil tehnic al persoanei, construit utilizand informatii de
+    interes colectate din situri specializate – e.g., retele sociale
+    profesionale (de exemplu, LinkedIn), sisteme de stocare si gestiune
+    a codului sursa (minimal, GitHub), situri ce propun rezolvarea unor
+    probleme de algoritmica sau concursuri tematice, situri propunand
+    stagii de pregatire (e.g., Stagii pe bune, Junio, Intern Suply),
+    sisteme de tip intrebare-raspuns (de pilda, StackExchange, Reddit
+    ori Quora), blog-uri axate pe aspecte tehnologice gazduite pe
+    platforme ca Medium sau WordPress etc. Aceste surse vor putea
+    fi ajustate de utilizator. De asemenea, sistemul trebuie sa
+    urmareasca evolutia utilizatorilor (de exemplu, actualizarea
+    profilului in functie de sugestiile oferite), eventual oferind
+    suport pentru 'gamification'. Diversele statistici vor fi
+    disponibile in formatele HTML, JSON si XML.
 
-- id: 17
-  title: WeGaS (Web Game System)
+    Resurse suplimentare:
+      - http://www.programmableweb.com/category/social/api
+      - https://developer.github.com/v3/
+      - https://api.stackexchange.com/
+
+- id: 3
+  title: WStress
+  class: M
+  members: 2
+  description: >
+    Se doreşte dezvoltarea unui instrument de testare şi de
+    stresare a unui sit/aplicatii Web, cu posibilitatea
+    detectării legăturilor invalide, a unui număr prea mare
+    de click/tap-uri pentru accesarea unor informaţii dorite,
+    a mărimii inadecvate a unor fişiere etc. De asemenea,
+    se va putea oferi graful relaţiilor dintre paginile
+    compunând situl, cu specificarea unor metadate asociate
+    fiecărei resurse în parte şi se vor putea alege diverse
+    scenarii de vizitare automată a sitului pentru a se
+    studia punctele mai dificil de accesat. Instrumentul
+    va pune la dispoziţie statistici (numerice şi grafice,
+    în format SVG) privitoare la jurnalul accesărilor şi a
+    condiţiilor de stres generat, statistici disponibile şi
+    prin intermediul unui serviciu Web.
+
+- id: 4
+  title: penGUIniX
   class: M
   members: 4
   description: >
-    Folosind una sau mai multe API-uri referitoare la jocuri electronice, se doreste
-    dezvoltarea unui joc Web de strategie, incluzand micro-management de resurse de
-    diverse categorii. Scenariul, tipul de conflict, strategiile, personajele, conditiile
-    de victorie/infrangere, maniera de evolutie pe baza nivelurilor pot fi stabilite
-    la alegere, de comun acord cu responsabilul de laborator. Bonus: oferirea unei
-    interfete 3D via WebGL, eventual recurgandu-se la realitate virtuala/imbogatita.
+    Se doreste crearea unei suite de (micro)servicii Web
+    menite a realiza administrarea de la distanţă pe baza
+    unui instrument Web a unui server Linux, într-un mod
+    similar aplicaţiei webadmin, oferindu-se acces
+    (autentificat) la fişierele-jurnal, la configurarea
+    serviciilor, la managementul utilizatorilor, la
+    sistemele de fişiere şi la vizualizarea proceselor etc.
 
-- id: 18
-  title: AnoFeT (Anonymous Feedback Tool)
-  class: B
-  members: 4
-  description: >
-    Sa se implementeze un instrument Web ce permite utilizatorilor posibilitatea
-    de a oferi feedback pentru un anumit "lucru" (eveniment, persoana, loc geografic,
-    produs, serviciu, artefact artistic etc.) intr-o maniera anonima. Aplicatia
-    trebuie sa gestioneze "lucrurile" dorite a fi evaluate si chestionarele specifice
-    fiecaruia (editabile de catre initiatorul unei solicitari de colectare a feedback-ului).
-    După terminarea perioadei in care un formular este accesibil persoanelor
-    ce realizeaza recenzii pentru un anumit "lucru", se vor prezenta statistici
-    de interes referitoare la fiecare categorie de "lucruri" evaluate -- se vor
-    considera criterii multiple precum grupul de utilizatori, perioada de timp vizand
-    evaluarea, subcategoriile de "lucruri", caracteristicile considerate pozitive/nagative
-    etc. Rapoartele generate vor fi disponibile in formatele HTML, CSV si JSON,
-    putand fi partajate pe diverse retele sociale. Bonus: alegerea unor maniere
-    de vizualizare atractiva a datelor.
-
-- id: 21
-  title: BaGr (Badge Generator)
+- id: 5
+  title: riCo (Price Comparer)
   class: B
   members: 3
   description: >
-    Sa se conceapa o aplicatie Web capabila sa genereze ecusoane pentru diverse evenimente
-    (conferinte, ateliere de lucru si altele) si/sau contexte (acces in cadrul unui
-    obiectiv turistic, semnalarea apartenentei la o organizatie, companie, grup de
-    interes,...), eventual cu precizarea rolului: vizitator, stagiar, personal administrativ,
-    participant, invitat special, student, profesor etc. Se va oferi posibilitatea
-    alegerii/editarii unei machete (predefinite sau specificate de utilizator) de
-    generare a unui set de ecusoane, inclusiv cu precizarea temei vizuale -- e.g.,
-    cromatica, orientare, dimensiuni, fonturi, sigle, URL-uri obligatoriu incluse.
-    Generarea suitei de ecusoane se va realiza si avand ca date de intrare numele,
-    afilierea si statutul participantilor preluate dintr-un fisier transferat prin
-    'upload' in cadrul instrumentului (minimal, vor fi acceptate formatele CSV si
-    XML). Ecusoanele vor fi disponibile ca documente HTML si sub forma grafica (e.g.,
-    PNG). Bonus: ecusoane generate in format SVG ori incluzand reprezentari QR Code.
+    Pornind de la diverse surse disponibile online, sa
+    se realizeze o aplicatie Web care ofera diverse
+    comparatii de produse (privind pretul minim, diverse
+    caracteristici utile, existenta unor oferte speciale
+    si altele). Sistemul va fi capabil sa analizeze automat
+    preturile disponibile pe anumite situri de profil
+    inregistrate in prealabil. Se va oferi suport si pentru
+    managementul surselor de date folosite de aplicatie.
+    Actualizarile de preturi vor fi disponibile si ca flux
+    de stiri in format RSS.
 
-- id: 23
-  title: Deton (Detention Monitoring Tool)
-  class: B
-  members: 3
-  description: >
-    Sa se dezvolte o aplicatie Web pentru gestiunea vizitelor de care beneficiaza
-    persoanele condamnate la executarea unei pedepse intr-un penitenciar, intr-o casa
-    de corectie sau entitate similara. Fiecarei vizite i se vor atasa informatii privind
-    individul ori indivizii care efectueaza vizita -- minimal, se vor considera: identitatea,
-    fotografia, relatia cu condamnatul (ruda, tutore legal, avocat, prieten), natura
-    vizitei. De asemenea, vor fi consemnate: data realizarii intrevederii, natura
-    si durata acesteia (e.g., consultare privind recursul procesului, vizita amicala),
-    posibile obiecte/date furnizate condamnatului sau oferite de condamnat vizitatorului/vizitatorilor,
-    rezumatul discutiilor efectuate (daca nu e incalcata confidentialitatea), starea
-    de sanatate si de spirit a detinutului, martorul/martorii la intalnire etc. Instrumentul
-    implementat va genera statistici -- documente HTML, iCalendar si JSON -- vizand
-    vizitele realizate per individ, perioada de timp, in functie de categoria pedepsei
-    savarsite sau alte criterii. Bonus: oferirea de vizualizari atractive ale datelor
-    statistice generate.
-
-- id: 29
-  title: GuV (Guess the VIP)
+- id: 6
+  title: Passer (Password Manager)
   class: B
   members: 2
   description: >
-    Sa se dezvolte o aplicatie Web care permite utilizatorilor ghicirea numelor unor
-    personalitati celebre cu ajutorul imaginilor (preluate local sau folosind un serviciu
-    online precum Flickr ori Instagram), fie prin tastarea directa a numelor (gen
-    Spanzuratoarea), fie prin apelarea la metode ajutatoare (i.e. variante de alegeri).
-    Utilizatorii autentificati vor avea la dispozitie un istoric al punctajelor proprii
-    obtinute pe baza sesiunilor de joc. Clasamentele vor putea fi facute publice in
-    formate ca Atom, CSV, JSON si HTML.
+    Sa se dezvolte o aplicatie Web care permite gestionarea
+    parolelor folosite de utilizatori in cadrul unor
+    aplicatii/situri Web. Utilizatorii vor avea acces la
+    functionalitati pe baza unui cont. Fiecare inregistrare
+    va avea asociate meta-date precum titlu, nume de utilizator,
+    parola, adresa Web, comentarii, timp maxim de valabilitate
+    a parolei etc. Informatiile de autentificare vor putea fi
+    grupate conform diferitelor categorii (e.g., in functie de
+    domeniul sitului, dupa "taria" parolei, frecventa utilizarii).
+    Aplicatia va oferi si un generator de parole "sigure" si
+    posibilitatea de a exporta datele in formatele CSV, JSON si
+    XML. Parolele vor fi stocate intr-un mod "sigur" pe baza unui
+    sistem de stocare persistenta (de exemplu, un server de baze
+    de date).
 
-- id: 32
-  title: JfK (Just for Kids Game)
-  class: B
-  members: 3
-  description: >
-    Sa se propuna un joc Web care ofera copiilor mijloace amuzante de invatare si
-    testare interactiva a cunostintelor generale dintr-un domeniu ales dintr-o lista
-    editabila (exemple tipice: matematica, literatura, geografie, istorie, muzica).
-    Rezultatele testelor realizate vor putea fi raportate parintilor, rudelor sau
-    tutorilor legali via e-mail si fluxuri de stiri Atom. Se vor oferi mai multe niveluri
-    de dificultate in functie de varsta copiilor -- e.g., prescolari, scolari mici,
-    elevi de gimnaziu etc. Parintii/tutorii vor avea posibilitatea monitorizarii progresului
-    inregistrat si a gestionarii testelor si cunostintelor folosite pentru instruire,
-    eventual preluate de pe diverse situri de profil indicate de utilizatori. Bonus:
-    partajarea celor mai bune rezultate obtinute de copii pe minim 2 retele sociale
-    (e.g., Facebook si Twitter).
+    Resurse suplimentare:
+      - https://jsonauts.github.io/
 
-- id: 34
-  title: LeAPPsa
-  class: B
-  members: 3
-  description: >
-    Sa se dezvolte o aplicatie Web care sa permita crearea de conturi de utilizator
-    doar pe baza unei adrese de e-mail (de exemplu, apartinand domeniului 'info.uaic.ro')
-    pentru a facilita circularea unei intrebari (sau barfe) printre colegi. Un utilizator
-    autentificat poate plasa o intrebare si maxim N nume de conturi ale unor colegi.
-    Acestia vor primi un mesaj cu un URL generat (avand un identificator unic) unde
-    pot raspunde la intrebare si adauga la randul lor pana la alte N conturi care
-    vor primi mesaj de notificare. Atentie: un coleg poate raspunde o singura data
-    la o intrebare. Sistemul implementat va afisa cat mai atractiv "arborele lepsii"
-    pentru o anumita intrebare si va genera statistici privind cea mai populara intrebare,
-    cel mai popular coleg etc. Datele vehiculate vor recurge, minimal, la formatele
-    JSON si XML.
-
-- id: 35
-  title: LoFo (Lost &amp; Found)
-  class: B
-  members: 3
-  description: >
-    Se doreste dezvoltarea unei aplicatii Web pentru managementul obiectelor pierdute,
-    oferind inclusiv suport pentru interactiunea dintre persoana care a declarat ca
-    a pierdut ceva (punand la dispozitie suficiente detalii referitoare la identificarea
-    obiectului pierdut) cu individul care a gasit, eventual, acel obiect (introducand
-    la randu-i diverse atribute ale acestuia). In loc de obiecte, se pot considera
-    si fiinte -- e.g., animalute de casa. Sistemul va include si o maniera de raportare
-    a fraudelor, plus diverse mijloace de generare a situatiilor privind entitatile
-    pierdute si/sau recuperate, disponibile in formatele HTML, CSV, JSON si PDF.
-
-- id: 42
-  title: PerA (Personal Web Assistant)
+- id: 7
+  title: Wews (News Web Manager)
   class: B
   members: 2
   description: >
-    Sa se dezvolte o aplicatie Web ce permite utilizatorilor autentificati sa realizeze
-    managementul activitatilor personale. Fiecare utilizator va preciza tipuri de
-    activitati si datele aferente acestora: nume, descriere, localizare, perioada
-    de desfasurare, periodicitatea etc. Un exemplu de activitate ar fi o cursa cu
-    trotineta pe bulevardul Copou, in fiecare joi, intre 6am si 7am, impreuna cu pasionatii
-    de Web. Aplicatia va oferi statistici referitoare la incarcarea pe zile a programului
-    fiecarui utilizator si va semnala potriviri de calendare ale unui grup de persoane
-    favorite, plus figurarea pe harta a activitatilor ce trebuie intreprinse. De asemenea,
-    se va genera un flux RSS/Atom oferind lista de activitati pentru fiecare program
-    in parte, eventual filtrat dupa diverse criterii (e.g., doar activitatile de relaxare,
-    pentru anumite zile/ore).
+    Avand la dispozitie o suita de situri Web oferind stiri (de
+    exemplu, ziare electronice sau situri precum Hacker News
+    ori Reddit), sa se realizeze o aplicatie Web care sa
+    centralizeze articolele aparute zilnic, prezentandu-le
+    intr-o forma atractiva pentru utilizator. De asemenea, se
+    va oferi posibilitatea de a schimba tema vizuala si/sau
+    tematicile dorite (e.g., eliminarea sectiunii de stiri
+    mondene, adaugarea unei sectiuni referitoare la programare
+    Web). Actualizarea stirilor se va putea face la diverse
+    intervale de timp stabilite de utilizatorii autentificati,
+    oferindu-se un flux RSS. Articolele favorite pot fi
+    partajate pe diverse retele sociale sau grupate pe categorii
+    predefinite ori stabilite de utilizator. Inspiratie: Feedly.
 
-- id: 51
-  title: StoW (Stories on the Web)
+    Resurse suplimentare:
+      - http://www.rssboard.org/rss-specification
+      - https://www.programmableweb.com/category/news-services/api
+      - https://developer.feedly.com/
+
+- id: 8
+  title: FOU (File Online Upload)
   class: B
-  members: 3
+  members: 2
   description: >
-    Sa se propuna o implementare online a unei (suite de) povesti celebre, punandu-se
-    la dispozitie o interfata Web care sa ofere copiilor -- pe grupe de varste --
-    o experienta narativa placuta, inclusiv semne de carte, scene alternative, progresul
-    parcurgerii textului, lista personajelor fiecarui basm in parte si detaliilor
-    despre acestea (stocate persistent), posibilitati de cautare etc. Pe baza unui
-    fisier JSON si/sau XML preluat prin 'upload', sistemul va fi capabil sa importe
-    continutul unei povesti, inclusiv resursele multimedia aferente. Suplimentar,
-    se vor include mijloace de administrare a povestilor existente, inclusiv a continuturilor
-    multimedia aferente.
+    Sa se dezvolte o aplicatie Web care sa permita utilizatorilor
+    transferul de pe calculatorul local al documentelor proprii pe
+    baza unui cont creat in prealabil. Daca se transmite un document
+    deja existent, sa se retina versiunile mai vechi, utilizatorul
+    avand posibilitatea sa le acceseze oricand. Sistemul va permite
+    adaugarea unor meta-date suplimentare pentru fiecare document
+    incarcat: descriere, tag-uri etc. De asemenea, utilizatorii vor
+    avea posibilitatea de grupare a fisierelor incarcate. Vor mai
+    fi oferite si functiile de stergere, cautare si preluare a
+    documentelor existente.
 
-- id: 54
-  title: WeBall
+- id: 9
+  title: OSSo (Open-Source Software Manager)
   class: B
   members: 4
   description: >
-    Urmand modelul campionatelor internationale de fotbal (sau orice joc de echipa
-    similar: handbal, polo, volei,...), sa se conceapa o aplicatie Web care organizeaza
-    -- eventual, cu aportul utilizatorului -- echipele pe grupe si, ulterior, realizeaza
-    diverse tipuri de finale. Utilizatorii vor putea vedea lista grupelor, rezultatele
-    partidelor jucate si clasamentul provizoriu, in formatele HTML, CSV, JSON si PDF.
-    Anumiti utilizatori autentificati cu rol de administrator vor putea actualiza
-    rezultatele meciurilor disputate. Se va oferi posibilitatea de a organiza si diferite
-    "poll"-uri (chestionare) privitoare la pronosticul unor partide interesante. Clasamentul
-    provizoriu si cel final vor putea fi disponibile si via un flux Atom. De asemenea,
-    situl va oferi posibilitatea inserarii de impresii (eventual, post factum) referitoare
-    la desfasurarea unor partide. Bonus: recurgerea la date publice disponibile pe
-    Web.
+    Sa se conceapa un instrument Web capabil sa gestioneze
+    meta-datele privitoare la diversele aplicatii software --
+    suite, pachete sau de sine-statatoare -- sau seturi de date
+    care sunt disponibile in regim deschis (open source/data) si
+    sunt utilizate in cadrul unei/unor organizatii. Pentru fiecare
+    dintre aceste aplicatii, se vor se vor avea in vedere
+    urmatoarele: descrierea succinta a rolului si functionalitatii,
+    categoria, istoricul versiunilor instalate, platforma
+    hardware/software, periodicitatea actualizarilor posibile
+    (zilnice, saptamanale, lunare), autorii si responsabilii cu
+    mentenanta, URL-urile depozitelor de cod-sursa ori a datelor
+    oferite, licenta de utilizare, maniera de instalare (pachet,
+    script de instalare, dezarhivare propriu-zisa etc.), comunitate
+    de interes specifica (e.g., lista de mesaje prin posta
+    electronica, blog, wiki, canal IRC), dependenta de alte
+    aplicatii/programe/biblioteci, aplicatii similare si altele.
+    Sistemul va oferi suport pentru realizarea de cautari
+    multi-criteriale (de pilda, toate programele educationale
+    concepute in limbajele Python sau Ruby sub licenta GPL,
+    ruland pe Linux, inclusiv Android, dependente de biblioteca
+    libxml). In plus, se vor genera rapoarte disponibile in
+    formatele HTML si PDF. Datele gestionate vor putea fi exportate
+    sub forma de documente JSON si XML. Inspiratie: situl AlternativeTo.
+
+    Resurse suplimentare:
+      - https://jsonauts.github.io/
+      - http://alternativeto.net/
+
+- id: 10
+  title: Oxy
+  class: B
+  members: 3
+  description: >
+    Sa se furnizeze o aplicatie Web avand rol de proxy. Utilizatorii
+    (clientii), pe baza conturilor proprii create in prealabil, vor
+    putea accesa prin intermediul aplicatiei diferite resurse via
+    URL-uri, redirectionate corespunzator. Sistemul va retine istoricul
+    adreselor Web accesate, inclusiv raspunsurile HTTP obtinute (e.g.,
+    reprezentarile resurselor), in vederea eficientizarii transferului
+    de date. De asemenea, se va oferi si posibilitatea folosirii de
+    URL-uri 'prescurtate', similare celor generate de Bit.ly,
+    Tinyurl.com etc. Aplicatia va pune la dispozitie diverse rapoarte
+    de interes (in formatele HTML, CSV si JSON) privitoare la accesarile
+    curente sau anterioare -- in functie de intervalul de timp, domeniul
+    primar, numarul de cereri, tipul MIME al continutului solicitat etc.
+    --, cu posibilitatea de a clasifica URL-urile in diverse categorii
+    specificate de administrator(i).
+
+    Resurse suplimentare:
+      - https://www.iana.org/assignments/media-types/media-types.xhtml
+      - https://dev.bitly.com/
+      - https://jsonauts.github.io/
+
+
+- id: 11
+  title: Sofy (Online Software Repository)
+  class: B
+  members: 3
+  description: >
+    Sa se realizeze o aplicatie Web care gestioneaza un depozit online
+    de aplicatii (software repository). Acestea vor putea fi transferate
+    prin 'upload' de catre utilizatorii autentificati. Aplicatiile incarcate
+    vor putea fi grupate dupa diverse criterii (precum platforma hardware,
+    sistemul de operare, tipul licentei, functionalitatile oferite (e.g.,
+    utilitar, suita de birou, instrument Internet) etc. sau pe baza unor
+    termeni de continut (i.e. clasificare via tagging). Sistemul va permite
+    adaugarea unor informatii suplimentare pentru fiecare aplicatie incarcata,
+    precum descrierea, situl Web oficial, istoricul versiunilor, frecventa
+    actualizarilor si altele. De asemenea, pentru fiecare aplicatie, vor fi
+    afisate data incarcarii, numarul de download-uri, marimea, alte aplicatii
+    similare. Fiecare utilizator va avea un profil unde vor putea fi
+    vizualizate toate aplicatiile incarcate de acesta. Sistemul va oferi
+    si o interfata de management al software-ului la nivel de utilizator
+    sau la nivel de administrator, rapoartele generate fiind disponibile
+    in formatele HTML, CSV si PDF. Bonus: preluarea automata a datelor
+    disponibile pe situri de profil precum Alternativeto.net si Softpedia.
+
+    Resurse suplimentare:
+      - https://blog.ldodds.com/2017/03/07/designing-csv-files/
+
+- id: 12
+  title: Cal-o-web
+  class: B
+  members: 3
+  description: >
+    Sa se dezvolte o aplicatie Web care sa permita utilizatorilor
+    autentificati sa-si monitorizeze caloriile consumate pe parcursul
+    unei unitati de timp (zi, saptamina, luna, an) in functie de ce
+    au consumat in acea unitate de timp. De asemenea, se vor putea
+    propune schimbari in dieta fiecarui utilizator pe baza preferintelor
+    personale (e.g., daca pentru Tuxy se constata ca numarul de calorii
+    lunare a scazut, atunci i se poate propune ca duminica sa consume 3
+    linguri de dulceata sau o banana). Aplicatia va oferi statistici,
+    inclusiv vizualizari de interes, pe baza caloriilor acumulate si
+    (evolutiei) greutatii -- introduse manual de utilizator. Rapoartele
+    generate vor fi exportate in format XML.
+
+- id: 13
+  title: CityZen
+  class: B
+  members: 3
+  description: >
+    Sa se dezvolte o aplicatie Web ce ofera suport pentru raportarea si, ulterior,
+    vizualizarea facila a unor probleme cetatenesti -- de exemplu, probleme de trafic,
+    scandaluri stradale, aparitia cersetoriei, vandalizari ale unor obiective turistice
+    sau de agrement etc. -- pe categorii prestabilite sau sugerate de utilizator
+    (autentificat sau in regim anonim).
+
+    Raportarea poate presupune preluarea de mesaje textuale sau de imagini/video,
+    ce apoi vor putea fi partajate via retele sociale (folosind termenul de continut
+    '#cityzen'). Sistemul va genera in timp real statistici vizand aspectele semnalate,
+    prioritatea lor, inclusiv situatia verificata pe teren de catre organismele abilitate.
+    Se vor implementa si mijloace de semnalare daca si cum autoritatile ori alte
+    organizatii au rezolvat anumite probleme ale orasului. Datele gestionate vor fi
+    importate/exportate in formatele CSV si JSON. Interfata se va baza pe tehnicile de
+    design responsiv.
+
+    Bonus: propunerea de vizualizari atractive ale informatiilor procesate.
+
+    Resurse suplimentare:
+      - https://jsonauts.github.io/
+
+- id: 14
+  title: SeAN (Seasonal Allergy Notifier)
+  class: B
+  members: 3
+  description: >
+    Sa se realizeze o aplicatie Web capabila sa notifice o persoana sau grup de utilizatori
+    autentificati asupra aparitiei unei alergii sezoniere: la polen, la expunere directa la
+    soare sau la praf etc. -- eventual, in conjunctie cu anumite fructe sau compusi alimentari.
+    Notificarile vor fi semnalate -- inclusiv cu o anumita prioritate/frecventa -- atat in
+    cadrul aplicatiei, cat si prin posta electronica. Se vor pune la dispozitie, de asemenea,
+    sfaturi referitoare la preintampinarea unei/unor alergii, plus tratamentul si/sau
+    medicatia. Utilizatorii vor putea adauga propriile alergii, cu posibilitatea de a fi
+    partajate la nivel de grup, inclusiv la nivelul unei retele sociale. Se vor genera
+    rapoarte in formatele HTML si PDF referitoare la statistici de interes.
+
+    Bonus: vizualizari atractive ale datelor oferite.
+    
+    Resurse suplimentare:
+      - http://www.wikidoc.org/index.php/Allergy
+      - https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4
