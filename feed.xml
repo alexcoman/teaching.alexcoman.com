@@ -7,6 +7,21 @@
 		<atom:link href="https://profs.info.uaic.ro/~alex.coman/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Alegerea proiectului pentru Tehnologii Web</title>
+				
+				
+					<description>&lt;p&gt;Lista cu &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/projects/&quot;&gt;proiectele propuse&lt;/a&gt; pentru Tehnologii web este disponibilă la următoarea adresă &lt;a href=&quot;/~alex.coman/laboratoare/web/proiecte&quot;&gt;@alexcoman/web/proiecte&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Proiectul va consta în realizarea unei aplicaţii aliniată problematicilor actuale privitoare la tehnologiile Web, implementarea axându-se pe partea de server, indiferent de limbajul ori limbajele de programare folosite.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+				<link>https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/alegerea-proiectului/</link>
+				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/noutati/web/alegerea-proiectului/</guid>
+			</item>
+		
+			<item>
 				<title>Sisteme pentru controlul versiunii</title>
 				
 				
@@ -123,19 +138,6 @@
 				<pubDate>Tue, 04 Apr 2017 12:00:00 +0000</pubDate>
 				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/server-web-php5-mysql/</link>
 				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/vagrant/server-web-php5-mysql/</guid>
-			</item>
-		
-			<item>
-				<title>VirtualBox - noțiuni introductive</title>
-				
-				
-					<description>&lt;p&gt;Virtual Box este o aplicație care își propune să vină în ajutorul nostru atunci când avem nevoie rapid și ușor de o mașină care să îndeplinească anumite specificații, atât hardware, cât și software. Astfel, urmând câțiva pași simpli, putem crea mașini virtule cu orice sistem de operare, diferit de cel pe care-l avem pe mașina locală. În plus, după ce am creat mașini virtuale proprii, cu specificațiile dorite, putem să le facem copii, sau să le clonăm și folosi pe orice alt computer.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sat, 01 Apr 2017 12:00:00 +0000</pubDate>
-				<link>https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/notiuni-introductive/</link>
-				<guid isPermaLink="true">https://profs.info.uaic.ro/~alex.coman/resurse/tutorial/virtualbox/notiuni-introductive/</guid>
 			</item>
 		
 	</channel>
