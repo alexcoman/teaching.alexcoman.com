@@ -1,6 +1,12 @@
 - title: 'Resurse utile'
   intro: ''
   cards:
+    - title: Propuneri de proiecte
+      intro: teme de proiect - lista propunerilor
+      color: pink
+      icon:  fab fa-linux
+      url: /laboratoare/web/proiecte
+
     - title: Tutoriale
       intro: diverse resurse ce completează informațiile din cadrul laboratoarelor
       color: green

@@ -9,19 +9,29 @@
 {% for project in projects %}
     {% if project.class == 'M' %}
         {% assign panel_class = 'primary' %}
-    {% else %}
+    {% elsif project.class == 'B' %}
         {% assign panel_class = 'success' %}
+    {% else %}
+        {% assign panel_class = 'warning' %}
     {% endif %}
+
     <div class="panel panel-{{ panel_class }}">
         <div class="panel-heading">
-            <h3 class="panel-title">{{ project.title }} <small>Clasă de dificultate: {{ project.class }}</small></h3>
+            <h3 class="panel-title">
+                {% if project.id %}{{ project.id }}. {% endif %}{{ project.title }}
+                {% if project.class %}
+                <small>Clasă de dificultate: {{ project.class }}</small>
+                {% endif %}
+            </h3>
         </div>
         <div class="panel-body">
             <p>{{ project.description | markdownify }}</p>
         </div>
+        {% if project.members %}
         <div class="panel-footer">
             <p class="text-right">Număr maxim de membri: {{ project.members }}</p>
         </div>
+        {% endif %}
     </div>
 {% endfor %}
 

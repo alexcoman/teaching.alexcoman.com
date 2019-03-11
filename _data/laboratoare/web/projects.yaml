@@ -1,3 +1,31 @@
+- title: Aspecte generale
+  description: >
+    - Proiectul va consta în realizarea unei aplicaţii aliniată problematicilor
+      actuale privitoare la tehnologiile Web, implementarea axându-se pe partea
+      de server, indiferent de limbajul ori limbajele de programare folosite.
+
+    - Proiectele propuse au următoarele clase de dificultate, fiecare cu un
+      punctaj acordat în urma evaluării:
+      - **M** -- maxim 10 puncte pentru fiecare componentă **P**, **A** şi **S**,
+      - **B** -- maxim 7 puncte pentru fiecare componentă **P**, **A** şi **S**.
+
+    - O temă de proiect – propusă de fiecare titular de laborator -- poate fi
+      aleasă de maxim 5 echipe. Studenţii care nu-şi aleg la timp o temă de proiect
+      vor avea asignat unul dintre proiectele nealese şi vor fi penalizaţi cu 2
+      puncte pentru fiecare componentă evaluată.
+
+    - O serie de resurse de interes referitoare la proiecte se poate găsi mai jos:
+      - [Lista de proiecte propuse](https://teaching.alexcoman.com/laboratoare/web/proiecte) -- pagina curentă
+      - [Statistici privitoare la alegerea proiectului](https://teaching.alexcoman.com/laboratoare/web/proiecte) -- pagina curentă
+      - [Evaluare - Componenta P](https://teaching.alexcoman.com/laboratoare/web/evaluare-componenta-p)
+      - [Formularul de înscriere](https://goo.gl/forms/aKBonwgLH6i2eor72)
+
+- title: Statistici privitoare la alegerea proiectului
+  description: >
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQQTxiRHPnF8mplWl3LKXh8QkE45Rmuq3IThuUOnfrNvrWjSPMkC3NzZg43eP1uTZ_FYsBz4JX6m90h/pubhtml?gid=1510442590&amp;single=false&amp;widget=false&amp;headers=false"></iframe>
+    </div>
+
 - id: 1
   title: TReX (Topic-based Resource eXplorer)
   class: M
@@ -19,9 +47,9 @@
     API respectand paradigma REST.
 
     Resurse suplimentare:
-      - http://www.acm.org/publications/class-2012
-      - https://www.programmableweb.com/apis/directory
-      - https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4
+      - [The 2012 ACM Computing Classification System](http://www.acm.org/publications/class-2012)
+      - [Largest API Directory on the Web](https://www.programmableweb.com/apis/directory)
+      - [Vizualizarea datelor. Privire de ansamblu](https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4)
 
 - id: 2
   title: TeaSk (Technical Skill Enhancer)
@@ -49,9 +77,9 @@
     disponibile in formatele HTML, JSON si XML.
 
     Resurse suplimentare:
-      - http://www.programmableweb.com/category/social/api
-      - https://developer.github.com/v3/
-      - https://api.stackexchange.com/
+      - [Programmable web - social](http://www.programmableweb.com/category/social/api)
+      - [developer.github.com/v3/](https://developer.github.com/v3/)
+      - [api.stackexchange.com](https://api.stackexchange.com/)
 
 - id: 3
   title: WStress
@@ -87,6 +115,59 @@
     sistemele de fişiere şi la vizualizarea proceselor etc.
 
 - id: 5
+  title: DesAnt (Web Design Assistant)
+  class: M
+  members: 3
+  description: >
+    Se doreste crearea unui instrument Web "inteligent" care sa asiste
+    utilizatorul in respectarea unor reguli de design Web (e.g., consistenta
+    spatiala, cromatica, model al navigarii, proportie dintre informatii
+    textuale si cele grafice etc.), avand la baza diverse biblioteci de
+    sabloane de proiectare (design patterns) a interactiunii. Aplicatia va
+    verifica daca diverse sabloane (pattern-uri) apar si sunt respectate pe
+    parcursul unui sit Web, oferind sugestii de ameliorare a interfetelor
+    eronate. Se vor sugera colectii predefinite de machete (template-uri)
+    de prezentare -- e.g., layout-uri, solutii cromatice, stiluri de afisare,
+    sisteme de prezentare a continutului -- si de interactiune -- de exemplu,
+    modalitati de navigare, formulare de autentificare, maniere de cautare
+    locala etc. -- pentru diverse categorii de situri Web (personale,
+    academice, comerciale, comunitare si altele) ce pot fi accesate pe mai
+    multe platforme.
+
+    Resurse suplimentare:
+      - [@busaco/hci](https://profs.info.uaic.ro/~busaco/teach/courses/hci/hci-film.html)
+      - [@evalica/patterns](https://profs.info.uaic.ro/~evalica/patterns/)
+
+- id: 6
+  title: HuWr (Human Migration Web Reporter)
+  class: M
+  members: 4
+  description: >
+    Pe baza datelor existente si a observatiilor semnalate de utilizatori
+    (autentificati via un cont existent pe o platforma Web cu caracter social
+    precum Facebook ori Twitter), se doreste realizarea unei harti interactive
+    -- via un serviciu public de cartografiere precum OpenStreetMap -- referitoare
+    la traseele migratiei persoanelor la nivel de natiune, de continent sau de glob.
+    Raportarea unui eveniment migratoriu se va putea efectua fie direct in cadrul
+    aplicatiei Web, fie folosind termenul de continut '#migration' in cadrul retelei
+    sociale preferate de utilizator. Sistemul propus va fi capabil sa figureze si sa
+    ofere statistici vizand aceste migratii sezoniere in functie de zona geografica
+    (e.g., tranzit pe teritoriul unei tari), perioada de timp, climat, consideratii
+    demografice etc. Fiecare nou raport introdus de utilizator va fi semnalat si in
+    cadrul unui flux de stiri RSS. Sistemul Web dezvoltat va oferi statistici relevante
+    disponibile ca documente HTML, CSV, JSON si PDF, putand fi partajate la nivelul
+    retelelor sociale. Folosind datele disponibile, se vor putea oferi predictii
+    referitoare la migrarea persoanelor spre un areal geografic. Bonus: propunerea
+    de vizualizari interesante ce recurg la SVG sau WebGL.
+
+    Resurse suplimentare:
+      - [oecd.org/migration/](http://www.oecd.org/migration/)
+      - [programmableweb.com/category/social/api](https://www.programmableweb.com/category/social/api)
+      - [programmableweb.com/category/mapping/api](https://www.programmableweb.com/category/mapping/api)
+      - [developer.mozilla.org/docs/SVG](https://developer.mozilla.org/docs/SVG)
+      - [khronos.org/webgl/wiki/](https://www.khronos.org/webgl/wiki/)
+
+- id: 7
   title: riCo (Price Comparer)
   class: B
   members: 3
@@ -102,7 +183,7 @@
     Actualizarile de preturi vor fi disponibile si ca flux
     de stiri in format RSS.
 
-- id: 6
+- id: 8
   title: Passer (Password Manager)
   class: B
   members: 2
@@ -123,9 +204,9 @@
     de date).
 
     Resurse suplimentare:
-      - https://jsonauts.github.io/
+      - [@jsonauts](https://jsonauts.github.io/)
 
-- id: 7
+- id: 9
   title: Wews (News Web Manager)
   class: B
   members: 2
@@ -145,11 +226,11 @@
     predefinite ori stabilite de utilizator. Inspiratie: Feedly.
 
     Resurse suplimentare:
-      - http://www.rssboard.org/rss-specification
-      - https://www.programmableweb.com/category/news-services/api
-      - https://developer.feedly.com/
+      - [rssboard.org/rss-specification](http://www.rssboard.org/rss-specification)
+      - [programmableweb.com/category/news-services/api](https://www.programmableweb.com/category/news-services/api)
+      - [developer.feedly.com](https://developer.feedly.com/)
 
-- id: 8
+- id: 10
   title: FOU (File Online Upload)
   class: B
   members: 2
@@ -165,7 +246,7 @@
     fi oferite si functiile de stergere, cautare si preluare a
     documentelor existente.
 
-- id: 9
+- id: 11
   title: OSSo (Open-Source Software Manager)
   class: B
   members: 4
@@ -195,10 +276,10 @@
     sub forma de documente JSON si XML. Inspiratie: situl AlternativeTo.
 
     Resurse suplimentare:
-      - https://jsonauts.github.io/
-      - http://alternativeto.net/
+      - [@jsonauts](https://jsonauts.github.io/)
+      - [alternativeto.net](http://alternativeto.net/)
 
-- id: 10
+- id: 12
   title: Oxy
   class: B
   members: 3
@@ -219,12 +300,12 @@
     specificate de administrator(i).
 
     Resurse suplimentare:
-      - https://www.iana.org/assignments/media-types/media-types.xhtml
-      - https://dev.bitly.com/
-      - https://jsonauts.github.io/
+      - [iana.org/media-types.xhtml](https://www.iana.org/assignments/media-types/media-types.xhtml
+      - [dev.bitly.com](https://dev.bitly.com/
+      - [@jsonauts](https://jsonauts.github.io/)
 
 
-- id: 11
+- id: 13
   title: Sofy (Online Software Repository)
   class: B
   members: 3
@@ -248,9 +329,9 @@
     disponibile pe situri de profil precum Alternativeto.net si Softpedia.
 
     Resurse suplimentare:
-      - https://blog.ldodds.com/2017/03/07/designing-csv-files/
+      - [https://blog.ldodds.com/2017/03/07/designing-csv-files/](https://blog.ldodds.com/2017/03/07/designing-csv-files/)
 
-- id: 12
+- id: 14
   title: Cal-o-web
   class: B
   members: 3
@@ -267,7 +348,7 @@
     (evolutiei) greutatii -- introduse manual de utilizator. Rapoartele
     generate vor fi exportate in format XML.
 
-- id: 13
+- id: 15
   title: CityZen
   class: B
   members: 3
@@ -290,9 +371,9 @@
     Bonus: propunerea de vizualizari atractive ale informatiilor procesate.
 
     Resurse suplimentare:
-      - https://jsonauts.github.io/
+      - [@jsonauts](https://jsonauts.github.io/)
 
-- id: 14
+- id: 16
   title: SeAN (Seasonal Allergy Notifier)
   class: B
   members: 3
@@ -310,5 +391,84 @@
     Bonus: vizualizari atractive ale datelor oferite.
     
     Resurse suplimentare:
-      - http://www.wikidoc.org/index.php/Allergy
-      - https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4
+      - [wikidoc.org/index.php/Allergy](http://www.wikidoc.org/index.php/Allergy)
+      - [@busaco/cliw/week4](https://profs.info.uaic.ro/~busaco/teach/courses/cliw/web-film.html#week4)
+
+- id: 17
+  title: Perfumer
+  class: B
+  members: 3
+  description: >
+    Sa se conceapa o aplicatie Web de management al resurselor dintr-o parfumerie care
+    ofera utilizatorilor diverse (tipuri de) parfumuri, in functie de profilul unei
+    persoane si vizand o anumita ocazie, un anotimp etc. Fiecarui produs i se vor atasa
+    proprietati specifice, inclusiv ingrediente, pret, comentarii, tag-uri, relatii cu
+    alte parfumuri inrudite. De asemenea, se va simula expedierea parfumurilor achizitionate
+    la o adresa stabilita, eventual in regim de cadou. Administratorul sistemului va avea
+    posibilitatea sa consulte rapoarte -- generate in formatele HTML, CSV si PDF -- privind
+    stocurile existente si situatia vanzarilor in functie de categoria de parfumuri, profilul
+    utilizatorilor, o anumita perioada de timp etc.
+
+- id: 18
+  title: Toyr
+  class: B
+  members: 3
+  description: >
+    Pentru un magazin online de jucarii e necesara gestionarea acestora, inclusiv stocurile
+    si preturile actuale, campaniile publicitare pe baza catalogului de oferte, politica de
+    acordare de reduceri (de exemplu, la cumpararea a minim P pinguini de cauciuc se va oferi
+    o minge), managementul unor evenimente (e.g., o aniversare ori 'Ziua Copilului') si altele.
+    Sa se dezvolte o aplicatie Web care faciliteaza realizarea acestor procese. Pentru
+    utilizatorii din categoria administrator, sistemul va facilita intocmirea de rapoarte --
+    in formatele CSV, HTML si PDF -- si organizarea jucariilor pe categorii: gen (fete/baieti),
+    intervale de varsta, materiale utilizate, scop. Noutatile privitoare la jucarii vor fi expuse
+    via un flux de stiri RSS.
+
+- id: 19
+  title: WAst (Web Accessibility Assistant)
+  class: B
+  members: 3
+  description: >
+    Sa se implementeze un instrument Web care permite utilizatorilor cu diverse probleme speciale
+    -- cele vizuale si/sau motorii, cu precadere -- sa acceseze intr-o maniera convenabila un
+    sit/document Web ce nu ofera in mod implicit continut accesibil si pentru aceste categorii
+    de persoane. In functie de unele informatii furnizate in prealabil de utilizator (e.g.,
+    posibile probleme cognitive), sistemul va pune la dispozitie o interfata care sa se muleze
+    pe nevoile acestuia, astfel incat sa se poata interactiona judicios cu situl/documentul
+    dorit. Se vor lua in consideratie standardele si reglementarile in vigoare privitoare la
+    accesibilitatea Web.
+
+    Resurse suplimentare:
+      - [@busaco/accesibilitatea-web-presentation](https://www.slideshare.net/busaco/accesibilitatea-web-presentation)
+      - [w3.org/WAI/guid-tech.html](https://www.w3.org/WAI/guid-tech.html)
+      - [webaim.org/](http://webaim.org/)
+
+- id: 20
+  title: Kitry (Kid Web Registry)
+  class: B
+  members: 3
+  description: >
+    Sa se dezvolte o aplicatie Web care sa permita utilizatorilor autentificati gestiunea
+    resurselor privitoare la ingrijirea unui copil sau grup de copii de varsta prescolara:
+    calendarul hranirii, al orelor de somn, diverse resurse multimedia (fotografii, filme,
+    inregistrari audio,...) privind evolutia acelui copil, istoricul medical etc. Resursele
+    multimedia vor fi stocate intern (e.g., prin 'upload') sau extern (indicand URL-uri
+    spre resurse din cadrul unor aplicatii Web cunoscute: Instagram, SoundCloud, Vimeo
+    etc.), eventual imbogatite cu alte documente similare pe baza tag-urilor asociate.
+    Aplicatia va oferi o vedere cronologica (timeline) a celor mai importante momente
+    surprinse referitoare la fiecare copil in parte. Rapoartele generate vor fi disponibile
+    si in formatele PDF si XML.
+
+- id: 21
+  title: Winema
+  class: B
+  members: 3
+  description: >
+    Pornind de la existenta de filmulete de prezentare a unei productii cinematografice
+    (asa-numitele trailer-e si/sau spoiler-e puse la dispozitie de situri ca IMDb,
+    YouTube ori Vimeo), sa se implementeze o aplicatie Web capabila sa ofere finaluri
+    diferite pentru diverse filme solicitate de utilizator. Pentru fiecare persoana in
+    parte, se vor furniza mijloace de gestionare a listei filmelor preferate, inclusiv
+    cautarea dupa anumite criterii -- e.g., titlu, gen, actor principal, regizor, an de
+    lansare, evaluari etc. Suplimentar, se vor genera statistici -- minimal, in
+    formatele HTML, CSV si PDF -- privind filmele disponibile la un moment dat.

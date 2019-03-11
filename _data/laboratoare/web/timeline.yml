@@ -2,10 +2,6 @@
   class: success
   icon: 'fas fa-play'
 
-- type: label
-  class: primary
-  content: 'săptămâna curentă'
-
 - type: event
   class: primary
   point:
@@ -154,6 +150,10 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week2">
       Programare Web – HTTP. Cookie-uri. Sesiuni Web</a>
 
+- type: label
+  class: primary
+  content: 'săptămâna curentă'
+
 - type: event
   class: primary
   point:
@@ -183,11 +183,12 @@
   point:
     class: 'info'
     icon: 'fas fa-desktop'
-  heading: 'Laborator: <a href="#">Discuții despre proiecte</a>'
+  heading: 'Laborator: <a href="proiecte">Discuții despre proiecte</a>'
   body: >
     <p>Resurse:
       <ul>
-        <li><a href="#">Lista de proiecte propuse</a></li>
+        <li><a href="proiecte">Lista de proiecte propuse</a></li>
+        <li><a href="https://goo.gl/forms/aKBonwgLH6i2eor72">Formularul de înscriere</a></li>
         <li><a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-exam.html">
           Aspecte privind evaluarea activităţii</a>
         </li>
@@ -201,7 +202,7 @@
       Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
 
 - type: label
-  class: primary
+  class: danger
   content: 'urmează o etapă de evaluare'
 
 - type: event
