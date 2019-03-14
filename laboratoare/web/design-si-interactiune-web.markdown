@@ -10,6 +10,26 @@ author: "Alexandru Coman"
 date: 2019-02-18 12:00:00
 ---
 
+## Discuții referitoare la proiecte
+
+Ultima parte a laboratorului va fi destinată discuțiilor referitoare la [proiecte][2] și [modalalitatea de evaluare][3].
+
+## Design web
+
+<div class="embed-responsive embed-responsive-4by3"> 
+    <iframe src="//www.slideshare.net/slideshow/embed_code/key/xToUy0eEzWI1jD"
+            frameborder="0" marginwidth="0" marginheight="0" scrolling="no"
+            allowfullscreen>        
+    </iframe> 
+</div>
+
+Alte resurse:
+
+- [MDN web docs - Flexbox][flexbox]
+- [MDN web docs - Grids][grids]
+- [MDN web docs - Grid Layout][grid-layout]
+- Exemple: [grid-grail], [card-layout]
+
 ## Protocolul HTTP
 
 La următoarea adresă [@alexcoman/http_server.py][0] puteți găsi o implementare rudimentară (și incompletă) a unui server web.
@@ -47,9 +67,11 @@ Accept-Encoding: gzip, deflate, br
 Accept-Language: en-US,en;q=0.9
 ```
 
-## Discuții referitoare la proiecte
-
-Ultima parte a laboratorului va fi destinată discuțiilor referitoare la [proiecte][2] și [modalalitatea de evaluare][3].
+[flexbox]: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+[grids]: https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids
+[grid-layout]: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+[grid-grail]: https://glitch.com/edit/#!/grid-grail?path=index.html:1:0
+[card-layout]: https://glitch.com/edit/#!/card-layout?path=index.html:45:51
 
 [0]: https://gist.github.com/alexcoman/226af528b4bded9a1db2bbf55803d48c
 [1]: http://127.0.0.1:8080

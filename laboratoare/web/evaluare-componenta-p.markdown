@@ -53,27 +53,6 @@ date: 2019-02-18 12:00:00
 - Depozitul de cod trebuie să conțină un fișier **README** care să conțină descrierea proiectului și problema pe care încearcă să o rezolve.
 - Depozitul de cod trebuie să conțină un fișier **CONTRIBUTING** care să specifice modul în care membrii echipei propun modificări (un exemplu poate fi găsit la următoarea adresă [@alexcoman/labs/CONTRIBUTING.md][contributing-labs].
 
-## Aspecte urmărite în evaluare
-
-### Interacțiunea cu utilizatorul
-
-- Unitate, compoziţie, echilibru vizual, eleganță estetică.
-- Concordanța interfeței și a mijloacelor de interacțiune cu utilizatorii.
-- Asigurarea ergonomiei (de exemplu: navigabilitate, căutare internă, recomandarea datelor de interes etc.).
-- Asigurarea accesibilității în ceea ce privește utilizatorii cu nevoi speciale; adoptarea unor tehnici vizând internaționalizarea și/sau localizarea conținutului (suport multi-lingv, convenții privind afișarea unităților de măsură etc.).
-- Independența de platformă, conform standardelor actuale ale Consorțiului Web.
-- design adaptiv/responsiv: orientări ale ecranului, rezoluții variate, densitate de pixeli, platforme (e.g. desktop, tabletă etc).
-- acces facil folosind paradigme de interacțiune: tradițională via mouse, tastatură și/sau naturală (e.g. tactilă, gesturală, vocală, 3D etc.).
-- acces prin intermediul dispozitivelor alternative precum cele embedded, smart TV etc.
-
-### Originalitate
-- Originalitatea ideii, a designului şi a implementării soluției propuse
-- Posibile inovații și diferențierea lucrării față de alte abordări existente
-
-### Prezentare
-- Modul de prezentare a proiectului în fața publicului
-- Documentația oferită (descrierea clară a proiectului); calitatea demonstrației practice; utilizarea unor studii de caz adecvate
-
 ## Alte observații
 
 - În cazul în care în istoricul depozitului de cod există commit-uri sau modificări care încalcă specificațiile de mai sus, acestea trebuie revizuite
