@@ -150,10 +150,6 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week2">
       Programare Web – HTTP. Cookie-uri. Sesiuni Web</a>
 
-- type: label
-  class: primary
-  content: 'săptămâna curentă'
-
 - type: event
   class: primary
   point:
@@ -201,10 +197,6 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week4">
       Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
 
-- type: label
-  class: danger
-  content: 'urmează o etapă de evaluare'
-
 - type: event
   class: primary
   point:
@@ -224,6 +216,10 @@
   footer: >
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week5">
       Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
+
+- type: label
+  class: primary
+  content: 'săptămâna curentă'
 
 - type: event
   class: primary
@@ -258,6 +254,33 @@
   footer: >
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week6">
       Modelarea datelor. Familia XML şi spaţii de nume</a>
+
+- type: label
+  class: danger
+  content: 'urmează o etapă de evaluare'
+
+- type: event
+  class: primary
+  point:
+    class: danger
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-a">Componenta A: Arhitectura aplicaţiei Web</a>'
+  body: >
+    <p>
+      <ul>
+        <li>
+          Prezentarea arhitecturii de ansamblu (e.g., via diagrame UML), plus etapele intermediare
+          ale dezvoltării proiectului.
+        </li>
+        <li>
+          Pentru proiectele din categoria M: adiţional, consideraţii preliminare privind structur
+          (modelarea) datelor şi provenienţa lor – de exemplu, recurgerea la anumite servicii Web
+          ori API-uri publice.</li>
+      </ul>
+    </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web09ProcesariXML-SAX-SimpleXML.pdf">
+      Procesarea datelor XML & HTML. Simple API for XML. Procesări simplificate</a>
 
 - type: label
   class: 'danger'

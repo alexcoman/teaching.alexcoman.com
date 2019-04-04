@@ -14,6 +14,8 @@ date: 2019-02-18 12:00:00
 
 Acest laborator are la bază prezentarea [Programare Web – Dezvoltarea aplicaţiilor Web în PHP][0]
 
+Suplimentar puteți parcurge informațiile prezentate în următoarele articole [Noțiuni introductive referitoare la Docker][docker-introducere], [imagini][docker-imagini] și [containere][docker-containere].
+
 ## Tuxy captcha
 
 Tuxy are nevoie de un mecanism care să îi garanteze că toți utilizatorii aplicației lui știu să rezolve ecuații de gradul I.
@@ -32,28 +34,25 @@ Pentru că nimeni din echipa lui Tuxy nu este suficient de pregătit pentru a de
 Tuxy Bot trebuie să știe să rezolve următoarele sarcini:
 
 - /reține cheie valoare
-    - Se va salva această informație și în toate comenzile ce vor fi trimise ulterior se va schimba orice apariție a cuvântului *cheie* cu valoarea acestuia
-- /palindrom valoare
-    - Verifică dacă valoarea primită este un șir palindrom
-- /calculează valoare1 operator valoare2
-- /evaluează expresie
+    - Se va salva această informație și în toate comenzile ce vor fi trimise ulterior se va schimba orice apariție a cuvântului *#cheie* cu valoarea acestuia
+- /uită cheia
+	- Se vor șterge informațiile referitoare la cheia primită, iar toate aparițiile valorii cheii curente vor fi înlocuite cu *#cheie*
+- /afișează cheia
+	- Va afișa valoarea pentru cheia primită
 - /curăță
     - Șterge toate informațiile salvate până în acest moment
 
 Câteva exemple:
 
 ```
-/reține acasă Iași
-Am învățat termenul `acasă`.
+/reține oraș Iași
+Am învățat termenul `oraș`.
 
-/reține expresie 20 + 4 - 3 * 8
-Am învățat termenul `expresie`.
+/reține facultate Facultatea de Informatică din #oraș
+Am învățat termenul `facultate`.
 
-/evaluează expresie
-Rezultatul expresiei: '20 + 4 - 3 * 8' este 0
-
-/palindrom acasa
-Șirul 'Iași' nu este palindrom.
+/afișează facultate
+Facultatea de Informatică din Iași
 
 /curăță
 Am șters toate informațiile din această sesiune.
@@ -65,3 +64,7 @@ Am șters toate informațiile din această sesiune.
 [3]: https://secure.php.net/manual/en/function.intval.php
 [4]: https://secure.php.net/manual/en/function.strpos.php
 [5]: https://secure.php.net/manual/en/
+
+[docker-introducere]: {{ site.baseurl }}/resurse/tutorial/docker/docker-introducere/
+[docker-imagini]: {{ site.baseurl }}/resurse/tutorial/docker/docker-imagini/
+[docker-containere]: {{ site.baseurl }}/resurse/tutorial/docker/docker-containere/
