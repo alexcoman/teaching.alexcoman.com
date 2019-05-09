@@ -7,6 +7,19 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Referitor la recuperarea laboratoarelor</title>
+				
+				
+					<description>&lt;p&gt;După cum am promis revin cu mai multe informații despre laboratoarele de Tehnologii Web ce au fost planificate în zile libere sau în perioada sărbătorilor de Paşte.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 09 May 2019 00:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/recuperare-laboratoare/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/recuperare-laboratoare/</guid>
+			</item>
+		
+			<item>
 				<title>Alegerea proiectului pentru Tehnologii Web</title>
 				
 				
@@ -125,19 +138,6 @@
 				<pubDate>Sun, 14 May 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</guid>
-			</item>
-		
-			<item>
-				<title>Vagrant - Server web (PHP5 &amp; MySQL)</title>
-				
-				
-					<description>&lt;p&gt;În cadrul acestui tutorial o să discutăm despre modul în care putem pregăti într-o manieră cât mai ușoară un mediu de execuție pentru o aplicație &lt;a href=&quot;http://php.net/&quot;&gt;PHP&lt;/a&gt; ce folosește &lt;a href=&quot;https://www.mysql.com/&quot;&gt;MySQL&lt;/a&gt; ca și bază de date.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Tue, 04 Apr 2017 12:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/vagrant/server-web-php5-mysql/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/vagrant/server-web-php5-mysql/</guid>
 			</item>
 		
 	</channel>

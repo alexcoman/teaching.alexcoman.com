@@ -1,0 +1,170 @@
+<!DOCTYPE html> <!--[if IE 8]> <html lang="ro" class="ie8"> <![endif]--> <!--[if IE 9]> <html lang="ro" class="ie9"> <![endif]--> <!--[if !IE]><!--> <html lang="ro"> <!--<![endif]--> <head> <title>Implementarea şi invocarea serviciilor Web</title> <!-- Meta --> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat disciplinei Tehnologii Web" /> <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang programming, document, software, application, student, grade" /> <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate, academic, informatie, educatie, scoala, proiect, limbaj, programare, document, software, aplicatie, student, nota" /> <link rel="shortcut icon" href="/assets/images/favicon.ico"> <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Global CSS --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Plugins CSS --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"> <!-- Theme CSS --> <link id="theme-style" rel="stylesheet" href="/assets/css/main.css"> <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <link rel="canonical" href="https://teaching.alexcoman.com/laboratoare/web/servicii-web/"> <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" integrity="sha256-3YM6A3pH4QFCl9WbSU8oXF5N6W/2ylvW0o2g+Z6TmLQ=" crossorigin="anonymous" /> </head> <body class="body-blue"> <div class="page-wrapper"> <header id="header" class="header "> <div class="container"> <div class="branding"> <h1 class="logo"> <a href="/laboratoare/web/servicii-web/"> <span aria-hidden="true" class="icon fas fa-university"></span> <span class="text-highlight">Tehnologii</span> <span class="text">Web</span> </a> </h1> </div> <ol class="breadcrumb"> <li><a href="/">Acasă</a></li> <li><a href="/laboratoare">Laboratoare</a></li> <li><a href="/laboratoare/web">Web</a></li> <li class="active">Implementarea şi invocarea serviciilor Web</li> </ol> </div> </header> <section id="blog_post" class="blog-post-section doc-wrapper"> <div class="container"> <div id="doc-header" class="doc-header text-center"> <h1 class="doc-title" itemprop="name headline"> <i class="icon fas fa-bug"></i> Implementarea şi invocarea serviciilor Web </h1> <div class="meta"> Publicat de: <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Alexandru Coman</span> </span> pe <i class="fas fa-clock"></i> <time datetime="2019-05-09T12:00:00+00:00" itemprop="datePublished"> 9 mai 2019 </time> </div> </div> <div class="doc-body"> <div class="doc-content"> <div class="content-inner"> <section id="dashboards" class="doc-section"> <div class="section-block"> <h2 id="consultarea-resurselor">Consultarea resurselor</h2> <p>Acest laborator are la bază rezursele discutate la curs. Suplimentar puteți parcurge informațiile prezentate în următoarele articole <a href="/resurse/tutorial/docker/docker-introducere/">Noțiuni introductive referitoare la Docker</a>, <a href="/resurse/tutorial/docker/docker-imagini/">imagini</a> și <a href="/resurse/tutorial/docker/docker-containere/">containere</a>.</p> <h2 id="recapitulare">Recapitulare</h2> <p>Implementați o aplicație web care să ofere utilizatorului o matrice pătratică (de o diminensiune configurabilă) populată cu puteri a lui 2 în ordine aleatorie. Aplicația trebuie să verifice dacă utilizatorul alege numerele în ordine crescătoare, iar în caz contrar îi va afișa un mesaj corespunzător.</p> <p>În continuare aveți la dispoziție un exemplu asemănător pe care îl puteți modifica, rescrie sau extinde după caz pentru a ajunge la rezultatul dorit.</p> <p><img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-1.png" alt="Exemplu de implementare" /> <img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-2.png" alt="Exemplu de implementare" /></p> <h2 id="soluție-incompletă">Soluție incompletă</h2> <p><strong>Important</strong>: Soluția prezentată mai jos reprezintă punctul de plecare pentru exercițiul curent. În implementarea curentă au fost intenționat introduse diverse probleme.</p> <p>Structura de fișiere și directoare pentru soluția curentă este următoarea:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>matrix
+├── controller
+│   └── MatrixController.php
+├── index.php
+├── model
+│   └── MatrixModel.php
+└── view
+    └── MatrixView.php
+</code></pre></div></div> <h3 id="matrixcontrollerphp">MatrixController.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/controller/MatrixController.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'model/MatrixModel.php'</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">MatrixController</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$rows</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="nx">int</span> <span class="nv">$collumns</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MatrixModel</span><span class="p">(</span><span class="nv">$rows</span><span class="p">,</span> <span class="nv">$collumns</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">handle_get</span><span class="p">(){</span>
+        <span class="nv">$matrix</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">;</span>
+        <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'view/MatrixView.php'</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">handle_post</span><span class="p">(){</span>
+        <span class="nv">$matrix</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">model</span><span class="p">;</span>
+        <span class="nv">$maxim</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="nv">$current_item</span> <span class="o">=</span> <span class="nb">intval</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'item'</span><span class="p">]);</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_items</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_state</span><span class="p">(</span><span class="nv">$item</span><span class="p">)){</span>
+                <span class="k">if</span><span class="p">(</span><span class="nv">$item</span> <span class="o">&gt;</span> <span class="nv">$maxim</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nv">$maxim</span> <span class="o">=</span> <span class="nv">$item</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="nv">$maxim</span> <span class="o">==</span> <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">clear</span><span class="p">();</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Ai castigat!'</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">elseif</span><span class="p">(</span><span class="nv">$current_item</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">==</span> <span class="nv">$maxim</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Ai ales corect!'</span><span class="p">;</span>
+            <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">set_state</span><span class="p">(</span><span class="nv">$current_item</span><span class="p">,</span> <span class="k">TRUE</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">clear</span><span class="p">();</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Ai raspuns gresit!'</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'view/MatrixView.php'</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">dispatch</span><span class="p">(){</span>
+        <span class="nv">$request_method</span> <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">"REQUEST_METHOD"</span><span class="p">]);</span>
+        <span class="nv">$method_name</span> <span class="o">=</span> <span class="s2">"handle_</span><span class="nv">$request_method</span><span class="s2">"</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">method_exists</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="nv">$method_name</span><span class="p">)){</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="err">$</span><span class="p">{</span><span class="nx">method_name</span><span class="p">}();</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <h3 id="matrixmodelphp">MatrixModel.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/model/MatrixModel.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">MatrixModel</span> <span class="p">{</span>
+
+    <span class="k">private</span> <span class="nv">$rows</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$collumn</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$rows</span><span class="p">,</span> <span class="nx">int</span> <span class="nv">$collumns</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">session_start</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rows</span> <span class="o">=</span> <span class="nv">$rows</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">collumns</span> <span class="o">=</span> <span class="nv">$collumns</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_count</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rows</span> <span class="o">*</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">collumns</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_rows</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_collumns</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_items</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'items'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'items'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">());</span>
+            <span class="nb">shuffle</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'items'</span><span class="p">]);</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">array_fill</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">(),</span> <span class="k">FALSE</span><span class="p">);</span>            
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'items'</span><span class="p">];</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_state</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">array_key_exists</span><span class="p">(</span><span class="nv">$item</span><span class="p">,</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]))</span>
+            <span class="k">return</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">][</span><span class="nv">$item</span><span class="p">];</span>
+        <span class="k">return</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">set_state</span><span class="p">(</span><span class="nx">int</span> <span class="nv">$item</span><span class="p">,</span> <span class="nx">bool</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">array_key_exists</span><span class="p">(</span><span class="nv">$item</span><span class="p">,</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">][</span><span class="nv">$item</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$value</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">clear</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nb">unset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'items'</span><span class="p">]);</span>
+        <span class="nb">unset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div> <h3 id="matrixviewphp">MatrixView.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/view/MatrixView.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Matrix View<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;style&gt;</span>
+            <span class="nc">.matrix</span> <span class="p">{</span>
+              <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+              <span class="nl">display</span><span class="p">:</span> <span class="n">grid</span><span class="p">;</span>
+              <span class="py">grid-gap</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+              <span class="py">grid-template-columns</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="cp">&lt;?=</span> <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_collumns</span><span class="p">()</span> <span class="cp">?&gt;</span><span class="p">,</span> <span class="m">80px</span><span class="p">);</span>
+              <span class="py">grid-template-rows</span><span class="p">:</span> <span class="nb">repeat</span><span class="p">(</span><span class="cp">&lt;?=</span> <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_rows</span><span class="p">()</span> <span class="cp">?&gt;</span><span class="p">,</span> <span class="m">80px</span><span class="p">);</span>
+              <span class="py">grid-auto-flow</span><span class="p">:</span> <span class="n">row</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nc">.cell</span> <span class="p">{</span>
+              <span class="nl">padding</span><span class="p">:</span> <span class="m">16px</span><span class="p">;</span>
+              <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nt">input</span><span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="nt">submit</span><span class="o">]</span> <span class="p">{</span>
+              <span class="nl">height</span><span class="p">:</span> <span class="m">64px</span><span class="p">;</span>
+              <span class="nl">width</span><span class="p">:</span> <span class="m">64px</span><span class="p">;</span>
+              <span class="nl">background-color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+              <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span><span class="p">;</span>
+              <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">black</span><span class="p">;</span>
+              <span class="nl">font-size</span><span class="p">:</span> <span class="m">32px</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"matrix"</span><span class="nt">&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="k">foreach</span><span class="p">(</span><span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_items</span><span class="p">()</span> <span class="k">as</span> <span class="nv">$item</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nv">$disabled</span><span class="o">=</span><span class="s1">''</span><span class="p">;</span>
+                <span class="k">if</span><span class="p">(</span><span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_state</span><span class="p">(</span><span class="nv">$item</span><span class="p">)){</span>
+                    <span class="nv">$disabled</span><span class="o">=</span><span class="s1">'disabled'</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"cell"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="cp">&lt;?=</span> <span class="nv">$disabled</span> <span class="cp">?&gt;</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"item"</span> <span class="na">value=</span><span class="s">"</span><span class="cp">&lt;?=</span> <span class="nv">$item</span> <span class="cp">?&gt;</span><span class="s">"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$message</span><span class="p">))</span> <span class="p">{</span> <span class="cp">?&gt;</span>
+                <span class="nt">&lt;div&gt;&lt;p&gt;</span><span class="cp">&lt;?=</span> <span class="nv">$message</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+            <span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span>
+        <span class="nt">&lt;/form&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div> <h3 id="indexphp">index.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/index.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nb">define</span><span class="p">(</span><span class="s1">'ROOT'</span><span class="p">,</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="nx">DIRECTORY_SEPARATOR</span><span class="p">);</span>
+
+    <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'controller/MatrixController.php'</span><span class="p">;</span>
+    <span class="nv">$controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MatrixController</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+    <span class="nv">$controller</span><span class="o">-&gt;</span><span class="na">dispatch</span><span class="p">();</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#consultarea-resurselor">Consultarea resurselor</a> </li> <li><a class="scrollto" href="#recapitulare">Recapitulare</a> </li> <li><a class="scrollto" href="#soluție-incompletă">Soluție incompletă</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#matrixcontrollerphp">MatrixController.php</a> </li> <li><a class="scrollto" href="#matrixmodelphp">MatrixModel.php</a> </li> <li><a class="scrollto" href="#matrixviewphp">MatrixView.php</a> </li> <li><a class="scrollto" href="#indexphp">index.php</a> </li></ul></li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 9 mai 2019 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://teaching.alexcoman.com" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
