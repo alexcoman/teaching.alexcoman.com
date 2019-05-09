@@ -217,10 +217,6 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week5">
       Programare Web – Dezvoltarea aplicaţiilor Web în PHP</a>
 
-- type: label
-  class: primary
-  content: 'săptămâna curentă'
-
 - type: event
   class: primary
   point:
@@ -255,10 +251,6 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week6">
       Modelarea datelor. Familia XML şi spaţii de nume</a>
 
-- type: label
-  class: danger
-  content: 'urmează o etapă de evaluare'
-
 - type: event
   class: primary
   point:
@@ -281,6 +273,69 @@
   footer: >
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/presentations/web09ProcesariXML-SAX-SimpleXML.pdf">
       Procesarea datelor XML & HTML. Simple API for XML. Procesări simplificate</a>
+
+- type: label
+  class: primary
+  content: 'săptămâna curentă'
+
+- type: event
+  class: primary
+  point:
+    class: 'info'
+    icon: 'fas fa-bug'
+  heading: 'Laborator: <a href="servicii-web">Implementarea şi invocarea serviciilor Web</a>'
+  body: >
+    <p>Demo:
+        <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/demos/xml-rest/xml-rest.zip"
+           title="Arhiv&#259; .zip">Invocarea unui serviciu Web REST</a> (arhiv&#259; zip, 2K) +
+           studii de caz: <a href="https://swapi.co/" title="Un API REST despre universul 'R&#259;zboiul Stelelor'">The Star Wars API</a>,
+        <a href="https://metmuseum.github.io/" title="Detalii">The Metropolitan Museum of Art Collection API</a>,
+        <a href="https://apifootball.com/documentation/" title="Detalii despre serviciul REST oferit de APIfoodball">APIfootball</a>,
+        <a href="https://www.programmableweb.com/news/how-guardian-approaching-hypermedia-based-api-infrastructure/2015/04/27" title="Detalii">How The Guardian is Approaching Hypermedia Based API Infrastructure</a>,
+        <a href="https://engineering.groupon.com/2013/misc/i-tier-dismantling-the-monoliths/" title="Detalii privind arhitectura GroupOn">I-Tier: Dismantling the Monolith</a> (GroupOn), <a href="https://aischool.microsoft.com/learning-paths/DdwGRNZ42GUIa84iaQoei" title="Microsoft AI School: Crearea de agen&#355;i conversa&#355;ionali">Building Bots with REST</a> (Microsoft), <a href="https://lettier.github.io/posts/2016-10-10-data-mining-hacker-news-front-vs-back.html" title="Data mining in Haskell by using various APIs">Data Mining Hacker News</a>,
+        <a href="https://github.com/jeff-1amstudios/restful-doom" title="HTTP+JSON API hosted inside the 1993 DOOM engine">RESTful DOOM</a>,
+        <a href="http://info.opto22.com/snap-pac-rest-api-thank-you" title="Programmable automation controllers offer support for REST">RESTful API in a PAC</a>
+    </p>
+    <p>Resurse:
+        <a href="http://www.infoq.com/presentations/rest-introduction" title="The basic principles of RESTful APIs, terminology, design patterns, data, pitfalls, best practices, and others">REST for an Hour</a>,
+        <a href="http://www.restapitutorial.com/" title="A tutorial about REST">Learn REST: A RESTful Tutorial</a>,
+        <a href="https://nordicapis.com/designing-a-true-rest-state-machine/" title="Designing a True REST State Machine">Designing a True REST State Machine</a>,
+        <a href="https://www.gov.uk/guidance/gds-api-technical-and-data-standards" title="A set of guiding principles for exposing a digital service as an API">API Technical and Data Standards</a> (gov.uk), <a href="https://github.com/Microsoft/api-guidelines/blob/master/Guidelines.md" title="Microsoft REST API Guidelines">REST API Guidelines</a> (Microsoft), <a href="https://restful-api-design.readthedocs.org/" title="Detalii despre proiectarea unui API RESTful">Thoughts on RESTful API Design</a> (Red Hat), <a href="http://apistylebook.com/" title="Collections of Resources for API Designers">API Stylebook</a>,
+        <a href="https://www.programmableweb.com/category/api-design/articles" title="Alte resurse de interes">API Design Articles</a>,
+        <a href="https://blog.mbedded.ninja/programming/serialization-formats/a-comparison-of-serialization-formats/" title="Despre formatele CSV, JSON, Protobuf, XML, YAML">A Comparison of Serialization Formats</a>,
+        <a href="http://www.ateam-oracle.com/performance-study-rest-vs-soap-for-mobile-applications/" title="Performance Study: REST vs SOAP for Mobile Applications">REST vs SOAP for Mobile Applications</a> (Oracle)
+    </p>
+    <p>Instrumente:
+        <a href="https://github.com/marmelab/awesome-rest" title="O suit&#259; de resurse de interes despre REST">Awesome REST</a>,
+        <a href="https://secure.php.net/manual/en/book.curl.php" title="Utilizarea bibliotecii libcURL &icirc;n PHP">Client URL Library for PHP</a>,
+        <a href="https://dotnet.microsoft.com/apps/aspnet/apis" title="Detalii despre ASP.NET Web API">ASP.NET Web API</a>,
+        <a href="https://github.com/open-guides/og-aws" title="Un ghid practic de utilizare a serviciilor oferite de Amazon">The Open Guide to Amazon Web Services</a>
+    </p>
+  footer: >
+    Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week11">
+      Servicii Web. Paradigma REST</a>
+
+- type: label
+  class: danger
+  content: 'urmează o etapă de evaluare'
+
+- type: event
+  class: primary
+  point:
+    class: 'info'
+    icon: 'fas fa-bell'
+  heading: 'Teste de laborator'
+  body: >
+    <p>
+      Componenta <string>E</string> - susţinerea unui număr de 3 exerciţii practice
+      neanunţate din materia predată, având durata de 15 minute, fiind permisă consultarea
+      documentaţiilor - în cadrul orelor de laborator. Exerciţiile E1 şi E2 vor putea fi
+      evaluate cu maxim 2.5 puncte, iar E3 cu 5 puncte.
+    </p>
+    <p>
+      Resurse: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-tests.html" target="_blank">mini-teste + probe de examen</a>
+    </p>
+  footer: '<a href="https://forms.gle/9a35oWwVdYMiCoBW8" target="_blank">Formular pentru trimiterea rezolvărilor</a>'
 
 - type: label
   class: 'danger'
