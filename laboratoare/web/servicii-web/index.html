@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--[if IE 8]> <html lang="ro" class="ie8"> <![endif]--> <!--[if IE 9]> <html lang="ro" class="ie9"> <![endif]--> <!--[if !IE]><!--> <html lang="ro"> <!--<![endif]--> <head> <title>Implementarea şi invocarea serviciilor Web</title> <!-- Meta --> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat disciplinei Tehnologii Web" /> <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang programming, document, software, application, student, grade" /> <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate, academic, informatie, educatie, scoala, proiect, limbaj, programare, document, software, aplicatie, student, nota" /> <link rel="shortcut icon" href="/assets/images/favicon.ico"> <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Global CSS --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Plugins CSS --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"> <!-- Theme CSS --> <link id="theme-style" rel="stylesheet" href="/assets/css/main.css"> <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <link rel="canonical" href="https://teaching.alexcoman.com/laboratoare/web/servicii-web/"> <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" integrity="sha256-3YM6A3pH4QFCl9WbSU8oXF5N6W/2ylvW0o2g+Z6TmLQ=" crossorigin="anonymous" /> </head> <body class="body-blue"> <div class="page-wrapper"> <header id="header" class="header "> <div class="container"> <div class="branding"> <h1 class="logo"> <a href="/laboratoare/web/servicii-web/"> <span aria-hidden="true" class="icon fas fa-university"></span> <span class="text-highlight">Tehnologii</span> <span class="text">Web</span> </a> </h1> </div> <ol class="breadcrumb"> <li><a href="/">Acasă</a></li> <li><a href="/laboratoare">Laboratoare</a></li> <li><a href="/laboratoare/web">Web</a></li> <li class="active">Implementarea şi invocarea serviciilor Web</li> </ol> </div> </header> <section id="blog_post" class="blog-post-section doc-wrapper"> <div class="container"> <div id="doc-header" class="doc-header text-center"> <h1 class="doc-title" itemprop="name headline"> <i class="icon fas fa-bug"></i> Implementarea şi invocarea serviciilor Web </h1> <div class="meta"> Publicat de: <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Alexandru Coman</span> </span> pe <i class="fas fa-clock"></i> <time datetime="2019-05-09T12:00:00+00:00" itemprop="datePublished"> 9 mai 2019 </time> </div> </div> <div class="doc-body"> <div class="doc-content"> <div class="content-inner"> <section id="dashboards" class="doc-section"> <div class="section-block"> <h2 id="consultarea-resurselor">Consultarea resurselor</h2> <p>Acest laborator are la bază rezursele discutate la curs. Suplimentar puteți parcurge informațiile prezentate în următoarele articole <a href="/resurse/tutorial/docker/docker-introducere/">Noțiuni introductive referitoare la Docker</a>, <a href="/resurse/tutorial/docker/docker-imagini/">imagini</a> și <a href="/resurse/tutorial/docker/docker-containere/">containere</a>.</p> <h2 id="recapitulare">Recapitulare</h2> <p>Implementați o aplicație web care să ofere utilizatorului o matrice pătratică (de o diminensiune configurabilă) populată cu puteri a lui 2 în ordine aleatorie. Aplicația trebuie să verifice dacă utilizatorul alege numerele în ordine crescătoare, iar în caz contrar îi va afișa un mesaj corespunzător.</p> <p>În continuare aveți la dispoziție un exemplu asemănător pe care îl puteți modifica, rescrie sau extinde după caz pentru a ajunge la rezultatul dorit.</p> <p><img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-1.png" alt="Exemplu de implementare" /> <img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-2.png" alt="Exemplu de implementare" /></p> <h2 id="soluție-incompletă">Soluție incompletă</h2> <p><strong>Important</strong>: Soluția prezentată mai jos reprezintă punctul de plecare pentru exercițiul curent. În implementarea curentă au fost intenționat introduse diverse probleme.</p> <p>Structura de fișiere și directoare pentru soluția curentă este următoarea:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>matrix
+<!DOCTYPE html> <!--[if IE 8]> <html lang="ro" class="ie8"> <![endif]--> <!--[if IE 9]> <html lang="ro" class="ie9"> <![endif]--> <!--[if !IE]><!--> <html lang="ro"> <!--<![endif]--> <head> <title>Implementarea şi invocarea serviciilor Web</title> <!-- Meta --> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="description" lang="ro" xml:lang="ro" content="Situl dedicat disciplinei Tehnologii Web" /> <meta name="keywords" lang="en" xml:lang="en" content="Web, WWW, technology, course, Romania, Iasi, Computer Science, university, academic, information, education, school, project, lang programming, document, software, application, student, grade" /> <meta name="keywords" lang="ro" xml:lang="ro" content="Web, WWW, technologie, curs, Romania, Iasi, Informatica, universitate, academic, informatie, educatie, scoala, proiect, limbaj, programare, document, software, aplicatie, student, nota" /> <link rel="shortcut icon" href="/assets/images/favicon.ico"> <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> <!-- Global CSS --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Plugins CSS --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"> <!-- Theme CSS --> <link id="theme-style" rel="stylesheet" href="/assets/css/main.css"> <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --> <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]--> <link rel="canonical" href="https://teaching.alexcoman.com/laboratoare/web/servicii-web/"> <link rel="alternate" type="application/rss+xml" title="" href="/feed.xml"> <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" integrity="sha256-3YM6A3pH4QFCl9WbSU8oXF5N6W/2ylvW0o2g+Z6TmLQ=" crossorigin="anonymous" /> </head> <body class="body-blue"> <div class="page-wrapper"> <header id="header" class="header "> <div class="container"> <div class="branding"> <h1 class="logo"> <a href="/laboratoare/web/servicii-web/"> <span aria-hidden="true" class="icon fas fa-university"></span> <span class="text-highlight">Tehnologii</span> <span class="text">Web</span> </a> </h1> </div> <ol class="breadcrumb"> <li><a href="/">Acasă</a></li> <li><a href="/laboratoare">Laboratoare</a></li> <li><a href="/laboratoare/web">Web</a></li> <li class="active">Implementarea şi invocarea serviciilor Web</li> </ol> </div> </header> <section id="blog_post" class="blog-post-section doc-wrapper"> <div class="container"> <div id="doc-header" class="doc-header text-center"> <h1 class="doc-title" itemprop="name headline"> <i class="icon fas fa-bug"></i> Implementarea şi invocarea serviciilor Web </h1> <div class="meta"> Publicat de: <span itemprop="author" itemscope itemtype="http://schema.org/Person"> <span itemprop="name">Alexandru Coman</span> </span> pe <i class="fas fa-clock"></i> <time datetime="2019-05-15T12:00:00+00:00" itemprop="datePublished"> 15 mai 2019 </time> </div> </div> <div class="doc-body"> <div class="doc-content"> <div class="content-inner"> <section id="dashboards" class="doc-section"> <div class="section-block"> <h2 id="consultarea-resurselor">Consultarea resurselor</h2> <p>Acest laborator are la bază rezursele discutate la curs. Suplimentar puteți parcurge informațiile prezentate în următoarele articole <a href="/resurse/tutorial/docker/docker-introducere/">Noțiuni introductive referitoare la Docker</a>, <a href="/resurse/tutorial/docker/docker-imagini/">imagini</a> și <a href="/resurse/tutorial/docker/docker-containere/">containere</a>.</p> <h2 id="recapitulare">Recapitulare</h2> <h3 id="exercițiu-de-laborator">Exercițiu de laborator</h3> <p>Implementați o aplicație web care să ofere utilizatorului o matrice pătratică (de o diminensiune configurabilă) populată cu puteri a lui 2 în ordine aleatorie. Aplicația trebuie să verifice dacă utilizatorul alege numerele în ordine crescătoare, iar în caz contrar îi va afișa un mesaj corespunzător.</p> <h3 id="soluție-incompletă">Soluție incompletă</h3> <p>În continuare aveți la dispoziție un exemplu asemănător pe care îl puteți modifica, rescrie sau extinde după caz pentru a ajunge la rezultatul dorit.</p> <p><img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-1.png" alt="Exemplu de implementare" /> <img src="/assets/images/laborator/web/servicii-web/matrix-exemplu-2.png" alt="Exemplu de implementare" /></p> <p><strong>Important</strong>: Soluția prezentată mai jos reprezintă punctul de plecare pentru exercițiul curent. În implementarea curentă au fost intenționat introduse diverse probleme.</p> <p>Structura de fișiere și directoare pentru soluția curentă este următoarea:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>matrix
 ├── controller
 │   └── MatrixController.php
 ├── index.php
@@ -6,7 +6,7 @@
 │   └── MatrixModel.php
 └── view
     └── MatrixView.php
-</code></pre></div></div> <h3 id="matrixcontrollerphp">MatrixController.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/controller/MatrixController.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+</code></pre></div></div> <p>Fișierul: <code class="highlighter-rouge">matrix/controller/MatrixController.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
 
 <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'model/MatrixModel.php'</span><span class="p">;</span>
 
@@ -33,7 +33,7 @@
             <span class="p">}</span>
         <span class="p">}</span>
 
-        <span class="k">if</span><span class="p">(</span><span class="nv">$maxim</span> <span class="o">==</span> <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$maxim</span> <span class="o">==</span> <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
             <span class="nv">$matrix</span><span class="o">-&gt;</span><span class="na">clear</span><span class="p">();</span>
             <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Ai castigat!'</span><span class="p">;</span>
         <span class="p">}</span>
@@ -52,13 +52,13 @@
         <span class="nv">$request_method</span> <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">"REQUEST_METHOD"</span><span class="p">]);</span>
         <span class="nv">$method_name</span> <span class="o">=</span> <span class="s2">"handle_</span><span class="nv">$request_method</span><span class="s2">"</span><span class="p">;</span>
         <span class="k">if</span><span class="p">(</span><span class="nb">method_exists</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="nv">$method_name</span><span class="p">)){</span>
-            <span class="nv">$this</span><span class="o">-&gt;</span><span class="err">$</span><span class="p">{</span><span class="nx">method_name</span><span class="p">}();</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="nv">$method_name</span><span class="p">();</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
 <span class="p">}</span>
 <span class="cp">?&gt;</span>
-</code></pre></div></div> <h3 id="matrixmodelphp">MatrixModel.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/model/MatrixModel.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+</code></pre></div></div> <p>Fișierul: <code class="highlighter-rouge">matrix/model/MatrixModel.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
 
 <span class="k">class</span> <span class="nc">MatrixModel</span> <span class="p">{</span>
 
@@ -80,7 +80,7 @@
     <span class="p">}</span>
 
     <span class="k">public</span> <span class="k">function</span> <span class="nf">get_collumns</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">rows</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">collumns</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="k">public</span> <span class="k">function</span> <span class="nf">get_items</span><span class="p">()</span> <span class="p">{</span>
@@ -110,7 +110,7 @@
     <span class="p">}</span>
 
 <span class="p">}</span>
-</code></pre></div></div> <h3 id="matrixviewphp">MatrixView.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/view/MatrixView.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</code></pre></div></div> <p>Fișierul: <code class="highlighter-rouge">matrix/view/MatrixView.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;head&gt;</span>
         <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
@@ -160,11 +160,285 @@
         <span class="nt">&lt;/form&gt;</span>
     <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
-</code></pre></div></div> <h3 id="indexphp">index.php</h3> <p>Fișierul: <code class="highlighter-rouge">matrix/index.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+</code></pre></div></div> <p>Fișierul: <code class="highlighter-rouge">matrix/index.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
     <span class="nb">define</span><span class="p">(</span><span class="s1">'ROOT'</span><span class="p">,</span> <span class="nx">__DIR__</span> <span class="o">.</span> <span class="nx">DIRECTORY_SEPARATOR</span><span class="p">);</span>
 
     <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'controller/MatrixController.php'</span><span class="p">;</span>
     <span class="nv">$controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MatrixController</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
     <span class="nv">$controller</span><span class="o">-&gt;</span><span class="na">dispatch</span><span class="p">();</span>
 <span class="cp">?&gt;</span>
-</code></pre></div></div> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#consultarea-resurselor">Consultarea resurselor</a> </li> <li><a class="scrollto" href="#recapitulare">Recapitulare</a> </li> <li><a class="scrollto" href="#soluție-incompletă">Soluție incompletă</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#matrixcontrollerphp">MatrixController.php</a> </li> <li><a class="scrollto" href="#matrixmodelphp">MatrixModel.php</a> </li> <li><a class="scrollto" href="#matrixviewphp">MatrixView.php</a> </li> <li><a class="scrollto" href="#indexphp">index.php</a> </li></ul></li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 9 mai 2019 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://teaching.alexcoman.com" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
+</code></pre></div></div> <h2 id="test-de-laborator">Test de laborator</h2> <h3 id="enunț">Enunț</h3> <p>Scrieți o aplicație web care să-i permită utilizatorului să ghicească suma obținută prin aruncarea a două zaruri. Utilizatorul va avea posibilitatea să ghicească suma obținută prin aruncarea celor două zaruri de maxim 5 ori. Pentru fiecare dintre cele 5 încercări utilizatorul va primi un mesaj care să-l ajute să afle rezultatul corect.</p> <p>Cerințe:</p> <ul> <li>Informațiile despre valorile obținute în urma aruncării celor două zaruri vor fi stocate la nivel de server folosind sesiuni.</li> <li>În momentul în care utilizatorul ghicește sau consumă cele trei încercări pe lângă mesajul corespunzător va primi informații și despre valoarea celor două zaruri și i se oferă posibilitatea să încerce din nou după o nouă “aruncare de zaruri”.</li> <li>Procesarea datelor se va face la nivel de server</li> </ul> <p>Exemplu de feedback din partea aplicației, dacă pentru această etapă de joc cele două zaruri au valorile (6, 2):</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Răspuns: 6
+Suma propusă este mai mică.
+
+Răspuns: 7
+Suma propusă este mai mică.
+
+Răspuns: 8
+Felicitări ai răspuns corect!
+
+Valorile obținute după aruncarea zarurilor sunt (6, 2).
+</code></pre></div></div> <p>sau</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Răspuns: 1
+Suma propusă este mai mare.
+
+Răspuns: 2
+Suma propusă este mai mică.
+
+Răspuns: 3
+Suma propusă este mai mică.
+
+Răspuns: 3
+Suma propusă este mai mică.
+
+Răspuns: 5
+Răspuns greșit. Din păcate nu ai ghicit.
+
+Valorile obținute după aruncarea zarurilor sunt (6, 2).
+</code></pre></div></div> <h3 id="soluție-posibilă">Soluție posibilă</h3> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="c1">// Definim numărul de încercări disponibile pentru utilizator.</span>
+    <span class="nb">define</span><span class="p">(</span><span class="nx">RETRY_COUNT</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
+
+    <span class="c1">// Pentru stocarea informațiilor o să folosim sesiuni.</span>
+    <span class="nb">session_start</span><span class="p">();</span>
+
+    <span class="c1">// Verificăm dacă utilizatorul dorește să înceapă un nou joc.</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'reset'</span><span class="p">])){</span>
+        <span class="c1">// O să ștergem toate informațiile din sesiunea curentă.</span>
+        <span class="nb">unset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'suma'</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Definim o serie de variabile care o să definească starea</span>
+    <span class="c1">// în care se află acum aplicația.</span>
+    <span class="nv">$flag_game_over</span> <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span> <span class="c1">// Jocul este în derulare.</span>
+    <span class="nv">$flag_winner</span>    <span class="o">=</span> <span class="k">FALSE</span><span class="p">;</span> <span class="c1">// Implicit utilizatorul a pierdut jocul.</span>
+
+
+    <span class="c1">// Verificam daca au fost obținute informațiile referitoare la</span>
+    <span class="c1">// cele două zaruri.</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'suma'</span><span class="p">]))</span> <span class="p">{</span>
+        <span class="c1">// Inițializăm valoarea pentru primul zar.</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar1'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">random_int</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+        <span class="c1">// Inițializăm valoarea pentru al doilea zar.</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar2'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">random_int</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+        <span class="c1">// Calculăm suma pe care trebuie să o ghicească utilizatorul.</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'suma'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar1'</span><span class="p">]</span> <span class="o">+</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar2'</span><span class="p">];</span>
+        <span class="c1">// Inițializăm contorul care o să rețină numărul de încercări</span>
+        <span class="c1">// pentru utilizatorul curent.</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'S-au aruncat două zaruri, ghicește suma acestora.'</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Verificăm dacă utilizatorul mai are la dispoziție încercări</span>
+    <span class="c1">// de a răspunde.</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="nx">RETRY_COUNT</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Utilizatorul a epuizat toate încercările pe care le avea</span>
+        <span class="c1">// la dispoziție.</span>
+        <span class="nv">$flag_game_over</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+        <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Din păcate nu ai ghicit suma.'</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Verificăm informațiile pe are le-am primit de la utilizator.</span>
+    <span class="k">elseif</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'raspuns'</span><span class="p">])){</span>
+        <span class="c1">// Incrementăm contorul ce reține numărul de încercări</span>
+        <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">=</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+        <span class="c1">// Obținem valoare pe care a propus-o utilizatorul.</span>
+        <span class="nv">$suma</span> <span class="o">=</span> <span class="nb">intval</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">'raspuns'</span><span class="p">]);</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$suma</span> <span class="o">==</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'suma'</span><span class="p">]){</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Felicitări ai ghicit suma.'</span><span class="p">;</span>
+            <span class="c1">// Notificăm faptul că jocul s-a terminat.</span>
+            <span class="nv">$flag_game_over</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+            <span class="c1">// Notificăm faptul că utilizatorul a câștigat jocul.</span>
+            <span class="nv">$flag_winner</span> <span class="o">=</span> <span class="k">TRUE</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">elseif</span><span class="p">(</span><span class="nv">$suma</span> <span class="o">&lt;</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'suma'</span><span class="p">]){</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Suma propusa este mai mica.'</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="nv">$message</span> <span class="o">=</span> <span class="s1">'Suma propusa este mai mare.'</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="cp">?&gt;</span>
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Tehnologii web - Test 1<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div&gt;&lt;p&gt;</span><span class="cp">&lt;?=</span> <span class="nv">$message</span> <span class="cp">?&gt;</span><span class="nt">&lt;/p&gt;&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$flag_game_over</span><span class="p">)</span> <span class="p">{</span> 
+                <span class="c1">// Jocul s-a terminat. O să afișăm mesajul corespunzător</span>
+                <span class="c1">// stării jocului urmate de valorile pentru cele două</span>
+                <span class="c1">// zaruri.</span>
+        <span class="cp">?&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Valorile pentru cele două zaruri au fost:<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;ul&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Zarul 1: <span class="cp">&lt;?=</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar1'</span><span class="p">]</span> <span class="cp">?&gt;</span><span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li&gt;</span>Zarul 2: <span class="cp">&lt;?=</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'zar2'</span><span class="p">]</span> <span class="cp">?&gt;</span><span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Incepe un nou joc!"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;/form&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span> 
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span> 
+                <span class="c1">// Jocul este în derulare. O să afișăm utilizatorului formularul</span>
+                <span class="c1">// prin intermediul căruia poate să trimită răspunsul către </span>
+                <span class="c1">// server și o serie de informații care să-l ghideze pe parcursul</span>
+                <span class="c1">// jocului.</span>
+        <span class="cp">?&gt;</span>
+            <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">method=</span><span class="s">"POST"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"raspuns"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">name=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Raspunde"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/form&gt;</span>
+            <span class="nt">&lt;div&gt;</span>
+                <span class="nt">&lt;p&gt;</span>
+                    Numărul de încercări rămase este:
+                    <span class="cp">&lt;?=</span> <span class="nx">RETRY_COUNT</span> <span class="o">-</span> <span class="nv">$_SESSION</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="cp">?&gt;</span>    
+                <span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="cp">&lt;?php</span> <span class="p">}</span> <span class="cp">?&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div> <h2 id="invocarea-serviciilor-web">Invocarea serviciilor web</h2> <h3 id="exercițiu-de-laborator-1">Exercițiu de laborator</h3> <p>Scrieți o aplicație web care să proceseze conținutul în format JSON oferit de <code class="highlighter-rouge">https://jsonplaceholder.typicode.com/todos/</code>.</p> <p>Aplicația va trebuie să afișeze în format JSON următoarele informații:</p> <ul> <li>Numărul total de utilizatori</li> <li>ID-ul utilizatorului cu cele mai multe TODOs</li> </ul> <h3 id="punct-de-plecare">Punct de plecare</h3> <p>Fișierul <code class="highlighter-rouge">index.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="k">require</span> <span class="s1">'request.php'</span><span class="p">;</span>
+    <span class="nv">$request</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HTTPRequest</span><span class="p">();</span>
+    <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">get</span><span class="p">(</span><span class="s1">'https://jsonplaceholder.typicode.com/todos/'</span><span class="p">);</span>
+
+    <span class="nv">$message</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+        <span class="s1">'meta'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'error'</span>  <span class="o">=&gt;</span> <span class="nv">$request</span><span class="o">-&gt;</span><span class="na">get_last_error</span><span class="p">(),</span>
+            <span class="s1">'status'</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span>
+                <span class="s1">'code'</span>    <span class="o">=&gt;</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">status_code</span><span class="p">,</span>
+                <span class="s1">'message'</span> <span class="o">=&gt;</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">status_message</span><span class="p">,</span>
+            <span class="p">),</span>
+            <span class="s1">'headers'</span> <span class="o">=&gt;</span> <span class="nv">$response</span><span class="o">-&gt;</span><span class="na">headers</span><span class="p">,</span>
+        <span class="p">),</span>
+        <span class="s1">'response'</span> <span class="o">=&gt;</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$response</span><span class="o">-&gt;</span><span class="na">body</span><span class="p">),</span>
+    <span class="p">);</span>
+
+    <span class="nb">header</span><span class="p">(</span><span class="s1">'Content-type: text/javascript'</span><span class="p">);</span>
+    <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$message</span><span class="p">,</span> <span class="nx">JSON_PRETTY_PRINT</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">request.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">HTTPResponse</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="nv">$body</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$headers</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$status_code</span><span class="p">;</span>
+    <span class="k">public</span> <span class="nv">$status_message</span><span class="p">;</span>
+    <span class="k">protected</span> <span class="nv">$raw_response</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="nf">__construct</span><span class="p">(</span><span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">raw_response</span> <span class="o">=</span> <span class="nv">$response</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">headers</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">status_code</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">status_message</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">body</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">parse</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">parse_headers</span><span class="p">(</span><span class="nv">$raw_headers</span><span class="p">){</span>
+        <span class="nv">$headers</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">"</span><span class="se">\r\n</span><span class="s2">"</span><span class="p">,</span> <span class="nv">$raw_headers</span><span class="p">);</span>
+        
+        <span class="nv">$status</span> <span class="o">=</span> <span class="nb">array_shift</span><span class="p">(</span><span class="nv">$headers</span><span class="p">);</span>
+        <span class="nb">preg_match</span><span class="p">(</span><span class="s1">'#HTTP/(\d\.\d)\s(\d\d\d)\s(.*)#'</span><span class="p">,</span> <span class="nv">$status</span><span class="p">,</span> <span class="nv">$matches</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">status_code</span> <span class="o">=</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">2</span><span class="p">];</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">status_message</span> <span class="o">=</span> <span class="nv">$matches</span><span class="p">[</span><span class="mi">3</span><span class="p">];</span>
+
+        <span class="k">foreach</span><span class="p">(</span><span class="nv">$headers</span> <span class="k">as</span> <span class="nv">$raw_header</span><span class="p">){</span>
+            <span class="nv">$header</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">':'</span><span class="p">,</span> <span class="nv">$raw_header</span><span class="p">);</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">headers</span><span class="p">[</span><span class="nb">trim</span><span class="p">(</span><span class="nv">$header</span><span class="p">[</span><span class="mi">0</span><span class="p">])]</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">$header</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+        <span class="p">}</span>
+        
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">parse</span><span class="p">(){</span>
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s2">"</span><span class="se">\r\n\r\n</span><span class="s2">"</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">raw_response</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">parse_headers</span><span class="p">(</span><span class="nv">$response</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">body</span> <span class="o">=</span> <span class="nv">$response</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+    <span class="p">}</span>
+    
+<span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">HTTPRequest</span> <span class="p">{</span>
+    
+    <span class="k">protected</span> <span class="nv">$user_agent</span><span class="p">;</span>
+    <span class="k">protected</span> <span class="nv">$error</span><span class="p">;</span>
+    <span class="k">protected</span> <span class="nv">$request</span><span class="p">;</span>
+    <span class="k">protected</span> <span class="nv">$headers</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">user_agent</span> <span class="o">=</span> <span class="s1">'Curl/Exerciții Tehnologii Web'</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'HTTP_USER_AGENT'</span><span class="p">])){</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">user_agent</span> <span class="o">=</span> <span class="nv">$_SERVER</span><span class="p">[</span><span class="s1">'HTTP_USER_AGENT'</span><span class="p">];</span>    
+        <span class="p">}</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">headers</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">set_method</span><span class="p">(</span><span class="nv">$method</span><span class="p">){</span>
+        <span class="k">switch</span> <span class="p">(</span><span class="nb">strtoupper</span><span class="p">(</span><span class="nv">$method</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="s1">'GET'</span><span class="o">:</span>
+                <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPGET</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">case</span> <span class="s1">'POST'</span><span class="o">:</span>
+                <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+                <span class="k">break</span><span class="p">;</span>
+            <span class="k">default</span><span class="o">:</span>
+                <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_CUSTOMREQUEST</span><span class="p">,</span> <span class="nv">$method</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">set_options</span><span class="p">(){</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_HTTPHEADER</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">headers</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_HEADER</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_USERAGENT</span><span class="p">,</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">user_agent</span><span class="p">);</span> 
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">request</span><span class="p">(</span><span class="nv">$method</span><span class="p">,</span> <span class="nv">$url</span><span class="p">,</span> <span class="nv">$vars</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span> <span class="o">=</span> <span class="s1">''</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set_method</span><span class="p">(</span><span class="nv">$method</span><span class="p">);</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set_options</span><span class="p">();</span>
+
+        <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$url</span><span class="p">);</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">is_array</span><span class="p">(</span><span class="nv">$vars</span><span class="p">)</span> <span class="k">and</span> <span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$vars</span><span class="p">)){</span>
+            <span class="nv">$vars</span> <span class="o">=</span> <span class="nb">http_build_query</span><span class="p">(</span><span class="nv">$vars</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">'&amp;'</span><span class="p">);</span>
+            <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$vars</span><span class="p">);</span>
+        <span class="p">}</span>
+       
+        <span class="nv">$response</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nv">$response</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$response</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">HTTPResponse</span><span class="p">(</span><span class="nv">$response</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span> <span class="o">=</span> <span class="nb">curl_error</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$response</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">function</span> <span class="nf">get_last_error</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">error</span><span class="p">;</span>
+    <span class="p">}</span>    
+
+    <span class="k">function</span> <span class="nf">get</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="nv">$vars</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$vars</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$url</span> <span class="o">.=</span> <span class="p">(</span><span class="nb">stripos</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="s1">'?'</span><span class="p">)</span> <span class="o">!==</span> <span class="kc">false</span><span class="p">)</span> <span class="o">?</span> <span class="s1">'&amp;'</span> <span class="o">:</span> <span class="s1">'?'</span><span class="p">;</span>
+            <span class="nv">$url</span> <span class="o">.=</span> <span class="p">(</span><span class="nb">is_string</span><span class="p">(</span><span class="nv">$vars</span><span class="p">))</span> <span class="o">?</span> <span class="nv">$vars</span> <span class="o">:</span> <span class="nb">http_build_query</span><span class="p">(</span><span class="nv">$vars</span><span class="p">,</span> <span class="s1">''</span><span class="p">,</span> <span class="s1">'&amp;'</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">(</span><span class="s1">'GET'</span><span class="p">,</span> <span class="nv">$url</span><span class="p">);</span>
+    <span class="p">}</span>
+    
+    <span class="k">function</span> <span class="nf">post</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="nv">$vars</span> <span class="o">=</span> <span class="k">array</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">request</span><span class="p">(</span><span class="s1">'POST'</span><span class="p">,</span> <span class="nv">$url</span><span class="p">,</span> <span class="nv">$vars</span><span class="p">);</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre></div></div> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#consultarea-resurselor">Consultarea resurselor</a> </li> <li><a class="scrollto" href="#recapitulare">Recapitulare</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#soluție-incompletă">Soluție incompletă</a> </li></ul></li> <li><a class="scrollto" href="#test-de-laborator">Test de laborator</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#enunț">Enunț</a> </li> <li><a class="scrollto" href="#soluție-posibilă">Soluție posibilă</a> </li></ul></li> <li><a class="scrollto" href="#invocarea-serviciilor-web">Invocarea serviciilor web</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator-1">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#punct-de-plecare">Punct de plecare</a> </li></ul></li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 16 mai 2019 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://teaching.alexcoman.com" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
