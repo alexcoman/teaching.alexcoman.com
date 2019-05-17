@@ -556,6 +556,32 @@ class HTTPRequest {
 }
 ```
 
+### Alternativă simplificată
+
+```php
+<?php
+
+define ('URL', 'https://jsonplaceholder.typicode.com/todos/');
+echo '<p>Invoking Web service from <code>' . URL . '</code></p>';
+
+$request = curl_init();
+// Stabilim URL-ul serviciului
+curl_setopt ($request, CURLOPT_URL, URL);
+// Rezultatul cererii va fi disponibil ca șir de caractere
+curl_setopt ($request, CURLOPT_RETURNTRANSFER, true);
+ // Nu verificam certificatul digital
+curl_setopt ($request, CURLOPT_SSL_VERIFYPEER, false);
+// Executam cererea GET
+$response = curl_exec ($request);
+// Închidem conexiunea
+curl_close ($request);
+// Deserealizăm datele
+$data = json_decode($response);
+// Afișăm conținutul variabilei $data.
+print_r($data);
+?>
+```
+
 [matrix-exemplu-1]: {{ site.baseurl }}/assets/images/laborator/web/servicii-web/matrix-exemplu-1.png
 [matrix-exemplu-2]: {{ site.baseurl }}/assets/images/laborator/web/servicii-web/matrix-exemplu-2.png
 
