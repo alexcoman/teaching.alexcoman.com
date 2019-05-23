@@ -167,7 +167,7 @@
     <span class="nv">$controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MatrixController</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
     <span class="nv">$controller</span><span class="o">-&gt;</span><span class="na">dispatch</span><span class="p">();</span>
 <span class="cp">?&gt;</span>
-</code></pre></div></div> <h2 id="test-de-laborator">Test de laborator</h2> <h3 id="enunț">Enunț</h3> <p>Scrieți o aplicație web care să-i permită utilizatorului să ghicească suma obținută prin aruncarea a două zaruri. Utilizatorul va avea posibilitatea să ghicească suma obținută prin aruncarea celor două zaruri de maxim 5 ori. Pentru fiecare dintre cele 5 încercări utilizatorul va primi un mesaj care să-l ajute să afle rezultatul corect.</p> <p>Cerințe:</p> <ul> <li>Informațiile despre valorile obținute în urma aruncării celor două zaruri vor fi stocate la nivel de server folosind sesiuni.</li> <li>În momentul în care utilizatorul ghicește sau consumă cele trei încercări pe lângă mesajul corespunzător va primi informații și despre valoarea celor două zaruri și i se oferă posibilitatea să încerce din nou după o nouă “aruncare de zaruri”.</li> <li>Procesarea datelor se va face la nivel de server</li> </ul> <p>Exemplu de feedback din partea aplicației, dacă pentru această etapă de joc cele două zaruri au valorile (6, 2):</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Răspuns: 6
+</code></pre></div></div> <h2 id="test-de-laborator---1">Test de laborator - 1</h2> <h3 id="enunț">Enunț</h3> <p>Scrieți o aplicație web care să-i permită utilizatorului să ghicească suma obținută prin aruncarea a două zaruri. Utilizatorul va avea posibilitatea să ghicească suma obținută prin aruncarea celor două zaruri de maxim 5 ori. Pentru fiecare dintre cele 5 încercări utilizatorul va primi un mesaj care să-l ajute să afle rezultatul corect.</p> <p>Cerințe:</p> <ul> <li>Informațiile despre valorile obținute în urma aruncării celor două zaruri vor fi stocate la nivel de server folosind sesiuni.</li> <li>În momentul în care utilizatorul ghicește sau consumă cele trei încercări pe lângă mesajul corespunzător va primi informații și despre valoarea celor două zaruri și i se oferă posibilitatea să încerce din nou după o nouă “aruncare de zaruri”.</li> <li>Procesarea datelor se va face la nivel de server</li> </ul> <p>Exemplu de feedback din partea aplicației, dacă pentru această etapă de joc cele două zaruri au valorile (6, 2):</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Răspuns: 6
 Suma propusă este mai mică.
 
 Răspuns: 7
@@ -462,4 +462,251 @@ Valorile obținute după aruncarea zarurilor sunt (6, 2).
 <span class="c1">// Afișăm conținutul variabilei $data.</span>
 <span class="nb">print_r</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
 <span class="cp">?&gt;</span>
-</code></pre></div></div> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#consultarea-resurselor">Consultarea resurselor</a> </li> <li><a class="scrollto" href="#recapitulare">Recapitulare</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#soluție-incompletă">Soluție incompletă</a> </li></ul></li> <li><a class="scrollto" href="#test-de-laborator">Test de laborator</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#enunț">Enunț</a> </li> <li><a class="scrollto" href="#soluție-posibilă">Soluție posibilă</a> </li></ul></li> <li><a class="scrollto" href="#invocarea-serviciilor-web">Invocarea serviciilor web</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator-1">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#punct-de-plecare">Punct de plecare</a> </li> <li><a class="scrollto" href="#alternativă-simplificată">Alternativă simplificată</a> </li></ul></li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 17 mai 2019 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://profs.info.uaic.ro/~alex.coman/" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/~alex.coman/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
+</code></pre></div></div> <h2 id="test-de-laborator---2">Test de laborator - 2</h2> <p>Implementați o aplicație web care să consume informațiile despre filmele Star Wars disponibile la adresa <code class="highlighter-rouge">https://swapi.co/api/</code>.</p> <ul> <li> <p>Aplicația trebuie să ofere utilizatorului doar informațiile despre planetele (<code class="highlighter-rouge">/api/planets</code>) ce apar în cel puțin 3 filme (<code class="highlighter-rouge">/api/films</code>) Star War.</p> </li> <li> <p>Aplicația trebuie să ofere utilizatorului doar informațiile despre piloții (<code class="highlighter-rouge">/api/people</code>) care au folosit cel puțin două nave (<code class="highlighter-rouge">/api/starships</code>) diferite.</p> </li> <li> <p>Aplicația trebuie să ofere utilizatorului doar informațiile despre planeta natală (<code class="highlighter-rouge">/api/plantes</code>) a speciilor (<code class="highlighter-rouge">/api/species</code>) care au culoare pielii <code class="highlighter-rouge">magenta</code>.</p> </li> <li> <p>Aplicația trebuie să ofere utilizatorului doar informațiile despre speciile (<code class="highlighter-rouge">/api/species</code>) care apar în cel puțin 3 filme (<code class="highlighter-rouge">/api/films</code>).</p> </li> <li> <p>Aplicația trebuie să ofere utilizatorului numele vehiculelor cu un număr de membrii ai echipajului mai mare de 15 și numele filmelor în care au apărut.</p> </li> </ul> <p><strong>Notă</strong>: Aplicația trebuie să facă cel puțin două cereri HTTP.</p> <h2 id="implementarea-serviciilor-web">Implementarea serviciilor web</h2> <h3 id="exercițiu-de-laborator-2">Exercițiu de laborator</h3> <p><strong>Important</strong>: Fragmentele de cod prezentate mai jos reprezintă punctul de plecare pentru exercițiul curent. În implementarea curentă au fost intenționat introduse diverse probleme.</p> <p>Pe baza discuțiilor din cadrul laboratorului va trebui să corectăm toate problemele existente.</p> <p>Structura de fișiere și directoare pentru soluția curentă este următoarea:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── application
+│   ├── Config
+│   │   └── config.php
+│   ├── Controller
+│   │   └── SongsController.php
+│   └── Model
+│       └── SongsModel.php
+├── core
+│   ├── Application.php
+│   ├── Controller.php
+│   └── Model.php
+└── index.php
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">application/Config/config.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_HOST'</span><span class="p">,</span> <span class="s1">'&lt;Change me: host     &gt;'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_NAME'</span><span class="p">,</span> <span class="s1">'&lt;Change me: database &gt;'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_USER'</span><span class="p">,</span> <span class="s1">'&lt;Change me: user     &gt;'</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">'DB_PASS'</span><span class="p">,</span> <span class="s1">'&lt;Change me: parola   &gt;'</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">application/Controller/SongsController.php</code></p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'core/Controller.php'</span><span class="p">;</span>
+<span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'application/Model/SongsModel.php'</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">SongsController</span> <span class="k">extends</span> <span class="nx">Controller</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle_get</span><span class="p">(</span><span class="nv">$song_id</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$song_model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SongModel</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">is_null</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$song</span> <span class="o">=</span> <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">get_song</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$song</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$song</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="nv">$songs</span> <span class="o">=</span> <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">get_songs</span><span class="p">();</span>
+            <span class="nv">$count</span> <span class="o">=</span> <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">get_count</span><span class="p">();</span>
+            <span class="nv">$response</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s2">"count"</span> <span class="o">=&gt;</span> <span class="nv">$count</span><span class="p">,</span> <span class="s2">"results"</span> <span class="o">=&gt;</span> <span class="nv">$songs</span><span class="p">);</span>
+            <span class="k">return</span> <span class="nv">$response</span><span class="p">;</span>            
+        <span class="p">}</span>
+        <span class="nb">http_response_code</span><span class="p">(</span><span class="mi">404</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle_post</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// FIXME: Verificarea parametrilor !!!</span>
+        <span class="nv">$song_model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SongModel</span><span class="p">();</span>
+        <span class="nv">$index</span> <span class="o">=</span> <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">add_song</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">],</span>
+                                       <span class="nv">$_POST</span><span class="p">[</span><span class="s2">"track"</span><span class="p">],</span> 
+                                       <span class="nv">$_POST</span><span class="p">[</span><span class="s2">"link"</span><span class="p">]);</span>
+        <span class="nv">$response</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+            <span class="s1">'id'</span>     <span class="o">=&gt;</span> <span class="nv">$index</span><span class="p">,</span>
+            <span class="s1">'artist'</span> <span class="o">=&gt;</span> <span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"artist"</span><span class="p">]),</span>
+            <span class="s1">'track'</span>  <span class="o">=&gt;</span> <span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"track"</span><span class="p">]),</span>
+            <span class="s1">'link'</span>   <span class="o">=&gt;</span> <span class="nb">htmlentities</span><span class="p">(</span><span class="nv">$_POST</span><span class="p">[</span><span class="s2">"link"</span><span class="p">])</span>
+        <span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$response</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle_delete</span><span class="p">(</span><span class="nv">$song_id</span><span class="o">=</span><span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">is_null</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">))</span> <span class="p">{</span>
+            <span class="nv">$song_model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SongModel</span><span class="p">();</span>
+            <span class="nv">$song</span> <span class="o">=</span> <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">get_song</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">);</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$song</span><span class="p">){</span>
+                <span class="nv">$song_model</span><span class="o">-&gt;</span><span class="na">delete_song</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">);</span>
+                <span class="k">return</span> <span class="nv">$song</span><span class="p">;</span>    
+            <span class="p">}</span>
+            
+        <span class="p">}</span>
+        <span class="nb">http_response_code</span><span class="p">(</span><span class="mi">404</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">handle_put</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$song_model</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SongModel</span><span class="p">();</span>
+        <span class="c1"># $song_model-&gt;update_song($_POST["artist"],</span>
+        <span class="c1">#                           $_POST["track"], </span>
+        <span class="c1">#                           $_POST["link"],</span>
+        <span class="c1">#                           $_POST['song_id']);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">application/Model/SongsModel.php</code></p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'core/Model.php'</span><span class="p">;</span>
+
+<span class="k">class</span> <span class="nc">SongModel</span> <span class="k">extends</span> <span class="nx">Model</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_songs</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT id, artist, track, link FROM song"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+        <span class="k">return</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">fetchAll</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_song</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT id, artist, track, link FROM song WHERE id = :song_id LIMIT 1"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">':song_id'</span> <span class="o">=&gt;</span> <span class="nv">$song_id</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">(</span><span class="nv">$parameters</span><span class="p">);</span>
+        <span class="k">return</span> <span class="p">(</span><span class="nv">$query</span><span class="o">-&gt;</span><span class="na">rowcount</span><span class="p">()</span> <span class="o">?</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">)</span> <span class="o">:</span> <span class="kc">false</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">add_song</span><span class="p">(</span><span class="nv">$artist</span><span class="p">,</span> <span class="nv">$track</span><span class="p">,</span> <span class="nv">$link</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"INSERT INTO song (artist, track, link) VALUES (:artist, :track, :link)"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">':artist'</span> <span class="o">=&gt;</span> <span class="nv">$artist</span><span class="p">,</span> <span class="s1">':track'</span> <span class="o">=&gt;</span> <span class="nv">$track</span><span class="p">,</span> <span class="s1">':link'</span> <span class="o">=&gt;</span> <span class="nv">$link</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">(</span><span class="nv">$parameters</span><span class="p">);</span>
+        <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">lastInsertId</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">delete_song</span><span class="p">(</span><span class="nv">$song_id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"DELETE FROM song WHERE id = :song_id"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">':song_id'</span> <span class="o">=&gt;</span> <span class="nv">$song_id</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">(</span><span class="nv">$parameters</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">update_song</span><span class="p">(</span><span class="nv">$artist</span><span class="p">,</span> <span class="nv">$track</span><span class="p">,</span> <span class="nv">$link</span><span class="p">,</span> <span class="nv">$song_id</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"UPDATE song SET artist = :artist, track = :track, link = :link WHERE id = :song_id"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$parameters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">':artist'</span> <span class="o">=&gt;</span> <span class="nv">$artist</span><span class="p">,</span> <span class="s1">':track'</span> <span class="o">=&gt;</span> <span class="nv">$track</span><span class="p">,</span> <span class="s1">':link'</span> <span class="o">=&gt;</span> <span class="nv">$link</span><span class="p">,</span> <span class="s1">':song_id'</span> <span class="o">=&gt;</span> <span class="nv">$song_id</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">(</span><span class="nv">$parameters</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">get_count</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">"SELECT COUNT(id) AS count FROM song"</span><span class="p">;</span>
+        <span class="nv">$query</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+        <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+        <span class="k">return</span> <span class="nv">$query</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_ASSOC</span><span class="p">)[</span><span class="s1">'count'</span><span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">core/Application.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">Application</span> <span class="p">{</span>
+    
+    <span class="k">private</span> <span class="nv">$controller</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$controller_name</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$params</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">parse_url</span><span class="p">();</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">get_controller</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">get_controller</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller_name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">ctype_alpha</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller_name</span><span class="p">))</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+        
+        <span class="nv">$controller_name</span> <span class="o">=</span> <span class="nb">ucfirst</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller_name</span><span class="p">)</span> <span class="o">.</span> 
+                           <span class="s1">'Controller'</span><span class="p">;</span>
+        <span class="nv">$controller_path</span> <span class="o">=</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'application/Controller/'</span> <span class="o">.</span>
+                           <span class="nv">$controller_name</span> <span class="o">.</span> <span class="s1">'.php'</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">file_exists</span><span class="p">(</span><span class="nv">$controller_path</span><span class="p">))</span>
+            <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+
+        <span class="k">require</span> <span class="nv">$controller_path</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller</span> <span class="o">=</span> <span class="k">new</span> <span class="nv">$controller_name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">parse_url</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'url'</span><span class="p">]))</span> <span class="p">{</span>
+            <span class="nv">$url</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'url'</span><span class="p">],</span> <span class="s1">'/'</span><span class="p">);</span>
+            <span class="nv">$url</span> <span class="o">=</span> <span class="nb">filter_var</span><span class="p">(</span><span class="nv">$url</span><span class="p">,</span> <span class="nx">FILTER_SANITIZE_URL</span><span class="p">);</span>
+            <span class="nv">$url</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">'/'</span><span class="p">,</span> <span class="nv">$url</span><span class="p">);</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller_name</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$url</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$url</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">:</span> <span class="kc">null</span><span class="p">;</span>
+            <span class="nb">unset</span><span class="p">(</span><span class="nv">$url</span><span class="p">[</span><span class="mi">0</span><span class="p">]);</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">params</span> <span class="o">=</span> <span class="nb">array_values</span><span class="p">(</span><span class="nv">$url</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">dispatch</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">controller</span><span class="o">-&gt;</span><span class="na">dispatch</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">params</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nb">http_response_code</span><span class="p">(</span><span class="mi">404</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">core/Controller.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">Controller</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">dispatch</span><span class="p">(</span><span class="nv">$params</span><span class="o">=</span><span class="k">array</span><span class="p">()){</span>
+        <span class="nv">$request_method</span> <span class="o">=</span> <span class="nb">strtolower</span><span class="p">(</span><span class="nv">$_SERVER</span><span class="p">[</span><span class="s2">"REQUEST_METHOD"</span><span class="p">]);</span>
+        <span class="nv">$method_name</span> <span class="o">=</span> <span class="s2">"handle_</span><span class="nv">$request_method</span><span class="s2">"</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">method_exists</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="nv">$method_name</span><span class="p">)){</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$params</span><span class="p">))</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nb">call_user_func_array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="nv">$this</span><span class="p">,</span> <span class="nv">$method_name</span><span class="p">),</span>
+                                            <span class="nv">$params</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="nv">$method_name</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="p">{</span>
+            <span class="nb">http_response_code</span><span class="p">(</span><span class="mi">405</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">core/Model.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+
+<span class="k">class</span> <span class="nc">Model</span> <span class="p">{</span>
+
+    <span class="k">public</span> <span class="nv">$connection</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+
+    <span class="k">function</span> <span class="nf">__construct</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">try</span> <span class="p">{</span>
+            <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connect</span><span class="p">();</span>
+        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">\PDOException</span> <span class="nv">$exc</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">exit</span><span class="p">(</span><span class="s1">'Database connection could not be established.'</span> <span class="o">.</span> <span class="nv">$exc</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">function</span> <span class="nf">connect</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nv">$connection_string</span> <span class="o">=</span> <span class="s1">'mysql:host='</span> <span class="o">.</span> <span class="nx">DB_HOST</span> <span class="o">.</span> <span class="s1">';dbname='</span> <span class="o">.</span> <span class="nx">DB_NAME</span> <span class="o">.</span> <span class="s1">';'</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">connection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="nv">$connection_string</span><span class="p">,</span> <span class="nx">DB_USER</span><span class="p">,</span> <span class="nx">DB_PASS</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">.htaccess</code>:</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RewriteEngine on
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</code></pre></div></div> <p>Fișierul <code class="highlighter-rouge">index.php</code>:</p> <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
+    <span class="nb">define</span><span class="p">(</span><span class="s1">'ROOT'</span><span class="p">,</span> <span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">)</span> <span class="o">.</span> <span class="nx">DIRECTORY_SEPARATOR</span><span class="p">);</span>
+    <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'application/Config/config.php'</span><span class="p">;</span>
+    <span class="k">require</span> <span class="nx">ROOT</span> <span class="o">.</span> <span class="s1">'core/Application.php'</span><span class="p">;</span>
+
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_GET</span><span class="p">[</span><span class="s1">'url'</span><span class="p">])</span> <span class="k">or</span> <span class="nv">$_GET</span><span class="p">[</span><span class="s1">'url'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'index.php'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">header</span><span class="p">(</span><span class="s1">'Location: /songs'</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nb">header</span><span class="p">(</span><span class="s1">'Content-Type: application/json'</span><span class="p">);</span>
+    <span class="nv">$application</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Application</span><span class="p">();</span>
+    <span class="nv">$response</span> <span class="o">=</span> <span class="nv">$application</span><span class="o">-&gt;</span><span class="na">dispatch</span><span class="p">();</span>
+    <span class="k">echo</span> <span class="nb">json_encode</span><span class="p">(</span><span class="nv">$response</span><span class="p">,</span> <span class="nx">JSON_PRETTY_PRINT</span> <span class="o">|</span> <span class="nx">JSON_UNESCAPED_SLASHES</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre></div></div> <p>Baza de date:</p> <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="nv">`tw_rest`</span><span class="p">;</span>
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="nv">`tw_rest`</span><span class="p">.</span><span class="nv">`song`</span> <span class="p">(</span>
+  <span class="nv">`id`</span> <span class="n">int</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="n">AUTO_INCREMENT</span><span class="p">,</span>
+  <span class="nv">`artist`</span> <span class="n">text</span> <span class="k">COLLATE</span> <span class="n">utf8_unicode_ci</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="nv">`track`</span> <span class="n">text</span> <span class="k">COLLATE</span> <span class="n">utf8_unicode_ci</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="nv">`link`</span> <span class="n">text</span> <span class="k">COLLATE</span> <span class="n">utf8_unicode_ci</span><span class="p">,</span>
+  <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="nv">`id`</span><span class="p">),</span>
+  <span class="k">UNIQUE</span> <span class="k">KEY</span> <span class="nv">`id`</span> <span class="p">(</span><span class="nv">`id`</span><span class="p">)</span>
+<span class="p">)</span> <span class="n">ENGINE</span><span class="o">=</span><span class="n">InnoDB</span> <span class="n">AUTO_INCREMENT</span><span class="o">=</span><span class="mi">1</span> <span class="k">DEFAULT</span> <span class="n">CHARSET</span><span class="o">=</span><span class="n">utf8</span> <span class="k">COLLATE</span><span class="o">=</span><span class="n">utf8_unicode_ci</span><span class="p">;</span>
+</code></pre></div></div> </div> </section> </div> </div> <div class="toc-sidebar hidden-xs"> <nav id="toc-nav"> <ul id="toc-menu" class="toc-menu nav nav-stacked" data-spy="affix" data-offset-top="180"> <li><a class="scrollto" href="#consultarea-resurselor">Consultarea resurselor</a> </li> <li><a class="scrollto" href="#recapitulare">Recapitulare</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#soluție-incompletă">Soluție incompletă</a> </li></ul></li> <li><a class="scrollto" href="#test-de-laborator---1">Test de laborator - 1</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#enunț">Enunț</a> </li> <li><a class="scrollto" href="#soluție-posibilă">Soluție posibilă</a> </li></ul></li> <li><a class="scrollto" href="#invocarea-serviciilor-web">Invocarea serviciilor web</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator-1">Exercițiu de laborator</a> </li> <li><a class="scrollto" href="#punct-de-plecare">Punct de plecare</a> </li> <li><a class="scrollto" href="#alternativă-simplificată">Alternativă simplificată</a> </li></ul></li> <li><a class="scrollto" href="#test-de-laborator---2">Test de laborator - 2</a> </li> <li><a class="scrollto" href="#implementarea-serviciilor-web">Implementarea serviciilor web</a> <ul class="toc-sub-menu nav nav-stacked"> <li><a class="scrollto" href="#exercițiu-de-laborator-2">Exercițiu de laborator</a> </li></ul></li> </ul> </nav> </div> </div> </div> </section> </div> <footer class="footer text-center"> <div class="container-fluid"> <div class="row"> <div class="col-md-2 col-xs-6"> <small class="copyright"> Bazat pe <a href="https://github.com/xriley/PrettyDocs-Theme" target="_blank">PrettyDocs</a>, dezvoltat de <a href="http://themes.3rdwavemedia.com/" target="_blank">Xiaoying Riley</a>. </small> </div> <div class="offset-md-2 col-md-8 col-xs-6"> <small> Ultima actualizare: 23 mai 2019 / <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="Conținut licențiat sub termenii Attribution-NonCommercial-ShareAlike 4.0 International">CC</a> <br/><a href="https://profs.info.uaic.ro/~alex.coman/" title="Spre situl Web al titularului laboratorului Alexandru Coman.">Alexandru Coman</a> </small> </div> </div> </div> </footer> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script> <script src="/~alex.coman/assets/js/main.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script> <script>hljs.initHighlightingOnLoad();</script> </body> </html>
