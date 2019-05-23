@@ -229,7 +229,7 @@ Fișierul: `matrix/index.php`:
 ```
 
 
-## Test de laborator
+## Test de laborator - 1
 
 ### Enunț
 
@@ -580,6 +580,341 @@ $data = json_decode($response);
 // Afișăm conținutul variabilei $data.
 print_r($data);
 ?>
+```
+
+## Test de laborator - 2
+
+Implementați o aplicație web care să consume informațiile despre
+filmele Star Wars disponibile la adresa `https://swapi.co/api/`.
+
+- Aplicația trebuie să ofere utilizatorului doar informațiile
+despre planetele (`/api/planets`) ce apar în cel puțin 3
+filme (`/api/films`) Star War.
+
+- Aplicația trebuie să ofere utilizatorului doar informațiile
+despre piloții (`/api/people`) care au folosit cel puțin două
+nave (`/api/starships`) diferite.
+
+- Aplicația trebuie să ofere utilizatorului doar informațiile
+despre planeta natală (`/api/plantes`) a speciilor
+(`/api/species`) care au culoare pielii `magenta`.
+
+- Aplicația trebuie să ofere utilizatorului doar informațiile
+despre speciile (`/api/species`) care apar în cel puțin 3
+filme (`/api/films`).
+
+- Aplicația trebuie să ofere utilizatorului numele vehiculelor
+cu un număr de membrii ai echipajului mai mare de 15 și numele
+filmelor în care au apărut.
+
+**Notă**: Aplicația trebuie să facă cel puțin două cereri HTTP.
+
+## Implementarea serviciilor web
+
+### Exercițiu de laborator
+
+**Important**: Fragmentele de cod prezentate mai jos reprezintă punctul
+de plecare pentru exercițiul curent. În implementarea curentă au fost
+intenționat introduse diverse probleme.
+
+Pe baza discuțiilor din cadrul laboratorului va trebui să corectăm toate
+problemele existente.
+
+Structura de fișiere și directoare pentru soluția curentă este următoarea:
+
+```
+├── application
+│   ├── Config
+│   │   └── config.php
+│   ├── Controller
+│   │   └── SongsController.php
+│   └── Model
+│       └── SongsModel.php
+├── core
+│   ├── Application.php
+│   ├── Controller.php
+│   └── Model.php
+└── index.php
+```
+
+Fișierul `application/Config/config.php`:
+
+```php
+<?php
+define('DB_HOST', '<Change me: host     >');
+define('DB_NAME', '<Change me: database >');
+define('DB_USER', '<Change me: user     >');
+define('DB_PASS', '<Change me: parola   >');
+?>
+```
+
+Fișierul `application/Controller/SongsController.php`
+
+```php
+<?php
+
+require ROOT . 'core/Controller.php';
+require ROOT . 'application/Model/SongsModel.php';
+
+class SongsController extends Controller {
+
+    public function handle_get($song_id=NULL) {
+        $song_model = new SongModel();
+        if(!is_null($song_id)) {
+            $song = $song_model->get_song($song_id);
+            if($song) {
+                return $song;
+            }
+        }
+        else {
+            $songs = $song_model->get_songs();
+            $count = $song_model->get_count();
+            $response = array("count" => $count, "results" => $songs);
+            return $response;            
+        }
+        http_response_code(404);
+    }
+
+    public function handle_post() {
+        // FIXME: Verificarea parametrilor !!!
+        $song_model = new SongModel();
+        $index = $song_model->add_song($_POST["artist"],
+                                       $_POST["track"], 
+                                       $_POST["link"]);
+        $response = array(
+            'id'     => $index,
+            'artist' => htmlentities($_POST["artist"]),
+            'track'  => htmlentities($_POST["track"]),
+            'link'   => htmlentities($_POST["link"])
+        );
+        return $response;
+    }
+
+    public function handle_delete($song_id=NULL) {
+        if(!is_null($song_id)) {
+            $song_model = new SongModel();
+            $song = $song_model->get_song($song_id);
+            if($song){
+                $song_model->delete_song($song_id);
+                return $song;    
+            }
+            
+        }
+        http_response_code(404);
+    }
+
+    public function handle_put() {
+        $song_model = new SongModel();
+        # $song_model->update_song($_POST["artist"],
+        #                           $_POST["track"], 
+        #                           $_POST["link"],
+        #                           $_POST['song_id']);
+    }
+}
+```
+
+Fișierul `application/Model/SongsModel.php`
+
+```php
+<?php
+
+require ROOT . 'core/Model.php';
+
+class SongModel extends Model {
+
+    public function get_songs() {
+        $sql = "SELECT id, artist, track, link FROM song";
+        $query = $this->connection->prepare($sql);
+        $query->execute();
+        return $query->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    public function get_song($song_id) {
+        $sql = "SELECT id, artist, track, link FROM song WHERE id = :song_id LIMIT 1";
+        $query = $this->connection->prepare($sql);
+        $parameters = array(':song_id' => $song_id);
+        $query->execute($parameters);
+        return ($query->rowcount() ? $query->fetch(PDO::FETCH_ASSOC) : false);
+    }
+
+    public function add_song($artist, $track, $link) {
+        $sql = "INSERT INTO song (artist, track, link) VALUES (:artist, :track, :link)";
+        $query = $this->connection->prepare($sql);
+        $parameters = array(':artist' => $artist, ':track' => $track, ':link' => $link);
+        $query->execute($parameters);
+        return $this->connection->lastInsertId();
+    }
+
+    public function delete_song($song_id) {
+        $sql = "DELETE FROM song WHERE id = :song_id";
+        $query = $this->connection->prepare($sql);
+        $parameters = array(':song_id' => $song_id);
+        $query->execute($parameters);
+    }
+
+    public function update_song($artist, $track, $link, $song_id) {
+        $sql = "UPDATE song SET artist = :artist, track = :track, link = :link WHERE id = :song_id";
+        $query = $this->connection->prepare($sql);
+        $parameters = array(':artist' => $artist, ':track' => $track, ':link' => $link, ':song_id' => $song_id);
+        $query->execute($parameters);
+    }
+
+    public function get_count() {
+        $sql = "SELECT COUNT(id) AS count FROM song";
+        $query = $this->connection->prepare($sql);
+        $query->execute();
+        return $query->fetch(PDO::FETCH_ASSOC)['count'];
+    }
+}
+
+?>
+```
+
+Fișierul `core/Application.php`:
+
+```php
+<?php
+
+class Application {
+    
+    private $controller = null;
+    private $controller_name = null;
+    private $params = array();
+
+    public function __construct() {
+        $this->parse_url();
+        $this->get_controller();
+    }
+
+    private function get_controller() {
+        if(!$this->controller_name)
+            return null;
+        if(!ctype_alpha($this->controller_name))
+            return null;
+        
+        $controller_name = ucfirst($this->controller_name) . 
+                           'Controller';
+        $controller_path = ROOT . 'application/Controller/' .
+                           $controller_name . '.php';
+        if(!file_exists($controller_path))
+            return null;
+
+        require $controller_path;
+        $this->controller = new $controller_name;
+    }
+
+    private function parse_url() {
+        if (isset($_GET['url'])) {
+            $url = trim($_GET['url'], '/');
+            $url = filter_var($url, FILTER_SANITIZE_URL);
+            $url = explode('/', $url);
+            $this->controller_name = isset($url[0]) ? $url[0] : null;
+            unset($url[0]);
+            $this->params = array_values($url);
+        }
+    }
+
+    public function dispatch() {
+        if($this->controller) {
+            return $this->controller->dispatch($this->params);
+        }
+        http_response_code(404);
+    }
+}
+
+?>
+```
+
+Fișierul `core/Controller.php`:
+
+```php
+<?php
+
+class Controller {
+
+    public function dispatch($params=array()){
+        $request_method = strtolower($_SERVER["REQUEST_METHOD"]);
+        $method_name = "handle_$request_method";
+        if(method_exists($this, $method_name)){
+            if (!empty($params)) {
+                return call_user_func_array(array($this, $method_name),
+                                            $params);
+            } else {
+                return $this->$method_name();
+            }
+        }
+        else {
+            http_response_code(405);
+        }
+    }
+}
+
+?>
+```
+
+Fișierul `core/Model.php`:
+
+```php
+<?php
+
+class Model {
+
+    public $connection = null;
+
+    function __construct() {
+        try {
+            $this->connect();
+        } catch (\PDOException $exc) {
+            exit('Database connection could not be established.' . $exc);
+        }
+    }
+
+    private function connect() {
+        $connection_string = 'mysql:host=' . DB_HOST . ';dbname=' . DB_NAME . ';';
+        $this->connection = new PDO($connection_string, DB_USER, DB_PASS);
+    }
+}
+```
+
+Fișierul `.htaccess`:
+
+```
+RewriteEngine on
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+```
+
+Fișierul `index.php`:
+
+```php
+<?php
+    define('ROOT', dirname(__FILE__) . DIRECTORY_SEPARATOR);
+    require ROOT . 'application/Config/config.php';
+    require ROOT . 'core/Application.php';
+
+    if(!isset($_GET['url']) or $_GET['url'] == 'index.php') {
+        header('Location: /songs');
+    }
+
+    header('Content-Type: application/json');
+    $application = new Application();
+    $response = $application->dispatch();
+    echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+?>
+```
+
+Baza de date:
+
+```sql
+CREATE DATABASE IF NOT EXISTS `tw_rest`;
+CREATE TABLE `tw_rest`.`song` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `artist` text COLLATE utf8_unicode_ci NOT NULL,
+  `track` text COLLATE utf8_unicode_ci NOT NULL,
+  `link` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 ```
 
 [matrix-exemplu-1]: {{ site.baseurl }}/assets/images/laborator/web/servicii-web/matrix-exemplu-1.png
