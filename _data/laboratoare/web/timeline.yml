@@ -315,10 +315,6 @@
     Curs: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-film.html#week11">
       Servicii Web. Paradigma REST</a>
 
-- type: label
-  class: danger
-  content: 'urmează o etapă de evaluare'
-
 - type: event
   class: primary
   point:
@@ -336,6 +332,45 @@
       Resurse: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-tests.html" target="_blank">mini-teste + probe de examen</a>
     </p>
   footer: '<a href="https://forms.gle/9a35oWwVdYMiCoBW8" target="_blank">Formular pentru trimiterea rezolvărilor</a>'
+
+- type: label
+  class: danger
+  content: 'urmează o etapă de evaluare'
+
+- type: event
+  class: primary
+  point:
+    class: danger
+    icon: 'fas fa-bell'
+  heading: 'Evaluare: <a href="evaluare-componenta-s">Componenta S: Soluţia completă</a>'
+  body: >
+    <p>
+      Fiecare echipă va livra următoarele resurse – toate obligatorii –,
+      conform fiecărei propuneri de proiect.
+
+      Fiecare echipă va avea alocate maxim 10 minute pentru susţinerea orală a
+      soluţiei Web dezvoltate.
+      <ul>
+        <li>
+          <p>Un raport &icirc;n formatul <a href="https://w3c.github.io/scholarly-html/" title="Detalii">Scholarly HTML</a> disponibil public pe situl Web al echipei (<em>e.g.</em>, blog, wiki) care descrie detaliile care vizeaz&#259; progresul proiectului. Con&#355;inuturile multimedia aferente, dac&#259; exist&#259;, vor putea fi distribuite <em>on-line</em> sub form&#259; de prezentare ori film. Minimal, vor fi asociate <em>tag</em>-urile <code>project</code>, <code>infoiasi</code>, <code>web</code>. De asemenea, se va detalia maniera de folosire a sistemului de management al codului-surs&#259; ales.</p>
+        </li>
+
+        <li>
+          <p>Ghidul de utilizare a aplica&#355;iei dezvoltate &ndash; disponibil ca document HTML5, recurg&acirc;nd la formatul <a href="https://w3c.github.io/scholarly-html/" title="Detalii">Scholarly HTML</a>.</p>
+        </li>
+        <li>
+          <p>Pentru proiectele din clasa <strong>M</strong> se va furniza un film demonstrativ av&acirc;nd durat&#259; de 3&mdash;5&nbsp;minute, la calitate HD.</p>
+        </li>
+      </ul>
+
+      <p>
+        Resurse utile:
+          <a href="https://www.prismnet.com/~hcexres/textbook/" title="Online Technical Writing">technical writing</a> &middot;
+          <a href="http://www.kevinboone.net/howto_report.html" title="How to write a technical report">advices</a>
+      </p>
+    </p>
+  footer: >
+    Mai multe detalii: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html" target="_blank">Tehnologii Web - proiecte practice</a>
 
 - type: label
   class: 'danger'

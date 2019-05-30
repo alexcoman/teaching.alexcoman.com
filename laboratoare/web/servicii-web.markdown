@@ -705,10 +705,11 @@ class SongsController extends Controller {
 
     public function handle_put() {
         $song_model = new SongModel();
-        # $song_model->update_song($_POST["artist"],
-        #                           $_POST["track"], 
-        #                           $_POST["link"],
-        #                           $_POST['song_id']);
+        # https://www.php.net/manual/en/features.file-upload.put-method.php
+        # $song_model->update_song($_PUT["artist"],
+        #                          $_PUT["track"], 
+        #                          $_PUT["link"],
+        #                          $_PUT['song_id']);
     }
 }
 ```
