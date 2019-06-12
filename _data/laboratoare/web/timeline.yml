@@ -335,7 +335,7 @@
 
 - type: label
   class: danger
-  content: 'urmează o etapă de evaluare'
+  content: 'săptămâna curentă'
 
 - type: event
   class: primary
@@ -370,8 +370,9 @@
       </p>
     </p>
   footer: >
+    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQntlb2ZPx9uhMKkaBI-DF6U0TsM-IqfivlmiF-Sh-L3D8b4HHWfCxiCaeemoZs78HomPd3cZgxGyZi/pubhtml?gid=1680204933&single=true" target="_blank">Planificarea echipelor</a><br>
     Mai multe detalii: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html" target="_blank">Tehnologii Web - proiecte practice</a>
-
+    
 - type: label
   class: 'danger'
   icon: 'fas fa-stop'
