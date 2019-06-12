@@ -7,6 +7,20 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Planificarea echipelor</title>
+				
+				
+					<description>&lt;p&gt;După cum am promis revin cu mai multe informații despre planificarea
+echipelor pentru prezentarea componentei “S”.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/planificarea-echipelor/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/planificarea-echipelor/</guid>
+			</item>
+		
+			<item>
 				<title>Referitor la recuperarea laboratoarelor</title>
 				
 				
@@ -125,19 +139,6 @@
 				<pubDate>Mon, 15 May 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</guid>
-			</item>
-		
-			<item>
-				<title>Instalarea sistemului de operare CentOS 7</title>
-				
-				
-					<description>&lt;p&gt;Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va rula sistemul de operare CentOS 7.&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Sun, 14 May 2017 12:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/virtualbox/instalare-centos-7/</guid>
 			</item>
 		
 	</channel>
