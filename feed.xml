@@ -7,6 +7,20 @@
 		<atom:link href="https://teaching.alexcoman.com/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>Referitor la restanțe</title>
+				
+				
+					<description>&lt;p&gt;Mai multe informații pot fi găsite la următoarea
+adresă: &lt;a href=&quot;https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html&quot;&gt;@busaco/web-projects&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
+				<link>https://teaching.alexcoman.com/resurse/noutati/web/restante/</link>
+				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/noutati/web/restante/</guid>
+			</item>
+		
+			<item>
 				<title>Planificarea echipelor</title>
 				
 				
@@ -126,19 +140,6 @@ echipelor pentru prezentarea componentei “S”.&lt;/p&gt;
 				<pubDate>Mon, 15 May 2017 12:00:00 +0000</pubDate>
 				<link>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</link>
 				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-devstack/</guid>
-			</item>
-		
-			<item>
-				<title>Instalare Openstack(RDO) folosind Packstack</title>
-				
-				
-					<description>&lt;p&gt;Acest tutorial vine în ajutorul studenților ce doresc să își pregătească o mașină virtuală care va contine un mediu de execuție OpensStack RDO(&lt;a href=&quot;RDO&quot;&gt;RedHat Deployment of OpenStack&lt;/a&gt;)&lt;/p&gt;
-
-</description>
-				
-				<pubDate>Mon, 15 May 2017 12:00:00 +0000</pubDate>
-				<link>https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</link>
-				<guid isPermaLink="true">https://teaching.alexcoman.com/resurse/tutorial/openstack/instalare-openstack-folosind-packstack/</guid>
 			</item>
 		
 	</channel>
