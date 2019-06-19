@@ -333,10 +333,6 @@
     </p>
   footer: '<a href="https://forms.gle/9a35oWwVdYMiCoBW8" target="_blank">Formular pentru trimiterea rezolvărilor</a>'
 
-- type: label
-  class: danger
-  content: 'săptămâna curentă'
-
 - type: event
   class: primary
   point:
@@ -372,7 +368,17 @@
   footer: >
     <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQntlb2ZPx9uhMKkaBI-DF6U0TsM-IqfivlmiF-Sh-L3D8b4HHWfCxiCaeemoZs78HomPd3cZgxGyZi/pubhtml?gid=1680204933&single=true" target="_blank">Planificarea echipelor</a><br>
     Mai multe detalii: <a href="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html" target="_blank">Tehnologii Web - proiecte practice</a>
-    
+
+- type: event
+  class: primary
+  point:
+    class: danger
+    icon: 'fas fa-bell'
+  heading: 'Restanţe'
+  body: >
+    <a href="https://profs.info.uaic.ro/~orar/discipline/orar_tw.html">
+      Planificarea proiectelor restante.
+    </a>
 - type: label
   class: 'danger'
   icon: 'fas fa-stop'

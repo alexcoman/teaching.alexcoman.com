@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Referitor la restanțe"
+date: 2019-06-19 00:00:00
+author: [Alexandru Coman]
+categories: [noutati, web]
+section-type: post
+excerpt_separator: <!--more-->
+color: blue
+highlight: true
+---
+
+Mai multe informații pot fi găsite la următoarea
+adresă: [@busaco/web-projects][0].
+
+<!--more-->
+
+Fragment de interes:
+
+
+> Punctajul obţinut la o componentă (P, A şi/sau S) evaluată
+> la altă dată decât cea prevăzută în planificarea precizată
+> va fi diminuat cu 2 puncte.
+
+> Echipele aparţinând grupelor al căror responsabil a fost
+> domnul Alexandru Coman vor avea evaluat proiectul restant
+> de către domnul Ciprian Amariei.
+
+
+[0]: https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html
